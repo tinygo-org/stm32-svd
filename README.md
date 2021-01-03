@@ -6,7 +6,7 @@ These files are not intended to be modified. Instead, they are intended to be us
 
 ## Contributing
 
-Please do not contribute changes directly to the SVD files in this repository. Instead, controbute patches upstream in the [stm32-rs](https://github.com/stm32-rs/stm32-rs) repository.
+Please do not contribute changes directly to the SVD files in this repository. Instead, contribute patches upstream in the [stm32-rs](https://github.com/stm32-rs/stm32-rs) repository.
 
 ## Updating
 
