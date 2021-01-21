@@ -30875,7 +30875,8 @@
         <size>0x111</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>OTG_FS</name><description>USB OTG FS Interrupt</description><value>67</value></interrupt>
+    <registers>
         <register>
           <name>GOTGCTL</name>
           <displayName>GOTGCTL</displayName>

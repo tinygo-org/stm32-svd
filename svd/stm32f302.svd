@@ -327,7 +327,7 @@
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>2</value></enumeratedValue><enumeratedValue><name>VeryHighSpeed</name><description>Very high speed</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OSPEEDR14</name>
@@ -1856,7 +1856,7 @@
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>2</value></enumeratedValue><enumeratedValue><name>VeryHighSpeed</name><description>Very high speed</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OSPEEDR14</name>
@@ -29898,7 +29898,7 @@
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>2</value></enumeratedValue><enumeratedValue><name>VeryHighSpeed</name><description>Very high speed</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OSPEEDR15</name><usage>read-write</usage><enumeratedValue><name>LowSpeed</name><description>Low speed</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed</description><value>1</value></enumeratedValue><enumeratedValue><name>HighSpeed</name><description>High speed</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OSPEEDR14</name>
