@@ -10302,7 +10302,7 @@
               </description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode (reset state)</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode (reset state)</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODER14</name>
@@ -12323,7 +12323,7 @@
               </description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode (reset state)</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode (reset state)</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODER14</name>
@@ -14344,7 +14344,7 @@
               </description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode (reset state)</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode (reset state)</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODER14</name>
@@ -16401,7 +16401,7 @@
               </description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode (reset state)</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode</description><value>3</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>MODER15</name><usage>read-write</usage><enumeratedValue><name>Input</name><description>Input mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Output</name><description>General purpose output mode</description><value>1</value></enumeratedValue><enumeratedValue><name>Alternate</name><description>Alternate function mode</description><value>2</value></enumeratedValue><enumeratedValue><name>Analog</name><description>Analog mode (reset state)</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODER14</name>
@@ -51879,6 +51879,7 @@
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>PLLSAI2RDYR</name><usage>read</usage><enumeratedValue><name>NotReady</name><description>Clock not ready</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>Clock ready</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PLLSAI2ON</name>
@@ -51893,6 +51894,7 @@
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="PLLSAI2RDYR" />
             </field>
             <field>
               <name>PLLSAI1ON</name>
@@ -51907,6 +51909,7 @@
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="PLLSAI2RDYR" />
             </field>
             <field>
               <name>PLLON</name>
@@ -51914,6 +51917,7 @@
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PLLON</name><usage>read-write</usage><enumeratedValue><name>Off</name><description>Clock Off</description><value>0</value></enumeratedValue><enumeratedValue><name>On</name><description>Clock On</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CSSON</name>
@@ -51924,6 +51928,7 @@
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
+            <enumeratedValues><name>CSSON</name><usage>read-write</usage><enumeratedValue><name>Off</name><description>Clock security system disabled (clock detector OFF)</description><value>0</value></enumeratedValue><enumeratedValue><name>On</name><description>Clock security system enable (clock detector ON if the HSE is ready, OFF if not)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>HSEBYP</name>
@@ -51934,6 +51939,7 @@
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>HSEBYP</name><usage>read-write</usage><enumeratedValue><name>NotBypassed</name><description>HSE crystal oscillator not bypassed</description><value>0</value></enumeratedValue><enumeratedValue><name>Bypassed</name><description>HSE crystal oscillator bypassed with external clock</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>HSERDY</name>
@@ -51941,6 +51947,7 @@
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="PLLSAI2RDYR" />
             </field>
             <field>
               <name>HSEON</name>
@@ -51948,6 +51955,7 @@
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="PLLON" />
             </field>
             <field>
               <name>HSIASFS</name>
@@ -51965,6 +51973,7 @@
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="PLLSAI2RDYR" />
             </field>
             <field>
               <name>HSIKERON</name>
@@ -51982,6 +51991,7 @@
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="PLLON" />
             </field>
             <field>
               <name>MSIRANGE</name>
@@ -52010,6 +52020,7 @@
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="PLLSAI2RDYR" />
             </field>
             <field>
               <name>MSION</name>
@@ -52078,6 +52089,7 @@
               <bitOffset>28</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>MCOPRE</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>MCO divided by 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>MCO divided by 2</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>MCO divided by 4</description><value>2</value></enumeratedValue><enumeratedValue><name>Div8</name><description>MCO divided by 8</description><value>3</value></enumeratedValue><enumeratedValue><name>Div16</name><description>MCO divided by 16</description><value>4</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MCOSEL</name>
@@ -52088,6 +52100,7 @@
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>MCOSEL</name><usage>read-write</usage><enumeratedValue><name>None</name><description>MCO output disabled, no clock on MCO</description><value>0</value></enumeratedValue><enumeratedValue><name>SYSCLK</name><description>SYSCLK system clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>MSI</name><description>MSI clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSI clock selected</description><value>3</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE clock selected</description><value>4</value></enumeratedValue><enumeratedValue><name>PLL</name><description>Main PLL clock selected</description><value>5</value></enumeratedValue><enumeratedValue><name>LSI</name><description>LSI clock selected</description><value>6</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE clock selected</description><value>7</value></enumeratedValue><enumeratedValue><name>HSI48</name><description>Internal HSI48 clock selected</description><value>8</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>STOPWUCK</name>
@@ -52098,6 +52111,7 @@
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>STOPWUCK</name><usage>read-write</usage><enumeratedValue><name>MSI</name><description>MSI oscillator selected as wakeup from stop clock and CSS backup clock</description><value>0</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSI oscillator selected as wakeup from stop clock and CSS backup clock</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PPRE2</name>
@@ -52108,6 +52122,7 @@
               <bitOffset>11</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PPRE2</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>HCLK not divided</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>HCLK divided by 2</description><value>4</value></enumeratedValue><enumeratedValue><name>Div4</name><description>HCLK divided by 4</description><value>5</value></enumeratedValue><enumeratedValue><name>Div8</name><description>HCLK divided by 8</description><value>6</value></enumeratedValue><enumeratedValue><name>Div16</name><description>HCLK divided by 16</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PPRE1</name>
@@ -52118,6 +52133,7 @@
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="PPRE2" />
             </field>
             <field>
               <name>HPRE</name>
@@ -52125,6 +52141,7 @@
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>HPRE</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>SYSCLK not divided</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>SYSCLK divided by 2</description><value>8</value></enumeratedValue><enumeratedValue><name>Div4</name><description>SYSCLK divided by 4</description><value>9</value></enumeratedValue><enumeratedValue><name>Div8</name><description>SYSCLK divided by 8</description><value>10</value></enumeratedValue><enumeratedValue><name>Div16</name><description>SYSCLK divided by 16</description><value>11</value></enumeratedValue><enumeratedValue><name>Div64</name><description>SYSCLK divided by 64</description><value>12</value></enumeratedValue><enumeratedValue><name>Div128</name><description>SYSCLK divided by 128</description><value>13</value></enumeratedValue><enumeratedValue><name>Div256</name><description>SYSCLK divided by 256</description><value>14</value></enumeratedValue><enumeratedValue><name>Div512</name><description>SYSCLK divided by 512</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SWS</name>
@@ -52132,6 +52149,7 @@
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>SWSR</name><usage>read</usage><enumeratedValue><name>MSI</name><description>MSI oscillator used as system clock</description><value>0</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSI oscillator used as system clock</description><value>1</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE used as system clock</description><value>2</value></enumeratedValue><enumeratedValue><name>PLL</name><description>PLL used as system clock</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SW</name>
@@ -52139,6 +52157,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>SW</name><usage>read-write</usage><enumeratedValue><name>MSI</name><description>MSI selected as system clock</description><value>0</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSI selected as system clock</description><value>1</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE selected as system clock</description><value>2</value></enumeratedValue><enumeratedValue><name>PLL</name><description>PLL selected as system clock</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -52685,18 +52704,21 @@
               <description>DMA1 reset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>DMA1RST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DMA2RST</name>
               <description>DMA2 reset</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
             <field>
               <name>DMAMUX1RST</name>
               <description>DMAMUXRST</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
             <field>
               <name>FLASHRST</name>
@@ -52706,12 +52728,14 @@
               </description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
             <field>
               <name>CRCRST</name>
               <description>CRC reset</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
             <field>
               <name>TSCRST</name>
@@ -52721,12 +52745,14 @@
               </description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
             <field>
               <name>GTZCRST</name>
               <description>GTZC reset</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1RST" />
             </field>
           </fields>
         </register>
@@ -52744,54 +52770,63 @@
               <description>IO port A reset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>GPIOARST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>GPIOBRST</name>
               <description>IO port B reset</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIOCRST</name>
               <description>IO port C reset</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIODRST</name>
               <description>IO port D reset</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIOERST</name>
               <description>IO port E reset</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIOFRST</name>
               <description>IO port F reset</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIOGRST</name>
               <description>IO port G reset</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>GPIOHRST</name>
               <description>IO port H reset</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>ADCRST</name>
               <description>ADC reset</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>AESRST</name>
@@ -52801,12 +52836,14 @@
               </description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>HASHRST</name>
               <description>Hash reset</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>RNGRST</name>
@@ -52816,24 +52853,28 @@
               </description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>PKARST</name>
               <description>PKARST</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>OTFDEC1RST</name>
               <description>OTFDEC1RST</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
             <field>
               <name>SDMMC1RST</name>
               <description>SDMMC1 reset</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOARST" />
             </field>
           </fields>
         </register>
@@ -52854,12 +52895,14 @@
               </description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>FMCRST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OSPI1RST</name>
               <description>OSPI1RST</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="FMCRST" />
             </field>
           </fields>
         </register>
@@ -52880,120 +52923,140 @@
               <description>Low Power Timer 1 reset</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPTIM1RST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPAMPRST</name>
               <description>OPAMP interface reset</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>DAC1RST</name>
               <description>DAC1 interface reset</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>PWRRST</name>
               <description>Power interface reset</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>CRSRST</name>
               <description>CRS reset</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>I2C3RST</name>
               <description>I2C3 reset</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>I2C2RST</name>
               <description>I2C2 reset</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>I2C1RST</name>
               <description>I2C1 reset</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>UART5RST</name>
               <description>UART5 reset</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>UART4RST</name>
               <description>UART4 reset</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>USART3RST</name>
               <description>USART3 reset</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>USART2RST</name>
               <description>USART2 reset</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>SPI3RST</name>
               <description>SPI3 reset</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>SPI2RST</name>
               <description>SPI2 reset</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM7RST</name>
               <description>TIM7 timer reset</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM6RST</name>
               <description>TIM6 timer reset</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM5RST</name>
               <description>TIM5 timer reset</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM4RST</name>
               <description>TIM3 timer reset</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM3RST</name>
               <description>TIM3 timer reset</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
             <field>
               <name>TIM2RST</name>
               <description>TIM2 timer reset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1RST" />
             </field>
           </fields>
         </register>
@@ -53014,42 +53077,49 @@
               <description>Low-power UART 1 reset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPUART1RST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>I2C4RST</name>
               <description>I2C4 reset</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
             <field>
               <name>LPTIM2RST</name>
               <description>Low-power timer 2 reset</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
             <field>
               <name>LPTIM3RST</name>
               <description>LPTIM3RST</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
             <field>
               <name>FDCAN1RST</name>
               <description>FDCAN1RST</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
             <field>
               <name>USBFSRST</name>
               <description>USBFSRST</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
             <field>
               <name>UCPD1RST</name>
               <description>UCPD1RST</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1RST" />
             </field>
           </fields>
         </register>
@@ -53070,48 +53140,56 @@
               </description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SYSCFGRST</name><usage>read-write</usage><enumeratedValue><name>Reset</name><description>Reset the selected module</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TIM1RST</name>
               <description>TIM1 timer reset</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>SPI1RST</name>
               <description>SPI1 reset</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>TIM8RST</name>
               <description>TIM8 timer reset</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>USART1RST</name>
               <description>USART1 reset</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>TIM15RST</name>
               <description>TIM15 timer reset</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>TIM16RST</name>
               <description>TIM16 timer reset</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>TIM17RST</name>
               <description>TIM17 timer reset</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>SAI1RST</name>
@@ -53121,6 +53199,7 @@
               </description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>SAI2RST</name>
@@ -53130,6 +53209,7 @@
               </description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
             <field>
               <name>DFSDM1RST</name>
@@ -53139,6 +53219,7 @@
               </description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGRST" />
             </field>
           </fields>
         </register>
@@ -53159,18 +53240,21 @@
               <description>DMA1 clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>DMA1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DMA2EN</name>
               <description>DMA2 clock enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
             <field>
               <name>DMAMUX1EN</name>
               <description>DMAMUX clock enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
             <field>
               <name>FLASHEN</name>
@@ -53180,12 +53264,14 @@
               </description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
             <field>
               <name>CRCEN</name>
               <description>CRC clock enable</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
             <field>
               <name>TSCEN</name>
@@ -53195,12 +53281,14 @@
               </description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
             <field>
               <name>GTZCEN</name>
               <description>GTZCEN</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMA1EN" />
             </field>
           </fields>
         </register>
@@ -53221,54 +53309,63 @@
               <description>IO port A clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>GPIOAEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>GPIOBEN</name>
               <description>IO port B clock enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIOCEN</name>
               <description>IO port C clock enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIODEN</name>
               <description>IO port D clock enable</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIOEEN</name>
               <description>IO port E clock enable</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIOFEN</name>
               <description>IO port F clock enable</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIOGEN</name>
               <description>IO port G clock enable</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>GPIOHEN</name>
               <description>IO port H clock enable</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>ADCEN</name>
               <description>ADC clock enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>AESEN</name>
@@ -53278,12 +53375,14 @@
               </description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>HASHEN</name>
               <description>HASH clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>RNGEN</name>
@@ -53293,24 +53392,28 @@
               </description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>PKAEN</name>
               <description>PKAEN</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>OTFDEC1EN</name>
               <description>OTFDEC1EN</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
             <field>
               <name>SDMMC1EN</name>
               <description>SDMMC1 clock enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="GPIOAEN" />
             </field>
           </fields>
         </register>
@@ -53334,12 +53437,14 @@
               </description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>FMCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OSPI1EN</name>
               <description>OSPI1EN</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="FMCEN" />
             </field>
           </fields>
         </register>
@@ -53357,42 +53462,49 @@
               <description>TIM2 timer clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TIM2EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TIM3EN</name>
               <description>TIM3 timer clock enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>TIM4EN</name>
               <description>TIM4 timer clock enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>TIM5EN</name>
               <description>TIM5 timer clock enable</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>TIM6EN</name>
               <description>TIM6 timer clock enable</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>TIM7EN</name>
               <description>TIM7 timer clock enable</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>RTCAPBEN</name>
               <description>RTC APB clock enable</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>WWDGEN</name>
@@ -53402,60 +53514,70 @@
               </description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>SPI2EN</name>
               <description>SPI2 clock enable</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>SP3EN</name>
               <description>SPI3 clock enable</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>USART2EN</name>
               <description>USART2 clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>USART3EN</name>
               <description>USART3 clock enable</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>UART4EN</name>
               <description>UART4 clock enable</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>UART5EN</name>
               <description>UART5 clock enable</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>I2C1EN</name>
               <description>I2C1 clock enable</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>I2C2EN</name>
               <description>I2C2 clock enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>I2C3EN</name>
               <description>I2C3 clock enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>CRSEN</name>
@@ -53465,6 +53587,7 @@
               </description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>PWREN</name>
@@ -53474,6 +53597,7 @@
               </description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>DAC1EN</name>
@@ -53483,6 +53607,7 @@
               </description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>OPAMPEN</name>
@@ -53492,6 +53617,7 @@
               </description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
             <field>
               <name>LPTIM1EN</name>
@@ -53501,6 +53627,7 @@
               </description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TIM2EN" />
             </field>
           </fields>
         </register>
@@ -53524,42 +53651,49 @@
               </description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPUART1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>I2C4EN</name>
               <description>I2C4 clock enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
             <field>
               <name>LPTIM2EN</name>
               <description>LPTIM2EN</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
             <field>
               <name>LPTIM3EN</name>
               <description>LPTIM3EN</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
             <field>
               <name>FDCAN1EN</name>
               <description>FDCAN1EN</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
             <field>
               <name>USBFSEN</name>
               <description>USBFSEN</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
             <field>
               <name>UCPD1EN</name>
               <description>UCPD1EN</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LPUART1EN" />
             </field>
           </fields>
         </register>
@@ -53577,66 +53711,77 @@
               <description>SYSCFG clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SYSCFGEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>The selected clock is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>The selected clock is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TIM1EN</name>
               <description>TIM1 timer clock enable</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>SPI1EN</name>
               <description>SPI1 clock enable</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>TIM8EN</name>
               <description>TIM8 timer clock enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>USART1EN</name>
               <description>USART1clock enable</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>TIM15EN</name>
               <description>TIM15 timer clock enable</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>TIM16EN</name>
               <description>TIM16 timer clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>TIM17EN</name>
               <description>TIM17 timer clock enable</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>SAI1EN</name>
               <description>SAI1 clock enable</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>SAI2EN</name>
               <description>SAI2 clock enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
             <field>
               <name>DFSDM1EN</name>
               <description>DFSDM timer clock enable</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SYSCFGEN" />
             </field>
           </fields>
         </register>
@@ -54451,6 +54596,7 @@
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSCOSEL</name><usage>read-write</usage><enumeratedValue><name>LSI</name><description>LSI clock selected"</description><value>0</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE clock selected</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSCOEN</name>
@@ -54461,6 +54607,7 @@
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSCOEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LSCO disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LSCO enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BDRST</name>
@@ -54471,6 +54618,7 @@
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>BDRST</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Reset not activated</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Reset the entire RTC domain</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>RTCEN</name>
@@ -54478,6 +54626,7 @@
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>RTCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>RTC clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>RTC clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSESYSRDY</name>
@@ -54485,6 +54634,7 @@
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSESYSRDYR</name><usage>read</usage><enumeratedValue><name>NotReady</name><description>LSESYS clock not ready</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>LSESYS clock ready</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>RTCSEL</name>
@@ -54492,6 +54642,7 @@
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>RTCSEL</name><usage>read-write</usage><enumeratedValue><name>NoClock</name><description>No clock</description><value>0</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE oscillator clock used as RTC clock</description><value>1</value></enumeratedValue><enumeratedValue><name>LSI</name><description>LSI oscillator clock used as RTC clock</description><value>2</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE oscillator clock divided by a prescaler used as RTC clock</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSESYSEN</name>
@@ -54499,6 +54650,7 @@
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSESYSEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LSESYS only enabled when requested by a peripheral or system function</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LSESYS enabled always generated by RCC</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSECSSD</name>
@@ -54506,6 +54658,7 @@
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>LSECSSDR</name><usage>read</usage><enumeratedValue><name>NoFailure</name><description>No failure detected on LSE (32 kHz oscillator)</description><value>0</value></enumeratedValue><enumeratedValue><name>Failure</name><description>Failure detected on LSE (32 kHz oscillator)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSECSSON</name>
@@ -54513,6 +54666,7 @@
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSECSSON</name><usage>read-write</usage><enumeratedValue><name>Off</name><description>CSS on LSE (32 kHz external oscillator) OFF</description><value>0</value></enumeratedValue><enumeratedValue><name>On</name><description>CSS on LSE (32 kHz external oscillator) ON</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSEDRV</name>
@@ -54523,6 +54677,7 @@
               <bitOffset>3</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSEDRV</name><usage>read-write</usage><enumeratedValue><name>Lower</name><description>'Xtal mode' lower driving capability</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumLow</name><description>'Xtal mode' medium low driving capability</description><value>1</value></enumeratedValue><enumeratedValue><name>MediumHigh</name><description>'Xtal mode' medium high driving capability</description><value>2</value></enumeratedValue><enumeratedValue><name>Higher</name><description>'Xtal mode' higher driving capability</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSEBYP</name>
@@ -54530,6 +54685,7 @@
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSEBYP</name><usage>read-write</usage><enumeratedValue><name>NotBypassed</name><description>LSE crystal oscillator not bypassed</description><value>0</value></enumeratedValue><enumeratedValue><name>Bypassed</name><description>LSE crystal oscillator bypassed with external clock</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSERDY</name>
@@ -54537,6 +54693,7 @@
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>LSERDYR</name><usage>read</usage><enumeratedValue><name>NotReady</name><description>LSE oscillator not ready</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>LSE oscillator ready</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSEON</name>
@@ -54544,6 +54701,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSEON</name><usage>read-write</usage><enumeratedValue><name>Off</name><description>LSE oscillator Off</description><value>0</value></enumeratedValue><enumeratedValue><name>On</name><description>LSE oscillator On</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -54561,6 +54719,7 @@
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>LPWRSTFR</name><usage>read</usage><enumeratedValue><name>NoReset</name><description>No reset has occured</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>A reset has occured</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>WWDGRSTF</name>
@@ -54568,6 +54727,7 @@
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>IWWDGRSTF</name>
@@ -54578,6 +54738,7 @@
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>SFTRSTF</name>
@@ -54585,6 +54746,7 @@
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>BORRSTF</name>
@@ -54592,6 +54754,7 @@
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>PINRSTF</name>
@@ -54599,6 +54762,7 @@
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>OBLRSTF</name>
@@ -54609,6 +54773,7 @@
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="LPWRSTFR" />
             </field>
             <field>
               <name>RMVF</name>
@@ -54616,6 +54781,7 @@
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>RMVFW</name><usage>write</usage><enumeratedValue><name>Clear</name><description>Clears the reset flag</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MSISRANGE</name>
@@ -54640,6 +54806,7 @@
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>LSIRDYR</name><usage>read</usage><enumeratedValue><name>NotReady</name><description>LSI oscillator not ready</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>LSI oscillator ready</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSION</name>
@@ -54647,6 +54814,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LSION</name><usage>read-write</usage><enumeratedValue><name>Off</name><description>LSI oscillator Off</description><value>0</value></enumeratedValue><enumeratedValue><name>On</name><description>LSI oscillator On</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>

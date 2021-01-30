@@ -13096,59 +13096,60 @@
           <fields>
             <field>
               <name>SMP9</name>
-              <description>SMP9</description>
+              <description>Channel 9 sampling time selection</description>
               <bitOffset>27</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP8</name>
-              <description>SMP8</description>
+              <description>Channel 8 sampling time selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP7</name>
-              <description>SMP7</description>
+              <description>Channel 7 sampling time selection</description>
               <bitOffset>21</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP6</name>
-              <description>SMP6</description>
+              <description>Channel 6 sampling time selection</description>
               <bitOffset>18</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP5</name>
-              <description>SMP5</description>
+              <description>Channel 5 sampling time selection</description>
               <bitOffset>15</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP4</name>
-              <description>SMP4</description>
+              <description>Channel 4 sampling time selection</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP3</name>
-              <description>SMP3</description>
+              <description>Channel 3 sampling time selection</description>
               <bitOffset>9</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP2</name>
-              <description>SMP2</description>
+              <description>Channel 2 sampling time selection</description>
               <bitOffset>6</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP1</name>
-              <description>SMP1</description>
+              <description>Channel 1 sampling time selection</description>
               <bitOffset>3</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
-          </fields>
+          <field><name>SMP0</name><description>Channel 0 sampling time selection</description><bitOffset>0</bitOffset><bitWidth>3</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>SMPR2</name>
@@ -13161,55 +13162,55 @@
           <fields>
             <field>
               <name>SMP18</name>
-              <description>SMP18</description>
+              <description>Channel 18 sampling time selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP17</name>
-              <description>SMP17</description>
+              <description>Channel 17 sampling time selection</description>
               <bitOffset>21</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP16</name>
-              <description>SMP16</description>
+              <description>Channel 16 sampling time selection</description>
               <bitOffset>18</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP15</name>
-              <description>SMP15</description>
+              <description>Channel 15 sampling time selection</description>
               <bitOffset>15</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP14</name>
-              <description>SMP14</description>
+              <description>Channel 14 sampling time selection</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP13</name>
-              <description>SMP13</description>
+              <description>Channel 13 sampling time selection</description>
               <bitOffset>9</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP12</name>
-              <description>SMP12</description>
+              <description>Channel 12 sampling time selection</description>
               <bitOffset>6</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP11</name>
-              <description>SMP11</description>
+              <description>Channel 11 sampling time selection</description>
               <bitOffset>3</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>SMP10</name>
-              <description>SMP10</description>
+              <description>Channel 10 sampling time selection</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
             </field>

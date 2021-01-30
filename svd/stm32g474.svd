@@ -2935,7 +2935,7 @@
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>SP3EN</name>
+                     <name>SPI3EN</name>
                      <description>SPI3 clock enable</description>
                      <bitOffset>15</bitOffset>
                      <bitWidth>1</bitWidth>
