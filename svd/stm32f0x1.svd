@@ -9701,7 +9701,7 @@
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-only</access>
-            <enumeratedValues><name>SWSR</name><usage>read</usage><enumeratedValue><name>HSI48</name><description>HSI48 used as system clock (when avaiable)</description><value>3</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSE oscillator used as system clock</description><value>0</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSI oscillator used as system clock</description><value>1</value></enumeratedValue><enumeratedValue><name>PLL</name><description>PLL used as system clock</description><value>2</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>SWSR</name><usage>read</usage><enumeratedValue><name>HSI48</name><description>HSI48 used as system clock (when avaiable)</description><value>3</value></enumeratedValue><enumeratedValue><name>HSI</name><description>HSI oscillator used as system clock</description><value>0</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE oscillator used as system clock</description><value>1</value></enumeratedValue><enumeratedValue><name>PLL</name><description>PLL used as system clock</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>HPRE</name>
