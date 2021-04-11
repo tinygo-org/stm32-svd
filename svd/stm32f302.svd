@@ -12538,7 +12538,7 @@
           <name>IMR2</name>
           <displayName>IMR2</displayName>
           <description>Interrupt mask register</description>
-          <addressOffset>0x18</addressOffset>
+          <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0xFFFFFFFC</resetValue>
@@ -12581,7 +12581,7 @@
           <name>EMR2</name>
           <displayName>EMR2</displayName>
           <description>Event mask register</description>
-          <addressOffset>0x1C</addressOffset>
+          <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12625,7 +12625,7 @@
           <displayName>RTSR2</displayName>
           <description>Rising Trigger selection
           register</description>
-          <addressOffset>0x20</addressOffset>
+          <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12653,7 +12653,7 @@
           <displayName>FTSR2</displayName>
           <description>Falling Trigger selection
           register</description>
-          <addressOffset>0x24</addressOffset>
+          <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12681,7 +12681,7 @@
           <displayName>SWIER2</displayName>
           <description>Software interrupt event
           register</description>
-          <addressOffset>0x28</addressOffset>
+          <addressOffset>0x30</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12708,7 +12708,7 @@
           <name>PR2</name>
           <displayName>PR2</displayName>
           <description>Pending register</description>
-          <addressOffset>0x2C</addressOffset>
+          <addressOffset>0x34</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>

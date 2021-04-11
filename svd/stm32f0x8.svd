@@ -16424,7 +16424,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
-            <enumeratedValues><name>BSYR</name><usage>read</usage><enumeratedValue><name>Inactive</name><description>No write/erase operation is in progress</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>No write/erase operation is in progress</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>BSYR</name><usage>read</usage><enumeratedValue><name>Inactive</name><description>No write/erase operation is in progress</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>A write/erase operation is in progress</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -16464,7 +16464,7 @@
               <description>Option bytes write enable</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPTWRE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Option byte write enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Option byte write disabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPTWRE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Option byte write disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Option byte write enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LOCK</name>

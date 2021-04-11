@@ -3129,6 +3129,8 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>PLLSRC</name><usage>read-write</usage><enumeratedValue><name>HSI</name><description>HSI clock selected as PLL and PLLI2S clock entry</description><value>0</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE oscillator clock selected as PLL and PLLI2S clock entry</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
+            <field><name>PLLR</name><description>Main PLL division factor for I2Ss, SAIs, SYSTEM and SPDIF-Rx clocks</description><bitOffset>28</bitOffset><bitWidth>3</bitWidth><writeConstraint><range><minimum>2</minimum><maximum>7</maximum></range></writeConstraint>
+            </field>
             <field><name>PLLM</name><description>Division factor for the main PLL (PLL)
               and audio PLL (PLLI2S) input clock</description><bitOffset>0</bitOffset><bitWidth>6</bitWidth><writeConstraint><range><minimum>2</minimum><maximum>63</maximum></range></writeConstraint>
             </field><field><name>PLLN</name><description>Main PLL (PLL) multiplication factor for
@@ -27155,6 +27157,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LATENCY</name><usage>read-write</usage><enumeratedValue><name>WS0</name><description>0 wait states</description><value>0</value></enumeratedValue><enumeratedValue><name>WS1</name><description>1 wait states</description><value>1</value></enumeratedValue><enumeratedValue><name>WS2</name><description>2 wait states</description><value>2</value></enumeratedValue><enumeratedValue><name>WS3</name><description>3 wait states</description><value>3</value></enumeratedValue><enumeratedValue><name>WS4</name><description>4 wait states</description><value>4</value></enumeratedValue><enumeratedValue><name>WS5</name><description>5 wait states</description><value>5</value></enumeratedValue><enumeratedValue><name>WS6</name><description>6 wait states</description><value>6</value></enumeratedValue><enumeratedValue><name>WS7</name><description>7 wait states</description><value>7</value></enumeratedValue><enumeratedValue><name>WS8</name><description>8 wait states</description><value>8</value></enumeratedValue><enumeratedValue><name>WS9</name><description>9 wait states</description><value>9</value></enumeratedValue><enumeratedValue><name>WS10</name><description>10 wait states</description><value>10</value></enumeratedValue><enumeratedValue><name>WS11</name><description>11 wait states</description><value>11</value></enumeratedValue><enumeratedValue><name>WS12</name><description>12 wait states</description><value>12</value></enumeratedValue><enumeratedValue><name>WS13</name><description>13 wait states</description><value>13</value></enumeratedValue><enumeratedValue><name>WS14</name><description>14 wait states</description><value>14</value></enumeratedValue><enumeratedValue><name>WS15</name><description>15 wait states</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PRFTEN</name>
@@ -27162,6 +27165,7 @@
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PRFTEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Prefetch is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Prefetch is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ICEN</name>
@@ -27169,6 +27173,7 @@
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>ICEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Instruction cache is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Instruction cache is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DCEN</name>
@@ -27176,6 +27181,7 @@
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>DCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Data cache is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Data cache is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ICRST</name>
@@ -27183,6 +27189,7 @@
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
+            <enumeratedValues><name>ICRST</name><usage>read-write</usage><enumeratedValue><name>NotReset</name><description>Instruction cache is not reset</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Instruction cache is reset</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DCRST</name>
@@ -27190,6 +27197,7 @@
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>DCRST</name><usage>read-write</usage><enumeratedValue><name>NotReset</name><description>Data cache is not reset</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Data cache is reset</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -27207,6 +27215,7 @@
               <description>FPEC key</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -27224,6 +27233,7 @@
               <description>Option byte key</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -27309,12 +27319,14 @@
               <description>Programming</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>PG</name><usage>read-write</usage><enumeratedValue><name>Program</name><description>Flash programming activated</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SER</name>
               <description>Sector Erase</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SER</name><usage>read-write</usage><enumeratedValue><name>SectorErase</name><description>Erase activated for selected sector</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MER</name>
@@ -27322,24 +27334,28 @@
               11</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MER</name><usage>read-write</usage><enumeratedValue><name>MassErase</name><description>Erase activated for all user sectors</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SNB</name>
               <description>Sector number</description>
               <bitOffset>3</bitOffset>
               <bitWidth>4</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>11</maximum></range></writeConstraint>
             </field>
             <field>
               <name>PSIZE</name>
               <description>Program size</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>PSIZE</name><usage>read-write</usage><enumeratedValue><name>PSIZE8</name><description>Program x8</description><value>0</value></enumeratedValue><enumeratedValue><name>PSIZE16</name><description>Program x16</description><value>1</value></enumeratedValue><enumeratedValue><name>PSIZE32</name><description>Program x32</description><value>2</value></enumeratedValue><enumeratedValue><name>PSIZE64</name><description>Program x64</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>STRT</name>
               <description>Start</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>STRT</name><usage>read-write</usage><enumeratedValue><name>Start</name><description>Trigger an erase operation</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>EOPIE</name>
@@ -27347,18 +27363,21 @@
               enable</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>EOPIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>End of operation interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>End of operation interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ERRIE</name>
               <description>Error interrupt enable</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>ERRIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Error interrupt generation disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Error interrupt generation enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LOCK</name>
               <description>Lock</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LOCK</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>FLASH_CR register is unlocked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>FLASH_CR register is locked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -35490,7 +35509,7 @@
           <resetValue>0x00000040</resetValue>
           <fields>
             <field>
-              <name>MCJDIV</name>
+              <name>MCKDIV</name>
               <description>Master clock divider</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>

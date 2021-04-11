@@ -13318,8 +13318,8 @@
               <bitWidth>5</bitWidth>
             </field>
             <field>
-              <name>L3</name>
-              <description>L3</description>
+              <name>L</name>
+              <description>Regular channel sequence length</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
@@ -18061,7 +18061,7 @@
           <resetValue>0x00000040</resetValue>
           <fields>
             <field>
-              <name>MCJDIV</name>
+              <name>MCKDIV</name>
               <description>Master clock divider</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
@@ -25079,6 +25079,7 @@
               enable</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>BIDIMODE</name><usage>read-write</usage><enumeratedValue><name>Unidirectional</name><description>2-line unidirectional data mode selected</description><value>0</value></enumeratedValue><enumeratedValue><name>Bidirectional</name><description>1-line bidirectional data mode selected</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BIDIOE</name>
@@ -25086,6 +25087,7 @@
               mode</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>BIDIOE</name><usage>read-write</usage><enumeratedValue><name>OutputDisabled</name><description>Output disabled (receive-only mode)</description><value>0</value></enumeratedValue><enumeratedValue><name>OutputEnabled</name><description>Output enabled (transmit-only mode)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CRCEN</name>
@@ -25093,16 +25095,18 @@
               enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CRCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>CRC calculation disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>CRC calculation enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CRCNEXT</name>
               <description>CRC transfer next</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CRCNEXT</name><usage>read-write</usage><enumeratedValue><name>TxBuffer</name><description>Next transmit value is from Tx buffer</description><value>0</value></enumeratedValue><enumeratedValue><name>CRC</name><description>Next transmit value is from Tx CRC register</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>DFF</name>
-              <description>Data frame format</description>
+              <name>CRCL</name>
+              <description>CRC length</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -25111,54 +25115,63 @@
               <description>Receive only</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>RXONLY</name><usage>read-write</usage><enumeratedValue><name>FullDuplex</name><description>Full duplex (Transmit and receive)</description><value>0</value></enumeratedValue><enumeratedValue><name>OutputDisabled</name><description>Output disabled (Receive-only mode)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SSM</name>
               <description>Software slave management</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SSM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Software slave management disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Software slave management enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SSI</name>
               <description>Internal slave select</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SSI</name><usage>read-write</usage><enumeratedValue><name>SlaveSelected</name><description>0 is forced onto the NSS pin and the I/O value of the NSS pin is ignored</description><value>0</value></enumeratedValue><enumeratedValue><name>SlaveNotSelected</name><description>1 is forced onto the NSS pin and the I/O value of the NSS pin is ignored</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSBFIRST</name>
               <description>Frame format</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LSBFIRST</name><usage>read-write</usage><enumeratedValue><name>MSBFirst</name><description>Data is transmitted/received with the MSB first</description><value>0</value></enumeratedValue><enumeratedValue><name>LSBFirst</name><description>Data is transmitted/received with the LSB first</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SPE</name>
               <description>SPI enable</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SPE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Peripheral disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Peripheral enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BR</name>
               <description>Baud rate control</description>
               <bitOffset>3</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>BR</name><usage>read-write</usage><enumeratedValue><name>Div2</name><description>f_PCLK / 2</description><value>0</value></enumeratedValue><enumeratedValue><name>Div4</name><description>f_PCLK / 4</description><value>1</value></enumeratedValue><enumeratedValue><name>Div8</name><description>f_PCLK / 8</description><value>2</value></enumeratedValue><enumeratedValue><name>Div16</name><description>f_PCLK / 16</description><value>3</value></enumeratedValue><enumeratedValue><name>Div32</name><description>f_PCLK / 32</description><value>4</value></enumeratedValue><enumeratedValue><name>Div64</name><description>f_PCLK / 64</description><value>5</value></enumeratedValue><enumeratedValue><name>Div128</name><description>f_PCLK / 128</description><value>6</value></enumeratedValue><enumeratedValue><name>Div256</name><description>f_PCLK / 256</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MSTR</name>
               <description>Master selection</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MSTR</name><usage>read-write</usage><enumeratedValue><name>Slave</name><description>Slave configuration</description><value>0</value></enumeratedValue><enumeratedValue><name>Master</name><description>Master configuration</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CPOL</name>
               <description>Clock polarity</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CPOL</name><usage>read-write</usage><enumeratedValue><name>IdleLow</name><description>CK to 0 when idle</description><value>0</value></enumeratedValue><enumeratedValue><name>IdleHigh</name><description>CK to 1 when idle</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CPHA</name>
               <description>Clock phase</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CPHA</name><usage>read-write</usage><enumeratedValue><name>FirstEdge</name><description>The first clock transition is the first data capture edge</description><value>0</value></enumeratedValue><enumeratedValue><name>SecondEdge</name><description>The second clock transition is the first data capture edge</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -25176,18 +25189,21 @@
               <description>Rx buffer DMA enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>RXDMAEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Rx buffer DMA disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Rx buffer DMA enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TXDMAEN</name>
               <description>Tx buffer DMA enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TXDMAEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Tx buffer DMA disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Tx buffer DMA enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SSOE</name>
               <description>SS output enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SSOE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>SS output is disabled in master mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>SS output is enabled in master mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>NSSP</name>
@@ -25206,6 +25222,7 @@
               <description>Error interrupt enable</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>ERRIE</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Error interrupt masked</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMasked</name><description>Error interrupt not masked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>RXNEIE</name>
@@ -25213,6 +25230,7 @@
               enable</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>RXNEIE</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>RXE interrupt masked</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMasked</name><description>RXE interrupt not masked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TXEIE</name>
@@ -25220,6 +25238,7 @@
               enable</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TXEIE</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>TXE interrupt masked</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMasked</name><description>TXE interrupt not masked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DS</name>
@@ -25263,6 +25282,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>RXNE</name><usage>read-write</usage><enumeratedValue><name>Empty</name><description>Rx buffer empty</description><value>0</value></enumeratedValue><enumeratedValue><name>NotEmpty</name><description>Rx buffer not empty</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TXE</name>
@@ -25270,6 +25290,7 @@
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>TXE</name><usage>read-write</usage><enumeratedValue><name>NotEmpty</name><description>Tx buffer not empty</description><value>0</value></enumeratedValue><enumeratedValue><name>Empty</name><description>Tx buffer empty</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CRCERR</name>
@@ -25277,6 +25298,7 @@
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>CRCERR</name><usage>read-write</usage><enumeratedValue><name>Match</name><description>CRC value received matches the SPIx_RXCRCR value</description><value>0</value></enumeratedValue><enumeratedValue><name>NoMatch</name><description>CRC value received does not match the SPIx_RXCRCR value</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODF</name>
@@ -25284,6 +25306,7 @@
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>MODFR</name><usage>read</usage><enumeratedValue><name>NoFault</name><description>No mode fault occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Fault</name><description>Mode fault occurred</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OVR</name>
@@ -25291,6 +25314,7 @@
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>OVRR</name><usage>read</usage><enumeratedValue><name>NoOverrun</name><description>No overrun occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Overrun</name><description>Overrun occurred</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BSY</name>
@@ -25298,10 +25322,11 @@
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>BSYR</name><usage>read</usage><enumeratedValue><name>NotBusy</name><description>SPI not busy</description><value>0</value></enumeratedValue><enumeratedValue><name>Busy</name><description>SPI busy</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>TIFRFE</name>
-              <description>TI frame format error</description>
+              <name>FRE</name>
+              <description>Frame format error</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
@@ -25336,6 +25361,7 @@
               <description>Data register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -25353,6 +25379,7 @@
               <description>CRC polynomial register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -25370,6 +25397,7 @@
               <description>Rx CRC register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -25387,6 +25415,7 @@
               <description>Tx CRC register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -29405,7 +29434,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>WCKSEL</name>
+              <name>WUCKSEL</name>
               <description>Wakeup clock selection</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>

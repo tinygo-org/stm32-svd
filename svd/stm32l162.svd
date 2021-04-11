@@ -12922,8 +12922,8 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>WCKSEL</name>
-              <description>WCKSEL</description>
+              <name>WUCKSEL</name>
+              <description>Wakeup clock selection</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
             </field>

@@ -1,6 +1,6 @@
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G081</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <description>STM32G081</description>
   <cpu>
     <name>CM0</name>
@@ -11,12 +11,8 @@
     <nvicPrioBits>2</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
   </cpu>
-  
-  
   <addressUnitBits>8</addressUnitBits>
-  
   <width>32</width>
-  
   <size>0x20</size>
   <resetValue>0x0</resetValue>
   <resetMask>0xFFFFFFFF</resetMask>
@@ -4161,8 +4157,9 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>GIF1</name>
-              <description>Channel 1 global interrupt flag</description>
+              <name>GIF0</name>
+              <description>Channel global interrupt
+              flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -4173,158 +4170,173 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>HTIF1</name>
-              <description>Channel 1 half transfer flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEIF1</name>
-              <description>Channel 1 transfer error flag</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GIF2</name>
-              <description>Channel 2 global interrupt flag</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TCIF2</name>
-              <description>Channel 2 transfer complete flag</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>HTIF2</name>
               <description>Channel 2 half transfer flag</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEIF2</name>
-              <description>Channel 2 transfer error flag</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GIF3</name>
-              <description>Channel 3 global interrupt flag</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TCIF3</name>
-              <description>Channel 3 transfer complete flag</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>HTIF3</name>
-              <description>Channel 3 half transfer flag</description>
-              <bitOffset>10</bitOffset>
+              <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>TEIF3</name>
               <description>Channel 3 transfer error flag</description>
-              <bitOffset>11</bitOffset>
+              <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>GIF4</name>
               <description>Channel 4 global interrupt flag</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TCIF4</name>
-              <description>Channel 4 transfer complete flag</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>HTIF4</name>
-              <description>Channel 4 half transfer flag</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEIF4</name>
-              <description>Channel 4 transfer error flag</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GIF5</name>
-              <description>Channel 5 global interrupt flag</description>
-              <bitOffset>16</bitOffset>
+              <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>TCIF5</name>
               <description>Channel 5 transfer complete flag</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>HTIF5</name>
-              <description>Channel 5 half transfer flag</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEIF5</name>
-              <description>Channel 5 transfer error flag</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GIF6</name>
-              <description>Channel 6 global interrupt flag</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TCIF6</name>
-              <description>Channel 6 transfer complete flag</description>
-              <bitOffset>21</bitOffset>
+              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>HTIF6</name>
               <description>Channel 6 half transfer flag</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TEIF6</name>
-              <description>Channel 6 transfer error flag</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>GIF7</name>
-              <description>Channel 7 global interrupt flag</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>TCIF7</name>
-              <description>Channel 7 transfer complete flag</description>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>HTIF7</name>
-              <description>Channel 7 half transfer flag</description>
-              <bitOffset>26</bitOffset>
+              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>TEIF7</name>
               <description>Channel 7 transfer error flag</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GIF8</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TCIF9</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HTIF10</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TEIF11</name>
+              <description>Channel transfer error
+              flag</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GIF12</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TCIF13</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HTIF14</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TEIF15</name>
+              <description>Channel transfer error
+              flag</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GIF16</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TCIF17</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HTIF18</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TEIF19</name>
+              <description>Channel transfer error
+              flag</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GIF20</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TCIF21</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HTIF22</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TEIF23</name>
+              <description>Channel transfer error
+              flag</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GIF24</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TCIF25</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HTIF26</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TEIF27</name>
+              <description>Channel transfer error
+              flag</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -4352,80 +4364,85 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CHTIF1</name>
-              <description>Clear channel 1 half transfer flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CTEIF1</name>
-              <description>Clear channel 1 transfer error flag</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CGIF2</name>
-              <description>Clear channel 2 global interrupt flag</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CTCIF2</name>
-              <description>Clear channel 2 transfer complete flag</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>CHTIF2</name>
               <description>Clear channel 2 half transfer flag</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CTEIF2</name>
-              <description>Clear channel 2 transfer error flag</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CGIF3</name>
-              <description>Clear channel 3 global interrupt flag</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CTCIF3</name>
-              <description>Clear channel 3 transfer complete flag</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CHTIF3</name>
-              <description>Clear channel 3 half transfer flag</description>
-              <bitOffset>10</bitOffset>
+              <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>CTEIF3</name>
               <description>Clear channel 3 transfer error flag</description>
-              <bitOffset>11</bitOffset>
+              <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>CGIF4</name>
               <description>Clear channel 4 global interrupt flag</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CTCIF5</name>
+              <description>Clear channel 5 transfer complete flag</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CHTIF6</name>
+              <description>Clear channel 6 half transfer flag</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CTEIF7</name>
+              <description>Clear channel 7 transfer error flag</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CGIF8</name>
+              <description>Channel global interrupt
+              flag</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CTCIF9</name>
+              <description>Channel transfer complete
+              flag</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CHTIF10</name>
+              <description>Channel half transfer flag</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CTEIF11</name>
+              <description>Channel transfer error
+              flag</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CGIF12</name>
+              <description>Channel global interrupt
+              flag</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTCIF4</name>
-              <description>Clear channel 4 transfer complete flag</description>
+              <name>CTCIF13</name>
+              <description>Channel transfer complete
+              flag</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CHTIF4</name>
-              <description>Clear channel 4 half transfer flag</description>
+              <name>CHTIF14</name>
+              <description>Channel half transfer flag</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -4436,74 +4453,83 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CGIF5</name>
-              <description>Clear channel 5 global interrupt flag</description>
+              <name>CGIF16</name>
+              <description>Channel global interrupt
+              flag</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTCIF5</name>
-              <description>Clear channel 5 transfer complete flag</description>
+              <name>CTCIF17</name>
+              <description>Channel transfer complete
+              flag</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CHTIF5</name>
-              <description>Clear channel 5 half transfer flag</description>
+              <name>CHTIF18</name>
+              <description>Channel half transfer flag</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTEIF5</name>
-              <description>Clear channel 5 transfer error flag</description>
+              <name>CTEIF19</name>
+              <description>Channel transfer error
+              flag</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CGIF6</name>
-              <description>Clear channel 6 global interrupt flag</description>
+              <name>CGIF20</name>
+              <description>Channel global interrupt
+              flag</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTCIF6</name>
-              <description>Clear channel 6 transfer complete flag</description>
+              <name>CTCIF21</name>
+              <description>Channel transfer complete
+              flag</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CHTIF6</name>
-              <description>Clear channel 6 half transfer flag</description>
+              <name>CHTIF22</name>
+              <description>Channel half transfer flag</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTEIF6</name>
-              <description>Clear channel 6 transfer error flag</description>
+              <name>CTEIF23</name>
+              <description>Channel transfer error
+              flag</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CGIF7</name>
-              <description>Clear channel 7 global interrupt flag</description>
+              <name>CGIF24</name>
+              <description>Channel global interrupt
+              flag</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTCIF7</name>
-              <description>Clear channel 7 transfer complete flag</description>
+              <name>CTCIF25</name>
+              <description>Channel transfer complete
+              flag</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CHTIF7</name>
-              <description>Clear channel 7 half transfer flag</description>
+              <name>CHTIF26</name>
+              <description>Channel half transfer flag</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>CTEIF7</name>
-              <description>Clear channel 7 transfer error flag</description>
+              <name>CTEIF27</name>
+              <description>Channel transfer error
+              flag</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>

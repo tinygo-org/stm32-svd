@@ -14966,1152 +14966,6 @@
         </registers>
     </peripheral>
     <peripheral>
-      <name>EXTI</name>
-      <description>External interrupt/event
-      controller</description>
-      <groupName>EXTI</groupName>
-      <baseAddress>0x40010400</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x400</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <interrupt>
-        <name>PVD_IRQ</name>
-        <description>Power voltage detector through EXTI line
-        detection interrupt</description>
-        <value>1</value>
-      </interrupt>
-      <interrupt>
-        <name>TAMP</name>
-        <description>Tamper and timestamp through EXTI19
-        line</description>
-        <value>2</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI0_IRQ</name>
-        <description>EXTI Line 0 interrupt</description>
-        <value>6</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI1_IRQ</name>
-        <description>EXTI Line1 interrupt</description>
-        <value>7</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI2_RI_IRQ</name>
-        <description>EXTI Line 2 and routing interface
-        interrupt</description>
-        <value>8</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI3_IRQ</name>
-        <description>EXTI Line1 interrupt</description>
-        <value>9</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI4_IRQ</name>
-        <description>EXTI Line4 interrupt</description>
-        <value>10</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI5_9_IRQ</name>
-        <description>EXTI Line[9:5] interrupts</description>
-        <value>23</value>
-      </interrupt>
-      <interrupt>
-        <name>EXTI15_10_IRQ</name>
-        <description>EXTI Line[15:10] interrupts</description>
-        <value>40</value>
-      </interrupt>
-      <registers>
-        <register>
-          <name>IMR</name>
-          <displayName>IMR</displayName>
-          <description>Interrupt mask register
-          (EXTI_IMR)</description>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x1F800000</resetValue>
-          <fields>
-            <field>
-              <name>MR0</name>
-              <description>Interrupt Mask on line 0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MR0</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MR1</name>
-              <description>Interrupt Mask on line 1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR2</name>
-              <description>Interrupt Mask on line 2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR3</name>
-              <description>Interrupt Mask on line 3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR4</name>
-              <description>Interrupt Mask on line 4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR5</name>
-              <description>Interrupt Mask on line 5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR6</name>
-              <description>Interrupt Mask on line 6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR7</name>
-              <description>Interrupt Mask on line 7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR8</name>
-              <description>Interrupt Mask on line 8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR9</name>
-              <description>Interrupt Mask on line 9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR10</name>
-              <description>Interrupt Mask on line 10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR11</name>
-              <description>Interrupt Mask on line 11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR12</name>
-              <description>Interrupt Mask on line 12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR13</name>
-              <description>Interrupt Mask on line 13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR14</name>
-              <description>Interrupt Mask on line 14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR15</name>
-              <description>Interrupt Mask on line 15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR16</name>
-              <description>Interrupt Mask on line 16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR17</name>
-              <description>Interrupt Mask on line 17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR18</name>
-              <description>Interrupt Mask on line 18</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR19</name>
-              <description>Interrupt Mask on line 19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR20</name>
-              <description>Interrupt Mask on line 20</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR21</name>
-              <description>Interrupt Mask on line 21</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR22</name>
-              <description>Interrupt Mask on line 22</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR23</name>
-              <description>Interrupt Mask on line 23</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR24</name>
-              <description>Interrupt Mask on line 24</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR25</name>
-              <description>Interrupt Mask on line 25</description>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR26</name>
-              <description>Interrupt Mask on line 26</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR27</name>
-              <description>Interrupt Mask on line 27</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR28</name>
-              <description>Interrupt Mask on line 28</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>EMR</name>
-          <displayName>EMR</displayName>
-          <description>Event mask register (EXTI_EMR)</description>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MR0</name>
-              <description>Event Mask on line 0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MR0</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MR1</name>
-              <description>Event Mask on line 1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR2</name>
-              <description>Event Mask on line 2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR3</name>
-              <description>Event Mask on line 3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR4</name>
-              <description>Event Mask on line 4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR5</name>
-              <description>Event Mask on line 5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR6</name>
-              <description>Event Mask on line 6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR7</name>
-              <description>Event Mask on line 7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR8</name>
-              <description>Event Mask on line 8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR9</name>
-              <description>Event Mask on line 9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR10</name>
-              <description>Event Mask on line 10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR11</name>
-              <description>Event Mask on line 11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR12</name>
-              <description>Event Mask on line 12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR13</name>
-              <description>Event Mask on line 13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR14</name>
-              <description>Event Mask on line 14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR15</name>
-              <description>Event Mask on line 15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR16</name>
-              <description>Event Mask on line 16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR17</name>
-              <description>Event Mask on line 17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR18</name>
-              <description>Event Mask on line 18</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR19</name>
-              <description>Event Mask on line 19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR20</name>
-              <description>Event Mask on line 20</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR21</name>
-              <description>Event Mask on line 21</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR22</name>
-              <description>Event Mask on line 22</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR23</name>
-              <description>Event Mask on line 23</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR24</name>
-              <description>Event Mask on line 24</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR25</name>
-              <description>Event Mask on line 25</description>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR26</name>
-              <description>Event Mask on line 26</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR27</name>
-              <description>Event Mask on line 27</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-            <field>
-              <name>MR28</name>
-              <description>Event Mask on line 28</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MR0" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RTSR</name>
-          <displayName>RTSR</displayName>
-          <description>Rising Trigger selection register
-          (EXTI_RTSR)</description>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>TR0</name>
-              <description>Rising trigger event configuration of
-              line 0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>TR0</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Rising edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Rising edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>TR1</name>
-              <description>Rising trigger event configuration of
-              line 1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR2</name>
-              <description>Rising trigger event configuration of
-              line 2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR3</name>
-              <description>Rising trigger event configuration of
-              line 3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR4</name>
-              <description>Rising trigger event configuration of
-              line 4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR5</name>
-              <description>Rising trigger event configuration of
-              line 5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR6</name>
-              <description>Rising trigger event configuration of
-              line 6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR7</name>
-              <description>Rising trigger event configuration of
-              line 7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR8</name>
-              <description>Rising trigger event configuration of
-              line 8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR9</name>
-              <description>Rising trigger event configuration of
-              line 9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR10</name>
-              <description>Rising trigger event configuration of
-              line 10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR11</name>
-              <description>Rising trigger event configuration of
-              line 11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR12</name>
-              <description>Rising trigger event configuration of
-              line 12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR13</name>
-              <description>Rising trigger event configuration of
-              line 13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR14</name>
-              <description>Rising trigger event configuration of
-              line 14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR15</name>
-              <description>Rising trigger event configuration of
-              line 15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR16</name>
-              <description>Rising trigger event configuration of
-              line 16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR17</name>
-              <description>Rising trigger event configuration of
-              line 17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR19</name>
-              <description>Rising trigger event configuration of
-              line 19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>FTSR</name>
-          <displayName>FTSR</displayName>
-          <description>Falling Trigger selection register
-          (EXTI_FTSR)</description>
-          <addressOffset>0xC</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>TR0</name>
-              <description>Falling trigger event configuration of
-              line 0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>TR0</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Falling edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Falling edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>TR1</name>
-              <description>Falling trigger event configuration of
-              line 1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR2</name>
-              <description>Falling trigger event configuration of
-              line 2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR3</name>
-              <description>Falling trigger event configuration of
-              line 3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR4</name>
-              <description>Falling trigger event configuration of
-              line 4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR5</name>
-              <description>Falling trigger event configuration of
-              line 5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR6</name>
-              <description>Falling trigger event configuration of
-              line 6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR7</name>
-              <description>Falling trigger event configuration of
-              line 7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR8</name>
-              <description>Falling trigger event configuration of
-              line 8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR9</name>
-              <description>Falling trigger event configuration of
-              line 9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR10</name>
-              <description>Falling trigger event configuration of
-              line 10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR11</name>
-              <description>Falling trigger event configuration of
-              line 11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR12</name>
-              <description>Falling trigger event configuration of
-              line 12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR13</name>
-              <description>Falling trigger event configuration of
-              line 13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR14</name>
-              <description>Falling trigger event configuration of
-              line 14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR15</name>
-              <description>Falling trigger event configuration of
-              line 15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR16</name>
-              <description>Falling trigger event configuration of
-              line 16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR17</name>
-              <description>Falling trigger event configuration of
-              line 17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-            <field>
-              <name>TR19</name>
-              <description>Falling trigger event configuration of
-              line 19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SWIER</name>
-          <displayName>SWIER</displayName>
-          <description>Software interrupt event register
-          (EXTI_SWIER)</description>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SWIER0</name>
-              <description>Software Interrupt on line
-              0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>SWIER0W</name><usage>write</usage><enumeratedValue><name>Pend</name><description>Generates an interrupt request</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>SWIER1</name>
-              <description>Software Interrupt on line
-              1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER2</name>
-              <description>Software Interrupt on line
-              2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER3</name>
-              <description>Software Interrupt on line
-              3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER4</name>
-              <description>Software Interrupt on line
-              4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER5</name>
-              <description>Software Interrupt on line
-              5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER6</name>
-              <description>Software Interrupt on line
-              6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER7</name>
-              <description>Software Interrupt on line
-              7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER8</name>
-              <description>Software Interrupt on line
-              8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER9</name>
-              <description>Software Interrupt on line
-              9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER10</name>
-              <description>Software Interrupt on line
-              10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER11</name>
-              <description>Software Interrupt on line
-              11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER12</name>
-              <description>Software Interrupt on line
-              12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER13</name>
-              <description>Software Interrupt on line
-              13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER14</name>
-              <description>Software Interrupt on line
-              14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER15</name>
-              <description>Software Interrupt on line
-              15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER16</name>
-              <description>Software Interrupt on line
-              16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER17</name>
-              <description>Software Interrupt on line
-              17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-            <field>
-              <name>SWIER19</name>
-              <description>Software Interrupt on line
-              19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>PR</name>
-          <displayName>PR</displayName>
-          <description>Pending register (EXTI_PR)</description>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PR0</name>
-              <description>Pending bit 0</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>PR0R</name><usage>read</usage><enumeratedValue><name>NotPending</name><description>No trigger request occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Selected trigger request occurred</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>PR0W</name><usage>write</usage><enumeratedValue><name>Clear</name><description>Clears pending bit</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>PR1</name>
-              <description>Pending bit 1</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR2</name>
-              <description>Pending bit 2</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR3</name>
-              <description>Pending bit 3</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR4</name>
-              <description>Pending bit 4</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR5</name>
-              <description>Pending bit 5</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR6</name>
-              <description>Pending bit 6</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR7</name>
-              <description>Pending bit 7</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR8</name>
-              <description>Pending bit 8</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR9</name>
-              <description>Pending bit 9</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR10</name>
-              <description>Pending bit 10</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR11</name>
-              <description>Pending bit 11</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR12</name>
-              <description>Pending bit 12</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR13</name>
-              <description>Pending bit 13</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR14</name>
-              <description>Pending bit 14</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR15</name>
-              <description>Pending bit 15</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR16</name>
-              <description>Pending bit 16</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR17</name>
-              <description>Pending bit 17</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-            <field>
-              <name>PR19</name>
-              <description>Pending bit 19</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="PR0R" />
-            <enumeratedValues derivedFrom="PR0W" />
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
       <name>CEC</name>
       <description>HDMI-CEC controller</description>
       <groupName>CEC</groupName>
@@ -16449,7 +15303,8 @@
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>PVD</name><description>PVD through EXTI line detection interrupt</description><value>1</value></interrupt>
+    <registers>
         <register>
           <name>CR</name>
           <displayName>CR</displayName>
@@ -27064,6 +25919,1873 @@
       </registers>
     </peripheral>
   <peripheral>
+      <name>ADC1_2</name>
+      <description>ADC Common registers</description>
+      <groupName>ADC</groupName>
+      <baseAddress>0x50000300</baseAddress><addressBlock>
+        <offset>0x0</offset>
+        <size>0x400</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>CSR</name>
+          <displayName>CSR</displayName>
+          <description>ADC Common status register</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>JQOVF_SLV</name>
+              <description>Injected Context Queue Overflow flag of
+              the slave ADC</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>JQOVF_SLV</name><usage>read-write</usage><enumeratedValue><name>NoOverflow</name><description>No injected context queue overflow has occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Overflow</name><description>Injected context queue overflow has occurred</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>AWD3_SLV</name>
+              <description>Analog watchdog 3 flag of the slave
+              ADC</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>AWD3_SLV</name><usage>read-write</usage><enumeratedValue><name>NoEvent</name><description>No analog watchdog event occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Event</name><description>Analog watchdog event occurred</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>AWD2_SLV</name>
+              <description>Analog watchdog 2 flag of the slave
+              ADC</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="AWD3_SLV" />
+            </field>
+            <field>
+              <name>AWD1_SLV</name>
+              <description>Analog watchdog 1 flag of the slave
+              ADC</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="AWD3_SLV" />
+            </field>
+            <field>
+              <name>JEOS_SLV</name>
+              <description>End of injected sequence flag of the
+              slave ADC</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>JEOS_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Injected sequence is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Injected sequence complete</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>JEOC_SLV</name>
+              <description>End of injected conversion flag of the
+              slave ADC</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>JEOC_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Injected conversion is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Injected conversion complete</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>OVR_SLV</name>
+              <description>Overrun flag of the slave
+              ADC</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OVR_SLV</name><usage>read-write</usage><enumeratedValue><name>NoOverrun</name><description>No overrun occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Overrun</name><description>Overrun occurred</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>EOS_SLV</name>
+              <description>End of regular sequence flag of the
+              slave ADC</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>EOS_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Regular sequence is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Regular sequence complete</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>EOC_SLV</name>
+              <description>End of regular conversion of the slave
+              ADC</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>EOC_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Regular conversion is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Regular conversion complete</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>EOSMP_SLV</name>
+              <description>End of Sampling phase flag of the slave
+              ADC</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>EOSMP_SLV</name><usage>read-write</usage><enumeratedValue><name>NotEnded</name><description>End of sampling phase no yet reached</description><value>0</value></enumeratedValue><enumeratedValue><name>Ended</name><description>End of sampling phase reached</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>ADRDY_SLV</name>
+              <description>Slave ADC ready</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>ADRDY_SLV</name><usage>read-write</usage><enumeratedValue><name>NotReady</name><description>ADC is not ready to start conversion</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>ADC is ready to start conversion</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>JQOVF_MST</name>
+              <description>Injected Context Queue Overflow flag of
+              the master ADC</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="JQOVF_SLV" />
+            </field>
+            <field>
+              <name>AWD3_MST</name>
+              <description>Analog watchdog 3 flag of the master
+              ADC</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="AWD3_SLV" />
+            </field>
+            <field>
+              <name>AWD2_MST</name>
+              <description>Analog watchdog 2 flag of the master
+              ADC</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="AWD3_SLV" />
+            </field>
+            <field>
+              <name>AWD1_MST</name>
+              <description>Analog watchdog 1 flag of the master
+              ADC</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="AWD3_SLV" />
+            </field>
+            <field>
+              <name>JEOS_MST</name>
+              <description>End of injected sequence flag of the
+              master ADC</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="JEOS_SLV" />
+            </field>
+            <field>
+              <name>JEOC_MST</name>
+              <description>End of injected conversion flag of the
+              master ADC</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="JEOC_SLV" />
+            </field>
+            <field>
+              <name>OVR_MST</name>
+              <description>Overrun flag of the master
+              ADC</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OVR_SLV" />
+            </field>
+            <field>
+              <name>EOS_MST</name>
+              <description>End of regular sequence flag of the
+              master ADC</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="EOS_SLV" />
+            </field>
+            <field>
+              <name>EOC_MST</name>
+              <description>End of regular conversion of the master
+              ADC</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="EOC_SLV" />
+            </field>
+            <field>
+              <name>EOSMP_MST</name>
+              <description>End of Sampling phase flag of the master
+              ADC</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="EOSMP_SLV" />
+            </field>
+            <field>
+              <name>ADRDY_MST</name>
+              <description>Master ADC ready</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="ADRDY_SLV" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CCR</name>
+          <displayName>CCR</displayName>
+          <description>ADC common control register</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>VBATEN</name>
+              <description>VBATEN</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VBATEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>V_BAT channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>V_BAT channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>TSEN</name>
+              <description>Temperature sensor enable</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TSEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Temperature sensor channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Temperature sensor channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>VREFEN</name>
+              <description>VREFINT enable</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VREFEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>V_REFINT channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>V_REFINT channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>CKMODE</name>
+              <description>ADC clock mode</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>2</bitWidth>
+            <enumeratedValues><name>CKMODE</name><usage>read-write</usage><enumeratedValue><name>Asynchronous</name><description>Use Kernel Clock adc_ker_ck_input divided by PRESC. Asynchronous to AHB clock</description><value>0</value></enumeratedValue><enumeratedValue><name>SyncDiv1</name><description>Use AHB clock rcc_hclk3. In this case rcc_hclk must equal sys_d1cpre_ck</description><value>1</value></enumeratedValue><enumeratedValue><name>SyncDiv2</name><description>Use AHB clock rcc_hclk3 divided by 2</description><value>2</value></enumeratedValue><enumeratedValue><name>SyncDiv4</name><description>Use AHB clock rcc_hclk3 divided by 4</description><value>3</value></enumeratedValue></enumeratedValues>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>EXTI</name>
+      <description>External interrupt/event
+      controller</description>
+      <groupName>EXTI</groupName>
+      <baseAddress>0x40010400</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x400</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <interrupt>
+        <name>TAMP_STAMP</name>
+        <description>Tamper and TimeStamp interrupts</description>
+        <value>2</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI0</name>
+        <description>EXTI Line0 interrupt</description>
+        <value>6</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI1</name>
+        <description>EXTI Line3 interrupt</description>
+        <value>7</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI2_TSC</name>
+        <description>EXTI Line2 and Touch sensing
+        interrupts</description>
+        <value>8</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI3</name>
+        <description>EXTI Line3 interrupt</description>
+        <value>9</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI4</name>
+        <description>EXTI Line4 interrupt</description>
+        <value>10</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI9_5</name>
+        <description>EXTI Line5 to Line9 interrupts</description>
+        <value>23</value>
+      </interrupt>
+      <interrupt>
+        <name>I2C1_EV_EXTI23</name>
+        <description>I2C1 event interrupt and EXTI Line23
+        interrupt</description>
+        <value>31</value>
+      </interrupt>
+      <interrupt>
+        <name>USART1_EXTI25</name>
+        <description>USART1 global interrupt and EXTI Line 25
+        interrupt</description>
+        <value>37</value>
+      </interrupt>
+      <interrupt>
+        <name>USART2_EXTI26</name>
+        <description>USART2 global interrupt and EXTI Line 26
+        interrupt</description>
+        <value>38</value>
+      </interrupt>
+      <interrupt>
+        <name>USART3_EXTI28</name>
+        <description>USART3 global interrupt and EXTI Line 28
+        interrupt</description>
+        <value>39</value>
+      </interrupt>
+      <interrupt>
+        <name>EXTI15_10</name>
+        <description>EXTI Line15 to Line10 interrupts</description>
+        <value>40</value>
+      </interrupt>
+      <interrupt>
+        <name>USB_WKUP_EXTI</name>
+        <description>USB wakeup from Suspend and EXTI Line
+        18</description>
+        <value>76</value>
+      </interrupt>
+      <registers>
+        <register>
+          <name>IMR1</name>
+          <displayName>IMR1</displayName>
+          <description>Interrupt mask register</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x1F800000</resetValue>
+          <fields>
+            <field>
+              <name>MR0</name>
+              <description>Interrupt Mask on line 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MR0</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>MR1</name>
+              <description>Interrupt Mask on line 1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR2</name>
+              <description>Interrupt Mask on line 2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR3</name>
+              <description>Interrupt Mask on line 3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR4</name>
+              <description>Interrupt Mask on line 4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR5</name>
+              <description>Interrupt Mask on line 5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR6</name>
+              <description>Interrupt Mask on line 6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR7</name>
+              <description>Interrupt Mask on line 7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR8</name>
+              <description>Interrupt Mask on line 8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR9</name>
+              <description>Interrupt Mask on line 9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR10</name>
+              <description>Interrupt Mask on line 10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR11</name>
+              <description>Interrupt Mask on line 11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR12</name>
+              <description>Interrupt Mask on line 12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR13</name>
+              <description>Interrupt Mask on line 13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR14</name>
+              <description>Interrupt Mask on line 14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR15</name>
+              <description>Interrupt Mask on line 15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR16</name>
+              <description>Interrupt Mask on line 16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR17</name>
+              <description>Interrupt Mask on line 17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR18</name>
+              <description>Interrupt Mask on line 18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR19</name>
+              <description>Interrupt Mask on line 19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR20</name>
+              <description>Interrupt Mask on line 20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR21</name>
+              <description>Interrupt Mask on line 21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR22</name>
+              <description>Interrupt Mask on line 22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR23</name>
+              <description>Interrupt Mask on line 23</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR24</name>
+              <description>Interrupt Mask on line 24</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR25</name>
+              <description>Interrupt Mask on line 25</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR26</name>
+              <description>Interrupt Mask on line 26</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR27</name>
+              <description>Interrupt Mask on line 27</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR28</name>
+              <description>Interrupt Mask on line 28</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR29</name>
+              <description>Interrupt Mask on line 29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR30</name>
+              <description>Interrupt Mask on line 30</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR31</name>
+              <description>Interrupt Mask on line 31</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>EMR1</name>
+          <displayName>EMR1</displayName>
+          <description>Event mask register</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR0</name>
+              <description>Event Mask on line 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MR0</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>MR1</name>
+              <description>Event Mask on line 1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR2</name>
+              <description>Event Mask on line 2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR3</name>
+              <description>Event Mask on line 3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR4</name>
+              <description>Event Mask on line 4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR5</name>
+              <description>Event Mask on line 5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR6</name>
+              <description>Event Mask on line 6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR7</name>
+              <description>Event Mask on line 7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR8</name>
+              <description>Event Mask on line 8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR9</name>
+              <description>Event Mask on line 9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR10</name>
+              <description>Event Mask on line 10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR11</name>
+              <description>Event Mask on line 11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR12</name>
+              <description>Event Mask on line 12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR13</name>
+              <description>Event Mask on line 13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR14</name>
+              <description>Event Mask on line 14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR15</name>
+              <description>Event Mask on line 15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR16</name>
+              <description>Event Mask on line 16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR17</name>
+              <description>Event Mask on line 17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR18</name>
+              <description>Event Mask on line 18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR19</name>
+              <description>Event Mask on line 19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR20</name>
+              <description>Event Mask on line 20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR21</name>
+              <description>Event Mask on line 21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR22</name>
+              <description>Event Mask on line 22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR23</name>
+              <description>Event Mask on line 23</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR24</name>
+              <description>Event Mask on line 24</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR25</name>
+              <description>Event Mask on line 25</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR26</name>
+              <description>Event Mask on line 26</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR27</name>
+              <description>Event Mask on line 27</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR28</name>
+              <description>Event Mask on line 28</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR29</name>
+              <description>Event Mask on line 29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR30</name>
+              <description>Event Mask on line 30</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+            <field>
+              <name>MR31</name>
+              <description>Event Mask on line 31</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR0" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>RTSR1</name>
+          <displayName>RTSR1</displayName>
+          <description>Rising Trigger selection
+          register</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>TR0</name>
+              <description>Rising trigger event configuration of
+              line 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TR0</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Rising edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Rising edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>TR1</name>
+              <description>Rising trigger event configuration of
+              line 1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR2</name>
+              <description>Rising trigger event configuration of
+              line 2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR3</name>
+              <description>Rising trigger event configuration of
+              line 3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR4</name>
+              <description>Rising trigger event configuration of
+              line 4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR5</name>
+              <description>Rising trigger event configuration of
+              line 5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR6</name>
+              <description>Rising trigger event configuration of
+              line 6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR7</name>
+              <description>Rising trigger event configuration of
+              line 7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR8</name>
+              <description>Rising trigger event configuration of
+              line 8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR9</name>
+              <description>Rising trigger event configuration of
+              line 9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR10</name>
+              <description>Rising trigger event configuration of
+              line 10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR11</name>
+              <description>Rising trigger event configuration of
+              line 11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR12</name>
+              <description>Rising trigger event configuration of
+              line 12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR13</name>
+              <description>Rising trigger event configuration of
+              line 13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR14</name>
+              <description>Rising trigger event configuration of
+              line 14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR15</name>
+              <description>Rising trigger event configuration of
+              line 15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR16</name>
+              <description>Rising trigger event configuration of
+              line 16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR17</name>
+              <description>Rising trigger event configuration of
+              line 17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR18</name>
+              <description>Rising trigger event configuration of
+              line 18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR19</name>
+              <description>Rising trigger event configuration of
+              line 19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR20</name>
+              <description>Rising trigger event configuration of
+              line 20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR21</name>
+              <description>Rising trigger event configuration of
+              line 21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR22</name>
+              <description>Rising trigger event configuration of
+              line 22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR29</name>
+              <description>Rising trigger event configuration of
+              line 29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR30</name>
+              <description>Rising trigger event configuration of
+              line 30</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR31</name>
+              <description>Rising trigger event configuration of
+              line 31</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>FTSR1</name>
+          <displayName>FTSR1</displayName>
+          <description>Falling Trigger selection
+          register</description>
+          <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>TR0</name>
+              <description>Falling trigger event configuration of
+              line 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TR0</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Falling edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Falling edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>TR1</name>
+              <description>Falling trigger event configuration of
+              line 1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR2</name>
+              <description>Falling trigger event configuration of
+              line 2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR3</name>
+              <description>Falling trigger event configuration of
+              line 3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR4</name>
+              <description>Falling trigger event configuration of
+              line 4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR5</name>
+              <description>Falling trigger event configuration of
+              line 5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR6</name>
+              <description>Falling trigger event configuration of
+              line 6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR7</name>
+              <description>Falling trigger event configuration of
+              line 7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR8</name>
+              <description>Falling trigger event configuration of
+              line 8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR9</name>
+              <description>Falling trigger event configuration of
+              line 9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR10</name>
+              <description>Falling trigger event configuration of
+              line 10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR11</name>
+              <description>Falling trigger event configuration of
+              line 11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR12</name>
+              <description>Falling trigger event configuration of
+              line 12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR13</name>
+              <description>Falling trigger event configuration of
+              line 13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR14</name>
+              <description>Falling trigger event configuration of
+              line 14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR15</name>
+              <description>Falling trigger event configuration of
+              line 15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR16</name>
+              <description>Falling trigger event configuration of
+              line 16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR17</name>
+              <description>Falling trigger event configuration of
+              line 17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR18</name>
+              <description>Falling trigger event configuration of
+              line 18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR19</name>
+              <description>Falling trigger event configuration of
+              line 19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR20</name>
+              <description>Falling trigger event configuration of
+              line 20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR21</name>
+              <description>Falling trigger event configuration of
+              line 21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR22</name>
+              <description>Falling trigger event configuration of
+              line 22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR29</name>
+              <description>Falling trigger event configuration of
+              line 29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR30</name>
+              <description>Falling trigger event configuration of
+              line 30.</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+            <field>
+              <name>TR31</name>
+              <description>Falling trigger event configuration of
+              line 31</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR0" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SWIER1</name>
+          <displayName>SWIER1</displayName>
+          <description>Software interrupt event
+          register</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>SWIER0</name>
+              <description>Software Interrupt on line
+              0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SWIER0W</name><usage>write</usage><enumeratedValue><name>Pend</name><description>Generates an interrupt request</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>SWIER1</name>
+              <description>Software Interrupt on line
+              1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER2</name>
+              <description>Software Interrupt on line
+              2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER3</name>
+              <description>Software Interrupt on line
+              3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER4</name>
+              <description>Software Interrupt on line
+              4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER5</name>
+              <description>Software Interrupt on line
+              5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER6</name>
+              <description>Software Interrupt on line
+              6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER7</name>
+              <description>Software Interrupt on line
+              7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER8</name>
+              <description>Software Interrupt on line
+              8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER9</name>
+              <description>Software Interrupt on line
+              9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER10</name>
+              <description>Software Interrupt on line
+              10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER11</name>
+              <description>Software Interrupt on line
+              11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER12</name>
+              <description>Software Interrupt on line
+              12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER13</name>
+              <description>Software Interrupt on line
+              13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER14</name>
+              <description>Software Interrupt on line
+              14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER15</name>
+              <description>Software Interrupt on line
+              15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER16</name>
+              <description>Software Interrupt on line
+              16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER17</name>
+              <description>Software Interrupt on line
+              17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER18</name>
+              <description>Software Interrupt on line
+              18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER19</name>
+              <description>Software Interrupt on line
+              19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER20</name>
+              <description>Software Interrupt on line
+              20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER21</name>
+              <description>Software Interrupt on line
+              21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER22</name>
+              <description>Software Interrupt on line
+              22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER29</name>
+              <description>Software Interrupt on line
+              29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER30</name>
+              <description>Software Interrupt on line
+              309</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+            <field>
+              <name>SWIER31</name>
+              <description>Software Interrupt on line
+              319</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER0W" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>PR1</name>
+          <displayName>PR1</displayName>
+          <description>Pending register</description>
+          <addressOffset>0x14</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>PR0</name>
+              <description>Pending bit 0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>PR0R</name><usage>read</usage><enumeratedValue><name>NotPending</name><description>No trigger request occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Selected trigger request occurred</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>PR0W</name><usage>write</usage><enumeratedValue><name>Clear</name><description>Clears pending bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>PR1</name>
+              <description>Pending bit 1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR2</name>
+              <description>Pending bit 2</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR3</name>
+              <description>Pending bit 3</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR4</name>
+              <description>Pending bit 4</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR5</name>
+              <description>Pending bit 5</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR6</name>
+              <description>Pending bit 6</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR7</name>
+              <description>Pending bit 7</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR8</name>
+              <description>Pending bit 8</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR9</name>
+              <description>Pending bit 9</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR10</name>
+              <description>Pending bit 10</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR11</name>
+              <description>Pending bit 11</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR12</name>
+              <description>Pending bit 12</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR13</name>
+              <description>Pending bit 13</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR14</name>
+              <description>Pending bit 14</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR15</name>
+              <description>Pending bit 15</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR16</name>
+              <description>Pending bit 16</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR17</name>
+              <description>Pending bit 17</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR18</name>
+              <description>Pending bit 18</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR19</name>
+              <description>Pending bit 19</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR20</name>
+              <description>Pending bit 20</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR21</name>
+              <description>Pending bit 21</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR22</name>
+              <description>Pending bit 22</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR29</name>
+              <description>Pending bit 29</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR30</name>
+              <description>Pending bit 30</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+            <field>
+              <name>PR31</name>
+              <description>Pending bit 31</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR0R" />
+            <enumeratedValues derivedFrom="PR0W" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IMR2</name>
+          <displayName>IMR2</displayName>
+          <description>Interrupt mask register</description>
+          <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFFFFFFFE</resetValue>
+          <fields>
+            <field>
+              <name>MR32</name>
+              <description>Interrupt Mask on external/internal line
+              32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MR32</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>MR33</name>
+              <description>Interrupt Mask on external/internal line
+              33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+            <field>
+              <name>MR34</name>
+              <description>Interrupt Mask on external/internal line
+              34</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+            <field>
+              <name>MR35</name>
+              <description>Interrupt Mask on external/internal line
+              35</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>EMR2</name>
+          <displayName>EMR2</displayName>
+          <description>Event mask register</description>
+          <addressOffset>0x24</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR32</name>
+              <description>Event mask on external/internal line
+              32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>MR32</name><usage>read-write</usage><enumeratedValue><name>Masked</name><description>Interrupt request line is masked</description><value>0</value></enumeratedValue><enumeratedValue><name>Unmasked</name><description>Interrupt request line is unmasked</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>MR33</name>
+              <description>Event mask on external/internal line
+              33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+            <field>
+              <name>MR34</name>
+              <description>Event mask on external/internal line
+              34</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+            <field>
+              <name>MR35</name>
+              <description>Event mask on external/internal line
+              35</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="MR32" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>RTSR2</name>
+          <displayName>RTSR2</displayName>
+          <description>Rising Trigger selection
+          register</description>
+          <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>TR32</name>
+              <description>Rising trigger event configuration bit
+              of line 32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TR32</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Rising edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Rising edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>TR33</name>
+              <description>Rising trigger event configuration bit
+              of line 33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR32" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>FTSR2</name>
+          <displayName>FTSR2</displayName>
+          <description>Falling Trigger selection
+          register</description>
+          <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>TR32</name>
+              <description>Falling trigger event configuration bit
+              of line 32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TR32</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Falling edge trigger is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Falling edge trigger is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>TR33</name>
+              <description>Falling trigger event configuration bit
+              of line 33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TR32" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SWIER2</name>
+          <displayName>SWIER2</displayName>
+          <description>Software interrupt event
+          register</description>
+          <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>SWIER32</name>
+              <description>Software interrupt on line
+              32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SWIER32W</name><usage>write</usage><enumeratedValue><name>Pend</name><description>Generates an interrupt request</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>SWIER33</name>
+              <description>Software interrupt on line
+              33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWIER32W" />
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>PR2</name>
+          <displayName>PR2</displayName>
+          <description>Pending register</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>PR32</name>
+              <description>Pending bit on line 32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues><name>PR32R</name><usage>read</usage><enumeratedValue><name>NotPending</name><description>No trigger request occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Selected trigger request occurred</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>PR32W</name><usage>write</usage><enumeratedValue><name>Clear</name><description>Clears pending bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field>
+              <name>PR33</name>
+              <description>Pending bit on line 33</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="PR32R" />
+            <enumeratedValues derivedFrom="PR32W" />
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>TIM1</name>
       <description>Advanced timer</description>
       <groupName>TIMs</groupName>
@@ -28500,242 +29222,6 @@
               capability</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>ADC1_2</name>
-      <description>ADC Common registers</description>
-      <groupName>ADC</groupName>
-      <baseAddress>0x50000300</baseAddress><addressBlock>
-        <offset>0x0</offset>
-        <size>0x400</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <registers>
-        <register>
-          <name>CSR</name>
-          <displayName>CSR</displayName>
-          <description>ADC Common status register</description>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>JQOVF_SLV</name>
-              <description>Injected Context Queue Overflow flag of
-              the slave ADC</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>JQOVF_SLV</name><usage>read-write</usage><enumeratedValue><name>NoOverflow</name><description>No injected context queue overflow has occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Overflow</name><description>Injected context queue overflow has occurred</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>AWD3_SLV</name>
-              <description>Analog watchdog 3 flag of the slave
-              ADC</description>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>AWD3_SLV</name><usage>read-write</usage><enumeratedValue><name>NoEvent</name><description>No analog watchdog event occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Event</name><description>Analog watchdog event occurred</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>AWD2_SLV</name>
-              <description>Analog watchdog 2 flag of the slave
-              ADC</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="AWD3_SLV" />
-            </field>
-            <field>
-              <name>AWD1_SLV</name>
-              <description>Analog watchdog 1 flag of the slave
-              ADC</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="AWD3_SLV" />
-            </field>
-            <field>
-              <name>JEOS_SLV</name>
-              <description>End of injected sequence flag of the
-              slave ADC</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>JEOS_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Injected sequence is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Injected sequence complete</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>JEOC_SLV</name>
-              <description>End of injected conversion flag of the
-              slave ADC</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>JEOC_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Injected conversion is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Injected conversion complete</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>OVR_SLV</name>
-              <description>Overrun flag of the slave
-              ADC</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OVR_SLV</name><usage>read-write</usage><enumeratedValue><name>NoOverrun</name><description>No overrun occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>Overrun</name><description>Overrun occurred</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>EOS_SLV</name>
-              <description>End of regular sequence flag of the
-              slave ADC</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>EOS_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Regular sequence is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Regular sequence complete</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>EOC_SLV</name>
-              <description>End of regular conversion of the slave
-              ADC</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>EOC_SLV</name><usage>read-write</usage><enumeratedValue><name>NotComplete</name><description>Regular conversion is not complete</description><value>0</value></enumeratedValue><enumeratedValue><name>Complete</name><description>Regular conversion complete</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>EOSMP_SLV</name>
-              <description>End of Sampling phase flag of the slave
-              ADC</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>EOSMP_SLV</name><usage>read-write</usage><enumeratedValue><name>NotEnded</name><description>End of sampling phase no yet reached</description><value>0</value></enumeratedValue><enumeratedValue><name>Ended</name><description>End of sampling phase reached</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>ADRDY_SLV</name>
-              <description>Slave ADC ready</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ADRDY_SLV</name><usage>read-write</usage><enumeratedValue><name>NotReady</name><description>ADC is not ready to start conversion</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>ADC is ready to start conversion</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>JQOVF_MST</name>
-              <description>Injected Context Queue Overflow flag of
-              the master ADC</description>
-              <bitOffset>10</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="JQOVF_SLV" />
-            </field>
-            <field>
-              <name>AWD3_MST</name>
-              <description>Analog watchdog 3 flag of the master
-              ADC</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="AWD3_SLV" />
-            </field>
-            <field>
-              <name>AWD2_MST</name>
-              <description>Analog watchdog 2 flag of the master
-              ADC</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="AWD3_SLV" />
-            </field>
-            <field>
-              <name>AWD1_MST</name>
-              <description>Analog watchdog 1 flag of the master
-              ADC</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="AWD3_SLV" />
-            </field>
-            <field>
-              <name>JEOS_MST</name>
-              <description>End of injected sequence flag of the
-              master ADC</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="JEOS_SLV" />
-            </field>
-            <field>
-              <name>JEOC_MST</name>
-              <description>End of injected conversion flag of the
-              master ADC</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="JEOC_SLV" />
-            </field>
-            <field>
-              <name>OVR_MST</name>
-              <description>Overrun flag of the master
-              ADC</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="OVR_SLV" />
-            </field>
-            <field>
-              <name>EOS_MST</name>
-              <description>End of regular sequence flag of the
-              master ADC</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EOS_SLV" />
-            </field>
-            <field>
-              <name>EOC_MST</name>
-              <description>End of regular conversion of the master
-              ADC</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EOC_SLV" />
-            </field>
-            <field>
-              <name>EOSMP_MST</name>
-              <description>End of Sampling phase flag of the master
-              ADC</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EOSMP_SLV" />
-            </field>
-            <field>
-              <name>ADRDY_MST</name>
-              <description>Master ADC ready</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ADRDY_SLV" />
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCR</name>
-          <displayName>CCR</displayName>
-          <description>ADC common control register</description>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>VBATEN</name>
-              <description>VBATEN</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>VBATEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>V_BAT channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>V_BAT channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>TSEN</name>
-              <description>Temperature sensor enable</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>TSEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Temperature sensor channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Temperature sensor channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>VREFEN</name>
-              <description>VREFINT enable</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>VREFEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>V_REFINT channel disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>V_REFINT channel enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>CKMODE</name>
-              <description>ADC clock mode</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>2</bitWidth>
-            <enumeratedValues><name>CKMODE</name><usage>read-write</usage><enumeratedValue><name>Asynchronous</name><description>Use Kernel Clock adc_ker_ck_input divided by PRESC. Asynchronous to AHB clock</description><value>0</value></enumeratedValue><enumeratedValue><name>SyncDiv1</name><description>Use AHB clock rcc_hclk3. In this case rcc_hclk must equal sys_d1cpre_ck</description><value>1</value></enumeratedValue><enumeratedValue><name>SyncDiv2</name><description>Use AHB clock rcc_hclk3 divided by 2</description><value>2</value></enumeratedValue><enumeratedValue><name>SyncDiv4</name><description>Use AHB clock rcc_hclk3 divided by 4</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>

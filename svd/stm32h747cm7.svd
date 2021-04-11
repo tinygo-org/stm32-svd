@@ -18433,7 +18433,7 @@
             <enumeratedValues><name>EWIW</name><usage>write</usage><enumeratedValue><name>Enable</name><description>interrupt occurs whenever the counter reaches the value 0x40</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           <field><name>WDGTB</name><description>Timer base The time base of the
-              prescaler can be modified as follows:</description><bitOffset>11</bitOffset><bitWidth>2</bitWidth><enumeratedValues><name>WDGTB</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>Counter clock (PCLK1 div 4096) div 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>Counter clock (PCLK1 div 4096) div 2</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>Counter clock (PCLK1 div 4096) div 4</description><value>2</value></enumeratedValue><enumeratedValue><name>Div8</name><description>Counter clock (PCLK1 div 4096) div 8</description><value>3</value></enumeratedValue></enumeratedValues>
+              prescaler can be modified as follows:</description><bitOffset>11</bitOffset><bitWidth>3</bitWidth><enumeratedValues><name>WDGTB</name><usage>read-write</usage><enumeratedValue><name>Div16</name><description>Counter clock (PCLK1 div 4096) div 16</description><value>4</value></enumeratedValue><enumeratedValue><name>Div32</name><description>Counter clock (PCLK1 div 4096) div 32</description><value>5</value></enumeratedValue><enumeratedValue><name>Div64</name><description>Counter clock (PCLK1 div 4096) div 64</description><value>6</value></enumeratedValue><enumeratedValue><name>Div128</name><description>Counter clock (PCLK1 div 4096) div 128</description><value>7</value></enumeratedValue><enumeratedValue><name>Div1</name><description>Counter clock (PCLK1 div 4096) div 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>Counter clock (PCLK1 div 4096) div 2</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>Counter clock (PCLK1 div 4096) div 4</description><value>2</value></enumeratedValue><enumeratedValue><name>Div8</name><description>Counter clock (PCLK1 div 4096) div 8</description><value>3</value></enumeratedValue></enumeratedValues>
             </field></fields>
         </register>
         <register>
@@ -20121,18 +20121,21 @@
               <description>Color Look-Up Table Enable</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CLUTEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Color look-up table disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Color look-up table enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>COLKEN</name>
               <description>Color Keying Enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>COLKEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Color keying disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Color keying enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LEN</name>
               <description>Layer Enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Layer disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Layer enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20152,6 +20155,7 @@
               Position</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>WHSTPOS</name>
@@ -20159,6 +20163,7 @@
               Position</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20178,6 +20183,7 @@
               Position</description>
               <bitOffset>16</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
             <field>
               <name>WVSTPOS</name>
@@ -20185,6 +20191,7 @@
               Position</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20203,18 +20210,21 @@
               <description>Color Key Red value</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>CKGREEN</name>
               <description>Color Key Green value</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>CKBLUE</name>
               <description>Color Key Blue value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20233,6 +20243,7 @@
               <description>Pixel Format</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>PF</name><usage>read-write</usage><enumeratedValue><name>ARGB8888</name><description>ARGB8888</description><value>0</value></enumeratedValue><enumeratedValue><name>RGB888</name><description>RGB888</description><value>1</value></enumeratedValue><enumeratedValue><name>RGB565</name><description>RGB565</description><value>2</value></enumeratedValue><enumeratedValue><name>ARGB1555</name><description>ARGB1555</description><value>3</value></enumeratedValue><enumeratedValue><name>ARGB4444</name><description>ARGB4444</description><value>4</value></enumeratedValue><enumeratedValue><name>L8</name><description>L8 (8-bit luminance)</description><value>5</value></enumeratedValue><enumeratedValue><name>AL44</name><description>AL44 (4-bit alpha, 4-bit luminance)</description><value>6</value></enumeratedValue><enumeratedValue><name>AL88</name><description>AL88 (8-bit alpha, 8-bit luminance)</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20251,6 +20262,7 @@
               <description>Constant Alpha</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20269,24 +20281,28 @@
               <description>Default Color Alpha</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DCRED</name>
               <description>Default Color Red</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DCGREEN</name>
               <description>Default Color Green</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DCBLUE</name>
               <description>Default Color Blue</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20305,12 +20321,14 @@
               <description>Blending Factor 1</description>
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>BF1</name><usage>read-write</usage><enumeratedValue><name>Constant</name><description>BF1 = constant alpha</description><value>4</value></enumeratedValue><enumeratedValue><name>Pixel</name><description>BF1 = pixel alpha * constant alpha</description><value>6</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BF2</name>
               <description>Blending Factor 2</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>BF2</name><usage>read-write</usage><enumeratedValue><name>Constant</name><description>BF2 = 1 - constant alpha</description><value>5</value></enumeratedValue><enumeratedValue><name>Pixel</name><description>BF2 = 1 - pixel alpha * constant alpha</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20330,6 +20348,7 @@
               Address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20349,6 +20368,7 @@
               bytes</description>
               <bitOffset>16</bitOffset>
               <bitWidth>13</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>8191</maximum></range></writeConstraint>
             </field>
             <field>
               <name>CFBLL</name>
@@ -20356,6 +20376,7 @@
               Length</description>
               <bitOffset>0</bitOffset>
               <bitWidth>13</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>8191</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20374,6 +20395,7 @@
               <description>Frame Buffer Line Number</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20391,24 +20413,28 @@
               <description>CLUT Address</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>RED</name>
               <description>Red value</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>GREEN</name>
               <description>Green value</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>BLUE</name>
               <description>Blue value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20428,6 +20454,7 @@
               units of pixel clock period)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>VSH</name>
@@ -20435,6 +20462,7 @@
               units of horizontal scan line)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20454,6 +20482,7 @@
               units of pixel clock period)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>AVBP</name>
@@ -20461,6 +20490,7 @@
               units of horizontal scan line)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20479,6 +20509,7 @@
               <description>Accumulated Active Width (in units of pixel clock period)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>AAH</name>
@@ -20486,6 +20517,7 @@
               horizontal scan line)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20505,6 +20537,7 @@
               period)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TOTALH</name>
@@ -20512,6 +20545,7 @@
               scan line)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20530,6 +20564,7 @@
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>HSPOL</name><usage>read-write</usage><enumeratedValue><name>ActiveLow</name><description>Horizontal synchronization polarity is active low</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveHigh</name><description>Horizontal synchronization polarity is active high</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VSPOL</name>
@@ -20538,6 +20573,7 @@
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>VSPOL</name><usage>read-write</usage><enumeratedValue><name>ActiveLow</name><description>Vertical synchronization polarity is active low</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveHigh</name><description>Vertical synchronization polarity is active high</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DEPOL</name>
@@ -20545,6 +20581,7 @@
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>DEPOL</name><usage>read-write</usage><enumeratedValue><name>ActiveLow</name><description>Data enable polarity is active low</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveHigh</name><description>Data enable polarity is active high</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PCPOL</name>
@@ -20552,6 +20589,7 @@
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PCPOL</name><usage>read-write</usage><enumeratedValue><name>RisingEdge</name><description>Pixel clock on rising edge</description><value>0</value></enumeratedValue><enumeratedValue><name>FallingEdge</name><description>Pixel clock on falling edge</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DEN</name>
@@ -20559,6 +20597,7 @@
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>DEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Dither disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Dither enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DRW</name>
@@ -20588,6 +20627,7 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>LTDCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LCD-TFT controller disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LCD-TFT controller enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20606,12 +20646,14 @@
               <description>Vertical Blanking Reload</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VBR</name><usage>read-write</usage><enumeratedValue><name>Reload</name><description>The shadow registers are reloaded during the vertical blanking period (at the beginning of the first line after the active display area).</description><value>1</value></enumeratedValue><enumeratedValue><name>NoEffect</name><description>This bit is set by software and cleared only by hardware after reload (it cannot be cleared through register write once it is set)</description><value>0</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>IMR</name>
               <description>Immediate Reload</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>IMR</name><usage>read-write</usage><enumeratedValue><name>Reload</name><description>The shadow registers are reloaded immediately. This bit is set by software and cleared only by hardware after reload</description><value>1</value></enumeratedValue><enumeratedValue><name>NoEffect</name><description>This bit is set by software and cleared only by hardware after reload (it cannot be cleared through register write once it is set)</description><value>0</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20631,6 +20673,7 @@
               value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>BCGREEN</name>
@@ -20638,12 +20681,14 @@
               value</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>BCRED</name>
               <description>Background Color Red value</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20662,6 +20707,7 @@
               enable</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>RRIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Register reload interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Register reload interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TERRIE</name>
@@ -20669,6 +20715,7 @@
               Enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TERRIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Transfer error interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Transfer error interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>FUIE</name>
@@ -20676,12 +20723,14 @@
               Enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>FUIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>FIFO underrun interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>FIFO underrun interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LIE</name>
               <description>Line Interrupt Enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Line interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Line interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20700,6 +20749,7 @@
               Flag</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>RRIF</name><usage>read-write</usage><enumeratedValue><name>NoReload</name><description>No register reload</description><value>0</value></enumeratedValue><enumeratedValue><name>Reload</name><description>Register reload interrupt generated when a vertical blanking reload occurs (and the first line after the active area is reached)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TERRIF</name>
@@ -20707,6 +20757,7 @@
               flag</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TERRIF</name><usage>read-write</usage><enumeratedValue><name>NoError</name><description>No transfer error</description><value>0</value></enumeratedValue><enumeratedValue><name>Error</name><description>Transfer error interrupt generated when a bus error occurs</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>FUIF</name>
@@ -20714,12 +20765,14 @@
               flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>FUIF</name><usage>read-write</usage><enumeratedValue><name>NoUnderrun</name><description>No FIFO underrun</description><value>0</value></enumeratedValue><enumeratedValue><name>Underrun</name><description>FIFO underrun interrupt generated, if one of the layer FIFOs is empty and pixel data is read from the FIFO</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LIF</name>
               <description>Line Interrupt flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LIF</name><usage>read-write</usage><enumeratedValue><name>NotReached</name><description>Programmed line not reached</description><value>0</value></enumeratedValue><enumeratedValue><name>Reached</name><description>Line interrupt generated when a programmed line is reached</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20738,6 +20791,7 @@
               Flag</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CRRIF</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clears the RRIF flag in the ISR register</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CTERRIF</name>
@@ -20745,6 +20799,7 @@
               Flag</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CTERRIF</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clears the TERRIF flag in the ISR register</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CFUIF</name>
@@ -20752,6 +20807,7 @@
               flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CFUIF</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clears the FUIF flag in the ISR register</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CLIF</name>
@@ -20759,6 +20815,7 @@
               Flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CLIF</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clears the LIF flag in the ISR register</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20777,6 +20834,7 @@
               <description>Line Interrupt Position</description>
               <bitOffset>0</bitOffset>
               <bitWidth>11</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>2047</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -20820,6 +20878,7 @@
               Status</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>HSYNCS</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Currently not in HSYNC phase</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Currently in HSYNC phase</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VSYNCS</name>
@@ -20827,6 +20886,7 @@
               Status</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VSYNCS</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Currently not in VSYNC phase</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Currently in VSYNC phase</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>HDES</name>
@@ -20834,6 +20894,7 @@
               Status</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>HDES</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Currently not in horizontal Data Enable phase</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Currently in horizontal Data Enable phase</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VDES</name>
@@ -20841,6 +20902,7 @@
               Status</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VDES</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Currently not in vertical Data Enable phase</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Currently in vertical Data Enable phase</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -78933,7 +78995,7 @@
           Register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -78985,13 +79047,13 @@
               <description>Loop Back mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>TX</name>
               <description>Loop Back mode</description>
               <bitOffset>5</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>RX</name>
               <description>Control of Transmit Pin</description>
@@ -79020,7 +79082,7 @@
               <description>Watchdog configuration</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>
+            <access>read-write</access></field>
           </fields>
         </register>
         <register>
@@ -79154,7 +79216,7 @@
               <bitWidth>8</bitWidth>
             </field>
             <field>
-              <name>TSEG2</name>
+              <name>NTSEG2</name>
               <description>Nominal Time segment after sample
               point</description>
               <bitOffset>0</bitOffset>
@@ -79275,7 +79337,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TREC</name>
+              <name>REC</name>
               <description>Receive Error Counter</description>
               <bitOffset>8</bitOffset>
               <bitWidth>7</bitWidth>
@@ -79375,7 +79437,7 @@
           Register</description>
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -79400,7 +79462,7 @@
           <description>FDCAN Interrupt Register</description>
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -79587,7 +79649,7 @@
           Register</description>
           <addressOffset>0x54</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -79800,7 +79862,7 @@
           Register</description>
           <addressOffset>0x58</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -80187,7 +80249,7 @@
           <description>FDCAN New Data 1 Register</description>
           <addressOffset>0x98</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -80390,7 +80452,7 @@
           <description>FDCAN New Data 2 Register</description>
           <addressOffset>0x9C</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -80607,15 +80669,16 @@
               <name>F0S</name>
               <description>Rx FIFO 0 Size</description>
               <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
+              <bitWidth>7</bitWidth>
             </field>
             <field>
               <name>F0WM</name>
               <description>FIFO 0 Watermark</description>
               <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
+              <bitWidth>7</bitWidth>
             </field>
-          </fields>
+          <field><name>F0OM</name><description>FIFO 0 operation mode</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>RXF0S</name>
@@ -80634,13 +80697,13 @@
               <bitWidth>7</bitWidth>
             </field>
             <field>
-              <name>F0G</name>
+              <name>F0GI</name>
               <description>Rx FIFO 0 Get Index</description>
               <bitOffset>8</bitOffset>
               <bitWidth>6</bitWidth>
             </field>
             <field>
-              <name>F0P</name>
+              <name>F0PI</name>
               <description>Rx FIFO 0 Put Index</description>
               <bitOffset>16</bitOffset>
               <bitWidth>6</bitWidth>
@@ -80670,7 +80733,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FA01</name>
+              <name>F0AI</name>
               <description>Rx FIFO 0 Acknowledge
               Index</description>
               <bitOffset>0</bitOffset>
@@ -80724,7 +80787,8 @@
               <bitOffset>24</bitOffset>
               <bitWidth>7</bitWidth>
             </field>
-          </fields>
+          <field><name>F1OM</name><description>FIFO 1 operation mode</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>RXF1S</name>
@@ -81108,7 +81172,8 @@
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-          </fields>
+          <field><name>EFPI</name><description>Event FIFO put index</description><bitOffset>16</bitOffset><bitWidth>5</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>TXEFA</name>
@@ -81426,7 +81491,7 @@
           </fields>
         </register>
         <register>
-          <name>CAN_TTGTP</name>
+          <name>TTGTP</name>
           <displayName>CAN_TTGTP</displayName>
           <description>FDCAN TT Global Time Preset
           Register</description>
@@ -81927,7 +81992,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>GTP</name>
+              <name>QGTP</name>
               <description>Quality of Global Time
               Phase</description>
               <bitOffset>6</bitOffset>
@@ -82073,7 +82138,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CT</name>
+              <name>CCV</name>
               <description>Cycle Count Value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>6</bitWidth>
