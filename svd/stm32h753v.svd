@@ -18470,7 +18470,7 @@
             <enumeratedValues><name>EWIW</name><usage>write</usage><enumeratedValue><name>Enable</name><description>interrupt occurs whenever the counter reaches the value 0x40</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           <field><name>WDGTB</name><description>Timer base The time base of the
-              prescaler can be modified as follows:</description><bitOffset>11</bitOffset><bitWidth>2</bitWidth><enumeratedValues><name>WDGTB</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>Counter clock (PCLK1 div 4096) div 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>Counter clock (PCLK1 div 4096) div 2</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>Counter clock (PCLK1 div 4096) div 4</description><value>2</value></enumeratedValue><enumeratedValue><name>Div8</name><description>Counter clock (PCLK1 div 4096) div 8</description><value>3</value></enumeratedValue></enumeratedValues>
+              prescaler can be modified as follows:</description><bitOffset>11</bitOffset><bitWidth>3</bitWidth><enumeratedValues><name>WDGTB</name><usage>read-write</usage><enumeratedValue><name>Div16</name><description>Counter clock (PCLK1 div 4096) div 16</description><value>4</value></enumeratedValue><enumeratedValue><name>Div32</name><description>Counter clock (PCLK1 div 4096) div 32</description><value>5</value></enumeratedValue><enumeratedValue><name>Div64</name><description>Counter clock (PCLK1 div 4096) div 64</description><value>6</value></enumeratedValue><enumeratedValue><name>Div128</name><description>Counter clock (PCLK1 div 4096) div 128</description><value>7</value></enumeratedValue><enumeratedValue><name>Div1</name><description>Counter clock (PCLK1 div 4096) div 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>Counter clock (PCLK1 div 4096) div 2</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>Counter clock (PCLK1 div 4096) div 4</description><value>2</value></enumeratedValue><enumeratedValue><name>Div8</name><description>Counter clock (PCLK1 div 4096) div 8</description><value>3</value></enumeratedValue></enumeratedValues>
             </field></fields>
         </register>
         <register>
@@ -81030,7 +81030,7 @@
           Register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -81082,13 +81082,13 @@
               <description>Loop Back mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>TX</name>
               <description>Loop Back mode</description>
               <bitOffset>5</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>RX</name>
               <description>Control of Transmit Pin</description>
@@ -81117,7 +81117,7 @@
               <description>Watchdog configuration</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>
+            <access>read-write</access></field>
           </fields>
         </register>
         <register>
@@ -81251,7 +81251,7 @@
               <bitWidth>8</bitWidth>
             </field>
             <field>
-              <name>TSEG2</name>
+              <name>NTSEG2</name>
               <description>Nominal Time segment after sample
               point</description>
               <bitOffset>0</bitOffset>
@@ -81372,7 +81372,7 @@
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TREC</name>
+              <name>REC</name>
               <description>Receive Error Counter</description>
               <bitOffset>8</bitOffset>
               <bitWidth>7</bitWidth>
@@ -81472,7 +81472,7 @@
           Register</description>
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -81497,7 +81497,7 @@
           <description>FDCAN Interrupt Register</description>
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -81684,7 +81684,7 @@
           Register</description>
           <addressOffset>0x54</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -81897,7 +81897,7 @@
           Register</description>
           <addressOffset>0x58</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -82284,7 +82284,7 @@
           <description>FDCAN New Data 1 Register</description>
           <addressOffset>0x98</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -82487,7 +82487,7 @@
           <description>FDCAN New Data 2 Register</description>
           <addressOffset>0x9C</addressOffset>
           <size>0x20</size>
-          <access>read-only</access>
+          <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -82704,15 +82704,16 @@
               <name>F0S</name>
               <description>Rx FIFO 0 Size</description>
               <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
+              <bitWidth>7</bitWidth>
             </field>
             <field>
               <name>F0WM</name>
               <description>FIFO 0 Watermark</description>
               <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
+              <bitWidth>7</bitWidth>
             </field>
-          </fields>
+          <field><name>F0OM</name><description>FIFO 0 operation mode</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>RXF0S</name>
@@ -82731,13 +82732,13 @@
               <bitWidth>7</bitWidth>
             </field>
             <field>
-              <name>F0G</name>
+              <name>F0GI</name>
               <description>Rx FIFO 0 Get Index</description>
               <bitOffset>8</bitOffset>
               <bitWidth>6</bitWidth>
             </field>
             <field>
-              <name>F0P</name>
+              <name>F0PI</name>
               <description>Rx FIFO 0 Put Index</description>
               <bitOffset>16</bitOffset>
               <bitWidth>6</bitWidth>
@@ -82767,7 +82768,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FA01</name>
+              <name>F0AI</name>
               <description>Rx FIFO 0 Acknowledge
               Index</description>
               <bitOffset>0</bitOffset>
@@ -82821,7 +82822,8 @@
               <bitOffset>24</bitOffset>
               <bitWidth>7</bitWidth>
             </field>
-          </fields>
+          <field><name>F1OM</name><description>FIFO 1 operation mode</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>RXF1S</name>
@@ -83205,7 +83207,8 @@
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-          </fields>
+          <field><name>EFPI</name><description>Event FIFO put index</description><bitOffset>16</bitOffset><bitWidth>5</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>TXEFA</name>
@@ -83523,7 +83526,7 @@
           </fields>
         </register>
         <register>
-          <name>CAN_TTGTP</name>
+          <name>TTGTP</name>
           <displayName>CAN_TTGTP</displayName>
           <description>FDCAN TT Global Time Preset
           Register</description>
@@ -84024,7 +84027,7 @@
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>GTP</name>
+              <name>QGTP</name>
               <description>Quality of Global Time
               Phase</description>
               <bitOffset>6</bitOffset>
@@ -84170,7 +84173,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CT</name>
+              <name>CCV</name>
               <description>Cycle Count Value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>6</bitWidth>

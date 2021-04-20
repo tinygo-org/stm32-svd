@@ -12678,7 +12678,7 @@
           <name>IMR2</name>
           <displayName>IMR2</displayName>
           <description>Interrupt mask register</description>
-          <addressOffset>0x18</addressOffset>
+          <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0xFFFFFFFC</resetValue>
@@ -12721,7 +12721,7 @@
           <name>EMR2</name>
           <displayName>EMR2</displayName>
           <description>Event mask register</description>
-          <addressOffset>0x1C</addressOffset>
+          <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12765,7 +12765,7 @@
           <displayName>RTSR2</displayName>
           <description>Rising Trigger selection
           register</description>
-          <addressOffset>0x20</addressOffset>
+          <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12793,7 +12793,7 @@
           <displayName>FTSR2</displayName>
           <description>Falling Trigger selection
           register</description>
-          <addressOffset>0x24</addressOffset>
+          <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12821,7 +12821,7 @@
           <displayName>SWIER2</displayName>
           <description>Software interrupt event
           register</description>
-          <addressOffset>0x28</addressOffset>
+          <addressOffset>0x30</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12848,7 +12848,7 @@
           <name>PR2</name>
           <displayName>PR2</displayName>
           <description>Pending register</description>
-          <addressOffset>0x2C</addressOffset>
+          <addressOffset>0x34</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12910,6 +12910,7 @@
               <description>Power down deepsleep</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>PDDS</name><usage>read-write</usage><enumeratedValue><name>STOP_MODE</name><description>Enter Stop mode when the CPU enters deepsleep</description><value>0</value></enumeratedValue><enumeratedValue><name>STANDBY_MODE</name><description>Enter Standby mode when the CPU enters deepsleep</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CWUF</name>
@@ -12988,7 +12989,9 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
-          </fields>
+          <field><name>VREFINTRDYF</name><description>Internal voltage reference ready flag</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><access>read-only</access></field>
+            <field><name>EWUP3</name><description>Enable WKUP3 pin</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth><access>read-write</access></field>
+            </fields>
         </register>
       </registers>
     </peripheral>
@@ -18492,7 +18495,7 @@
       </interrupt>
     </peripheral>
     <peripheral>
-      <name>DAC</name>
+      <name>DAC1</name>
       <description>Digital-to-analog converter</description>
       <groupName>DAC</groupName>
       <baseAddress>0x40007400</baseAddress>
@@ -31482,6 +31485,7 @@
         </register>
       </registers>
     </peripheral>
+    <peripheral derivedFrom="DAC1"><name>DAC2</name><baseAddress>0x40009800</baseAddress></peripheral>
     <peripheral><name>OPAMP</name><description>Operational Amplifier</description><baseAddress>1073807360</baseAddress><addressBlock><offset>0</offset><size>1024</size><usage>registers</usage></addressBlock><registers><register><name>OPAMP2_CSR</name><description>OPAMP2 control register</description><addressOffset>60</addressOffset><size>32</size><resetValue>0</resetValue><fields><field><name>OPAMP2EN</name><description>OPAMP2 enable</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth><access>read-write</access><enumeratedValues><name>OPAMP2EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>OPAMP2 is disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>OPAMP2 is enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field><name>FORCE_VP</name><description>FORCE_VP</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth><access>read-write</access><enumeratedValues><name>FORCE_VP</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal operating mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Calibration</name><description>Calibration mode. Non-inverting input connected to calibration reference</description><value>1</value></enumeratedValue></enumeratedValues>

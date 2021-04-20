@@ -24560,7 +24560,7 @@
                <resetValue>0x00000040</resetValue>
                <fields>
                   <field>
-                     <name>MCJDIV</name>
+                     <name>MCKDIV</name>
                      <description>Master clock divider</description>
                      <bitOffset>20</bitOffset>
                      <bitWidth>4</bitWidth>

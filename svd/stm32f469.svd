@@ -42560,7 +42560,7 @@
           <resetValue>0x00000040</resetValue>
           <fields>
             <field>
-              <name>MCJDIV</name>
+              <name>MCKDIV</name>
               <description>Master clock divider</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
@@ -44302,7 +44302,8 @@
         <size>0x800</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>DSIHOST</name><description>DSI host global interrupt</description><value>92</value></interrupt>
+    <registers>
         <register>
           <name>DSI_VR</name>
           <displayName>DSI_VR</displayName>

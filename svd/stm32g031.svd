@@ -1,6 +1,6 @@
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G031</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <description>STM32G031</description>
     <cpu>
     <name>CM0</name>
@@ -11,12 +11,8 @@
     <nvicPrioBits>2</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
   </cpu>
-  
-  
   <addressUnitBits>8</addressUnitBits>
-  
   <width>32</width>
-  
   <size>0x20</size>
   <resetValue>0x0</resetValue>
   <resetMask>0xFFFFFFFF</resetMask>
