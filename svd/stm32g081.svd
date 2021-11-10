@@ -1,4 +1,20 @@
-<device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+<!--
+Copyright (c) 2020 STMicroelectronics.
+
+ SPDX-License-Identifier: Apache-2.0
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--><device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G081</name>
   <version>1.1</version>
   <description>STM32G081</description>
@@ -9109,7 +9125,7 @@
               of Configurable Event input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR2</name>
@@ -9117,7 +9133,7 @@
               of Configurable Event input</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR3</name>
@@ -9125,7 +9141,7 @@
               of Configurable Event input</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR4</name>
@@ -9133,7 +9149,7 @@
               of Configurable Event input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR5</name>
@@ -9141,7 +9157,7 @@
               of Configurable Event input</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR6</name>
@@ -9149,7 +9165,7 @@
               of Configurable Event input</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR7</name>
@@ -9157,7 +9173,7 @@
               of Configurable Event input</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR8</name>
@@ -9165,7 +9181,7 @@
               of Configurable Event input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR9</name>
@@ -9173,7 +9189,7 @@
               of Configurable Event input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR10</name>
@@ -9181,7 +9197,7 @@
               of Configurable Event input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR11</name>
@@ -9189,7 +9205,7 @@
               of Configurable Event input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR12</name>
@@ -9197,7 +9213,7 @@
               of Configurable Event input</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR13</name>
@@ -9205,7 +9221,7 @@
               of Configurable Event input</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR14</name>
@@ -9213,7 +9229,7 @@
               of Configurable Event input</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR15</name>
@@ -9221,7 +9237,7 @@
               of Configurable Event input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR16</name>
@@ -9229,7 +9245,7 @@
               of Configurable Event input</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR17</name>
@@ -9237,7 +9253,7 @@
               of Configurable Event input</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR18</name>
@@ -9245,7 +9261,7 @@
               of Configurable Event input</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
           </fields>
         </register>
@@ -9273,7 +9289,7 @@
               of Configurable Event input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR2</name>
@@ -9281,7 +9297,7 @@
               of Configurable Event input</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR3</name>
@@ -9289,7 +9305,7 @@
               of Configurable Event input</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR4</name>
@@ -9297,7 +9313,7 @@
               of Configurable Event input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR5</name>
@@ -9305,7 +9321,7 @@
               of Configurable Event input</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR6</name>
@@ -9313,7 +9329,7 @@
               of Configurable Event input</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR7</name>
@@ -9321,7 +9337,7 @@
               of Configurable Event input</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR8</name>
@@ -9329,7 +9345,7 @@
               of Configurable Event input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR9</name>
@@ -9337,7 +9353,7 @@
               of Configurable Event input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR10</name>
@@ -9345,7 +9361,7 @@
               of Configurable Event input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR11</name>
@@ -9353,7 +9369,7 @@
               of Configurable Event input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR12</name>
@@ -9361,7 +9377,7 @@
               of Configurable Event input</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR13</name>
@@ -9369,7 +9385,7 @@
               of Configurable Event input</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR14</name>
@@ -9377,7 +9393,7 @@
               of Configurable Event input</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR15</name>
@@ -9385,7 +9401,7 @@
               of Configurable Event input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR16</name>
@@ -9393,7 +9409,7 @@
               of Configurable Event input</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR17</name>
@@ -9401,7 +9417,7 @@
               of Configurable Event input</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
             <field>
               <name>TR18</name>
@@ -9409,7 +9425,7 @@
               of Configurable Event input</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="TR0" />
+            <enumeratedValues derivedFrom="TR0"/>
             </field>
           </fields>
         </register>
@@ -9437,7 +9453,7 @@
               of Configurable Event input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER2</name>
@@ -9445,7 +9461,7 @@
               of Configurable Event input</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER3</name>
@@ -9453,7 +9469,7 @@
               of Configurable Event input</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER4</name>
@@ -9461,7 +9477,7 @@
               of Configurable Event input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER5</name>
@@ -9469,7 +9485,7 @@
               of Configurable Event input</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER6</name>
@@ -9477,7 +9493,7 @@
               of Configurable Event input</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER7</name>
@@ -9485,7 +9501,7 @@
               of Configurable Event input</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER8</name>
@@ -9493,7 +9509,7 @@
               of Configurable Event input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER9</name>
@@ -9501,7 +9517,7 @@
               of Configurable Event input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER10</name>
@@ -9509,7 +9525,7 @@
               of Configurable Event input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER11</name>
@@ -9517,7 +9533,7 @@
               of Configurable Event input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER12</name>
@@ -9525,7 +9541,7 @@
               of Configurable Event input</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER13</name>
@@ -9533,7 +9549,7 @@
               of Configurable Event input</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER14</name>
@@ -9541,7 +9557,7 @@
               of Configurable Event input</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER15</name>
@@ -9549,7 +9565,7 @@
               of Configurable Event input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER16</name>
@@ -9557,7 +9573,7 @@
               of Configurable Event input</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER17</name>
@@ -9565,7 +9581,7 @@
               of Configurable Event input</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
             <field>
               <name>SWIER18</name>
@@ -9573,7 +9589,7 @@
               of Configurable Event input</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SWIER0W" />
+            <enumeratedValues derivedFrom="SWIER0W"/>
             </field>
           </fields>
         </register>
@@ -9602,8 +9618,8 @@
               Pending bit.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF2</name>
@@ -9611,8 +9627,8 @@
               Pending bit.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF3</name>
@@ -9620,8 +9636,8 @@
               Pending bit.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF4</name>
@@ -9629,8 +9645,8 @@
               Pending bit.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF5</name>
@@ -9638,8 +9654,8 @@
               Pending bit</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF6</name>
@@ -9647,8 +9663,8 @@
               Pending bit.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF7</name>
@@ -9656,8 +9672,8 @@
               Pending bit.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF8</name>
@@ -9665,8 +9681,8 @@
               Pending bit.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF9</name>
@@ -9674,8 +9690,8 @@
               Pending bit.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF10</name>
@@ -9683,8 +9699,8 @@
               Pending bit.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF11</name>
@@ -9692,8 +9708,8 @@
               Pending bit.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF12</name>
@@ -9701,8 +9717,8 @@
               Pending bit.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF13</name>
@@ -9710,8 +9726,8 @@
               Pending bit.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF14</name>
@@ -9719,8 +9735,8 @@
               Pending bit.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF15</name>
@@ -9728,8 +9744,8 @@
               Pending bit.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF16</name>
@@ -9737,8 +9753,8 @@
               Pending bit.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF17</name>
@@ -9746,8 +9762,8 @@
               Pending bit.</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
             <field>
               <name>RPIF18</name>
@@ -9755,8 +9771,8 @@
               Pending bit.</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="RPIF0R" />
-            <enumeratedValues derivedFrom="RPIF0W" />
+            <enumeratedValues derivedFrom="RPIF0R"/>
+            <enumeratedValues derivedFrom="RPIF0W"/>
             </field>
           </fields>
         </register>
@@ -9785,8 +9801,8 @@
               pending bit.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF2</name>
@@ -9794,8 +9810,8 @@
               pending bit.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF3</name>
@@ -9803,8 +9819,8 @@
               pending bit.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF4</name>
@@ -9812,8 +9828,8 @@
               pending bit.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF5</name>
@@ -9821,8 +9837,8 @@
               pending bit.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF6</name>
@@ -9830,8 +9846,8 @@
               pending bit.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF7</name>
@@ -9839,8 +9855,8 @@
               pending bit.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF8</name>
@@ -9848,8 +9864,8 @@
               pending bit.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF9</name>
@@ -9857,8 +9873,8 @@
               pending bit.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF10</name>
@@ -9866,8 +9882,8 @@
               pending bit.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF11</name>
@@ -9875,8 +9891,8 @@
               pending bit.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF12</name>
@@ -9884,8 +9900,8 @@
               pending bit.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF13</name>
@@ -9893,8 +9909,8 @@
               pending bit.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF14</name>
@@ -9902,8 +9918,8 @@
               pending bit.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF15</name>
@@ -9911,8 +9927,8 @@
               pending bit.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF16</name>
@@ -9920,8 +9936,8 @@
               pending bit.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF17</name>
@@ -9929,8 +9945,8 @@
               pending bit.</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
             <field>
               <name>FPIF18</name>
@@ -9938,8 +9954,8 @@
               pending bit.</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="FPIF0R" />
-            <enumeratedValues derivedFrom="FPIF0W" />
+            <enumeratedValues derivedFrom="FPIF0R"/>
+            <enumeratedValues derivedFrom="FPIF0W"/>
             </field>
           </fields>
         </register>
@@ -9965,21 +9981,21 @@
               <description>GPIO port selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI16_23</name>
               <description>GPIO port selection</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI24_31</name>
               <description>GPIO port selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
           </fields>
         </register>
@@ -10005,21 +10021,21 @@
               <description>GPIO port selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI16_23</name>
               <description>GPIO port selection</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI24_31</name>
               <description>GPIO port selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
           </fields>
         </register>
@@ -10045,21 +10061,21 @@
               <description>GPIO port selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI16_23</name>
               <description>GPIO port selection</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI24_31</name>
               <description>GPIO port selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
           </fields>
         </register>
@@ -10085,21 +10101,21 @@
               <description>GPIO port selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI16_23</name>
               <description>GPIO port selection</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
             <field>
               <name>EXTI24_31</name>
               <description>GPIO port selection</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            <enumeratedValues derivedFrom="EXTI0_7" />
+            <enumeratedValues derivedFrom="EXTI0_7"/>
             </field>
           </fields>
         </register>
@@ -10127,7 +10143,7 @@
               input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM2</name>
@@ -10135,7 +10151,7 @@
               input</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM3</name>
@@ -10143,7 +10159,7 @@
               input</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM4</name>
@@ -10151,7 +10167,7 @@
               input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM5</name>
@@ -10159,7 +10175,7 @@
               input</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM6</name>
@@ -10167,7 +10183,7 @@
               input</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM7</name>
@@ -10175,7 +10191,7 @@
               input</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM8</name>
@@ -10183,7 +10199,7 @@
               input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM9</name>
@@ -10191,7 +10207,7 @@
               input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM10</name>
@@ -10199,7 +10215,7 @@
               input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM11</name>
@@ -10207,7 +10223,7 @@
               input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM12</name>
@@ -10215,7 +10231,7 @@
               input</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM13</name>
@@ -10223,7 +10239,7 @@
               input</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM14</name>
@@ -10231,7 +10247,7 @@
               input</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM15</name>
@@ -10239,7 +10255,7 @@
               input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM16</name>
@@ -10247,7 +10263,7 @@
               input</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM17</name>
@@ -10255,7 +10271,7 @@
               input</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM18</name>
@@ -10263,7 +10279,7 @@
               input</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM19</name>
@@ -10271,7 +10287,7 @@
               input</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM20</name>
@@ -10279,7 +10295,7 @@
               input</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM21</name>
@@ -10287,7 +10303,7 @@
               input</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM22</name>
@@ -10295,7 +10311,7 @@
               input</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM23</name>
@@ -10303,7 +10319,7 @@
               input</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM24</name>
@@ -10311,7 +10327,7 @@
               input</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM25</name>
@@ -10319,7 +10335,7 @@
               input</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM26</name>
@@ -10327,7 +10343,7 @@
               input</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM27</name>
@@ -10335,7 +10351,7 @@
               input</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM28</name>
@@ -10343,7 +10359,7 @@
               input</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM29</name>
@@ -10351,7 +10367,7 @@
               input</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM30</name>
@@ -10359,7 +10375,7 @@
               input</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
             <field>
               <name>IM31</name>
@@ -10367,7 +10383,7 @@
               input</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM0" />
+            <enumeratedValues derivedFrom="IM0"/>
             </field>
           </fields>
         </register>
@@ -10396,7 +10412,7 @@
               input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM2</name>
@@ -10404,7 +10420,7 @@
               input</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM3</name>
@@ -10412,7 +10428,7 @@
               input</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM4</name>
@@ -10420,7 +10436,7 @@
               input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM5</name>
@@ -10428,7 +10444,7 @@
               input</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM6</name>
@@ -10436,7 +10452,7 @@
               input</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM7</name>
@@ -10444,7 +10460,7 @@
               input</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM8</name>
@@ -10452,7 +10468,7 @@
               input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM9</name>
@@ -10460,7 +10476,7 @@
               input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM10</name>
@@ -10468,7 +10484,7 @@
               input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM11</name>
@@ -10476,7 +10492,7 @@
               input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM12</name>
@@ -10484,7 +10500,7 @@
               input</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM13</name>
@@ -10492,7 +10508,7 @@
               input</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM14</name>
@@ -10500,7 +10516,7 @@
               input</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM15</name>
@@ -10508,7 +10524,7 @@
               input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM16</name>
@@ -10516,7 +10532,7 @@
               input</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM17</name>
@@ -10524,7 +10540,7 @@
               input</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM18</name>
@@ -10532,7 +10548,7 @@
               input</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM19</name>
@@ -10540,7 +10556,7 @@
               input</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM21</name>
@@ -10548,7 +10564,7 @@
               input</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM23</name>
@@ -10556,7 +10572,7 @@
               input</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM25</name>
@@ -10564,7 +10580,7 @@
               input</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM26</name>
@@ -10572,7 +10588,7 @@
               input</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM27</name>
@@ -10580,7 +10596,7 @@
               input</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM28</name>
@@ -10588,7 +10604,7 @@
               input</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM29</name>
@@ -10596,7 +10612,7 @@
               input</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM30</name>
@@ -10604,7 +10620,7 @@
               input</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
             <field>
               <name>EM31</name>
@@ -10612,7 +10628,7 @@
               input</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM0" />
+            <enumeratedValues derivedFrom="EM0"/>
             </field>
           </fields>
         </register>
@@ -10640,7 +10656,7 @@
               input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="IM32" />
+            <enumeratedValues derivedFrom="IM32"/>
             </field>
           </fields>
         </register>
@@ -10668,7 +10684,7 @@
               input</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="EM32" />
+            <enumeratedValues derivedFrom="EM32"/>
             </field>
           </fields>
         </register>
@@ -11154,6 +11170,7 @@
               <description>Output Compare 1 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC1PE</name>
@@ -13088,7 +13105,7 @@
       </addressBlock>
       <interrupt>
         <name>TIM1_BRK_UP_TRG_COM</name>
-        <description>IM1 break, update, trigger and commutation interrupts</description>
+        <description>TIM1 break, update, trigger and commutation interrupts</description>
         <value>13</value>
       </interrupt>
       <interrupt>
@@ -13672,6 +13689,7 @@
               <description>Output Compare 1 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC1CE</name>
@@ -13706,6 +13724,7 @@
               <description>Output Compare 2 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC1M"/>
             </field>
             <field>
               <name>OC2CE</name>
@@ -13720,6 +13739,7 @@
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC1M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC2M_3</name>
@@ -13727,6 +13747,7 @@
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC1M_3"/>
             </field>
           </fields>
         </register>
@@ -13847,6 +13868,7 @@
               <description>Output compare 3 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC3M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC3CE</name>
@@ -13881,6 +13903,7 @@
               <description>Output compare 4 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC3M"/>
             </field>
             <field>
               <name>OC4CE</name>
@@ -13895,6 +13918,7 @@
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC3M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC4M_3</name>
@@ -13902,6 +13926,7 @@
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC3M_3"/>
             </field>
           </fields>
         </register>
@@ -14452,18 +14477,20 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>OC6M_bit3</name>
+              <name>OC6M_3</name>
               <description>Output Compare 6 mode bit
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC5M_3"/>
             </field>
             <field>
-              <name>OC5M_bit3</name>
+              <name>OC5M_3</name>
               <description>Output Compare 5 mode bit
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC5M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC6CE</name>
@@ -14477,6 +14504,7 @@
               <description>Output compare 6 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC5M"/>
             </field>
             <field>
               <name>OC6PE</name>
@@ -14504,6 +14532,7 @@
               <description>Output compare 5 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC5M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC5PE</name>
@@ -22650,6 +22679,7 @@
               <description>OC1M</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC1CE</name>
@@ -23459,6 +23489,7 @@
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC1M_3"/>
             </field>
             <field>
               <name>OC1M_3</name>
@@ -23466,6 +23497,7 @@
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC1M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC2CE</name>
@@ -23479,6 +23511,7 @@
               <description>Output compare 2 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC1M"/>
             </field>
             <field>
               <name>OC2PE</name>
@@ -23513,6 +23546,7 @@
               <description>Output compare 1 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC1PE</name>
@@ -23604,6 +23638,7 @@
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC3M_3"/>
             </field>
             <field>
               <name>OC3M_3</name>
@@ -23611,6 +23646,7 @@
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC3M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC4CE</name>
@@ -23624,6 +23660,7 @@
               <description>Output compare 4 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC3M"/>
             </field>
             <field>
               <name>OC4PE</name>
@@ -23658,6 +23695,7 @@
               <description>Output compare 3 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC3M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC3PE</name>

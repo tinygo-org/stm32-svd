@@ -1,4 +1,20 @@
-<device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+<!--
+Copyright (c) 2020 STMicroelectronics.
+
+ SPDX-License-Identifier: Apache-2.0
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--><device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G061</name>
   <version>0.1</version>
   <description>STM32G061</description>
@@ -9407,7 +9423,7 @@ Note: If the LPTIM does not support encoder mode feature, these bits are reserve
       </addressBlock>
       <interrupt>
         <name>TIM1_BRK_UP_TRG_COM</name>
-        <description>IM1 break, update, trigger and commutation interrupts</description>
+        <description>TIM1 break, update, trigger and commutation interrupts</description>
         <value>13</value>
       </interrupt>
       <interrupt>
@@ -9417,8 +9433,8 @@ Note: If the LPTIM does not support encoder mode feature, these bits are reserve
       </interrupt>
       <registers>
         <register>
-          <name>TIM1_CR1</name>
-          <displayName>TIM1_CR1</displayName>
+          <name>CR1</name>
+          <displayName>CR1</displayName>
           <description>control register 1</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -9633,8 +9649,8 @@ Note: tDTS = 1/fDTS, tCK_INT = 1/fCK_INT.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CR2</name>
-          <displayName>TIM1_CR2</displayName>
+          <name>CR2</name>
+          <displayName>CR2</displayName>
           <description>control register 2</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -9960,8 +9976,8 @@ Note: The clock of the slave timer or ADC must be enabled prior to receive event
           </fields>
         </register>
         <register>
-          <name>TIM1_SMCR</name>
-          <displayName>TIM1_SMCR</displayName>
+          <name>SMCR</name>
+          <displayName>SMCR</displayName>
           <description>slave mode control register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -9977,54 +9993,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1&#226;&#128;&#153; then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Encoder mode 2 - Counter counts up/down on TI2FP2 edge depending on TI1FP1 level.</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Encoder mode 3 - Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter, generates an update of the registers and starts the counter.Codes above 1000: Reserved.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>OCCS</name>
               <description>OCREF clear selection
@@ -10055,49 +10024,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0) </description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Trigger input (ETRF)</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>MSM</name>
               <description>Master/slave mode</description>
@@ -10289,54 +10216,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1&#226;&#128;&#153; then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Encoder mode 2 - Counter counts up/down on TI2FP2 edge depending on TI1FP1 level.</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Encoder mode 3 - Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter, generates an update of the registers and starts the counter.Codes above 1000: Reserved.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>TS2</name>
               <description>Trigger selection
@@ -10347,54 +10227,12 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0) </description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Trigger input (ETRF)</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
           </fields>
         </register>
         <register>
-          <name>TIM1_DIER</name>
-          <displayName>TIM1_DIER</displayName>
+          <name>DIER</name>
+          <displayName>DIER</displayName>
           <description>DMA/Interrupt enable register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -10689,8 +10527,8 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
           </fields>
         </register>
         <register>
-          <name>TIM1_SR</name>
-          <displayName>TIM1_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>status register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -10930,8 +10768,8 @@ Refer to CC1IF description (Note: Channel 6 can only be configured as output)</d
           </fields>
         </register>
         <register>
-          <name>TIM1_EGR</name>
-          <displayName>TIM1_EGR</displayName>
+          <name>EGR</name>
+          <displayName>EGR</displayName>
           <description>event generation register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -11182,79 +11020,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.(this mode is used to generate a timing base).</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - In upcounting, channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive. In downcounting, channel 1 is inactive (OC1REF='0&#226;&#128;&#153;) as long as TIMx_CNT&gt;TIMx_CCR1 else active (OC1REF=&#226;&#128;&#153;1&#226;&#128;&#153;).</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT&gt;TIMx_CCR1 else inactive.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Retrigerrable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update. In down-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Retrigerrable OPM mode 2 - In up-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 2 and the channels becomes inactive again at the next update. In down-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update.</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Combined PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC is the logical OR between OC1REF and OC2REF.</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xD</name>
-                  <description>Combined PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC is the logical AND between OC1REF and OC2REF.</description>
-                  <value>0xD</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xE</name>
-                  <description>Asymmetric PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xE</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xF</name>
-                  <description>Asymmetric PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xF</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>OC1CE</name>
               <description>Output Compare 1 clear enable</description>
@@ -11322,12 +11088,13 @@ Refer to OC1PE description.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>OC2M1</name>
+              <name>OC2M</name>
               <description>Output Compare 2 mode
 Refer to OC1M[3:0] description.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC2M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC2CE</name>
@@ -11348,86 +11115,15 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.(this mode is used to generate a timing base).</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - In upcounting, channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive. In downcounting, channel 1 is inactive (OC1REF='0&#226;&#128;&#153;) as long as TIMx_CNT&gt;TIMx_CCR1 else active (OC1REF=&#226;&#128;&#153;1&#226;&#128;&#153;).</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT&gt;TIMx_CCR1 else inactive.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Retrigerrable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update. In down-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Retrigerrable OPM mode 2 - In up-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 2 and the channels becomes inactive again at the next update. In down-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update.</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Combined PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC is the logical OR between OC1REF and OC2REF.</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xD</name>
-                  <description>Combined PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC is the logical AND between OC1REF and OC2REF.</description>
-                  <value>0xD</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xE</name>
-                  <description>Asymmetric PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xE</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xF</name>
-                  <description>Asymmetric PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xF</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
-              <name>OC2M2</name>
+              <name>OC2M_3</name>
               <description>Output Compare 2 mode
 Refer to OC1M[3:0] description.</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC2M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -11700,12 +11396,13 @@ Refer to OC1PE description.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>OC3M1</name>
+              <name>OC3M</name>
               <description>Output compare 3 mode
 Refer to OC1M[3:0] description.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC3M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC3CE</name>
@@ -11763,12 +11460,13 @@ Refer to OC1PE description.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>OC4M1</name>
+              <name>OC4M</name>
               <description>Output compare 4 mode
 Refer to OC3M[3:0] description.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="OC3M"/>
             </field>
             <field>
               <name>OC4CE</name>
@@ -11779,20 +11477,22 @@ Refer to OC1CE description.</description>
               <access>read-write</access>
             </field>
             <field>
-              <name>OC3M2</name>
+              <name>OC3M_3</name>
               <description>Output compare 3 mode
 Refer to OC1M[3:0] description.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC3M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>OC4M2</name>
+              <name>OC4M_3</name>
               <description>Output compare 4 mode
 Refer to OC3M[3:0] description.</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="OC3M_3"/>
             </field>
           </fields>
         </register>
@@ -11904,8 +11604,8 @@ Refer to IC1F[3:0] description.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCER</name>
-          <displayName>TIM1_CCER</displayName>
+          <name>CCER</name>
+          <displayName>CCER</displayName>
           <description>capture/compare enable
           register</description>
           <addressOffset>0x20</addressOffset>
@@ -12127,8 +11827,8 @@ Refer to CC1P description</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CNT</name>
-          <displayName>TIM1_CNT</displayName>
+          <name>CNT</name>
+          <displayName>CNT</displayName>
           <description>counter</description>
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
@@ -12152,8 +11852,8 @@ This bit is a read-only copy of the UIF bit of the TIMx_ISR register. If the UIF
           </fields>
         </register>
         <register>
-          <name>TIM1_PSC</name>
-          <displayName>TIM1_PSC</displayName>
+          <name>PSC</name>
+          <displayName>PSC</displayName>
           <description>prescaler</description>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
@@ -12172,8 +11872,8 @@ PSC contains the value to be loaded in the active prescaler register at each upd
           </fields>
         </register>
         <register>
-          <name>TIM1_ARR</name>
-          <displayName>TIM1_ARR</displayName>
+          <name>ARR</name>
+          <displayName>ARR</displayName>
           <description>auto-reload register</description>
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
@@ -12193,8 +11893,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_RCR</name>
-          <displayName>TIM1_RCR</displayName>
+          <name>RCR</name>
+          <displayName>RCR</displayName>
           <description>repetition counter register</description>
           <addressOffset>0x30</addressOffset>
           <size>0x20</size>
@@ -12210,8 +11910,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR1</name>
-          <displayName>TIM1_CCR1</displayName>
+          <name>CCR1</name>
+          <displayName>CCR1</displayName>
           <description>capture/compare register 1</description>
           <addressOffset>0x34</addressOffset>
           <size>0x20</size>
@@ -12227,8 +11927,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR2</name>
-          <displayName>TIM1_CCR2</displayName>
+          <name>CCR2</name>
+          <displayName>CCR2</displayName>
           <description>capture/compare register 2</description>
           <addressOffset>0x38</addressOffset>
           <size>0x20</size>
@@ -12244,8 +11944,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR3</name>
-          <displayName>TIM1_CCR3</displayName>
+          <name>CCR3</name>
+          <displayName>CCR3</displayName>
           <description>capture/compare register 3</description>
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
@@ -12261,8 +11961,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR4</name>
-          <displayName>TIM1_CCR4</displayName>
+          <name>CCR4</name>
+          <displayName>CCR4</displayName>
           <description>capture/compare register 4</description>
           <addressOffset>0x40</addressOffset>
           <size>0x20</size>
@@ -12278,8 +11978,8 @@ The counter is blocked while the auto-reload value is null.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_BDTR</name>
-          <displayName>TIM1_BDTR</displayName>
+          <name>BDTR</name>
+          <displayName>BDTR</displayName>
           <description>break and dead-time register</description>
           <addressOffset>0x44</addressOffset>
           <size>0x20</size>
@@ -12752,8 +12452,8 @@ Refer to BKBID description</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_DCR</name>
-          <displayName>TIM1_DCR</displayName>
+          <name>DCR</name>
+          <displayName>DCR</displayName>
           <description>DMA control register</description>
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
@@ -12828,8 +12528,8 @@ If the DMA Data Size is configured in bytes, the data is also transferred to 7 r
           </fields>
         </register>
         <register>
-          <name>TIM1_DMAR</name>
-          <displayName>TIM1_DMAR</displayName>
+          <name>DMAR</name>
+          <displayName>DMAR</displayName>
           <description>DMA address for full transfer</description>
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
@@ -12848,8 +12548,8 @@ If the DMA Data Size is configured in bytes, the data is also transferred to 7 r
           </fields>
         </register>
         <register>
-          <name>TIM1_OR1</name>
-          <displayName>TIM1_OR1</displayName>
+          <name>OR1</name>
+          <displayName>OR1</displayName>
           <description>option register 1</description>
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
@@ -12889,18 +12589,20 @@ This bit selects the ocref_clr input source.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>OC6M_bit3</name>
+              <name>OC6M_3</name>
               <description>Output Compare 6 mode bit
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC5M_3"/>
             </field>
             <field>
-              <name>OC5M_bit3</name>
+              <name>OC5M_3</name>
               <description>Output Compare 5 mode bit
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC5M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC6CE</name>
@@ -12914,6 +12616,7 @@ This bit selects the ocref_clr input source.</description>
               <description>Output compare 6 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC5M"/>
             </field>
             <field>
               <name>OC6PE</name>
@@ -12941,6 +12644,7 @@ This bit selects the ocref_clr input source.</description>
               <description>Output compare 5 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC5M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC5PE</name>
@@ -12959,8 +12663,8 @@ This bit selects the ocref_clr input source.</description>
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR5</name>
-          <displayName>TIM1_CCR5</displayName>
+          <name>CCR5</name>
+          <displayName>CCR5</displayName>
           <description>capture/compare register 4</description>
           <addressOffset>0x58</addressOffset>
           <size>0x20</size>
@@ -13046,8 +12750,8 @@ Note: it is also possible to apply this distortion on combined PWM signals.</des
           </fields>
         </register>
         <register>
-          <name>TIM1_CCR6</name>
-          <displayName>TIM1_CCR6</displayName>
+          <name>CCR6</name>
+          <displayName>CCR6</displayName>
           <description>capture/compare register 4</description>
           <addressOffset>0x5C</addressOffset>
           <size>0x20</size>
@@ -13063,8 +12767,8 @@ Note: it is also possible to apply this distortion on combined PWM signals.</des
           </fields>
         </register>
         <register>
-          <name>TIM1_AF1</name>
-          <displayName>TIM1_AF1</displayName>
+          <name>AF1</name>
+          <displayName>AF1</displayName>
           <description>DMA address for full transfer</description>
           <addressOffset>0x60</addressOffset>
           <size>0x20</size>
@@ -13242,8 +12946,8 @@ Note: These bits can not be modified as long as LOCK level 1 has been programmed
           </fields>
         </register>
         <register>
-          <name>TIM1_AF2</name>
-          <displayName>TIM1_AF2</displayName>
+          <name>AF2</name>
+          <displayName>AF2</displayName>
           <description>DMA address for full transfer</description>
           <addressOffset>0x64</addressOffset>
           <size>0x20</size>
@@ -13379,8 +13083,8 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
           </fields>
         </register>
         <register>
-          <name>TIM1_TISEL</name>
-          <displayName>TIM1_TISEL</displayName>
+          <name>TISEL</name>
+          <displayName>TISEL</displayName>
           <description>TIM1 timer input selection
           register</description>
           <addressOffset>0x68</addressOffset>
@@ -13809,54 +13513,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1 then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Encoder mode 2 - Counter counts up/down on TI2FP2 edge depending on TI1FP1 level.</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Encoder mode 3 - Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI)</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>OCCS</name>
               <description>OCREF clear selection
@@ -13887,74 +13544,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0)</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Trigger input (ETRF)</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Internal Trigger 4 (ITR4)</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Internal Trigger 5 (ITR5)</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xA</name>
-                  <description>Internal Trigger 6 (ITR6)</description>
-                  <value>0xA</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xB</name>
-                  <description>Internal Trigger 7 (ITR7)</description>
-                  <value>0xB</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Internal Trigger 8 (ITR8)</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>MSM</name>
               <description>Master/Slave mode</description>
@@ -14147,54 +13737,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1 then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Encoder mode 2 - Counter counts up/down on TI2FP2 edge depending on TI1FP1 level.</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Encoder mode 3 - Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI)</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>TS2</name>
               <description>Trigger selection
@@ -14205,74 +13748,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0)</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Trigger input (ETRF)</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Internal Trigger 4 (ITR4)</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Internal Trigger 5 (ITR5)</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xA</name>
-                  <description>Internal Trigger 6 (ITR6)</description>
-                  <value>0xA</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xB</name>
-                  <description>Internal Trigger 7 (ITR7)</description>
-                  <value>0xB</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Internal Trigger 8 (ITR8)</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
           </fields>
         </register>
         <register>
@@ -14773,6 +14249,7 @@ This bit is set by software in order to generate an event, it is automatically c
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC1M_3"/>
             </field>
             <field>
               <name>OC1M_3</name>
@@ -14780,6 +14257,7 @@ This bit is set by software in order to generate an event, it is automatically c
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC1M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC2CE</name>
@@ -14793,6 +14271,7 @@ This bit is set by software in order to generate an event, it is automatically c
               <description>Output compare 2 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC2M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC2PE</name>
@@ -14867,79 +14346,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.(this mode is used to generate a timing base).</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - In upcounting, channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive. In downcounting, channel 1 is inactive (OC1REF='0) as long as TIMx_CNT&gt;TIMx_CCR1 else active (OC1REF=1).</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT&gt;TIMx_CCR1 else inactive.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update. In down-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Retriggerable OPM mode 2 - In up-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 2 and the channels becomes inactive again at the next update. In down-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update.</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Combined PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC is the logical OR between OC1REF and OC2REF.</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xD</name>
-                  <description>Combined PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC is the logical AND between OC1REF and OC2REF.</description>
-                  <value>0xD</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xE</name>
-                  <description>Asymmetric PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xE</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xF</name>
-                  <description>Asymmetric PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down.</description>
-                  <value>0xF</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>OC1PE</name>
               <description>Output compare 1 preload enable
@@ -15067,6 +14474,7 @@ Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER
               3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="OC3M_3"/>
             </field>
             <field>
               <name>OC3M_3</name>
@@ -15074,6 +14482,7 @@ Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER
               3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OC3M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC4CE</name>
@@ -15087,6 +14496,7 @@ Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER
               <description>Output compare 4 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="OC3M"/>
             </field>
             <field>
               <name>OC4PE</name>
@@ -15121,6 +14531,7 @@ Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER
               <description>Output compare 3 mode</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>OC3M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / AsymmetricPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC outputs OC1REF when the counter is counting up, OC2REF when it is counting down</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / AsymmetricPwmMode2: Inversely to AsymmetricPwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC3PE</name>
@@ -16599,7 +16010,7 @@ Note: The PWM mode can be used without validating the preload register only in o
               </enumeratedValues>
             </field>
             <field>
-              <name>OC1M1</name>
+              <name>OC1M</name>
               <description>Output compare 1 mode (refer to bit 16 for OC1M[3])
 These bits define the behavior of the output reference signal OC1REF from which OC1 is derived. OC1REF is active high whereas OC1 active level depends on CC1P bit.
 Others: Reserved
@@ -16608,51 +16019,10 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen. The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs. </description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1). </description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1). </description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT = TIMx_CCR1. </description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low. </description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT &lt; TIMx_CCR1 else inactive.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT &lt; TIMx_CCR1 else active</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
+              <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>OC1M2</name>
+              <name>OC1M_3</name>
               <description>Output compare 1 mode (refer to bit 16 for OC1M[3])
 These bits define the behavior of the output reference signal OC1REF from which OC1 is derived. OC1REF is active high whereas OC1 active level depends on CC1P bit.
 Others: Reserved
@@ -16661,49 +16031,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen. The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs. </description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1). </description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1). </description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT = TIMx_CCR1. </description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low. </description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT &lt; TIMx_CCR1 else inactive.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT &lt; TIMx_CCR1 else active</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
           </fields>
         </register>
         <register>
@@ -17433,39 +16761,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1&#226;&#128;&#153; then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter, generates an update of the registers and starts the counter.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>TS1</name>
               <description>Trigger selection
@@ -17476,44 +16772,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0)</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>MSM</name>
               <description>Master/slave mode</description>
@@ -17543,39 +16802,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Slave mode disabled - if CEN = '1&#226;&#128;&#153; then the prescaler is clocked directly by the internal clock.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Reset Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Gated Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Trigger Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>External Clock Mode 1 - Rising edges of the selected trigger (TRGI) clock the counter.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Combined reset + trigger mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter, generates an update of the registers and starts the counter.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>TS2</name>
               <description>Trigger selection
@@ -17586,44 +16813,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Internal Trigger 0 (ITR0)</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Internal Trigger 1 (ITR1)</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Internal Trigger 2 (ITR2)</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Internal Trigger 3 (ITR3)</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>TI1 Edge Detector (TI1F_ED)</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Filtered Timer Input 1 (TI1FP1)</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>Filtered Timer Input 2 (TI2FP2)</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
           </fields>
         </register>
         <register>
@@ -18215,69 +17405,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Retrigerrable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update. In down-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Retrigerrable OPM mode 2 - In up-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 2 and the channels becomes inactive again at the next update. In down-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update.</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Combined PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC is the logical OR between OC1REF and OC2REF.</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xD</name>
-                  <description>Combined PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC is the logical AND between OC1REF and OC2REF.</description>
-                  <value>0xD</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
               <name>CC2S</name>
               <description>Capture/Compare 2 selection
@@ -18324,11 +17452,12 @@ Note: CC2S bits are writable only when the channel is OFF (CC2E = '0&#226;&#128;
               <access>read-write</access>
             </field>
             <field>
-              <name>OC2M1</name>
+              <name>OC2M</name>
               <description>Output Compare 2 mode</description>
               <bitOffset>12</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC2M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs / OpmMode1: Retriggerable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). In down-counting mode, the channel is inactive</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register / OpmMode2: Inversely to OpmMode1</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register / Reserved</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy / Reserved</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low / CombinedPwmMode1: OCyREF has the same behavior as in PWM mode 1. OCyREFC is the logical OR between OC1REF and OC2REF</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high / CombinedPwmMode2: OCyREF has the same behavior as in PWM mode 2. OCyREFC is the logical AND between OC1REF and OC2REF</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active / Reserved</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1 / Reserved</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OC1M2</name>
@@ -18341,75 +17470,14 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive.</description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active.</description>
-                  <value>0x7</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x8</name>
-                  <description>Retrigerrable OPM mode 1 - In up-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update. In down-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes inactive again at the next update.</description>
-                  <value>0x8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x9</name>
-                  <description>Retrigerrable OPM mode 2 - In up-counting mode, the channel is inactive until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 2 and the channels becomes inactive again at the next update. In down-counting mode, the channel is active until a trigger event is detected (on TRGI signal). Then, a comparison is performed as in PWM mode 1 and the channels becomes active again at the next update.</description>
-                  <value>0x9</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xC</name>
-                  <description>Combined PWM mode 1 - OC1REF has the same behavior as in PWM mode 1. OC1REFC is the logical OR between OC1REF and OC2REF.</description>
-                  <value>0xC</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0xD</name>
-                  <description>Combined PWM mode 2 - OC1REF has the same behavior as in PWM mode 2. OC1REFC is the logical AND between OC1REF and OC2REF.</description>
-                  <value>0xD</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
             <field>
-              <name>OC2M2</name>
+              <name>OC2M_3</name>
               <description>Output Compare 2 mode</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>OC2M_3</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>Normal output compare mode (modes 0-7)</description><value>0</value></enumeratedValue><enumeratedValue><name>Extended</name><description>Extended output compare mode (modes 7-15)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -20163,7 +19231,7 @@ The PWM mode can be used without validating the preload register only in one pul
               </enumeratedValues>
             </field>
             <field>
-              <name>OC1M1</name>
+              <name>OC1M</name>
               <description>Output Compare 1 mode
 These bits define the behavior of the output reference signal OC1REF from which OC1 and OC1N are derived. OC1REF is active high whereas OC1 and OC1N active level depends on CC1P and CC1NP bits.
 All other values: Reserved
@@ -20173,51 +19241,10 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive. </description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. </description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
+              <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>OC1M2</name>
+              <name>OC1M_3</name>
               <description>Output Compare 1 mode
 These bits define the behavior of the output reference signal OC1REF from which OC1 and OC1N are derived. OC1REF is active high whereas OC1 and OC1N active level depends on CC1P and CC1NP bits.
 All other values: Reserved
@@ -20227,49 +19254,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>B_0x0</name>
-                  <description>Frozen - The comparison between the output compare register TIMx_CCR1 and the counter TIMx_CNT has no effect on the outputs.</description>
-                  <value>0x0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x1</name>
-                  <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x2</name>
-                  <description>Set channel 1 to inactive level on match. OC1REF signal is forced low when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
-                  <value>0x2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x3</name>
-                  <description>Toggle - OC1REF toggles when TIMx_CNT=TIMx_CCR1.</description>
-                  <value>0x3</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x4</name>
-                  <description>Force inactive level - OC1REF is forced low.</description>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x5</name>
-                  <description>Force active level - OC1REF is forced high.</description>
-                  <value>0x5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x6</name>
-                  <description>PWM mode 1 - Channel 1 is active as long as TIMx_CNT&lt;TIMx_CCR1 else inactive. </description>
-                  <value>0x6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>B_0x7</name>
-                  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. </description>
-                  <value>0x7</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
+              </field>
           </fields>
         </register>
         <register>
