@@ -26158,8 +26158,8 @@
          </addressBlock>	  
         <registers>			
             <register>
-               <name>VREFBUF_CSR</name>
-               <displayName>VREFBUF_CSR</displayName>
+               <name>CSR</name>
+               <displayName>CSR</displayName>
                <description>VREF_BUF Control and Status           Register</description>
                <addressOffset>0x0</addressOffset>
                <size>0x20</size>
@@ -26196,8 +26196,8 @@
                </fields>
             </register>
             <register>
-               <name>VREFBUF_CCR</name>
-               <displayName>VREFBUF_CCR</displayName>
+               <name>CCR</name>
+               <displayName>CCR</displayName>
                <description>VREF_BUF Calibration Control           Register</description>
                <addressOffset>0x04</addressOffset>
                <size>0x20</size>
@@ -26241,8 +26241,8 @@
         </interrupt>		 	 
         <registers>
             <register>
-               <name>COMP_C1CSR</name>
-               <displayName>COMP_C1CSR</displayName>
+               <name>C1CSR</name>
+               <displayName>C1CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x0</addressOffset>
                <size>0x20</size>
@@ -26328,8 +26328,8 @@
                </fields>
             </register>						
             <register>
-               <name>COMP_C2CSR</name>
-               <displayName>COMP_C2CSR</displayName>
+               <name>C2CSR</name>
+               <displayName>C2CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x4</addressOffset>
                <size>0x20</size>
@@ -26415,8 +26415,8 @@
                </fields>
             </register>			
             <register>
-               <name>COMP_C3CSR</name>
-               <displayName>COMP_C3CSR</displayName>
+               <name>C3CSR</name>
+               <displayName>C3CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x8</addressOffset>
                <size>0x20</size>
@@ -26502,8 +26502,8 @@
                </fields>
             </register>			
             <register>
-               <name>COMP_C4CSR</name>
-               <displayName>COMP_C4CSR</displayName>
+               <name>C4CSR</name>
+               <displayName>C4CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x0C</addressOffset>
                <size>0x20</size>
@@ -26589,8 +26589,8 @@
                </fields>
             </register>			
             <register>
-               <name>COMP_C5CSR</name>
-               <displayName>COMP_C5CSR</displayName>
+               <name>C5CSR</name>
+               <displayName>C5CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x10</addressOffset>
                <size>0x20</size>
@@ -26676,8 +26676,8 @@
                </fields>
             </register>			
             <register>
-               <name>COMP_C6CSR</name>
-               <displayName>COMP_C6CSR</displayName>
+               <name>C6CSR</name>
+               <displayName>C6CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x14</addressOffset>
                <size>0x20</size>
@@ -26763,8 +26763,8 @@
                </fields>
             </register>			
             <register>
-               <name>COMP_C7CSR</name>
-               <displayName>COMP_C7CSR</displayName>
+               <name>C7CSR</name>
+               <displayName>C7CSR</displayName>
                <description>Comparator control/status           register</description>
                <addressOffset>0x18</addressOffset>
                <size>0x20</size>

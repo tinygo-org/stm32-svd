@@ -21861,8 +21861,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPCBB1_CR</name>
-          <displayName>MPCBB1_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -21890,8 +21890,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_LCKVTR1</name>
-          <displayName>MPCBB1_LCKVTR1</displayName>
+          <name>LCKVTR1</name>
+          <displayName>LCKVTR1</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -22093,8 +22093,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_LCKVTR2</name>
-          <displayName>MPCBB1_LCKVTR2</displayName>
+          <name>LCKVTR2</name>
+          <displayName>LCKVTR2</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -22296,8 +22296,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR0</name>
-          <displayName>MPCBB1_VCTR0</displayName>
+          <name>VCTR0</name>
+          <displayName>VCTR0</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -22499,8 +22499,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR1</name>
-          <displayName>MPCBB1_VCTR1</displayName>
+          <name>VCTR1</name>
+          <displayName>VCTR1</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
@@ -22702,8 +22702,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR2</name>
-          <displayName>MPCBB1_VCTR2</displayName>
+          <name>VCTR2</name>
+          <displayName>VCTR2</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x108</addressOffset>
           <size>0x20</size>
@@ -22905,8 +22905,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR3</name>
-          <displayName>MPCBB1_VCTR3</displayName>
+          <name>VCTR3</name>
+          <displayName>VCTR3</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x10C</addressOffset>
           <size>0x20</size>
@@ -23108,8 +23108,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR4</name>
-          <displayName>MPCBB1_VCTR4</displayName>
+          <name>VCTR4</name>
+          <displayName>VCTR4</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x110</addressOffset>
           <size>0x20</size>
@@ -23311,8 +23311,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR5</name>
-          <displayName>MPCBB1_VCTR5</displayName>
+          <name>VCTR5</name>
+          <displayName>VCTR5</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x114</addressOffset>
           <size>0x20</size>
@@ -23514,8 +23514,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR6</name>
-          <displayName>MPCBB1_VCTR6</displayName>
+          <name>VCTR6</name>
+          <displayName>VCTR6</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x118</addressOffset>
           <size>0x20</size>
@@ -23717,8 +23717,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR7</name>
-          <displayName>MPCBB1_VCTR7</displayName>
+          <name>VCTR7</name>
+          <displayName>VCTR7</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x11C</addressOffset>
           <size>0x20</size>
@@ -23920,8 +23920,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR8</name>
-          <displayName>MPCBB1_VCTR8</displayName>
+          <name>VCTR8</name>
+          <displayName>VCTR8</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x120</addressOffset>
           <size>0x20</size>
@@ -24123,8 +24123,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR9</name>
-          <displayName>MPCBB1_VCTR9</displayName>
+          <name>VCTR9</name>
+          <displayName>VCTR9</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x124</addressOffset>
           <size>0x20</size>
@@ -24326,8 +24326,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR10</name>
-          <displayName>MPCBB1_VCTR10</displayName>
+          <name>VCTR10</name>
+          <displayName>VCTR10</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x128</addressOffset>
           <size>0x20</size>
@@ -24529,8 +24529,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR11</name>
-          <displayName>MPCBB1_VCTR11</displayName>
+          <name>VCTR11</name>
+          <displayName>VCTR11</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x12C</addressOffset>
           <size>0x20</size>
@@ -24732,8 +24732,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR12</name>
-          <displayName>MPCBB1_VCTR12</displayName>
+          <name>VCTR12</name>
+          <displayName>VCTR12</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x130</addressOffset>
           <size>0x20</size>
@@ -24935,8 +24935,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR13</name>
-          <displayName>MPCBB1_VCTR13</displayName>
+          <name>VCTR13</name>
+          <displayName>VCTR13</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x134</addressOffset>
           <size>0x20</size>
@@ -25138,8 +25138,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR14</name>
-          <displayName>MPCBB1_VCTR14</displayName>
+          <name>VCTR14</name>
+          <displayName>VCTR14</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x138</addressOffset>
           <size>0x20</size>
@@ -25341,8 +25341,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR15</name>
-          <displayName>MPCBB1_VCTR15</displayName>
+          <name>VCTR15</name>
+          <displayName>VCTR15</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x13C</addressOffset>
           <size>0x20</size>
@@ -25544,8 +25544,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR16</name>
-          <displayName>MPCBB1_VCTR16</displayName>
+          <name>VCTR16</name>
+          <displayName>VCTR16</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
@@ -25747,8 +25747,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR17</name>
-          <displayName>MPCBB1_VCTR17</displayName>
+          <name>VCTR17</name>
+          <displayName>VCTR17</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x144</addressOffset>
           <size>0x20</size>
@@ -25950,8 +25950,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR18</name>
-          <displayName>MPCBB1_VCTR18</displayName>
+          <name>VCTR18</name>
+          <displayName>VCTR18</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x148</addressOffset>
           <size>0x20</size>
@@ -26153,8 +26153,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR19</name>
-          <displayName>MPCBB1_VCTR19</displayName>
+          <name>VCTR19</name>
+          <displayName>VCTR19</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x14C</addressOffset>
           <size>0x20</size>
@@ -26356,8 +26356,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR20</name>
-          <displayName>MPCBB1_VCTR20</displayName>
+          <name>VCTR20</name>
+          <displayName>VCTR20</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x150</addressOffset>
           <size>0x20</size>
@@ -26559,8 +26559,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR21</name>
-          <displayName>MPCBB1_VCTR21</displayName>
+          <name>VCTR21</name>
+          <displayName>VCTR21</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x154</addressOffset>
           <size>0x20</size>
@@ -26762,8 +26762,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR22</name>
-          <displayName>MPCBB1_VCTR22</displayName>
+          <name>VCTR22</name>
+          <displayName>VCTR22</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x158</addressOffset>
           <size>0x20</size>
@@ -26965,8 +26965,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR23</name>
-          <displayName>MPCBB1_VCTR23</displayName>
+          <name>VCTR23</name>
+          <displayName>VCTR23</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x15C</addressOffset>
           <size>0x20</size>
@@ -27168,8 +27168,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR24</name>
-          <displayName>MPCBB1_VCTR24</displayName>
+          <name>VCTR24</name>
+          <displayName>VCTR24</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x160</addressOffset>
           <size>0x20</size>
@@ -27371,8 +27371,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR25</name>
-          <displayName>MPCBB1_VCTR25</displayName>
+          <name>VCTR25</name>
+          <displayName>VCTR25</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x164</addressOffset>
           <size>0x20</size>
@@ -27574,8 +27574,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR26</name>
-          <displayName>MPCBB1_VCTR26</displayName>
+          <name>VCTR26</name>
+          <displayName>VCTR26</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x168</addressOffset>
           <size>0x20</size>
@@ -27777,8 +27777,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR27</name>
-          <displayName>MPCBB1_VCTR27</displayName>
+          <name>VCTR27</name>
+          <displayName>VCTR27</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x16C</addressOffset>
           <size>0x20</size>
@@ -27980,8 +27980,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR28</name>
-          <displayName>MPCBB1_VCTR28</displayName>
+          <name>VCTR28</name>
+          <displayName>VCTR28</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x170</addressOffset>
           <size>0x20</size>
@@ -28183,8 +28183,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR29</name>
-          <displayName>MPCBB1_VCTR29</displayName>
+          <name>VCTR29</name>
+          <displayName>VCTR29</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x174</addressOffset>
           <size>0x20</size>
@@ -28386,8 +28386,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR30</name>
-          <displayName>MPCBB1_VCTR30</displayName>
+          <name>VCTR30</name>
+          <displayName>VCTR30</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x178</addressOffset>
           <size>0x20</size>
@@ -28589,8 +28589,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR31</name>
-          <displayName>MPCBB1_VCTR31</displayName>
+          <name>VCTR31</name>
+          <displayName>VCTR31</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x17C</addressOffset>
           <size>0x20</size>
@@ -28792,8 +28792,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR32</name>
-          <displayName>MPCBB1_VCTR32</displayName>
+          <name>VCTR32</name>
+          <displayName>VCTR32</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x180</addressOffset>
           <size>0x20</size>
@@ -28995,8 +28995,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR33</name>
-          <displayName>MPCBB1_VCTR33</displayName>
+          <name>VCTR33</name>
+          <displayName>VCTR33</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x184</addressOffset>
           <size>0x20</size>
@@ -29198,8 +29198,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR34</name>
-          <displayName>MPCBB1_VCTR34</displayName>
+          <name>VCTR34</name>
+          <displayName>VCTR34</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x188</addressOffset>
           <size>0x20</size>
@@ -29401,8 +29401,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR35</name>
-          <displayName>MPCBB1_VCTR35</displayName>
+          <name>VCTR35</name>
+          <displayName>VCTR35</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x18C</addressOffset>
           <size>0x20</size>
@@ -29604,8 +29604,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR36</name>
-          <displayName>MPCBB1_VCTR36</displayName>
+          <name>VCTR36</name>
+          <displayName>VCTR36</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x190</addressOffset>
           <size>0x20</size>
@@ -29807,8 +29807,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR37</name>
-          <displayName>MPCBB1_VCTR37</displayName>
+          <name>VCTR37</name>
+          <displayName>VCTR37</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x194</addressOffset>
           <size>0x20</size>
@@ -30010,8 +30010,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR38</name>
-          <displayName>MPCBB1_VCTR38</displayName>
+          <name>VCTR38</name>
+          <displayName>VCTR38</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x198</addressOffset>
           <size>0x20</size>
@@ -30213,8 +30213,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR39</name>
-          <displayName>MPCBB1_VCTR39</displayName>
+          <name>VCTR39</name>
+          <displayName>VCTR39</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x19C</addressOffset>
           <size>0x20</size>
@@ -30416,8 +30416,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR40</name>
-          <displayName>MPCBB1_VCTR40</displayName>
+          <name>VCTR40</name>
+          <displayName>VCTR40</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A0</addressOffset>
           <size>0x20</size>
@@ -30619,8 +30619,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR41</name>
-          <displayName>MPCBB1_VCTR41</displayName>
+          <name>VCTR41</name>
+          <displayName>VCTR41</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A4</addressOffset>
           <size>0x20</size>
@@ -30822,8 +30822,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR42</name>
-          <displayName>MPCBB1_VCTR42</displayName>
+          <name>VCTR42</name>
+          <displayName>VCTR42</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A8</addressOffset>
           <size>0x20</size>
@@ -31025,8 +31025,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR43</name>
-          <displayName>MPCBB1_VCTR43</displayName>
+          <name>VCTR43</name>
+          <displayName>VCTR43</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1AC</addressOffset>
           <size>0x20</size>
@@ -31228,8 +31228,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR44</name>
-          <displayName>MPCBB1_VCTR44</displayName>
+          <name>VCTR44</name>
+          <displayName>VCTR44</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B0</addressOffset>
           <size>0x20</size>
@@ -31431,8 +31431,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR45</name>
-          <displayName>MPCBB1_VCTR45</displayName>
+          <name>VCTR45</name>
+          <displayName>VCTR45</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B4</addressOffset>
           <size>0x20</size>
@@ -31634,8 +31634,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR46</name>
-          <displayName>MPCBB1_VCTR46</displayName>
+          <name>VCTR46</name>
+          <displayName>VCTR46</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B8</addressOffset>
           <size>0x20</size>
@@ -31837,8 +31837,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR47</name>
-          <displayName>MPCBB1_VCTR47</displayName>
+          <name>VCTR47</name>
+          <displayName>VCTR47</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1BC</addressOffset>
           <size>0x20</size>
@@ -32040,8 +32040,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR48</name>
-          <displayName>MPCBB1_VCTR48</displayName>
+          <name>VCTR48</name>
+          <displayName>VCTR48</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C0</addressOffset>
           <size>0x20</size>
@@ -32243,8 +32243,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR49</name>
-          <displayName>MPCBB1_VCTR49</displayName>
+          <name>VCTR49</name>
+          <displayName>VCTR49</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C4</addressOffset>
           <size>0x20</size>
@@ -32446,8 +32446,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR50</name>
-          <displayName>MPCBB1_VCTR50</displayName>
+          <name>VCTR50</name>
+          <displayName>VCTR50</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C8</addressOffset>
           <size>0x20</size>
@@ -32649,8 +32649,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR51</name>
-          <displayName>MPCBB1_VCTR51</displayName>
+          <name>VCTR51</name>
+          <displayName>VCTR51</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1CC</addressOffset>
           <size>0x20</size>
@@ -32852,8 +32852,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR52</name>
-          <displayName>MPCBB1_VCTR52</displayName>
+          <name>VCTR52</name>
+          <displayName>VCTR52</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D0</addressOffset>
           <size>0x20</size>
@@ -33055,8 +33055,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR53</name>
-          <displayName>MPCBB1_VCTR53</displayName>
+          <name>VCTR53</name>
+          <displayName>VCTR53</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D4</addressOffset>
           <size>0x20</size>
@@ -33258,8 +33258,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR54</name>
-          <displayName>MPCBB1_VCTR54</displayName>
+          <name>VCTR54</name>
+          <displayName>VCTR54</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D8</addressOffset>
           <size>0x20</size>
@@ -33461,8 +33461,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR55</name>
-          <displayName>MPCBB1_VCTR55</displayName>
+          <name>VCTR55</name>
+          <displayName>VCTR55</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1DC</addressOffset>
           <size>0x20</size>
@@ -33664,8 +33664,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR56</name>
-          <displayName>MPCBB1_VCTR56</displayName>
+          <name>VCTR56</name>
+          <displayName>VCTR56</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E0</addressOffset>
           <size>0x20</size>
@@ -33867,8 +33867,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR57</name>
-          <displayName>MPCBB1_VCTR57</displayName>
+          <name>VCTR57</name>
+          <displayName>VCTR57</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E4</addressOffset>
           <size>0x20</size>
@@ -34070,8 +34070,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR58</name>
-          <displayName>MPCBB1_VCTR58</displayName>
+          <name>VCTR58</name>
+          <displayName>VCTR58</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E8</addressOffset>
           <size>0x20</size>
@@ -34273,8 +34273,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR59</name>
-          <displayName>MPCBB1_VCTR59</displayName>
+          <name>VCTR59</name>
+          <displayName>VCTR59</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1EC</addressOffset>
           <size>0x20</size>
@@ -34476,8 +34476,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR60</name>
-          <displayName>MPCBB1_VCTR60</displayName>
+          <name>VCTR60</name>
+          <displayName>VCTR60</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F0</addressOffset>
           <size>0x20</size>
@@ -34679,8 +34679,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR61</name>
-          <displayName>MPCBB1_VCTR61</displayName>
+          <name>VCTR61</name>
+          <displayName>VCTR61</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F4</addressOffset>
           <size>0x20</size>
@@ -34882,8 +34882,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR62</name>
-          <displayName>MPCBB1_VCTR62</displayName>
+          <name>VCTR62</name>
+          <displayName>VCTR62</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F8</addressOffset>
           <size>0x20</size>
@@ -35085,8 +35085,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB1_VCTR63</name>
-          <displayName>MPCBB1_VCTR63</displayName>
+          <name>VCTR63</name>
+          <displayName>VCTR63</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1FC</addressOffset>
           <size>0x20</size>
@@ -35301,8 +35301,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPCBB2_CR</name>
-          <displayName>MPCBB2_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -35330,8 +35330,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_LCKVTR1</name>
-          <displayName>MPCBB2_LCKVTR1</displayName>
+          <name>LCKVTR1</name>
+          <displayName>LCKVTR1</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -35533,8 +35533,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_LCKVTR2</name>
-          <displayName>MPCBB2_LCKVTR2</displayName>
+          <name>LCKVTR2</name>
+          <displayName>LCKVTR2</displayName>
           <description>MPCBB control register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -35736,8 +35736,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR0</name>
-          <displayName>MPCBB2_VCTR0</displayName>
+          <name>VCTR0</name>
+          <displayName>VCTR0</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -35939,8 +35939,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR1</name>
-          <displayName>MPCBB2_VCTR1</displayName>
+          <name>VCTR1</name>
+          <displayName>VCTR1</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
@@ -36142,8 +36142,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR2</name>
-          <displayName>MPCBB2_VCTR2</displayName>
+          <name>VCTR2</name>
+          <displayName>VCTR2</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x108</addressOffset>
           <size>0x20</size>
@@ -36345,8 +36345,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR3</name>
-          <displayName>MPCBB2_VCTR3</displayName>
+          <name>VCTR3</name>
+          <displayName>VCTR3</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x10C</addressOffset>
           <size>0x20</size>
@@ -36548,8 +36548,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR4</name>
-          <displayName>MPCBB2_VCTR4</displayName>
+          <name>VCTR4</name>
+          <displayName>VCTR4</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x110</addressOffset>
           <size>0x20</size>
@@ -36751,8 +36751,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR5</name>
-          <displayName>MPCBB2_VCTR5</displayName>
+          <name>VCTR5</name>
+          <displayName>VCTR5</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x114</addressOffset>
           <size>0x20</size>
@@ -36954,8 +36954,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR6</name>
-          <displayName>MPCBB2_VCTR6</displayName>
+          <name>VCTR6</name>
+          <displayName>VCTR6</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x118</addressOffset>
           <size>0x20</size>
@@ -37157,8 +37157,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR7</name>
-          <displayName>MPCBB2_VCTR7</displayName>
+          <name>VCTR7</name>
+          <displayName>VCTR7</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x11C</addressOffset>
           <size>0x20</size>
@@ -37360,8 +37360,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR8</name>
-          <displayName>MPCBB2_VCTR8</displayName>
+          <name>VCTR8</name>
+          <displayName>VCTR8</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x120</addressOffset>
           <size>0x20</size>
@@ -37563,8 +37563,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR9</name>
-          <displayName>MPCBB2_VCTR9</displayName>
+          <name>VCTR9</name>
+          <displayName>VCTR9</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x124</addressOffset>
           <size>0x20</size>
@@ -37766,8 +37766,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR10</name>
-          <displayName>MPCBB2_VCTR10</displayName>
+          <name>VCTR10</name>
+          <displayName>VCTR10</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x128</addressOffset>
           <size>0x20</size>
@@ -37969,8 +37969,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR11</name>
-          <displayName>MPCBB2_VCTR11</displayName>
+          <name>VCTR11</name>
+          <displayName>VCTR11</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x12C</addressOffset>
           <size>0x20</size>
@@ -38172,8 +38172,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR12</name>
-          <displayName>MPCBB2_VCTR12</displayName>
+          <name>VCTR12</name>
+          <displayName>VCTR12</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x130</addressOffset>
           <size>0x20</size>
@@ -38375,8 +38375,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR13</name>
-          <displayName>MPCBB2_VCTR13</displayName>
+          <name>VCTR13</name>
+          <displayName>VCTR13</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x134</addressOffset>
           <size>0x20</size>
@@ -38578,8 +38578,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR14</name>
-          <displayName>MPCBB2_VCTR14</displayName>
+          <name>VCTR14</name>
+          <displayName>VCTR14</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x138</addressOffset>
           <size>0x20</size>
@@ -38781,8 +38781,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR15</name>
-          <displayName>MPCBB2_VCTR15</displayName>
+          <name>VCTR15</name>
+          <displayName>VCTR15</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x13C</addressOffset>
           <size>0x20</size>
@@ -38984,8 +38984,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR16</name>
-          <displayName>MPCBB2_VCTR16</displayName>
+          <name>VCTR16</name>
+          <displayName>VCTR16</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
@@ -39187,8 +39187,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR17</name>
-          <displayName>MPCBB2_VCTR17</displayName>
+          <name>VCTR17</name>
+          <displayName>VCTR17</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x144</addressOffset>
           <size>0x20</size>
@@ -39390,8 +39390,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR18</name>
-          <displayName>MPCBB2_VCTR18</displayName>
+          <name>VCTR18</name>
+          <displayName>VCTR18</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x148</addressOffset>
           <size>0x20</size>
@@ -39593,8 +39593,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR19</name>
-          <displayName>MPCBB2_VCTR19</displayName>
+          <name>VCTR19</name>
+          <displayName>VCTR19</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x14C</addressOffset>
           <size>0x20</size>
@@ -39796,8 +39796,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR20</name>
-          <displayName>MPCBB2_VCTR20</displayName>
+          <name>VCTR20</name>
+          <displayName>VCTR20</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x150</addressOffset>
           <size>0x20</size>
@@ -39999,8 +39999,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR21</name>
-          <displayName>MPCBB2_VCTR21</displayName>
+          <name>VCTR21</name>
+          <displayName>VCTR21</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x154</addressOffset>
           <size>0x20</size>
@@ -40202,8 +40202,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR22</name>
-          <displayName>MPCBB2_VCTR22</displayName>
+          <name>VCTR22</name>
+          <displayName>VCTR22</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x158</addressOffset>
           <size>0x20</size>
@@ -40405,8 +40405,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR23</name>
-          <displayName>MPCBB2_VCTR23</displayName>
+          <name>VCTR23</name>
+          <displayName>VCTR23</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x15C</addressOffset>
           <size>0x20</size>
@@ -40608,8 +40608,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR24</name>
-          <displayName>MPCBB2_VCTR24</displayName>
+          <name>VCTR24</name>
+          <displayName>VCTR24</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x160</addressOffset>
           <size>0x20</size>
@@ -40811,8 +40811,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR25</name>
-          <displayName>MPCBB2_VCTR25</displayName>
+          <name>VCTR25</name>
+          <displayName>VCTR25</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x164</addressOffset>
           <size>0x20</size>
@@ -41014,8 +41014,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR26</name>
-          <displayName>MPCBB2_VCTR26</displayName>
+          <name>VCTR26</name>
+          <displayName>VCTR26</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x168</addressOffset>
           <size>0x20</size>
@@ -41217,8 +41217,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR27</name>
-          <displayName>MPCBB2_VCTR27</displayName>
+          <name>VCTR27</name>
+          <displayName>VCTR27</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x16C</addressOffset>
           <size>0x20</size>
@@ -41420,8 +41420,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR28</name>
-          <displayName>MPCBB2_VCTR28</displayName>
+          <name>VCTR28</name>
+          <displayName>VCTR28</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x170</addressOffset>
           <size>0x20</size>
@@ -41623,8 +41623,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR29</name>
-          <displayName>MPCBB2_VCTR29</displayName>
+          <name>VCTR29</name>
+          <displayName>VCTR29</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x174</addressOffset>
           <size>0x20</size>
@@ -41826,8 +41826,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR30</name>
-          <displayName>MPCBB2_VCTR30</displayName>
+          <name>VCTR30</name>
+          <displayName>VCTR30</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x178</addressOffset>
           <size>0x20</size>
@@ -42029,8 +42029,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR31</name>
-          <displayName>MPCBB2_VCTR31</displayName>
+          <name>VCTR31</name>
+          <displayName>VCTR31</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x17C</addressOffset>
           <size>0x20</size>
@@ -42232,8 +42232,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR32</name>
-          <displayName>MPCBB2_VCTR32</displayName>
+          <name>VCTR32</name>
+          <displayName>VCTR32</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x180</addressOffset>
           <size>0x20</size>
@@ -42435,8 +42435,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR33</name>
-          <displayName>MPCBB2_VCTR33</displayName>
+          <name>VCTR33</name>
+          <displayName>VCTR33</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x184</addressOffset>
           <size>0x20</size>
@@ -42638,8 +42638,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR34</name>
-          <displayName>MPCBB2_VCTR34</displayName>
+          <name>VCTR34</name>
+          <displayName>VCTR34</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x188</addressOffset>
           <size>0x20</size>
@@ -42841,8 +42841,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR35</name>
-          <displayName>MPCBB2_VCTR35</displayName>
+          <name>VCTR35</name>
+          <displayName>VCTR35</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x18C</addressOffset>
           <size>0x20</size>
@@ -43044,8 +43044,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR36</name>
-          <displayName>MPCBB2_VCTR36</displayName>
+          <name>VCTR36</name>
+          <displayName>VCTR36</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x190</addressOffset>
           <size>0x20</size>
@@ -43247,8 +43247,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR37</name>
-          <displayName>MPCBB2_VCTR37</displayName>
+          <name>VCTR37</name>
+          <displayName>VCTR37</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x194</addressOffset>
           <size>0x20</size>
@@ -43450,8 +43450,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR38</name>
-          <displayName>MPCBB2_VCTR38</displayName>
+          <name>VCTR38</name>
+          <displayName>VCTR38</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x198</addressOffset>
           <size>0x20</size>
@@ -43653,8 +43653,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR39</name>
-          <displayName>MPCBB2_VCTR39</displayName>
+          <name>VCTR39</name>
+          <displayName>VCTR39</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x19C</addressOffset>
           <size>0x20</size>
@@ -43856,8 +43856,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR40</name>
-          <displayName>MPCBB2_VCTR40</displayName>
+          <name>VCTR40</name>
+          <displayName>VCTR40</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A0</addressOffset>
           <size>0x20</size>
@@ -44059,8 +44059,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR41</name>
-          <displayName>MPCBB2_VCTR41</displayName>
+          <name>VCTR41</name>
+          <displayName>VCTR41</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A4</addressOffset>
           <size>0x20</size>
@@ -44262,8 +44262,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR42</name>
-          <displayName>MPCBB2_VCTR42</displayName>
+          <name>VCTR42</name>
+          <displayName>VCTR42</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1A8</addressOffset>
           <size>0x20</size>
@@ -44465,8 +44465,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR43</name>
-          <displayName>MPCBB2_VCTR43</displayName>
+          <name>VCTR43</name>
+          <displayName>VCTR43</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1AC</addressOffset>
           <size>0x20</size>
@@ -44668,8 +44668,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR44</name>
-          <displayName>MPCBB2_VCTR44</displayName>
+          <name>VCTR44</name>
+          <displayName>VCTR44</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B0</addressOffset>
           <size>0x20</size>
@@ -44871,8 +44871,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR45</name>
-          <displayName>MPCBB2_VCTR45</displayName>
+          <name>VCTR45</name>
+          <displayName>VCTR45</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B4</addressOffset>
           <size>0x20</size>
@@ -45074,8 +45074,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR46</name>
-          <displayName>MPCBB2_VCTR46</displayName>
+          <name>VCTR46</name>
+          <displayName>VCTR46</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1B8</addressOffset>
           <size>0x20</size>
@@ -45277,8 +45277,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR47</name>
-          <displayName>MPCBB2_VCTR47</displayName>
+          <name>VCTR47</name>
+          <displayName>VCTR47</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1BC</addressOffset>
           <size>0x20</size>
@@ -45480,8 +45480,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR48</name>
-          <displayName>MPCBB2_VCTR48</displayName>
+          <name>VCTR48</name>
+          <displayName>VCTR48</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C0</addressOffset>
           <size>0x20</size>
@@ -45683,8 +45683,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR49</name>
-          <displayName>MPCBB2_VCTR49</displayName>
+          <name>VCTR49</name>
+          <displayName>VCTR49</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C4</addressOffset>
           <size>0x20</size>
@@ -45886,8 +45886,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR50</name>
-          <displayName>MPCBB2_VCTR50</displayName>
+          <name>VCTR50</name>
+          <displayName>VCTR50</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1C8</addressOffset>
           <size>0x20</size>
@@ -46089,8 +46089,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR51</name>
-          <displayName>MPCBB2_VCTR51</displayName>
+          <name>VCTR51</name>
+          <displayName>VCTR51</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1CC</addressOffset>
           <size>0x20</size>
@@ -46292,8 +46292,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR52</name>
-          <displayName>MPCBB2_VCTR52</displayName>
+          <name>VCTR52</name>
+          <displayName>VCTR52</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D0</addressOffset>
           <size>0x20</size>
@@ -46495,8 +46495,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR53</name>
-          <displayName>MPCBB2_VCTR53</displayName>
+          <name>VCTR53</name>
+          <displayName>VCTR53</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D4</addressOffset>
           <size>0x20</size>
@@ -46698,8 +46698,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR54</name>
-          <displayName>MPCBB2_VCTR54</displayName>
+          <name>VCTR54</name>
+          <displayName>VCTR54</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1D8</addressOffset>
           <size>0x20</size>
@@ -46901,8 +46901,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR55</name>
-          <displayName>MPCBB2_VCTR55</displayName>
+          <name>VCTR55</name>
+          <displayName>VCTR55</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1DC</addressOffset>
           <size>0x20</size>
@@ -47104,8 +47104,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR56</name>
-          <displayName>MPCBB2_VCTR56</displayName>
+          <name>VCTR56</name>
+          <displayName>VCTR56</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E0</addressOffset>
           <size>0x20</size>
@@ -47307,8 +47307,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR57</name>
-          <displayName>MPCBB2_VCTR57</displayName>
+          <name>VCTR57</name>
+          <displayName>VCTR57</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E4</addressOffset>
           <size>0x20</size>
@@ -47510,8 +47510,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR58</name>
-          <displayName>MPCBB2_VCTR58</displayName>
+          <name>VCTR58</name>
+          <displayName>VCTR58</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1E8</addressOffset>
           <size>0x20</size>
@@ -47713,8 +47713,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR59</name>
-          <displayName>MPCBB2_VCTR59</displayName>
+          <name>VCTR59</name>
+          <displayName>VCTR59</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1EC</addressOffset>
           <size>0x20</size>
@@ -47916,8 +47916,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR60</name>
-          <displayName>MPCBB2_VCTR60</displayName>
+          <name>VCTR60</name>
+          <displayName>VCTR60</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F0</addressOffset>
           <size>0x20</size>
@@ -48119,8 +48119,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR61</name>
-          <displayName>MPCBB2_VCTR61</displayName>
+          <name>VCTR61</name>
+          <displayName>VCTR61</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F4</addressOffset>
           <size>0x20</size>
@@ -48322,8 +48322,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR62</name>
-          <displayName>MPCBB2_VCTR62</displayName>
+          <name>VCTR62</name>
+          <displayName>VCTR62</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1F8</addressOffset>
           <size>0x20</size>
@@ -48525,8 +48525,8 @@
           </fields>
         </register>
         <register>
-          <name>MPCBB2_VCTR63</name>
-          <displayName>MPCBB2_VCTR63</displayName>
+          <name>VCTR63</name>
+          <displayName>VCTR63</displayName>
           <description>MPCBBx vector register</description>
           <addressOffset>0x1FC</addressOffset>
           <size>0x20</size>
@@ -95234,8 +95234,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>DAC_CR</name>
-          <displayName>DAC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>DAC control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -95450,8 +95450,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SWTRGR</name>
-          <displayName>DAC_SWTRGR</displayName>
+          <name>SWTRGR</name>
+          <displayName>SWTRGR</displayName>
           <description>DAC software trigger register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -95487,8 +95487,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12R1</name>
-          <displayName>DAC_DHR12R1</displayName>
+          <name>DHR12R1</name>
+          <displayName>DHR12R1</displayName>
           <description>
             DAC channel1 12-bit right-aligned data
             holding register
@@ -95511,8 +95511,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12L1</name>
-          <displayName>DAC_DHR12L1</displayName>
+          <name>DHR12L1</name>
+          <displayName>DHR12L1</displayName>
           <description>
             DAC channel1 12-bit left aligned data
             holding register
@@ -95535,8 +95535,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8R1</name>
-          <displayName>DAC_DHR8R1</displayName>
+          <name>DHR8R1</name>
+          <displayName>DHR8R1</displayName>
           <description>
             DAC channel1 8-bit right aligned data
             holding register
@@ -95559,8 +95559,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12R2</name>
-          <displayName>DAC_DHR12R2</displayName>
+          <name>DHR12R2</name>
+          <displayName>DHR12R2</displayName>
           <description>
             DAC channel2 12-bit right aligned data
             holding register
@@ -95583,8 +95583,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12L2</name>
-          <displayName>DAC_DHR12L2</displayName>
+          <name>DHR12L2</name>
+          <displayName>DHR12L2</displayName>
           <description>
             DAC channel2 12-bit left aligned data
             holding register
@@ -95607,8 +95607,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8R2</name>
-          <displayName>DAC_DHR8R2</displayName>
+          <name>DHR8R2</name>
+          <displayName>DHR8R2</displayName>
           <description>
             DAC channel2 8-bit right-aligned data
             holding register
@@ -95631,8 +95631,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12RD</name>
-          <displayName>DAC_DHR12RD</displayName>
+          <name>DHR12RD</name>
+          <displayName>DHR12RD</displayName>
           <description>
             Dual DAC 12-bit right-aligned data holding
             register
@@ -95665,8 +95665,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12LD</name>
-          <displayName>DAC_DHR12LD</displayName>
+          <name>DHR12LD</name>
+          <displayName>DHR12LD</displayName>
           <description>
             DUAL DAC 12-bit left aligned data holding
             register
@@ -95699,8 +95699,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8RD</name>
-          <displayName>DAC_DHR8RD</displayName>
+          <name>DHR8RD</name>
+          <displayName>DHR8RD</displayName>
           <description>
             DUAL DAC 8-bit right aligned data holding
             register
@@ -95733,8 +95733,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DOR1</name>
-          <displayName>DAC_DOR1</displayName>
+          <name>DOR1</name>
+          <displayName>DOR1</displayName>
           <description>
             DAC channel1 data output
             register
@@ -95757,8 +95757,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_DOR2</name>
-          <displayName>DAC_DOR2</displayName>
+          <name>DOR2</name>
+          <displayName>DOR2</displayName>
           <description>
             DAC channel2 data output
             register
@@ -95781,8 +95781,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SR</name>
-          <displayName>DAC_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>DAC status register</description>
           <addressOffset>0x34</addressOffset>
           <size>0x20</size>
@@ -95863,8 +95863,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_CCR</name>
-          <displayName>DAC_CCR</displayName>
+          <name>CCR</name>
+          <displayName>CCR</displayName>
           <description>
             DAC calibration control
             register
@@ -95895,8 +95895,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_MCR</name>
-          <displayName>DAC_MCR</displayName>
+          <name>MCR</name>
+          <displayName>MCR</displayName>
           <description>DAC mode control register</description>
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
@@ -95936,8 +95936,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SHSR1</name>
-          <displayName>DAC_SHSR1</displayName>
+          <name>SHSR1</name>
+          <displayName>SHSR1</displayName>
           <description>
             DAC Sample and Hold sample time register
             1
@@ -95964,8 +95964,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SHSR2</name>
-          <displayName>DAC_SHSR2</displayName>
+          <name>SHSR2</name>
+          <displayName>SHSR2</displayName>
           <description>
             DAC Sample and Hold sample time register
             2
@@ -95992,8 +95992,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SHHR</name>
-          <displayName>DAC_SHHR</displayName>
+          <name>SHHR</name>
+          <displayName>SHHR</displayName>
           <description>
             DAC Sample and Hold hold time
             register
@@ -96026,8 +96026,8 @@
           </fields>
         </register>
         <register>
-          <name>DAC_SHRR</name>
-          <displayName>DAC_SHRR</displayName>
+          <name>SHRR</name>
+          <displayName>SHRR</displayName>
           <description>
             DAC Sample and Hold refresh time
             register
@@ -99526,8 +99526,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>TZSC_CR</name>
-          <displayName>TZSC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>TZSC control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -99543,8 +99543,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_SECCFGR1</name>
-          <displayName>TZSC_SECCFGR1</displayName>
+          <name>SECCFGR1</name>
+          <displayName>SECCFGR1</displayName>
           <description>
             TZSC secure configuration register
             1
@@ -99749,8 +99749,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_SECCFGR2</name>
-          <displayName>TZSC_SECCFGR2</displayName>
+          <name>SECCFGR2</name>
+          <displayName>SECCFGR2</displayName>
           <description>
             TZSC secure configuration register
             2
@@ -99877,8 +99877,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_PRIVCFGR1</name>
-          <displayName>TZSC_PRIVCFGR1</displayName>
+          <name>PRIVCFGR1</name>
+          <displayName>PRIVCFGR1</displayName>
           <description>
             TZSC privilege configuration register
             1
@@ -100083,8 +100083,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_PRIVCFGR2</name>
-          <displayName>TZSC_PRIVCFGR2</displayName>
+          <name>PRIVCFGR2</name>
+          <displayName>PRIVCFGR2</displayName>
           <description>
             TZSC privilege configuration register
             2
@@ -100211,8 +100211,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_NSWMR1</name>
-          <displayName>TZSC_MPCWM1_NSWMR1</displayName>
+          <name>MPCWM1_NSWMR1</name>
+          <displayName>MPCWM1_NSWMR1</displayName>
           <description>
             TZSC external memory non-secure watermark
             register 1
@@ -100237,8 +100237,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_NSWMR2</name>
-          <displayName>TZSC_MPCWM1_NSWMR2</displayName>
+          <name>MPCWM1_NSWMR2</name>
+          <displayName>MPCWM1_NSWMR2</displayName>
           <description>
             TZSC external memory non-secure watermark
             register 1
@@ -100263,8 +100263,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM2_NSWMR1</name>
-          <displayName>TZSC_MPCWM2_NSWMR1</displayName>
+          <name>MPCWM2_NSWMR1</name>
+          <displayName>MPCWM2_NSWMR1</displayName>
           <description>
             TZSC external memory non-secure watermark
             register 1
@@ -100289,8 +100289,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM3_NSWMR1</name>
-          <displayName>TZSC_MPCWM3_NSWMR1</displayName>
+          <name>MPCWM3_NSWMR1</name>
+          <displayName>MPCWM3_NSWMR1</displayName>
           <description>
             TZSC external memory non-secure watermark
             register 2
@@ -100315,8 +100315,8 @@
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM2_NSWMR2</name>
-          <displayName>TZSC_MPCWM2_NSWMR2</displayName>
+          <name>MPCWM2_NSWMR2</name>
+          <displayName>MPCWM2_NSWMR2</displayName>
           <description>
             TZSC external memory non-secure watermark
             register 2
@@ -112826,8 +112826,8 @@
       </interrupt>
       <registers>
         <register>
-          <name>FMC_BCR1</name>
-          <displayName>FMC_BCR1</displayName>
+          <name>BCR1</name>
+          <displayName>BCR1</displayName>
           <description>FMC_BCR1</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -113038,8 +113038,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BCR2</name>
-          <displayName>FMC_BCR2</displayName>
+          <name>BCR2</name>
+          <displayName>BCR2</displayName>
           <description>FMC_BCR2</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -113250,8 +113250,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BCR3</name>
-          <displayName>FMC_BCR3</displayName>
+          <name>BCR3</name>
+          <displayName>BCR3</displayName>
           <description>&gt;FMC_BCR3</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -113462,8 +113462,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BCR4</name>
-          <displayName>FMC_BCR4</displayName>
+          <name>BCR4</name>
+          <displayName>BCR4</displayName>
           <description>&gt;FMC_BCR4</description>
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
@@ -113674,8 +113674,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BTR1</name>
-          <displayName>FMC_BTR1</displayName>
+          <name>BTR1</name>
+          <displayName>BTR1</displayName>
           <description>
             This register contains the control
             information of each memory bank, used for SRAMs, PSRAM
@@ -113838,8 +113838,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BTR2</name>
-          <displayName>FMC_BTR2</displayName>
+          <name>BTR2</name>
+          <displayName>BTR2</displayName>
           <description>FMC_BTR2</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -113993,8 +113993,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BTR3</name>
-          <displayName>FMC_BTR3</displayName>
+          <name>BTR3</name>
+          <displayName>BTR3</displayName>
           <description>FMC_BTR3</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -114148,8 +114148,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BTR4</name>
-          <displayName>FMC_BTR4</displayName>
+          <name>BTR4</name>
+          <displayName>BTR4</displayName>
           <description>FMC_BTR4</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
@@ -114303,8 +114303,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_PCR</name>
-          <displayName>FMC_PCR</displayName>
+          <name>PCR</name>
+          <displayName>PCR</displayName>
           <description>NAND Flash control registers</description>
           <addressOffset>0x80</addressOffset>
           <size>0x20</size>
@@ -114394,8 +114394,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_SR</name>
-          <displayName>FMC_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>
             This register contains information about the
             FIFO status and interrupt. The FMC features a FIFO that
@@ -114490,8 +114490,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_PMEM</name>
-          <displayName>FMC_PMEM</displayName>
+          <name>PMEM</name>
+          <displayName>PMEM</displayName>
           <description>
             The FMC_PMEM read/write register contains
             the timing information for NAND Flash memory bank. This
@@ -114559,8 +114559,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_PATT</name>
-          <displayName>FMC_PATT</displayName>
+          <name>PATT</name>
+          <displayName>PATT</displayName>
           <description>
             The FMC_PATT read/write register contains
             the timing information for NAND Flash memory bank. It is
@@ -114630,8 +114630,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_ECCR</name>
-          <displayName>FMC_ECCR</displayName>
+          <name>ECCR</name>
+          <displayName>ECCR</displayName>
           <description>
             This register contain the current error
             correction code value computed by the ECC computation
@@ -114670,8 +114670,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BWTR1</name>
-          <displayName>FMC_BWTR1</displayName>
+          <name>BWTR1</name>
+          <displayName>BWTR1</displayName>
           <description>
             This register contains the control
             information of each memory bank. It is used for SRAMs,
@@ -114776,8 +114776,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BWTR2</name>
-          <displayName>FMC_BWTR2</displayName>
+          <name>BWTR2</name>
+          <displayName>BWTR2</displayName>
           <description>
             This register contains the control
             information of each memory bank. It is used for SRAMs,
@@ -114882,8 +114882,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BWTR3</name>
-          <displayName>FMC_BWTR3</displayName>
+          <name>BWTR3</name>
+          <displayName>BWTR3</displayName>
           <description>
             This register contains the control
             information of each memory bank. It is used for SRAMs,
@@ -114988,8 +114988,8 @@
           </fields>
         </register>
         <register>
-          <name>FMC_BWTR4</name>
-          <displayName>FMC_BWTR4</displayName>
+          <name>BWTR4</name>
+          <displayName>BWTR4</displayName>
           <description>
             This register contains the control
             information of each memory bank. It is used for SRAMs,
@@ -115158,8 +115158,8 @@
       </interrupt>
       <registers>
         <register>
-          <name>RNG_CR</name>
-          <displayName>RNG_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>RNG control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -115240,8 +115240,8 @@
           </fields>
         </register>
         <register>
-          <name>RNG_SR</name>
-          <displayName>RNG_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>RNG status register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -115316,8 +115316,8 @@
           </fields>
         </register>
         <register>
-          <name>RNG_DR</name>
-          <displayName>RNG_DR</displayName>
+          <name>DR</name>
+          <displayName>DR</displayName>
           <description>
             The RNG_DR register is a read-only register
             that delivers a 32-bit random value when read. The
@@ -115341,8 +115341,8 @@
           </fields>
         </register>
         <register>
-          <name>RNG_HTCR</name>
-          <displayName>RNG_HTCR</displayName>
+          <name>HTCR</name>
+          <displayName>HTCR</displayName>
           <description>
             The RNG_DR register is a read-only register
             that delivers a 32-bit random value when read. The

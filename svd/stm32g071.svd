@@ -4529,8 +4529,8 @@ Copyright (c) 2021 STMicroelectronics.
       </interrupt>
       <registers>
         <register>
-          <name>DMAMUX_C0CR</name>
-          <displayName>DMAMUX_C0CR</displayName>
+          <name>C0CR</name>
+          <displayName>C0CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x0</addressOffset>
@@ -4597,8 +4597,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C1CR</name>
-          <displayName>DMAMUX_C1CR</displayName>
+          <name>C1CR</name>
+          <displayName>C1CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x4</addressOffset>
@@ -4665,8 +4665,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C2CR</name>
-          <displayName>DMAMUX_C2CR</displayName>
+          <name>C2CR</name>
+          <displayName>C2CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x8</addressOffset>
@@ -4733,8 +4733,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C3CR</name>
-          <displayName>DMAMUX_C3CR</displayName>
+          <name>C3CR</name>
+          <displayName>C3CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0xC</addressOffset>
@@ -4801,8 +4801,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C4CR</name>
-          <displayName>DMAMUX_C4CR</displayName>
+          <name>C4CR</name>
+          <displayName>C4CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x10</addressOffset>
@@ -4869,8 +4869,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C5CR</name>
-          <displayName>DMAMUX_C5CR</displayName>
+          <name>C5CR</name>
+          <displayName>C5CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x14</addressOffset>
@@ -4937,8 +4937,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C6CR</name>
-          <displayName>DMAMUX_C6CR</displayName>
+          <name>C6CR</name>
+          <displayName>C6CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x18</addressOffset>
@@ -5005,8 +5005,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG0CR</name>
-          <displayName>DMAMUX_RG0CR</displayName>
+          <name>RG0CR</name>
+          <displayName>RG0CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x100</addressOffset>
@@ -5057,8 +5057,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG1CR</name>
-          <displayName>DMAMUX_RG1CR</displayName>
+          <name>RG1CR</name>
+          <displayName>RG1CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x104</addressOffset>
@@ -5109,8 +5109,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG2CR</name>
-          <displayName>DMAMUX_RG2CR</displayName>
+          <name>RG2CR</name>
+          <displayName>RG2CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x108</addressOffset>
@@ -5161,8 +5161,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG3CR</name>
-          <displayName>DMAMUX_RG3CR</displayName>
+          <name>RG3CR</name>
+          <displayName>RG3CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x10C</addressOffset>
@@ -5213,8 +5213,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGSR</name>
-          <displayName>DMAMUX_RGSR</displayName>
+          <name>RGSR</name>
+          <displayName>RGSR</displayName>
           <description>DMAMux - DMA request generator status
           register</description>
           <addressOffset>0x140</addressOffset>
@@ -5236,8 +5236,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGCFR</name>
-          <displayName>DMAMUX_RGCFR</displayName>
+          <name>RGCFR</name>
+          <displayName>RGCFR</displayName>
           <description>DMAMux - DMA request generator clear flag
           register</description>
           <addressOffset>0x144</addressOffset>
@@ -5256,8 +5256,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_CSR</name>
-          <displayName>DMAMUX_CSR</displayName>
+          <name>CSR</name>
+          <displayName>CSR</displayName>
           <description>DMAMUX request line multiplexer interrupt
           channel status register</description>
           <addressOffset>0x80</addressOffset>
@@ -5275,8 +5275,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_CFR</name>
-          <displayName>DMAMUX_CFR</displayName>
+          <name>CFR</name>
+          <displayName>CFR</displayName>
           <description>DMAMUX request line multiplexer interrupt
           clear flag register</description>
           <addressOffset>0x84</addressOffset>
@@ -5294,8 +5294,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_SIDR</name>
-          <displayName>DMAMUX_SIDR</displayName>
+          <name>SIDR</name>
+          <displayName>SIDR</displayName>
           <description>DMAMUX size identification
           register</description>
           <addressOffset>0x3FC</addressOffset>
@@ -5312,8 +5312,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_IPIDR</name>
-          <displayName>DMAMUX_IPIDR</displayName>
+          <name>IPIDR</name>
+          <displayName>IPIDR</displayName>
           <description>DMAMUX IP identification
           register</description>
           <addressOffset>0x3F8</addressOffset>
@@ -5330,8 +5330,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_VERR</name>
-          <displayName>DMAMUX_VERR</displayName>
+          <name>VERR</name>
+          <displayName>VERR</displayName>
           <description>DMAMUX version register</description>
           <addressOffset>0x3F4</addressOffset>
           <size>0x20</size>
@@ -5353,8 +5353,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_HWCFGR1</name>
-          <displayName>DMAMUX_HWCFGR1</displayName>
+          <name>HWCFGR1</name>
+          <displayName>HWCFGR1</displayName>
           <description>DMAMUX hardware configuration 1
           register</description>
           <addressOffset>0x3F0</addressOffset>
@@ -5393,8 +5393,8 @@ Copyright (c) 2021 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_HWCFGR2</name>
-          <displayName>DMAMUX_HWCFGR2</displayName>
+          <name>HWCFGR2</name>
+          <displayName>HWCFGR2</displayName>
           <description>DMAMUX hardware configuration 2
           register</description>
           <addressOffset>0x3EC</addressOffset>
@@ -21069,8 +21069,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
       </addressBlock>
       <registers>
         <register>
-          <name>DAC_CR</name>
-          <displayName>DAC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>DAC control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -21221,8 +21221,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SWTRGR</name>
-          <displayName>DAC_SWTRGR</displayName>
+          <name>SWTRGR</name>
+          <displayName>SWTRGR</displayName>
           <description>DAC software trigger register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -21254,8 +21254,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12R1</name>
-          <displayName>DAC_DHR12R1</displayName>
+          <name>DHR12R1</name>
+          <displayName>DHR12R1</displayName>
           <description>DAC channel1 12-bit right-aligned data
           holding register</description>
           <addressOffset>0x8</addressOffset>
@@ -21274,8 +21274,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12L1</name>
-          <displayName>DAC_DHR12L1</displayName>
+          <name>DHR12L1</name>
+          <displayName>DHR12L1</displayName>
           <description>DAC channel1 12-bit left aligned data
           holding register</description>
           <addressOffset>0xC</addressOffset>
@@ -21294,8 +21294,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8R1</name>
-          <displayName>DAC_DHR8R1</displayName>
+          <name>DHR8R1</name>
+          <displayName>DHR8R1</displayName>
           <description>DAC channel1 8-bit right aligned data
           holding register</description>
           <addressOffset>0x10</addressOffset>
@@ -21314,8 +21314,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12R2</name>
-          <displayName>DAC_DHR12R2</displayName>
+          <name>DHR12R2</name>
+          <displayName>DHR12R2</displayName>
           <description>DAC channel2 12-bit right aligned data
           holding register</description>
           <addressOffset>0x14</addressOffset>
@@ -21334,8 +21334,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12L2</name>
-          <displayName>DAC_DHR12L2</displayName>
+          <name>DHR12L2</name>
+          <displayName>DHR12L2</displayName>
           <description>DAC channel2 12-bit left aligned data
           holding register</description>
           <addressOffset>0x18</addressOffset>
@@ -21354,8 +21354,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8R2</name>
-          <displayName>DAC_DHR8R2</displayName>
+          <name>DHR8R2</name>
+          <displayName>DHR8R2</displayName>
           <description>DAC channel2 8-bit right-aligned data
           holding register</description>
           <addressOffset>0x1C</addressOffset>
@@ -21374,8 +21374,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12RD</name>
-          <displayName>DAC_DHR12RD</displayName>
+          <name>DHR12RD</name>
+          <displayName>DHR12RD</displayName>
           <description>Dual DAC 12-bit right-aligned data holding
           register</description>
           <addressOffset>0x20</addressOffset>
@@ -21402,8 +21402,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR12LD</name>
-          <displayName>DAC_DHR12LD</displayName>
+          <name>DHR12LD</name>
+          <displayName>DHR12LD</displayName>
           <description>DUAL DAC 12-bit left aligned data holding
           register</description>
           <addressOffset>0x24</addressOffset>
@@ -21430,8 +21430,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DHR8RD</name>
-          <displayName>DAC_DHR8RD</displayName>
+          <name>DHR8RD</name>
+          <displayName>DHR8RD</displayName>
           <description>DUAL DAC 8-bit right aligned data holding
           register</description>
           <addressOffset>0x28</addressOffset>
@@ -21458,8 +21458,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DOR1</name>
-          <displayName>DAC_DOR1</displayName>
+          <name>DOR1</name>
+          <displayName>DOR1</displayName>
           <description>DAC channel1 data output
           register</description>
           <addressOffset>0x2C</addressOffset>
@@ -21478,8 +21478,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_DOR2</name>
-          <displayName>DAC_DOR2</displayName>
+          <name>DOR2</name>
+          <displayName>DOR2</displayName>
           <description>DAC channel2 data output
           register</description>
           <addressOffset>0x30</addressOffset>
@@ -21498,8 +21498,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SR</name>
-          <displayName>DAC_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>DAC status register</description>
           <addressOffset>0x34</addressOffset>
           <size>0x20</size>
@@ -21568,8 +21568,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_CCR</name>
-          <displayName>DAC_CCR</displayName>
+          <name>CCR</name>
+          <displayName>CCR</displayName>
           <description>DAC calibration control
           register</description>
           <addressOffset>0x38</addressOffset>
@@ -21594,8 +21594,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_MCR</name>
-          <displayName>DAC_MCR</displayName>
+          <name>MCR</name>
+          <displayName>MCR</displayName>
           <description>DAC mode control register</description>
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
@@ -21631,8 +21631,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SHSR1</name>
-          <displayName>DAC_SHSR1</displayName>
+          <name>SHSR1</name>
+          <displayName>SHSR1</displayName>
           <description>DAC Sample and Hold sample time register
           1</description>
           <addressOffset>0x40</addressOffset>
@@ -21655,8 +21655,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SHSR2</name>
-          <displayName>DAC_SHSR2</displayName>
+          <name>SHSR2</name>
+          <displayName>SHSR2</displayName>
           <description>DAC Sample and Hold sample time register
           2</description>
           <addressOffset>0x44</addressOffset>
@@ -21679,8 +21679,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SHHR</name>
-          <displayName>DAC_SHHR</displayName>
+          <name>SHHR</name>
+          <displayName>SHHR</displayName>
           <description>DAC Sample and Hold hold time
           register</description>
           <addressOffset>0x48</addressOffset>
@@ -21707,8 +21707,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>DAC_SHRR</name>
-          <displayName>DAC_SHRR</displayName>
+          <name>SHRR</name>
+          <displayName>SHRR</displayName>
           <description>DAC Sample and Hold refresh time
           register</description>
           <addressOffset>0x4C</addressOffset>
@@ -25620,8 +25620,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -25650,8 +25650,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -25681,8 +25681,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -25698,8 +25698,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -25728,8 +25728,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>

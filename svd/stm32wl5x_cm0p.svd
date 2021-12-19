@@ -50,8 +50,8 @@ Copyright (c) 2020 STMicroelectronics.
       </interrupt>
       <registers>
         <register>
-          <name>ADC_ISR</name>
-          <displayName>ADC_ISR</displayName>
+          <name>ISR</name>
+          <displayName>ISR</displayName>
           <description>ADC interrupt and status           register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -121,8 +121,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_IER</name>
-          <displayName>ADC_IER</displayName>
+          <name>IER</name>
+          <displayName>IER</displayName>
           <description>ADC interrupt enable register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -192,8 +192,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CR</name>
-          <displayName>ADC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>ADC control register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -239,8 +239,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CFGR1</name>
-          <displayName>ADC_CFGR1</displayName>
+          <name>CFGR1</name>
+          <displayName>CFGR1</displayName>
           <description>ADC configuration register 1</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -346,8 +346,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CFGR2</name>
-          <displayName>ADC_CFGR2</displayName>
+          <name>CFGR2</name>
+          <displayName>CFGR2</displayName>
           <description>ADC configuration register 2</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -423,8 +423,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_SMPR</name>
-          <displayName>ADC_SMPR</displayName>
+          <name>SMPR</name>
+          <displayName>SMPR</displayName>
           <description>ADC sampling time register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -452,8 +452,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_AWD1TR</name>
-          <displayName>ADC_AWD1TR</displayName>
+          <name>AWD1TR</name>
+          <displayName>AWD1TR</displayName>
           <description>ADC watchdog threshold           register</description>
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
@@ -475,8 +475,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_AWD2TR</name>
-          <displayName>ADC_AWD2TR</displayName>
+          <name>AWD2TR</name>
+          <displayName>AWD2TR</displayName>
           <description>ADC watchdog threshold           register</description>
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
@@ -498,8 +498,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CHSELR0</name>
-          <displayName>ADC_CHSELR0</displayName>
+          <name>CHSELR0</name>
+          <displayName>CHSELR0</displayName>
           <description>channel selection register</description>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
@@ -515,8 +515,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CHSELR1</name>
-          <displayName>ADC_CHSELR1</displayName>
+          <name>CHSELR1</name>
+          <displayName>CHSELR1</displayName>
           <description>channel selection register</description>
           <alternateRegister>ADC_CHSELR0</alternateRegister>
           <addressOffset>0x28</addressOffset>
@@ -575,8 +575,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_AWD3TR</name>
-          <displayName>ADC_AWD3TR</displayName>
+          <name>AWD3TR</name>
+          <displayName>AWD3TR</displayName>
           <description>ADC watchdog threshold           register</description>
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
@@ -598,8 +598,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_DR</name>
-          <displayName>ADC_DR</displayName>
+          <name>DR</name>
+          <displayName>DR</displayName>
           <description>ADC data register</description>
           <addressOffset>0x40</addressOffset>
           <size>0x20</size>
@@ -615,8 +615,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_AWD2CR</name>
-          <displayName>ADC_AWD2CR</displayName>
+          <name>AWD2CR</name>
+          <displayName>AWD2CR</displayName>
           <description>ADC Analog Watchdog 2 Configuration           register</description>
           <addressOffset>0xA0</addressOffset>
           <size>0x20</size>
@@ -632,8 +632,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_AWD3CR</name>
-          <displayName>ADC_AWD3CR</displayName>
+          <name>AWD3CR</name>
+          <displayName>AWD3CR</displayName>
           <description>ADC Analog Watchdog 3 Configuration           register</description>
           <addressOffset>0xA4</addressOffset>
           <size>0x20</size>
@@ -649,8 +649,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CALFACT</name>
-          <displayName>ADC_CALFACT</displayName>
+          <name>CALFACT</name>
+          <displayName>CALFACT</displayName>
           <description>ADC Calibration factor</description>
           <addressOffset>0xB4</addressOffset>
           <size>0x20</size>
@@ -666,8 +666,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ADC_CCR</name>
-          <displayName>ADC_CCR</displayName>
+          <name>CCR</name>
+          <displayName>CCR</displayName>
           <description>ADC common configuration           register</description>
           <addressOffset>0x308</addressOffset>
           <size>0x20</size>
@@ -16661,8 +16661,8 @@ Copyright (c) 2020 STMicroelectronics.
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -16690,8 +16690,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -16719,8 +16719,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -16736,8 +16736,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address           register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -16765,8 +16765,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size           register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -30251,8 +30251,8 @@ Copyright (c) 2020 STMicroelectronics.
       </addressBlock>
       <registers>
         <register>
-          <name>TZSC_CR</name>
-          <displayName>TZSC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>TZSC control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -30268,8 +30268,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_SECCFGR1</name>
-          <displayName>TZSC_SECCFGR1</displayName>
+          <name>SECCFGR1</name>
+          <displayName>SECCFGR1</displayName>
           <description>TZSC security configuration           register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -30297,8 +30297,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_PRIVCFGR1</name>
-          <displayName>TZSC_PRIVCFGR1</displayName>
+          <name>PRIVCFGR1</name>
+          <displayName>PRIVCFGR1</displayName>
           <description>TZSC privilege configuration register           1</description>
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
@@ -30332,8 +30332,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_UPWMR</name>
-          <displayName>TZSC_MPCWM1_UPWMR</displayName>
+          <name>MPCWM1_UPWMR</name>
+          <displayName>MPCWM1_UPWMR</displayName>
           <description>Unprivileged Water Mark 1 register</description>
           <addressOffset>0x130</addressOffset>
           <size>0x20</size>
@@ -30349,8 +30349,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_UPWWMR</name>
-          <displayName>TZSC_MPCWM1_UPWWMR</displayName>
+          <name>MPCWM1_UPWWMR</name>
+          <displayName>MPCWM1_UPWWMR</displayName>
           <description>Unprivileged Writable Water Mark 1 register</description>
           <addressOffset>0x134</addressOffset>
           <size>0x20</size>
@@ -30366,8 +30366,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM2_UPWMR</name>
-          <displayName>TZSC_MPCWM2_UPWMR</displayName>
+          <name>MPCWM2_UPWMR</name>
+          <displayName>MPCWM2_UPWMR</displayName>
           <description>Unprivileged Water Mark 2 register</description>
           <addressOffset>0x138</addressOffset>
           <size>0x20</size>
@@ -30383,8 +30383,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM3_UPWMR</name>
-          <displayName>TZSC_MPCWM3_UPWMR</displayName>
+          <name>MPCWM3_UPWMR</name>
+          <displayName>MPCWM3_UPWMR</displayName>
           <description>Unprivileged Water Mark 3 register</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>

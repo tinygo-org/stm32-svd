@@ -5850,6 +5850,7 @@
               <description>code segment start address</description>
               <bitOffset>8</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5867,6 +5868,7 @@
               <description>code segment length</description>
               <bitOffset>8</bitOffset>
               <bitWidth>14</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>16383</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5886,6 +5888,7 @@
               address</description>
               <bitOffset>8</bitOffset>
               <bitWidth>16</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5905,6 +5908,7 @@
               length</description>
               <bitOffset>8</bitOffset>
               <bitWidth>14</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>16383</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5924,6 +5928,7 @@
               address</description>
               <bitOffset>6</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5942,6 +5947,7 @@
               length</description>
               <bitOffset>6</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5959,18 +5965,23 @@
               <description>Volatile data execution</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VDER</name><usage>read</usage><enumeratedValue><name>NotExecutable</name><description>Volatile data segment cannot be executed if VDS = 0</description><value>0</value></enumeratedValue><enumeratedValue><name>Executable</name><description>Volatile data segment is declared executable whatever VDS bit value</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>VDEW</name><usage>write</usage><enumeratedValue><name>Reset</name><description>Resets volatile data execution bit</description><value>0</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VDS</name>
               <description>Volatile data shared</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VDSR</name><usage>read</usage><enumeratedValue><name>NotShared</name><description>Volatile data segment is not shared and cannot be hit by a non protected executable code when the Firewall is closed</description><value>0</value></enumeratedValue><enumeratedValue><name>Shared</name><description>Volatile data segment is shared with non protected application code</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>VDSW</name><usage>write</usage><enumeratedValue><name>Reset</name><description>Resets volatile data shared bit</description><value>0</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>FPA</name>
               <description>Firewall pre alarm</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>FPAW</name><usage>write</usage><enumeratedValue><name>PreArmReset</name><description>Any code executed outside the protected segment when the Firewall is opened will generate a system reset</description><value>0</value></enumeratedValue><enumeratedValue><name>PreArmSet</name><description>Any code executed outside the protected segment will close the Firewall</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -34221,8 +34232,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -34251,8 +34262,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -34282,8 +34293,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -34299,8 +34310,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -34329,8 +34340,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>

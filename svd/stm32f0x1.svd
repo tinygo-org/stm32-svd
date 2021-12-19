@@ -15962,6 +15962,7 @@
               <description>Signal Free Time</description>
               <bitOffset>5</bitOffset>
               <bitWidth>3</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
             </field>
             <field>
               <name>LSTN</name>
@@ -15974,6 +15975,7 @@
               <description>Own Address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -15991,6 +15993,7 @@
               <description>Tx Data register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>

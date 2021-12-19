@@ -17098,8 +17098,8 @@ Copyright (c) 2020 STMicroelectronics.
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -17127,8 +17127,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -17156,8 +17156,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -17173,8 +17173,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address           register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -17202,8 +17202,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size           register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -31105,8 +31105,8 @@ Copyright (c) 2020 STMicroelectronics.
       </addressBlock>
       <registers>
         <register>
-          <name>TZSC_CR</name>
-          <displayName>TZSC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>TZSC control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -31122,8 +31122,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_SECCFGR1</name>
-          <displayName>TZSC_SECCFGR1</displayName>
+          <name>SECCFGR1</name>
+          <displayName>SECCFGR1</displayName>
           <description>TZSC security configuration           register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -31151,8 +31151,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_PRIVCFGR1</name>
-          <displayName>TZSC_PRIVCFGR1</displayName>
+          <name>PRIVCFGR1</name>
+          <displayName>PRIVCFGR1</displayName>
           <description>TZSC privilege configuration register           1</description>
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
@@ -31186,8 +31186,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_UPWMR</name>
-          <displayName>TZSC_MPCWM1_UPWMR</displayName>
+          <name>MPCWM1_UPWMR</name>
+          <displayName>MPCWM1_UPWMR</displayName>
           <description>Unprivileged Water Mark 1 register</description>
           <addressOffset>0x130</addressOffset>
           <size>0x20</size>
@@ -31203,8 +31203,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM1_UPWWMR</name>
-          <displayName>TZSC_MPCWM1_UPWWMR</displayName>
+          <name>MPCWM1_UPWWMR</name>
+          <displayName>MPCWM1_UPWWMR</displayName>
           <description>Unprivileged Writable Water Mark 1 register</description>
           <addressOffset>0x134</addressOffset>
           <size>0x20</size>
@@ -31220,8 +31220,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM2_UPWMR</name>
-          <displayName>TZSC_MPCWM2_UPWMR</displayName>
+          <name>MPCWM2_UPWMR</name>
+          <displayName>MPCWM2_UPWMR</displayName>
           <description>Unprivileged Water Mark 2 register</description>
           <addressOffset>0x138</addressOffset>
           <size>0x20</size>
@@ -31237,8 +31237,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>TZSC_MPCWM3_UPWMR</name>
-          <displayName>TZSC_MPCWM3_UPWMR</displayName>
+          <name>MPCWM3_UPWMR</name>
+          <displayName>MPCWM3_UPWMR</displayName>
           <description>Unprivileged Water Mark 3 register</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
