@@ -4336,8 +4336,8 @@ Copyright (c) 2020 STMicroelectronics.
       </interrupt>
       <registers>
         <register>
-          <name>DMAMUX_C0CR</name>
-          <displayName>DMAMUX_C0CR</displayName>
+          <name>C0CR</name>
+          <displayName>C0CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x0</addressOffset>
@@ -4404,8 +4404,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C1CR</name>
-          <displayName>DMAMUX_C1CR</displayName>
+          <name>C1CR</name>
+          <displayName>C1CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x4</addressOffset>
@@ -4472,8 +4472,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C2CR</name>
-          <displayName>DMAMUX_C2CR</displayName>
+          <name>C2CR</name>
+          <displayName>C2CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x8</addressOffset>
@@ -4540,8 +4540,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C3CR</name>
-          <displayName>DMAMUX_C3CR</displayName>
+          <name>C3CR</name>
+          <displayName>C3CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0xC</addressOffset>
@@ -4608,8 +4608,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C4CR</name>
-          <displayName>DMAMUX_C4CR</displayName>
+          <name>C4CR</name>
+          <displayName>C4CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x10</addressOffset>
@@ -4676,8 +4676,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C5CR</name>
-          <displayName>DMAMUX_C5CR</displayName>
+          <name>C5CR</name>
+          <displayName>C5CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x14</addressOffset>
@@ -4744,8 +4744,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C6CR</name>
-          <displayName>DMAMUX_C6CR</displayName>
+          <name>C6CR</name>
+          <displayName>C6CR</displayName>
           <description>DMAMux - DMA request line multiplexer
           channel x control register</description>
           <addressOffset>0x18</addressOffset>
@@ -4812,8 +4812,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG0CR</name>
-          <displayName>DMAMUX_RG0CR</displayName>
+          <name>RG0CR</name>
+          <displayName>RG0CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x100</addressOffset>
@@ -4864,8 +4864,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG1CR</name>
-          <displayName>DMAMUX_RG1CR</displayName>
+          <name>RG1CR</name>
+          <displayName>RG1CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x104</addressOffset>
@@ -4916,8 +4916,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG2CR</name>
-          <displayName>DMAMUX_RG2CR</displayName>
+          <name>RG2CR</name>
+          <displayName>RG2CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x108</addressOffset>
@@ -4968,8 +4968,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG3CR</name>
-          <displayName>DMAMUX_RG3CR</displayName>
+          <name>RG3CR</name>
+          <displayName>RG3CR</displayName>
           <description>DMAMux - DMA request generator channel x
           control register</description>
           <addressOffset>0x10C</addressOffset>
@@ -5020,8 +5020,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGSR</name>
-          <displayName>DMAMUX_RGSR</displayName>
+          <name>RGSR</name>
+          <displayName>RGSR</displayName>
           <description>DMAMux - DMA request generator status
           register</description>
           <addressOffset>0x140</addressOffset>
@@ -5043,8 +5043,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGCFR</name>
-          <displayName>DMAMUX_RGCFR</displayName>
+          <name>RGCFR</name>
+          <displayName>RGCFR</displayName>
           <description>DMAMux - DMA request generator clear flag
           register</description>
           <addressOffset>0x144</addressOffset>
@@ -5063,8 +5063,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_CSR</name>
-          <displayName>DMAMUX_CSR</displayName>
+          <name>CSR</name>
+          <displayName>CSR</displayName>
           <description>DMAMUX request line multiplexer interrupt
           channel status register</description>
           <addressOffset>0x80</addressOffset>
@@ -5082,8 +5082,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_CFR</name>
-          <displayName>DMAMUX_CFR</displayName>
+          <name>CFR</name>
+          <displayName>CFR</displayName>
           <description>DMAMUX request line multiplexer interrupt
           clear flag register</description>
           <addressOffset>0x84</addressOffset>
@@ -5101,8 +5101,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_SIDR</name>
-          <displayName>DMAMUX_SIDR</displayName>
+          <name>SIDR</name>
+          <displayName>SIDR</displayName>
           <description>DMAMUX size identification
           register</description>
           <addressOffset>0x3FC</addressOffset>
@@ -5119,8 +5119,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_IPIDR</name>
-          <displayName>DMAMUX_IPIDR</displayName>
+          <name>IPIDR</name>
+          <displayName>IPIDR</displayName>
           <description>DMAMUX IP identification
           register</description>
           <addressOffset>0x3F8</addressOffset>
@@ -5137,8 +5137,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_VERR</name>
-          <displayName>DMAMUX_VERR</displayName>
+          <name>VERR</name>
+          <displayName>VERR</displayName>
           <description>DMAMUX version register</description>
           <addressOffset>0x3F4</addressOffset>
           <size>0x20</size>
@@ -5160,8 +5160,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_HWCFGR1</name>
-          <displayName>DMAMUX_HWCFGR1</displayName>
+          <name>HWCFGR1</name>
+          <displayName>HWCFGR1</displayName>
           <description>DMAMUX hardware configuration 1
           register</description>
           <addressOffset>0x3F0</addressOffset>
@@ -5200,8 +5200,8 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>DMAMUX_HWCFGR2</name>
-          <displayName>DMAMUX_HWCFGR2</displayName>
+          <name>HWCFGR2</name>
+          <displayName>HWCFGR2</displayName>
           <description>DMAMUX hardware configuration 2
           register</description>
           <addressOffset>0x3EC</addressOffset>
@@ -20939,8 +20939,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -20969,8 +20969,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -21000,8 +21000,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -21017,8 +21017,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -21047,8 +21047,8 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>

@@ -3907,6 +3907,7 @@
                <field><name>MDIORST</name><description>MDIO reset</description><bitOffset>30</bitOffset><bitWidth>1</bitWidth></field>
             <field><name>DFSDM1RST</name><description>DFSDM 1 reset</description><bitOffset>29</bitOffset><bitWidth>1</bitWidth></field>
             <field><name>DSIRST</name><description>DSI reset</description><bitOffset>27</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>SDMMC2RST</name><description>SDMMC2 module reset</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth></field>
             </fields>
             </register>
             <register>
@@ -4516,6 +4517,8 @@
             <field><name>DFSDM1EN</name><description>DFSDM1 clock enable</description><bitOffset>29</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1EN"/>
             </field>
             <field><name>DSIEN</name><description>DSI clock enable</description><bitOffset>27</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1EN"/>
+            </field>
+            <field><name>SDMMC2EN</name><description>SDMMC2 clock enable</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1EN"/>
             </field>
             </fields>
             </register>
@@ -30313,8 +30316,8 @@
          </interrupt>
          <registers>
             <register>
-               <name>DFSDM_CHCFG0R1</name>
-               <displayName>DFSDM_CHCFG0R1</displayName>
+               <name>CHCFG0R1</name>
+               <displayName>CHCFG0R1</displayName>
                <description>DFSDM channel configuration 0 register           1</description>
                <addressOffset>0x0</addressOffset>
                <size>0x20</size>
@@ -30390,8 +30393,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG1R1</name>
-               <displayName>DFSDM_CHCFG1R1</displayName>
+               <name>CHCFG1R1</name>
+               <displayName>CHCFG1R1</displayName>
                <description>DFSDM channel configuration 1 register           1</description>
                <addressOffset>0x4</addressOffset>
                <size>0x20</size>
@@ -30467,8 +30470,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG2R1</name>
-               <displayName>DFSDM_CHCFG2R1</displayName>
+               <name>CHCFG2R1</name>
+               <displayName>CHCFG2R1</displayName>
                <description>DFSDM channel configuration 2 register           1</description>
                <addressOffset>0x8</addressOffset>
                <size>0x20</size>
@@ -30544,8 +30547,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG3R1</name>
-               <displayName>DFSDM_CHCFG3R1</displayName>
+               <name>CHCFG3R1</name>
+               <displayName>CHCFG3R1</displayName>
                <description>DFSDM channel configuration 3 register           1</description>
                <addressOffset>0xC</addressOffset>
                <size>0x20</size>
@@ -30621,8 +30624,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG4R1</name>
-               <displayName>DFSDM_CHCFG4R1</displayName>
+               <name>CHCFG4R1</name>
+               <displayName>CHCFG4R1</displayName>
                <description>DFSDM channel configuration 4 register           1</description>
                <addressOffset>0x10</addressOffset>
                <size>0x20</size>
@@ -30698,8 +30701,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG5R1</name>
-               <displayName>DFSDM_CHCFG5R1</displayName>
+               <name>CHCFG5R1</name>
+               <displayName>CHCFG5R1</displayName>
                <description>DFSDM channel configuration 5 register           1</description>
                <addressOffset>0x14</addressOffset>
                <size>0x20</size>
@@ -30775,8 +30778,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG6R1</name>
-               <displayName>DFSDM_CHCFG6R1</displayName>
+               <name>CHCFG6R1</name>
+               <displayName>CHCFG6R1</displayName>
                <description>DFSDM channel configuration 6 register           1</description>
                <addressOffset>0x18</addressOffset>
                <size>0x20</size>
@@ -30852,8 +30855,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG7R1</name>
-               <displayName>DFSDM_CHCFG7R1</displayName>
+               <name>CHCFG7R1</name>
+               <displayName>CHCFG7R1</displayName>
                <description>DFSDM channel configuration 7 register           1</description>
                <addressOffset>0x1C</addressOffset>
                <size>0x20</size>
@@ -30929,8 +30932,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG0R2</name>
-               <displayName>DFSDM_CHCFG0R2</displayName>
+               <name>CHCFG0R2</name>
+               <displayName>CHCFG0R2</displayName>
                <description>DFSDM channel configuration 0 register           2</description>
                <addressOffset>0x20</addressOffset>
                <size>0x20</size>
@@ -30952,8 +30955,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG1R2</name>
-               <displayName>DFSDM_CHCFG1R2</displayName>
+               <name>CHCFG1R2</name>
+               <displayName>CHCFG1R2</displayName>
                <description>DFSDM channel configuration 1 register           2</description>
                <addressOffset>0x24</addressOffset>
                <size>0x20</size>
@@ -30975,8 +30978,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG2R2</name>
-               <displayName>DFSDM_CHCFG2R2</displayName>
+               <name>CHCFG2R2</name>
+               <displayName>CHCFG2R2</displayName>
                <description>DFSDM channel configuration 2 register           2</description>
                <addressOffset>0x28</addressOffset>
                <size>0x20</size>
@@ -30998,8 +31001,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG3R2</name>
-               <displayName>DFSDM_CHCFG3R2</displayName>
+               <name>CHCFG3R2</name>
+               <displayName>CHCFG3R2</displayName>
                <description>DFSDM channel configuration 3 register           2</description>
                <addressOffset>0x2C</addressOffset>
                <size>0x20</size>
@@ -31021,8 +31024,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG4R2</name>
-               <displayName>DFSDM_CHCFG4R2</displayName>
+               <name>CHCFG4R2</name>
+               <displayName>CHCFG4R2</displayName>
                <description>DFSDM channel configuration 4 register           2</description>
                <addressOffset>0x30</addressOffset>
                <size>0x20</size>
@@ -31044,8 +31047,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG5R2</name>
-               <displayName>DFSDM_CHCFG5R2</displayName>
+               <name>CHCFG5R2</name>
+               <displayName>CHCFG5R2</displayName>
                <description>DFSDM channel configuration 5 register           2</description>
                <addressOffset>0x34</addressOffset>
                <size>0x20</size>
@@ -31067,8 +31070,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG6R2</name>
-               <displayName>DFSDM_CHCFG6R2</displayName>
+               <name>CHCFG6R2</name>
+               <displayName>CHCFG6R2</displayName>
                <description>DFSDM channel configuration 6 register           2</description>
                <addressOffset>0x38</addressOffset>
                <size>0x20</size>
@@ -31090,8 +31093,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHCFG7R2</name>
-               <displayName>DFSDM_CHCFG7R2</displayName>
+               <name>CHCFG7R2</name>
+               <displayName>CHCFG7R2</displayName>
                <description>DFSDM channel configuration 7 register           2</description>
                <addressOffset>0x3C</addressOffset>
                <size>0x20</size>
@@ -31113,8 +31116,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD0R</name>
-               <displayName>DFSDM_AWSCD0R</displayName>
+               <name>AWSCD0R</name>
+               <displayName>AWSCD0R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x40</addressOffset>
                <size>0x20</size>
@@ -31148,8 +31151,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD1R</name>
-               <displayName>DFSDM_AWSCD1R</displayName>
+               <name>AWSCD1R</name>
+               <displayName>AWSCD1R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x44</addressOffset>
                <size>0x20</size>
@@ -31183,8 +31186,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD2R</name>
-               <displayName>DFSDM_AWSCD2R</displayName>
+               <name>AWSCD2R</name>
+               <displayName>AWSCD2R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x48</addressOffset>
                <size>0x20</size>
@@ -31218,8 +31221,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD3R</name>
-               <displayName>DFSDM_AWSCD3R</displayName>
+               <name>AWSCD3R</name>
+               <displayName>AWSCD3R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x4C</addressOffset>
                <size>0x20</size>
@@ -31253,8 +31256,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD4R</name>
-               <displayName>DFSDM_AWSCD4R</displayName>
+               <name>AWSCD4R</name>
+               <displayName>AWSCD4R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x50</addressOffset>
                <size>0x20</size>
@@ -31288,8 +31291,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD5R</name>
-               <displayName>DFSDM_AWSCD5R</displayName>
+               <name>AWSCD5R</name>
+               <displayName>AWSCD5R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x54</addressOffset>
                <size>0x20</size>
@@ -31323,8 +31326,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD6R</name>
-               <displayName>DFSDM_AWSCD6R</displayName>
+               <name>AWSCD6R</name>
+               <displayName>AWSCD6R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x58</addressOffset>
                <size>0x20</size>
@@ -31358,8 +31361,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_AWSCD7R</name>
-               <displayName>DFSDM_AWSCD7R</displayName>
+               <name>AWSCD7R</name>
+               <displayName>AWSCD7R</displayName>
                <description>DFSDM analog watchdog and short-circuit           detector register</description>
                <addressOffset>0x5C</addressOffset>
                <size>0x20</size>
@@ -31393,8 +31396,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT0R</name>
-               <displayName>DFSDM_CHWDAT0R</displayName>
+               <name>CHWDAT0R</name>
+               <displayName>CHWDAT0R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x60</addressOffset>
                <size>0x20</size>
@@ -31410,8 +31413,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT1R</name>
-               <displayName>DFSDM_CHWDAT1R</displayName>
+               <name>CHWDAT1R</name>
+               <displayName>CHWDAT1R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x64</addressOffset>
                <size>0x20</size>
@@ -31427,8 +31430,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT2R</name>
-               <displayName>DFSDM_CHWDAT2R</displayName>
+               <name>CHWDAT2R</name>
+               <displayName>CHWDAT2R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x68</addressOffset>
                <size>0x20</size>
@@ -31444,8 +31447,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT3R</name>
-               <displayName>DFSDM_CHWDAT3R</displayName>
+               <name>CHWDAT3R</name>
+               <displayName>CHWDAT3R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x6C</addressOffset>
                <size>0x20</size>
@@ -31461,8 +31464,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT4R</name>
-               <displayName>DFSDM_CHWDAT4R</displayName>
+               <name>CHWDAT4R</name>
+               <displayName>CHWDAT4R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x70</addressOffset>
                <size>0x20</size>
@@ -31478,8 +31481,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT5R</name>
-               <displayName>DFSDM_CHWDAT5R</displayName>
+               <name>CHWDAT5R</name>
+               <displayName>CHWDAT5R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x74</addressOffset>
                <size>0x20</size>
@@ -31495,8 +31498,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT6R</name>
-               <displayName>DFSDM_CHWDAT6R</displayName>
+               <name>CHWDAT6R</name>
+               <displayName>CHWDAT6R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x78</addressOffset>
                <size>0x20</size>
@@ -31512,8 +31515,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHWDAT7R</name>
-               <displayName>DFSDM_CHWDAT7R</displayName>
+               <name>CHWDAT7R</name>
+               <displayName>CHWDAT7R</displayName>
                <description>DFSDM channel watchdog filter data           register</description>
                <addressOffset>0x7C</addressOffset>
                <size>0x20</size>
@@ -31529,8 +31532,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN0R</name>
-               <displayName>DFSDM_CHDATIN0R</displayName>
+               <name>CHDATIN0R</name>
+               <displayName>CHDATIN0R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x80</addressOffset>
                <size>0x20</size>
@@ -31552,8 +31555,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN1R</name>
-               <displayName>DFSDM_CHDATIN1R</displayName>
+               <name>CHDATIN1R</name>
+               <displayName>CHDATIN1R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x84</addressOffset>
                <size>0x20</size>
@@ -31575,8 +31578,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN2R</name>
-               <displayName>DFSDM_CHDATIN2R</displayName>
+               <name>CHDATIN2R</name>
+               <displayName>CHDATIN2R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x88</addressOffset>
                <size>0x20</size>
@@ -31598,8 +31601,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN3R</name>
-               <displayName>DFSDM_CHDATIN3R</displayName>
+               <name>CHDATIN3R</name>
+               <displayName>CHDATIN3R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x8C</addressOffset>
                <size>0x20</size>
@@ -31621,8 +31624,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN4R</name>
-               <displayName>DFSDM_CHDATIN4R</displayName>
+               <name>CHDATIN4R</name>
+               <displayName>CHDATIN4R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x90</addressOffset>
                <size>0x20</size>
@@ -31644,8 +31647,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN5R</name>
-               <displayName>DFSDM_CHDATIN5R</displayName>
+               <name>CHDATIN5R</name>
+               <displayName>CHDATIN5R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x94</addressOffset>
                <size>0x20</size>
@@ -31667,8 +31670,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN6R</name>
-               <displayName>DFSDM_CHDATIN6R</displayName>
+               <name>CHDATIN6R</name>
+               <displayName>CHDATIN6R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x98</addressOffset>
                <size>0x20</size>
@@ -31690,8 +31693,8 @@
                </fields>
             </register>
             <register>
-               <name>DFSDM_CHDATIN7R</name>
-               <displayName>DFSDM_CHDATIN7R</displayName>
+               <name>CHDATIN7R</name>
+               <displayName>CHDATIN7R</displayName>
                <description>DFSDM channel data input           register</description>
                <addressOffset>0x9C</addressOffset>
                <size>0x20</size>
@@ -33783,8 +33786,8 @@
          </interrupt>
          <registers>
             <register>
-               <name>JPEG_CONFR0</name>
-               <displayName>JPEG_CONFR0</displayName>
+               <name>CONFR0</name>
+               <displayName>CONFR0</displayName>
                <description>JPEG codec configuration register           0</description>
                <addressOffset>0x0</addressOffset>
                <size>0x20</size>
@@ -33800,8 +33803,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR1</name>
-               <displayName>JPEG_CONFR1</displayName>
+               <name>CONFR1</name>
+               <displayName>CONFR1</displayName>
                <description>JPEG codec configuration register           1</description>
                <addressOffset>0x4</addressOffset>
                <size>0x20</size>
@@ -33847,8 +33850,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR2</name>
-               <displayName>JPEG_CONFR2</displayName>
+               <name>CONFR2</name>
+               <displayName>CONFR2</displayName>
                <description>JPEG codec configuration register           2</description>
                <addressOffset>0x8</addressOffset>
                <size>0x20</size>
@@ -33864,8 +33867,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR3</name>
-               <displayName>JPEG_CONFR3</displayName>
+               <name>CONFR3</name>
+               <displayName>CONFR3</displayName>
                <description>JPEG codec configuration register           3</description>
                <addressOffset>0xC</addressOffset>
                <size>0x20</size>
@@ -33881,8 +33884,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR4</name>
-               <displayName>JPEG_CONFR4</displayName>
+               <name>CONFR4</name>
+               <displayName>CONFR4</displayName>
                <description>JPEG codec configuration register           4</description>
                <addressOffset>0x10</addressOffset>
                <size>0x20</size>
@@ -33928,8 +33931,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR5</name>
-               <displayName>JPEG_CONFR5</displayName>
+               <name>CONFR5</name>
+               <displayName>CONFR5</displayName>
                <description>JPEG codec configuration register           5</description>
                <addressOffset>0x14</addressOffset>
                <size>0x20</size>
@@ -33975,8 +33978,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR6</name>
-               <displayName>JPEG_CONFR6</displayName>
+               <name>CONFR6</name>
+               <displayName>CONFR6</displayName>
                <description>JPEG codec configuration register           6</description>
                <addressOffset>0x18</addressOffset>
                <size>0x20</size>
@@ -34022,8 +34025,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CONFR7</name>
-               <displayName>JPEG_CONFR7</displayName>
+               <name>CONFR7</name>
+               <displayName>CONFR7</displayName>
                <description>JPEG codec configuration register           7</description>
                <addressOffset>0x1C</addressOffset>
                <size>0x20</size>
@@ -34069,8 +34072,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CR</name>
-               <displayName>JPEG_CR</displayName>
+               <name>CR</name>
+               <displayName>CR</displayName>
                <description>JPEG control register</description>
                <addressOffset>0x30</addressOffset>
                <size>0x20</size>
@@ -34156,8 +34159,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_SR</name>
-               <displayName>JPEG_SR</displayName>
+               <name>SR</name>
+               <displayName>SR</displayName>
                <description>JPEG status register</description>
                <addressOffset>0x34</addressOffset>
                <size>0x20</size>
@@ -34209,8 +34212,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_CFR</name>
-               <displayName>JPEG_CFR</displayName>
+               <name>CFR</name>
+               <displayName>CFR</displayName>
                <description>JPEG clear flag register</description>
                <addressOffset>0x38</addressOffset>
                <size>0x20</size>
@@ -34232,8 +34235,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_DIR</name>
-               <displayName>JPEG_DIR</displayName>
+               <name>DIR</name>
+               <displayName>DIR</displayName>
                <description>JPEG data input register</description>
                <addressOffset>0x40</addressOffset>
                <size>0x20</size>
@@ -34249,8 +34252,8 @@
                </fields>
             </register>
             <register>
-               <name>JPEG_DOR</name>
-               <displayName>JPEG_DOR</displayName>
+               <name>DOR</name>
+               <displayName>DOR</displayName>
                <description>JPEG data output register</description>
                <addressOffset>0x44</addressOffset>
                <size>0x20</size>
@@ -62540,8 +62543,8 @@
          </addressBlock>
          <registers>
             <register>
-               <name>MPU_TYPER</name>
-               <displayName>MPU_TYPER</displayName>
+               <name>TYPER</name>
+               <displayName>TYPER</displayName>
                <description>MPU type register</description>
                <addressOffset>0x0</addressOffset>
                <size>0x20</size>
@@ -62569,8 +62572,8 @@
                </fields>
             </register>
             <register>
-               <name>MPU_CTRL</name>
-               <displayName>MPU_CTRL</displayName>
+               <name>CTRL</name>
+               <displayName>CTRL</displayName>
                <description>MPU control register</description>
                <addressOffset>0x4</addressOffset>
                <size>0x20</size>
@@ -62598,8 +62601,8 @@
                </fields>
             </register>
             <register>
-               <name>MPU_RNR</name>
-               <displayName>MPU_RNR</displayName>
+               <name>RNR</name>
+               <displayName>RNR</displayName>
                <description>MPU region number register</description>
                <addressOffset>0x8</addressOffset>
                <size>0x20</size>
@@ -62615,8 +62618,8 @@
                </fields>
             </register>
             <register>
-               <name>MPU_RBAR</name>
-               <displayName>MPU_RBAR</displayName>
+               <name>RBAR</name>
+               <displayName>RBAR</displayName>
                <description>MPU region base address           register</description>
                <addressOffset>0xC</addressOffset>
                <size>0x20</size>
@@ -62644,8 +62647,8 @@
                </fields>
             </register>
             <register>
-               <name>MPU_RASR</name>
-               <displayName>MPU_RASR</displayName>
+               <name>RASR</name>
+               <displayName>RASR</displayName>
                <description>MPU region attribute and size           register</description>
                <addressOffset>0x10</addressOffset>
                <size>0x20</size>

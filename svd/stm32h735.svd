@@ -3541,6 +3541,7 @@
               periods</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
             </field>
             <field>
               <name>RXTOL</name>
@@ -3615,6 +3616,7 @@
               received.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>15</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
             </field>
             <field>
               <name>LSTN</name>
@@ -3642,6 +3644,7 @@
               TXSTART=1</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -15396,7 +15399,7 @@
               <description>MMC Receive LPI transition counter interrupt Mask</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -15441,7 +15444,7 @@
               <description>MMC Transmit LPI transition counter interrupt Mask</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -32375,8 +32378,8 @@
       </interrupt>
       <registers>
         <register>
-          <name>MDIOS_CR</name>
-          <displayName>MDIOS_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>MDIOS configuration register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -32424,8 +32427,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_WRFR</name>
-          <displayName>MDIOS_WRFR</displayName>
+          <name>WRFR</name>
+          <displayName>WRFR</displayName>
           <description>MDIOS write flag register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -32442,8 +32445,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_CWRFR</name>
-          <displayName>MDIOS_CWRFR</displayName>
+          <name>CWRFR</name>
+          <displayName>CWRFR</displayName>
           <description>MDIOS clear write flag
           register</description>
           <addressOffset>0x8</addressOffset>
@@ -32460,8 +32463,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_RDFR</name>
-          <displayName>MDIOS_RDFR</displayName>
+          <name>RDFR</name>
+          <displayName>RDFR</displayName>
           <description>MDIOS read flag register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -32478,8 +32481,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_CRDFR</name>
-          <displayName>MDIOS_CRDFR</displayName>
+          <name>CRDFR</name>
+          <displayName>CRDFR</displayName>
           <description>MDIOS clear read flag register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -32495,8 +32498,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_SR</name>
-          <displayName>MDIOS_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>MDIOS status register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -32524,8 +32527,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_CLRFR</name>
-          <displayName>MDIOS_CLRFR</displayName>
+          <name>CLRFR</name>
+          <displayName>CLRFR</displayName>
           <description>MDIOS clear flag register</description>
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
@@ -32555,8 +32558,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR0</name>
-          <displayName>MDIOS_DINR0</displayName>
+          <name>DINR0</name>
+          <displayName>DINR0</displayName>
           <description>MDIOS input data register 0</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
@@ -32573,8 +32576,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR1</name>
-          <displayName>MDIOS_DINR1</displayName>
+          <name>DINR1</name>
+          <displayName>DINR1</displayName>
           <description>MDIOS input data register 1</description>
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
@@ -32591,8 +32594,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR2</name>
-          <displayName>MDIOS_DINR2</displayName>
+          <name>DINR2</name>
+          <displayName>DINR2</displayName>
           <description>MDIOS input data register 2</description>
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
@@ -32609,8 +32612,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR3</name>
-          <displayName>MDIOS_DINR3</displayName>
+          <name>DINR3</name>
+          <displayName>DINR3</displayName>
           <description>MDIOS input data register 3</description>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
@@ -32627,8 +32630,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR4</name>
-          <displayName>MDIOS_DINR4</displayName>
+          <name>DINR4</name>
+          <displayName>DINR4</displayName>
           <description>MDIOS input data register 4</description>
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
@@ -32645,8 +32648,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR5</name>
-          <displayName>MDIOS_DINR5</displayName>
+          <name>DINR5</name>
+          <displayName>DINR5</displayName>
           <description>MDIOS input data register 5</description>
           <addressOffset>0x30</addressOffset>
           <size>0x20</size>
@@ -32663,8 +32666,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR6</name>
-          <displayName>MDIOS_DINR6</displayName>
+          <name>DINR6</name>
+          <displayName>DINR6</displayName>
           <description>MDIOS input data register 6</description>
           <addressOffset>0x34</addressOffset>
           <size>0x20</size>
@@ -32681,8 +32684,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR7</name>
-          <displayName>MDIOS_DINR7</displayName>
+          <name>DINR7</name>
+          <displayName>DINR7</displayName>
           <description>MDIOS input data register 7</description>
           <addressOffset>0x38</addressOffset>
           <size>0x20</size>
@@ -32699,8 +32702,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR8</name>
-          <displayName>MDIOS_DINR8</displayName>
+          <name>DINR8</name>
+          <displayName>DINR8</displayName>
           <description>MDIOS input data register 8</description>
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
@@ -32717,8 +32720,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR9</name>
-          <displayName>MDIOS_DINR9</displayName>
+          <name>DINR9</name>
+          <displayName>DINR9</displayName>
           <description>MDIOS input data register 9</description>
           <addressOffset>0x40</addressOffset>
           <size>0x20</size>
@@ -32735,8 +32738,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR10</name>
-          <displayName>MDIOS_DINR10</displayName>
+          <name>DINR10</name>
+          <displayName>DINR10</displayName>
           <description>MDIOS input data register 10</description>
           <addressOffset>0x44</addressOffset>
           <size>0x20</size>
@@ -32753,8 +32756,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR11</name>
-          <displayName>MDIOS_DINR11</displayName>
+          <name>DINR11</name>
+          <displayName>DINR11</displayName>
           <description>MDIOS input data register 11</description>
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
@@ -32771,8 +32774,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR12</name>
-          <displayName>MDIOS_DINR12</displayName>
+          <name>DINR12</name>
+          <displayName>DINR12</displayName>
           <description>MDIOS input data register 12</description>
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
@@ -32789,8 +32792,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR13</name>
-          <displayName>MDIOS_DINR13</displayName>
+          <name>DINR13</name>
+          <displayName>DINR13</displayName>
           <description>MDIOS input data register 13</description>
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
@@ -32807,8 +32810,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR14</name>
-          <displayName>MDIOS_DINR14</displayName>
+          <name>DINR14</name>
+          <displayName>DINR14</displayName>
           <description>MDIOS input data register 14</description>
           <addressOffset>0x54</addressOffset>
           <size>0x20</size>
@@ -32825,8 +32828,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR15</name>
-          <displayName>MDIOS_DINR15</displayName>
+          <name>DINR15</name>
+          <displayName>DINR15</displayName>
           <description>MDIOS input data register 15</description>
           <addressOffset>0x58</addressOffset>
           <size>0x20</size>
@@ -32843,8 +32846,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR16</name>
-          <displayName>MDIOS_DINR16</displayName>
+          <name>DINR16</name>
+          <displayName>DINR16</displayName>
           <description>MDIOS input data register 16</description>
           <addressOffset>0x5C</addressOffset>
           <size>0x20</size>
@@ -32861,8 +32864,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR17</name>
-          <displayName>MDIOS_DINR17</displayName>
+          <name>DINR17</name>
+          <displayName>DINR17</displayName>
           <description>MDIOS input data register 17</description>
           <addressOffset>0x60</addressOffset>
           <size>0x20</size>
@@ -32879,8 +32882,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR18</name>
-          <displayName>MDIOS_DINR18</displayName>
+          <name>DINR18</name>
+          <displayName>DINR18</displayName>
           <description>MDIOS input data register 18</description>
           <addressOffset>0x64</addressOffset>
           <size>0x20</size>
@@ -32897,8 +32900,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR19</name>
-          <displayName>MDIOS_DINR19</displayName>
+          <name>DINR19</name>
+          <displayName>DINR19</displayName>
           <description>MDIOS input data register 19</description>
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
@@ -32915,8 +32918,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR20</name>
-          <displayName>MDIOS_DINR20</displayName>
+          <name>DINR20</name>
+          <displayName>DINR20</displayName>
           <description>MDIOS input data register 20</description>
           <addressOffset>0x6C</addressOffset>
           <size>0x20</size>
@@ -32933,8 +32936,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR21</name>
-          <displayName>MDIOS_DINR21</displayName>
+          <name>DINR21</name>
+          <displayName>DINR21</displayName>
           <description>MDIOS input data register 21</description>
           <addressOffset>0x70</addressOffset>
           <size>0x20</size>
@@ -32951,8 +32954,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR22</name>
-          <displayName>MDIOS_DINR22</displayName>
+          <name>DINR22</name>
+          <displayName>DINR22</displayName>
           <description>MDIOS input data register 22</description>
           <addressOffset>0x74</addressOffset>
           <size>0x20</size>
@@ -32969,8 +32972,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR23</name>
-          <displayName>MDIOS_DINR23</displayName>
+          <name>DINR23</name>
+          <displayName>DINR23</displayName>
           <description>MDIOS input data register 23</description>
           <addressOffset>0x78</addressOffset>
           <size>0x20</size>
@@ -32987,8 +32990,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR24</name>
-          <displayName>MDIOS_DINR24</displayName>
+          <name>DINR24</name>
+          <displayName>DINR24</displayName>
           <description>MDIOS input data register 24</description>
           <addressOffset>0x7C</addressOffset>
           <size>0x20</size>
@@ -33005,8 +33008,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR25</name>
-          <displayName>MDIOS_DINR25</displayName>
+          <name>DINR25</name>
+          <displayName>DINR25</displayName>
           <description>MDIOS input data register 25</description>
           <addressOffset>0x80</addressOffset>
           <size>0x20</size>
@@ -33023,8 +33026,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR26</name>
-          <displayName>MDIOS_DINR26</displayName>
+          <name>DINR26</name>
+          <displayName>DINR26</displayName>
           <description>MDIOS input data register 26</description>
           <addressOffset>0x84</addressOffset>
           <size>0x20</size>
@@ -33041,8 +33044,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR27</name>
-          <displayName>MDIOS_DINR27</displayName>
+          <name>DINR27</name>
+          <displayName>DINR27</displayName>
           <description>MDIOS input data register 27</description>
           <addressOffset>0x88</addressOffset>
           <size>0x20</size>
@@ -33059,8 +33062,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR28</name>
-          <displayName>MDIOS_DINR28</displayName>
+          <name>DINR28</name>
+          <displayName>DINR28</displayName>
           <description>MDIOS input data register 28</description>
           <addressOffset>0x8C</addressOffset>
           <size>0x20</size>
@@ -33077,8 +33080,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR29</name>
-          <displayName>MDIOS_DINR29</displayName>
+          <name>DINR29</name>
+          <displayName>DINR29</displayName>
           <description>MDIOS input data register 29</description>
           <addressOffset>0x90</addressOffset>
           <size>0x20</size>
@@ -33095,8 +33098,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR30</name>
-          <displayName>MDIOS_DINR30</displayName>
+          <name>DINR30</name>
+          <displayName>DINR30</displayName>
           <description>MDIOS input data register 30</description>
           <addressOffset>0x94</addressOffset>
           <size>0x20</size>
@@ -33113,8 +33116,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DINR31</name>
-          <displayName>MDIOS_DINR31</displayName>
+          <name>DINR31</name>
+          <displayName>DINR31</displayName>
           <description>MDIOS input data register 31</description>
           <addressOffset>0x98</addressOffset>
           <size>0x20</size>
@@ -33131,8 +33134,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR0</name>
-          <displayName>MDIOS_DOUTR0</displayName>
+          <name>DOUTR0</name>
+          <displayName>DOUTR0</displayName>
           <description>MDIOS output data register 0</description>
           <addressOffset>0x9C</addressOffset>
           <size>0x20</size>
@@ -33149,8 +33152,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR1</name>
-          <displayName>MDIOS_DOUTR1</displayName>
+          <name>DOUTR1</name>
+          <displayName>DOUTR1</displayName>
           <description>MDIOS output data register 1</description>
           <addressOffset>0xA0</addressOffset>
           <size>0x20</size>
@@ -33167,8 +33170,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR2</name>
-          <displayName>MDIOS_DOUTR2</displayName>
+          <name>DOUTR2</name>
+          <displayName>DOUTR2</displayName>
           <description>MDIOS output data register 2</description>
           <addressOffset>0xA4</addressOffset>
           <size>0x20</size>
@@ -33185,8 +33188,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR3</name>
-          <displayName>MDIOS_DOUTR3</displayName>
+          <name>DOUTR3</name>
+          <displayName>DOUTR3</displayName>
           <description>MDIOS output data register 3</description>
           <addressOffset>0xA8</addressOffset>
           <size>0x20</size>
@@ -33203,8 +33206,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR4</name>
-          <displayName>MDIOS_DOUTR4</displayName>
+          <name>DOUTR4</name>
+          <displayName>DOUTR4</displayName>
           <description>MDIOS output data register 4</description>
           <addressOffset>0xAC</addressOffset>
           <size>0x20</size>
@@ -33221,8 +33224,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR5</name>
-          <displayName>MDIOS_DOUTR5</displayName>
+          <name>DOUTR5</name>
+          <displayName>DOUTR5</displayName>
           <description>MDIOS output data register 5</description>
           <addressOffset>0xB0</addressOffset>
           <size>0x20</size>
@@ -33239,8 +33242,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR6</name>
-          <displayName>MDIOS_DOUTR6</displayName>
+          <name>DOUTR6</name>
+          <displayName>DOUTR6</displayName>
           <description>MDIOS output data register 6</description>
           <addressOffset>0xB4</addressOffset>
           <size>0x20</size>
@@ -33257,8 +33260,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR7</name>
-          <displayName>MDIOS_DOUTR7</displayName>
+          <name>DOUTR7</name>
+          <displayName>DOUTR7</displayName>
           <description>MDIOS output data register 7</description>
           <addressOffset>0xB8</addressOffset>
           <size>0x20</size>
@@ -33275,8 +33278,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR8</name>
-          <displayName>MDIOS_DOUTR8</displayName>
+          <name>DOUTR8</name>
+          <displayName>DOUTR8</displayName>
           <description>MDIOS output data register 8</description>
           <addressOffset>0xBC</addressOffset>
           <size>0x20</size>
@@ -33293,8 +33296,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR9</name>
-          <displayName>MDIOS_DOUTR9</displayName>
+          <name>DOUTR9</name>
+          <displayName>DOUTR9</displayName>
           <description>MDIOS output data register 9</description>
           <addressOffset>0xC0</addressOffset>
           <size>0x20</size>
@@ -33311,8 +33314,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR10</name>
-          <displayName>MDIOS_DOUTR10</displayName>
+          <name>DOUTR10</name>
+          <displayName>DOUTR10</displayName>
           <description>MDIOS output data register 10</description>
           <addressOffset>0xC4</addressOffset>
           <size>0x20</size>
@@ -33329,8 +33332,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR11</name>
-          <displayName>MDIOS_DOUTR11</displayName>
+          <name>DOUTR11</name>
+          <displayName>DOUTR11</displayName>
           <description>MDIOS output data register 11</description>
           <addressOffset>0xC8</addressOffset>
           <size>0x20</size>
@@ -33347,8 +33350,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR12</name>
-          <displayName>MDIOS_DOUTR12</displayName>
+          <name>DOUTR12</name>
+          <displayName>DOUTR12</displayName>
           <description>MDIOS output data register 12</description>
           <addressOffset>0xCC</addressOffset>
           <size>0x20</size>
@@ -33365,8 +33368,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR13</name>
-          <displayName>MDIOS_DOUTR13</displayName>
+          <name>DOUTR13</name>
+          <displayName>DOUTR13</displayName>
           <description>MDIOS output data register 13</description>
           <addressOffset>0xD0</addressOffset>
           <size>0x20</size>
@@ -33383,8 +33386,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR14</name>
-          <displayName>MDIOS_DOUTR14</displayName>
+          <name>DOUTR14</name>
+          <displayName>DOUTR14</displayName>
           <description>MDIOS output data register 14</description>
           <addressOffset>0xD4</addressOffset>
           <size>0x20</size>
@@ -33401,8 +33404,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR15</name>
-          <displayName>MDIOS_DOUTR15</displayName>
+          <name>DOUTR15</name>
+          <displayName>DOUTR15</displayName>
           <description>MDIOS output data register 15</description>
           <addressOffset>0xD8</addressOffset>
           <size>0x20</size>
@@ -33419,8 +33422,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR16</name>
-          <displayName>MDIOS_DOUTR16</displayName>
+          <name>DOUTR16</name>
+          <displayName>DOUTR16</displayName>
           <description>MDIOS output data register 16</description>
           <addressOffset>0xDC</addressOffset>
           <size>0x20</size>
@@ -33437,8 +33440,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR17</name>
-          <displayName>MDIOS_DOUTR17</displayName>
+          <name>DOUTR17</name>
+          <displayName>DOUTR17</displayName>
           <description>MDIOS output data register 17</description>
           <addressOffset>0xE0</addressOffset>
           <size>0x20</size>
@@ -33455,8 +33458,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR18</name>
-          <displayName>MDIOS_DOUTR18</displayName>
+          <name>DOUTR18</name>
+          <displayName>DOUTR18</displayName>
           <description>MDIOS output data register 18</description>
           <addressOffset>0xE4</addressOffset>
           <size>0x20</size>
@@ -33473,8 +33476,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR19</name>
-          <displayName>MDIOS_DOUTR19</displayName>
+          <name>DOUTR19</name>
+          <displayName>DOUTR19</displayName>
           <description>MDIOS output data register 19</description>
           <addressOffset>0xE8</addressOffset>
           <size>0x20</size>
@@ -33491,8 +33494,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR20</name>
-          <displayName>MDIOS_DOUTR20</displayName>
+          <name>DOUTR20</name>
+          <displayName>DOUTR20</displayName>
           <description>MDIOS output data register 20</description>
           <addressOffset>0xEC</addressOffset>
           <size>0x20</size>
@@ -33509,8 +33512,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR21</name>
-          <displayName>MDIOS_DOUTR21</displayName>
+          <name>DOUTR21</name>
+          <displayName>DOUTR21</displayName>
           <description>MDIOS output data register 21</description>
           <addressOffset>0xF0</addressOffset>
           <size>0x20</size>
@@ -33527,8 +33530,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR22</name>
-          <displayName>MDIOS_DOUTR22</displayName>
+          <name>DOUTR22</name>
+          <displayName>DOUTR22</displayName>
           <description>MDIOS output data register 22</description>
           <addressOffset>0xF4</addressOffset>
           <size>0x20</size>
@@ -33545,8 +33548,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR23</name>
-          <displayName>MDIOS_DOUTR23</displayName>
+          <name>DOUTR23</name>
+          <displayName>DOUTR23</displayName>
           <description>MDIOS output data register 23</description>
           <addressOffset>0xF8</addressOffset>
           <size>0x20</size>
@@ -33563,8 +33566,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR24</name>
-          <displayName>MDIOS_DOUTR24</displayName>
+          <name>DOUTR24</name>
+          <displayName>DOUTR24</displayName>
           <description>MDIOS output data register 24</description>
           <addressOffset>0xFC</addressOffset>
           <size>0x20</size>
@@ -33581,8 +33584,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR25</name>
-          <displayName>MDIOS_DOUTR25</displayName>
+          <name>DOUTR25</name>
+          <displayName>DOUTR25</displayName>
           <description>MDIOS output data register 25</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -33599,8 +33602,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR26</name>
-          <displayName>MDIOS_DOUTR26</displayName>
+          <name>DOUTR26</name>
+          <displayName>DOUTR26</displayName>
           <description>MDIOS output data register 26</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
@@ -33617,8 +33620,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR27</name>
-          <displayName>MDIOS_DOUTR27</displayName>
+          <name>DOUTR27</name>
+          <displayName>DOUTR27</displayName>
           <description>MDIOS output data register 27</description>
           <addressOffset>0x108</addressOffset>
           <size>0x20</size>
@@ -33635,8 +33638,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR28</name>
-          <displayName>MDIOS_DOUTR28</displayName>
+          <name>DOUTR28</name>
+          <displayName>DOUTR28</displayName>
           <description>MDIOS output data register 28</description>
           <addressOffset>0x10C</addressOffset>
           <size>0x20</size>
@@ -33653,8 +33656,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR29</name>
-          <displayName>MDIOS_DOUTR29</displayName>
+          <name>DOUTR29</name>
+          <displayName>DOUTR29</displayName>
           <description>MDIOS output data register 29</description>
           <addressOffset>0x110</addressOffset>
           <size>0x20</size>
@@ -33671,8 +33674,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR30</name>
-          <displayName>MDIOS_DOUTR30</displayName>
+          <name>DOUTR30</name>
+          <displayName>DOUTR30</displayName>
           <description>MDIOS output data register 30</description>
           <addressOffset>0x114</addressOffset>
           <size>0x20</size>
@@ -33689,8 +33692,8 @@
           </fields>
         </register>
         <register>
-          <name>MDIOS_DOUTR31</name>
-          <displayName>MDIOS_DOUTR31</displayName>
+          <name>DOUTR31</name>
+          <displayName>DOUTR31</displayName>
           <description>MDIOS output data register 31</description>
           <addressOffset>0x118</addressOffset>
           <size>0x20</size>
@@ -34588,8 +34591,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -34618,8 +34621,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -34649,8 +34652,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -34666,8 +34669,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -34696,8 +34699,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>

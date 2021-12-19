@@ -5917,6 +5917,7 @@
               periods</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
             </field>
             <field>
               <name>RXTOL</name>
@@ -5991,6 +5992,7 @@
               received.</description>
               <bitOffset>16</bitOffset>
               <bitWidth>15</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
             </field>
             <field>
               <name>LSTN</name>
@@ -6018,6 +6020,7 @@
               TXSTART=1</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -52310,7 +52313,7 @@
               <description>MMC Receive LPI transition counter interrupt Mask</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -52355,7 +52358,7 @@
               <description>MMC Transmit LPI transition counter interrupt Mask</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -84670,8 +84673,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -84700,8 +84703,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -84731,8 +84734,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -84748,8 +84751,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -84778,8 +84781,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>

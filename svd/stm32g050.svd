@@ -50,8 +50,8 @@ Copyright (c) 2021 STMicroelectronics.
         </interrupt>
         <registers>
           <register>
-            <name>ADC_ISR</name>
-            <displayName>ADC_ISR</displayName>
+            <name>ISR</name>
+            <displayName>ISR</displayName>
             <description>ADC interrupt and status register</description>
             <addressOffset>0x0</addressOffset>
             <size>0x20</size>
@@ -263,8 +263,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_IER</name>
-            <displayName>ADC_IER</displayName>
+            <name>IER</name>
+            <displayName>IER</displayName>
             <description>ADC interrupt enable register </description>
             <addressOffset>0x4</addressOffset>
             <size>0x20</size>
@@ -484,8 +484,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CR</name>
-            <displayName>ADC_CR</displayName>
+            <name>CR</name>
+            <displayName>CR</displayName>
             <description>ADC control register</description>
             <addressOffset>0x8</addressOffset>
             <size>0x20</size>
@@ -632,8 +632,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CFGR1</name>
-            <displayName>ADC_CFGR1</displayName>
+            <name>CFGR1</name>
+            <displayName>CFGR1</displayName>
             <description>ADC configuration register 1</description>
             <addressOffset>0xc</addressOffset>
             <size>0x20</size>
@@ -1047,8 +1047,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CFGR2</name>
-            <displayName>ADC_CFGR2</displayName>
+            <name>CFGR2</name>
+            <displayName>CFGR2</displayName>
             <description>ADC configuration register 2</description>
             <addressOffset>0x10</addressOffset>
             <size>0x20</size>
@@ -1261,8 +1261,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_SMPR</name>
-            <displayName>ADC_SMPR</displayName>
+            <name>SMPR</name>
+            <displayName>SMPR</displayName>
             <description>ADC sampling time register</description>
             <addressOffset>0x14</addressOffset>
             <size>0x20</size>
@@ -1792,8 +1792,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_AWD1TR</name>
-            <displayName>ADC_AWD1TR</displayName>
+            <name>AWD1TR</name>
+            <displayName>AWD1TR</displayName>
             <description>ADC watchdog threshold register</description>
             <addressOffset>0x20</addressOffset>
             <size>0x20</size>
@@ -1821,8 +1821,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_AWD2TR</name>
-            <displayName>ADC_AWD2TR</displayName>
+            <name>AWD2TR</name>
+            <displayName>AWD2TR</displayName>
             <description>ADC watchdog threshold register</description>
             <addressOffset>0x24</addressOffset>
             <size>0x20</size>
@@ -1850,8 +1850,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CHSELRMOD0</name>
-            <displayName>ADC_CHSELRMOD0</displayName>
+            <name>CHSELRMOD0</name>
+            <displayName>CHSELRMOD0</displayName>
             <description>ADC channel selection register</description>
             <addressOffset>0x28</addressOffset>
             <size>0x20</size>
@@ -2298,8 +2298,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CHSELRMOD1</name>
-            <displayName>ADC_CHSELRMOD1</displayName>
+            <name>CHSELRMOD1</name>
+            <displayName>CHSELRMOD1</displayName>
             <description>ADC channel selection register</description>
             <alternateRegister>ADC_CHSELRMOD0</alternateRegister>
             <addressOffset>0x28</addressOffset>
@@ -2430,8 +2430,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_AWD3TR</name>
-            <displayName>ADC_AWD3TR</displayName>
+            <name>AWD3TR</name>
+            <displayName>AWD3TR</displayName>
             <description>ADC watchdog threshold register</description>
             <addressOffset>0x2c</addressOffset>
             <size>0x20</size>
@@ -2459,8 +2459,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_DR</name>
-            <displayName>ADC_DR</displayName>
+            <name>DR</name>
+            <displayName>DR</displayName>
             <description>ADC data register</description>
             <addressOffset>0x40</addressOffset>
             <size>0x20</size>
@@ -2479,8 +2479,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_AWD2CR</name>
-            <displayName>ADC_AWD2CR</displayName>
+            <name>AWD2CR</name>
+            <displayName>AWD2CR</displayName>
             <description>ADC Analog Watchdog 2 Configuration register</description>
             <addressOffset>0xa0</addressOffset>
             <size>0x20</size>
@@ -2908,8 +2908,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_AWD3CR</name>
-            <displayName>ADC_AWD3CR</displayName>
+            <name>AWD3CR</name>
+            <displayName>AWD3CR</displayName>
             <description>ADC Analog Watchdog 3 Configuration register</description>
             <addressOffset>0xa4</addressOffset>
             <size>0x20</size>
@@ -3337,8 +3337,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CALFACT</name>
-            <displayName>ADC_CALFACT</displayName>
+            <name>CALFACT</name>
+            <displayName>CALFACT</displayName>
             <description>ADC Calibration factor</description>
             <addressOffset>0xb4</addressOffset>
             <size>0x20</size>
@@ -3360,8 +3360,8 @@ Copyright (c) 2021 STMicroelectronics.
             </fields>
           </register>
           <register>
-            <name>ADC_CCR</name>
-            <displayName>ADC_CCR</displayName>
+            <name>CCR</name>
+            <displayName>CCR</displayName>
             <description>ADC common configuration register</description>
             <addressOffset>0x308</addressOffset>
             <size>0x20</size>
@@ -3520,8 +3520,8 @@ Note: Software is allowed to write these bits only when the ADC is disabled (ADC
       </addressBlock>
       <registers>
         <register>
-          <name>CRC_DR</name>
-          <displayName>CRC_DR</displayName>
+          <name>DR</name>
+          <displayName>DR</displayName>
           <description>Data register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -3537,8 +3537,8 @@ Note: Software is allowed to write these bits only when the ADC is disabled (ADC
           </fields>
         </register>
         <register>
-          <name>CRC_IDR</name>
-          <displayName>CRC_IDR</displayName>
+          <name>IDR</name>
+          <displayName>IDR</displayName>
           <description>Independent data register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -3555,8 +3555,8 @@ Note: Software is allowed to write these bits only when the ADC is disabled (ADC
           </fields>
         </register>
         <register>
-          <name>CRC_CR</name>
-          <displayName>CRC_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>Control register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -3652,8 +3652,8 @@ These bits control the size of the polynomial.</description>
           </fields>
         </register>
         <register>
-          <name>CRC_INIT</name>
-          <displayName>CRC_INIT</displayName>
+          <name>INIT</name>
+          <displayName>INIT</displayName>
           <description>Initial CRC value</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -3670,8 +3670,8 @@ These bits control the size of the polynomial.</description>
           </fields>
         </register>
         <register>
-          <name>CRC_POL</name>
-          <displayName>CRC_POL</displayName>
+          <name>POL</name>
+          <displayName>POL</displayName>
           <description>polynomial</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -3723,8 +3723,8 @@ These bits control the size of the polynomial.</description>
             </fields>
           </register>
           <register>
-            <name>DBG_CR</name>
-            <displayName>DBG_CR</displayName>
+            <name>CR</name>
+            <displayName>CR</displayName>
             <description>DBG configuration register </description>
             <addressOffset>0x4</addressOffset>
             <size>0x20</size>
@@ -3775,8 +3775,8 @@ Debug options in Standby or Shutdown mode.</description>
             </fields>
           </register>
           <register>
-            <name>DBG_APB_FZ1</name>
-            <displayName>DBG_APB_FZ1</displayName>
+            <name>APB_FZ1</name>
+            <displayName>APB_FZ1</displayName>
             <description>DBG APB freeze register 1 </description>
             <addressOffset>0x8</addressOffset>
             <size>0x20</size>
@@ -3932,8 +3932,8 @@ This bit enables/disables the clock to the counter of IWDG when the core is halt
             </fields>
           </register>
           <register>
-            <name>DBG_APB_FZ2</name>
-            <displayName>DBG_APB_FZ2</displayName>
+            <name>APB_FZ2</name>
+            <displayName>APB_FZ2</displayName>
             <description>DBG APB freeze register 2 </description>
             <addressOffset>0xc</addressOffset>
             <size>0x20</size>
@@ -4062,8 +4062,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
       </interrupt>
       <registers>
         <register>
-          <name>DMAMUX_C0CR</name>
-          <displayName>DMAMUX_C0CR</displayName>
+          <name>C0CR</name>
+          <displayName>C0CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -4185,8 +4185,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C1CR</name>
-          <displayName>DMAMUX_C1CR</displayName>
+          <name>C1CR</name>
+          <displayName>C1CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -4308,8 +4308,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C2CR</name>
-          <displayName>DMAMUX_C2CR</displayName>
+          <name>C2CR</name>
+          <displayName>C2CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -4431,8 +4431,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C3CR</name>
-          <displayName>DMAMUX_C3CR</displayName>
+          <name>C3CR</name>
+          <displayName>C3CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -4554,8 +4554,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C4CR</name>
-          <displayName>DMAMUX_C4CR</displayName>
+          <name>C4CR</name>
+          <displayName>C4CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -4677,8 +4677,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C5CR</name>
-          <displayName>DMAMUX_C5CR</displayName>
+          <name>C5CR</name>
+          <displayName>C5CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
@@ -4800,8 +4800,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_C6CR</name>
-          <displayName>DMAMUX_C6CR</displayName>
+          <name>C6CR</name>
+          <displayName>C6CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
@@ -4923,8 +4923,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>		
 		<register>
-          <name>DMAMUX_C7CR</name>
-          <displayName>DMAMUX_C7CR</displayName>
+          <name>C7CR</name>
+          <displayName>C7CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
@@ -5046,8 +5046,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
 		<register>
-          <name>DMAMUX_C8CR</name>
-          <displayName>DMAMUX_C8CR</displayName>
+          <name>C8CR</name>
+          <displayName>C8CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
@@ -5169,8 +5169,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
 		<register>
-          <name>DMAMUX_C9CR</name>
-          <displayName>DMAMUX_C9CR</displayName>
+          <name>C9CR</name>
+          <displayName>C9CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
@@ -5292,8 +5292,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
 		<register>
-          <name>DMAMUX_C10CR</name>
-          <displayName>DMAMUX_C10CR</displayName>
+          <name>C10CR</name>
+          <displayName>C10CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
@@ -5415,8 +5415,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
 		<register>
-          <name>DMAMUX_C11CR</name>
-          <displayName>DMAMUX_C11CR</displayName>
+          <name>C11CR</name>
+          <displayName>C11CR</displayName>
           <description>DMAMUX request line multiplexer channel x configuration register</description>
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
@@ -5538,8 +5538,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>												
         <register>
-          <name>DMAMUX_CSR</name>
-          <displayName>DMAMUX_CSR</displayName>
+          <name>CSR</name>
+          <displayName>CSR</displayName>
           <description>DMAMUX request line multiplexer interrupt channel status register</description>
           <addressOffset>0x80</addressOffset>
           <size>0x20</size>
@@ -5657,8 +5657,8 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
           </fields>
         </register>
         <register>
-          <name>DMAMUX_CFR</name>
-          <displayName>DMAMUX_CFR</displayName>
+          <name>CFR</name>
+          <displayName>CFR</displayName>
           <description>DMAMUX request line multiplexer interrupt clear flag register</description>
           <addressOffset>0x84</addressOffset>
           <size>0x20</size>
@@ -5764,8 +5764,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG0CR</name>
-          <displayName>DMAMUX_RG0CR</displayName>
+          <name>RG0CR</name>
+          <displayName>RG0CR</displayName>
           <description>DMAMUX request generator channel x configuration register</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -5860,8 +5860,8 @@ Note: This field shall only be written when GE bit is disabled.</description>
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG1CR</name>
-          <displayName>DMAMUX_RG1CR</displayName>
+          <name>RG1CR</name>
+          <displayName>RG1CR</displayName>
           <description>DMAMUX request generator channel x configuration register</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
@@ -5956,8 +5956,8 @@ Note: This field shall only be written when GE bit is disabled.</description>
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG2CR</name>
-          <displayName>DMAMUX_RG2CR</displayName>
+          <name>RG2CR</name>
+          <displayName>RG2CR</displayName>
           <description>DMAMUX request generator channel x configuration register</description>
           <addressOffset>0x108</addressOffset>
           <size>0x20</size>
@@ -6052,8 +6052,8 @@ Note: This field shall only be written when GE bit is disabled.</description>
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RG3CR</name>
-          <displayName>DMAMUX_RG3CR</displayName>
+          <name>RG3CR</name>
+          <displayName>RG3CR</displayName>
           <description>DMAMUX request generator channel x configuration register</description>
           <addressOffset>0x10C</addressOffset>
           <size>0x20</size>
@@ -6148,8 +6148,8 @@ Note: This field shall only be written when GE bit is disabled.</description>
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGSR</name>
-          <displayName>DMAMUX_RGSR</displayName>
+          <name>RGSR</name>
+          <displayName>RGSR</displayName>
           <description>DMAMUX request generator interrupt status register</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
@@ -6195,8 +6195,8 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
           </fields>
         </register>
         <register>
-          <name>DMAMUX_RGCFR</name>
-          <displayName>DMAMUX_RGCFR</displayName>
+          <name>RGCFR</name>
+          <displayName>RGCFR</displayName>
           <description>DMAMUX request generator interrupt clear flag register</description>
           <addressOffset>0x144</addressOffset>
           <size>0x20</size>
@@ -10228,8 +10228,8 @@ This flag is updated when an address match event occurs (ADDR=1).</description>
       </addressBlock>
       <registers>
         <register>
-          <name>IWDG_KR</name>
-          <displayName>IWDG_KR</displayName>
+          <name>KR</name>
+          <displayName>KR</displayName>
           <description>Key register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -10246,8 +10246,8 @@ This flag is updated when an address match event occurs (ADDR=1).</description>
           </fields>
         </register>
         <register>
-          <name>IWDG_PR</name>
-          <displayName>IWDG_PR</displayName>
+          <name>PR</name>
+          <displayName>PR</displayName>
           <description>Prescaler register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -10308,8 +10308,8 @@ Note: Reading this register returns the prescaler value from the VDD voltage dom
           </fields>
         </register>
         <register>
-          <name>IWDG_RLR</name>
-          <displayName>IWDG_RLR</displayName>
+          <name>RLR</name>
+          <displayName>RLR</displayName>
           <description>Reload register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -10326,8 +10326,8 @@ Note: Reading this register returns the prescaler value from the VDD voltage dom
           </fields>
         </register>
         <register>
-          <name>IWDG_SR</name>
-          <displayName>IWDG_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>Status register</description>
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
@@ -10364,8 +10364,8 @@ Window value can be updated only when WVU bit is reset.</description>
           </fields>
         </register>
         <register>
-          <name>IWDG_WINR</name>
-          <displayName>IWDG_WINR</displayName>
+          <name>WINR</name>
+          <displayName>WINR</displayName>
           <description>Window register</description>
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
@@ -24235,8 +24235,8 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
       </interrupt>
       <registers>
         <register>
-          <name>WWDG_CR</name>
-          <displayName>WWDG_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>Control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -24275,8 +24275,8 @@ This bit is set by software and only cleared by hardware after a reset. When WDG
           </fields>
         </register>
         <register>
-          <name>WWDG_CFR</name>
-          <displayName>WWDG_CFR</displayName>
+          <name>CFR</name>
+          <displayName>CFR</displayName>
           <description>Configuration register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -24352,8 +24352,8 @@ The timebase of the prescaler can be modified as follows:</description>
           </fields>
         </register>
         <register>
-          <name>WWDG_SR</name>
-          <displayName>WWDG_SR</displayName>
+          <name>SR</name>
+          <displayName>SR</displayName>
           <description>Status register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>

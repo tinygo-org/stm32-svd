@@ -40660,8 +40660,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>DMA2D_CR</name>
-          <displayName>DMA2D_CR</displayName>
+          <name>CR</name>
+          <displayName>CR</displayName>
           <description>DMA2D control register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -40757,8 +40757,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_ISR</name>
-          <displayName>DMA2D_ISR</displayName>
+          <name>ISR</name>
+          <displayName>ISR</displayName>
           <description>DMA2D Interrupt Status
           Register</description>
           <addressOffset>0x4</addressOffset>
@@ -40821,8 +40821,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_IFCR</name>
-          <displayName>DMA2D_IFCR</displayName>
+          <name>IFCR</name>
+          <displayName>IFCR</displayName>
           <description>DMA2D interrupt flag clear
           register</description>
           <addressOffset>0x8</addressOffset>
@@ -40881,8 +40881,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_FGMAR</name>
-          <displayName>DMA2D_FGMAR</displayName>
+          <name>FGMAR</name>
+          <displayName>FGMAR</displayName>
           <description>DMA2D foreground memory address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -40907,8 +40907,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_FGOR</name>
-          <displayName>DMA2D_FGOR</displayName>
+          <name>FGOR</name>
+          <displayName>FGOR</displayName>
           <description>DMA2D foreground offset
           register</description>
           <addressOffset>0x10</addressOffset>
@@ -40933,8 +40933,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_BGMAR</name>
-          <displayName>DMA2D_BGMAR</displayName>
+          <name>BGMAR</name>
+          <displayName>BGMAR</displayName>
           <description>DMA2D background memory address
           register</description>
           <addressOffset>0x14</addressOffset>
@@ -40959,8 +40959,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_BGOR</name>
-          <displayName>DMA2D_BGOR</displayName>
+          <name>BGOR</name>
+          <displayName>BGOR</displayName>
           <description>DMA2D background offset
           register</description>
           <addressOffset>0x18</addressOffset>
@@ -40985,8 +40985,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_FGPFCCR</name>
-          <displayName>DMA2D_FGPFCCR</displayName>
+          <name>FGPFCCR</name>
+          <displayName>FGPFCCR</displayName>
           <description>DMA2D foreground PFC control
           register</description>
           <addressOffset>0x1C</addressOffset>
@@ -41089,8 +41089,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_FGCOLR</name>
-          <displayName>DMA2D_FGCOLR</displayName>
+          <name>FGCOLR</name>
+          <displayName>FGCOLR</displayName>
           <description>DMA2D foreground color
           register</description>
           <addressOffset>0x20</addressOffset>
@@ -41131,8 +41131,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_BGPFCCR</name>
-          <displayName>DMA2D_BGPFCCR</displayName>
+          <name>BGPFCCR</name>
+          <displayName>BGPFCCR</displayName>
           <description>DMA2D background PFC control
           register</description>
           <addressOffset>0x24</addressOffset>
@@ -41225,8 +41225,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_BGCOLR</name>
-          <displayName>DMA2D_BGCOLR</displayName>
+          <name>BGCOLR</name>
+          <displayName>BGCOLR</displayName>
           <description>DMA2D background color
           register</description>
           <addressOffset>0x28</addressOffset>
@@ -41267,8 +41267,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_FGCMAR</name>
-          <displayName>DMA2D_FGCMAR</displayName>
+          <name>FGCMAR</name>
+          <displayName>FGCMAR</displayName>
           <description>DMA2D foreground CLUT memory address
           register</description>
           <addressOffset>0x2C</addressOffset>
@@ -41291,8 +41291,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_BGCMAR</name>
-          <displayName>DMA2D_BGCMAR</displayName>
+          <name>BGCMAR</name>
+          <displayName>BGCMAR</displayName>
           <description>DMA2D background CLUT memory address
           register</description>
           <addressOffset>0x30</addressOffset>
@@ -41315,8 +41315,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_OPFCCR</name>
-          <displayName>DMA2D_OPFCCR</displayName>
+          <name>OPFCCR</name>
+          <displayName>OPFCCR</displayName>
           <description>DMA2D output PFC control
           register</description>
           <addressOffset>0x34</addressOffset>
@@ -41354,8 +41354,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_OCOLR</name>
-          <displayName>DMA2D_OCOLR</displayName>
+          <name>OCOLR</name>
+          <displayName>OCOLR</displayName>
           <description>DMA2D output color register</description>
           <addressOffset>0x38</addressOffset>
           <size>0x20</size>
@@ -41405,8 +41405,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_OMAR</name>
-          <displayName>DMA2D_OMAR</displayName>
+          <name>OMAR</name>
+          <displayName>OMAR</displayName>
           <description>DMA2D output memory address
           register</description>
           <addressOffset>0x3C</addressOffset>
@@ -41430,8 +41430,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_OOR</name>
-          <displayName>DMA2D_OOR</displayName>
+          <name>OOR</name>
+          <displayName>OOR</displayName>
           <description>DMA2D output offset register</description>
           <addressOffset>0x40</addressOffset>
           <size>0x20</size>
@@ -41453,8 +41453,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_NLR</name>
-          <displayName>DMA2D_NLR</displayName>
+          <name>NLR</name>
+          <displayName>NLR</displayName>
           <description>DMA2D number of line register</description>
           <addressOffset>0x44</addressOffset>
           <size>0x20</size>
@@ -41485,8 +41485,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_LWR</name>
-          <displayName>DMA2D_LWR</displayName>
+          <name>LWR</name>
+          <displayName>LWR</displayName>
           <description>DMA2D line watermark register</description>
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
@@ -41508,8 +41508,8 @@
           </fields>
         </register>
         <register>
-          <name>DMA2D_AMTCR</name>
-          <displayName>DMA2D_AMTCR</displayName>
+          <name>AMTCR</name>
+          <displayName>AMTCR</displayName>
           <description>DMA2D AXI master timer configuration
           register</description>
           <addressOffset>0x4C</addressOffset>
@@ -41757,8 +41757,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>MPU_TYPER</name>
-          <displayName>MPU_TYPER</displayName>
+          <name>TYPER</name>
+          <displayName>TYPER</displayName>
           <description>MPU type register</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -41787,8 +41787,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_CTRL</name>
-          <displayName>MPU_CTRL</displayName>
+          <name>CTRL</name>
+          <displayName>CTRL</displayName>
           <description>MPU control register</description>
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
@@ -41818,8 +41818,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RNR</name>
-          <displayName>MPU_RNR</displayName>
+          <name>RNR</name>
+          <displayName>RNR</displayName>
           <description>MPU region number register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
@@ -41835,8 +41835,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RBAR</name>
-          <displayName>MPU_RBAR</displayName>
+          <name>RBAR</name>
+          <displayName>RBAR</displayName>
           <description>MPU region base address
           register</description>
           <addressOffset>0xC</addressOffset>
@@ -41865,8 +41865,8 @@
           </fields>
         </register>
         <register>
-          <name>MPU_RASR</name>
-          <displayName>MPU_RASR</displayName>
+          <name>RASR</name>
+          <displayName>RASR</displayName>
           <description>MPU region attribute and size
           register</description>
           <addressOffset>0x10</addressOffset>
