@@ -15,4 +15,4 @@ stm32-rs/svd/%.svd.patched: stm32-rs/devices/%.yaml stm32-rs/svd/%.svd
 
 # Copy the resulting SVD file to the destination location.
 svd/%.svd: stm32-rs/svd/%.svd.patched
-	cp $< $@
+	python patch.py $< $@
