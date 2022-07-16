@@ -5952,7 +5952,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -5960,7 +5960,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -5968,7 +5968,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -5976,7 +5976,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -5984,7 +5984,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -5992,7 +5992,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -7393,7 +7393,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -7401,7 +7401,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -7409,7 +7409,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -7417,7 +7417,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -7425,7 +7425,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -7433,7 +7433,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -8810,7 +8810,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -8818,7 +8818,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -8826,7 +8826,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -8834,7 +8834,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -8842,7 +8842,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -8850,7 +8850,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -10864,7 +10864,7 @@
               group</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM3TRGO</name><description>Timer 3 TRGO event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4CC4</name><description>Timer 4 CC4 event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC1</name><description>Timer 5 CC1 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5CC2</name><description>Timer 5 CC2 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5CC3</name><description>Timer 5 CC3 event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM8CC1</name><description>Timer 8 CC1 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM8TRGO</name><description>Timer 8 TRGO event</description><value>14</value></enumeratedValue><enumeratedValue><name>EXTI11</name><description>EXTI line 11</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>JSWSTART</name>
@@ -10888,7 +10888,7 @@
               group</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM8CC4</name><description>Timer 8 CC4 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM1TRGO2</name><description>Timer 1 TRGO(2) event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM8TRGO</name><description>Timer 8 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM8TRGO2</name><description>Timer 8 TRGO(2) event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM3CC3</name><description>Timer 3 CC3 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM6TRGO</name><description>Timer 6 TRGO event</description><value>14</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC2</name><description>Timer 3 CC2 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM4CC1</name><description>Timer 4 CC1 event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM4CC2</name><description>Timer 4 CC2 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM4CC3</name><description>Timer 4 CC3 event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC4</name><description>Timer 5 CC4 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM8CC2</name><description>Timer 8 CC2 event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM8CC3</name><description>Timer 8 CC3 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM8CC4</name><description>Timer 8 CC4 event</description><value>14</value></enumeratedValue><enumeratedValue><name>EXTI15</name><description>EXTI line 15</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ALIGN</name>
@@ -16082,7 +16082,7 @@
     <peripheral>
       <name>ADC_Common</name>
       <description>Common ADC registers</description>
-      <groupName>ADC</groupName>
+      <groupName>ADC_Common</groupName>
       <baseAddress>0x40012300</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -19258,12 +19258,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>CNT</name>
               <description>Counter value</description>
               <bitOffset>0</bitOffset>
@@ -19300,12 +19294,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -19323,13 +19311,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -20883,7 +20864,9 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          </fields>
+          <field><name>OPM</name><description>One-pulse mode</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields>
         </register>
         <register>
           <name>DIER</name>
@@ -23549,8 +23532,8 @@
       </interrupt>
       <registers>
         <register>
-          <name>FS_GOTGCTL</name>
-          <displayName>FS_GOTGCTL</displayName>
+          <name>GOTGCTL</name>
+          <displayName>GOTGCTL</displayName>
           <description>OTG_FS control and status register
           (OTG_FS_GOTGCTL)</description>
           <addressOffset>0x0</addressOffset>
@@ -23630,8 +23613,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GOTGINT</name>
-          <displayName>FS_GOTGINT</displayName>
+          <name>GOTGINT</name>
+          <displayName>GOTGINT</displayName>
           <description>OTG_FS interrupt register
           (OTG_FS_GOTGINT)</description>
           <addressOffset>0x4</addressOffset>
@@ -23680,8 +23663,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GAHBCFG</name>
-          <displayName>FS_GAHBCFG</displayName>
+          <name>GAHBCFG</name>
+          <displayName>GAHBCFG</displayName>
           <description>OTG_FS AHB configuration register
           (OTG_FS_GAHBCFG)</description>
           <addressOffset>0x8</addressOffset>
@@ -23711,8 +23694,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GUSBCFG</name>
-          <displayName>FS_GUSBCFG</displayName>
+          <name>GUSBCFG</name>
+          <displayName>GUSBCFG</displayName>
           <description>OTG_FS USB configuration register
           (OTG_FS_GUSBCFG)</description>
           <addressOffset>0xC</addressOffset>
@@ -23779,8 +23762,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GRSTCTL</name>
-          <displayName>FS_GRSTCTL</displayName>
+          <name>GRSTCTL</name>
+          <displayName>GRSTCTL</displayName>
           <description>OTG_FS reset register
           (OTG_FS_GRSTCTL)</description>
           <addressOffset>0x10</addressOffset>
@@ -23839,8 +23822,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GINTSTS</name>
-          <displayName>FS_GINTSTS</displayName>
+          <name>GINTSTS</name>
+          <displayName>GINTSTS</displayName>
           <description>OTG_FS core interrupt register
           (OTG_FS_GINTSTS)</description>
           <addressOffset>0x14</addressOffset>
@@ -24034,8 +24017,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GINTMSK</name>
-          <displayName>FS_GINTMSK</displayName>
+          <name>GINTMSK</name>
+          <displayName>GINTMSK</displayName>
           <description>OTG_FS interrupt mask register
           (OTG_FS_GINTMSK)</description>
           <addressOffset>0x18</addressOffset>
@@ -24186,7 +24169,7 @@
               <description>Host port interrupt mask</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
             <field>
               <name>HCIM</name>
@@ -24238,8 +24221,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GRXSTSR_Device</name>
-          <displayName>FS_GRXSTSR_Device</displayName>
+          <name>GRXSTSR_Device</name>
+          <displayName>GRXSTSR_Device</displayName>
           <description>OTG_FS Receive status debug read(Device
           mode)</description>
           <addressOffset>0x1C</addressOffset>
@@ -24280,19 +24263,18 @@
           </fields>
         </register>
         <register>
-          <name>FS_GRXSTSR_Host</name>
-          <displayName>FS_GRXSTSR_Host</displayName>
-          <description>OTG_FS Receive status debug read(Host
-          mode)</description>
+          <name>GRXSTSR_Host</name>
+          <displayName>GRXSTSR_Host</displayName>
+          <description>OTG status debug read (host mode)</description>
           <alternateRegister>FS_GRXSTSR_Device</alternateRegister>
-          <addressOffset>0x1C</addressOffset>
-          <size>0x20</size>
+          <addressOffset>28</addressOffset>
+          <size>32</size>
           <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>EPNUM</name>
-              <description>Endpoint number</description>
+              <name>CHNUM</name>
+              <description>Channel number</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
@@ -24314,17 +24296,11 @@
               <bitOffset>17</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
-            <field>
-              <name>FRMNUM</name>
-              <description>Frame number</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
-          <name>FS_GRXFSIZ</name>
-          <displayName>FS_GRXFSIZ</displayName>
+          <name>GRXFSIZ</name>
+          <displayName>GRXFSIZ</displayName>
           <description>OTG_FS Receive FIFO size register
           (OTG_FS_GRXFSIZ)</description>
           <addressOffset>0x24</addressOffset>
@@ -24341,8 +24317,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GNPTXFSIZ_Device</name>
-          <displayName>FS_GNPTXFSIZ_Device</displayName>
+          <name>DIEPTXF0</name>
+          <displayName>DIEPTXF0</displayName>
           <description>OTG_FS non-periodic transmit FIFO size
           register (Device mode)</description>
           <addressOffset>0x28</addressOffset>
@@ -24366,11 +24342,11 @@
           </fields>
         </register>
         <register>
-          <name>FS_GNPTXFSIZ_Host</name>
-          <displayName>FS_GNPTXFSIZ_Host</displayName>
+          <name>HNPTXFSIZ</name>
+          <displayName>HNPTXFSIZ</displayName>
           <description>OTG_FS non-periodic transmit FIFO size
           register (Host mode)</description>
-          <alternateRegister>FS_GNPTXFSIZ_Device</alternateRegister>
+          <alternateRegister>DIEPTXF0</alternateRegister>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -24392,8 +24368,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GNPTXSTS</name>
-          <displayName>FS_GNPTXSTS</displayName>
+          <name>GNPTXSTS</name>
+          <displayName>GNPTXSTS</displayName>
           <description>OTG_FS non-periodic transmit FIFO/queue
           status register (OTG_FS_GNPTXSTS)</description>
           <addressOffset>0x2C</addressOffset>
@@ -24425,8 +24401,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_GCCFG</name>
-          <displayName>FS_GCCFG</displayName>
+          <name>GCCFG</name>
+          <displayName>GCCFG</displayName>
           <description>OTG_FS general core configuration register
           (OTG_FS_GCCFG)</description>
           <addressOffset>0x38</addressOffset>
@@ -24460,11 +24436,12 @@
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-          </fields>
+          <field><name>NOVBUSSENS</name><description>Vbus sensing disable option</description><bitOffset>21</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
-          <name>FS_CID</name>
-          <displayName>FS_CID</displayName>
+          <name>CID</name>
+          <displayName>CID</displayName>
           <description>core ID register</description>
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
@@ -24480,8 +24457,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HPTXFSIZ</name>
-          <displayName>FS_HPTXFSIZ</displayName>
+          <name>HPTXFSIZ</name>
+          <displayName>HPTXFSIZ</displayName>
           <description>OTG_FS Host periodic transmit FIFO size
           register (OTG_FS_HPTXFSIZ)</description>
           <addressOffset>0x100</addressOffset>
@@ -24505,10 +24482,9 @@
           </fields>
         </register>
         <register>
-          <name>FS_DIEPTXF1</name>
-          <displayName>FS_DIEPTXF1</displayName>
-          <description>OTG_FS device IN endpoint transmit FIFO size
-          register (OTG_FS_DIEPTXF2)</description>
+          <dim>3</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3</dimIndex><name>DIEPTXF%s</name>
+          <displayName>DIEPTXF1</displayName>
+          <description>OTF_FS device IN endpoint transmit FIFO size register</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -24529,57 +24505,18 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>FS_DIEPTXF2</name>
-          <displayName>FS_DIEPTXF2</displayName>
-          <description>OTG_FS device IN endpoint transmit FIFO size
-          register (OTG_FS_DIEPTXF3)</description>
-          <addressOffset>0x108</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x02000400</resetValue>
-          <fields>
-            <field>
-              <name>INEPTXSA</name>
-              <description>IN endpoint FIFO3 transmit RAM start
-              address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
-              <name>INEPTXFD</name>
-              <description>IN endpoint TxFIFO depth</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>FS_DIEPTXF3</name>
-          <displayName>FS_DIEPTXF3</displayName>
-          <description>OTG_FS device IN endpoint transmit FIFO size
-          register (OTG_FS_DIEPTXF4)</description>
-          <addressOffset>0x10C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x02000400</resetValue>
-          <fields>
-            <field>
-              <name>INEPTXSA</name>
-              <description>IN endpoint FIFO4 transmit RAM start
-              address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
-              <name>INEPTXFD</name>
-              <description>IN endpoint TxFIFO depth</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
+        <register><name>GRXSTSP_Device</name><description>OTG status read and pop (device mode)</description><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>FRMNUM</name><description>Frame number</description><bitOffset>21</bitOffset><bitWidth>4</bitWidth></field>
+            <field><name>PKTSTS</name><description>Packet status</description><bitOffset>17</bitOffset><bitWidth>4</bitWidth></field>
+            <field><name>DPID</name><description>Data PID</description><bitOffset>15</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>BCNT</name><description>Byte count</description><bitOffset>4</bitOffset><bitWidth>11</bitWidth></field>
+            <field><name>EPNUM</name><description>Endpoint number</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth></field>
+            </fields></register>
+        <register><name>GRXSTSP_Host</name><description>OTG status read and pop (host mode)</description><alternateRegister>GRXSTSP_Device</alternateRegister><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>PKTSTS</name><description>Packet status</description><bitOffset>17</bitOffset><bitWidth>4</bitWidth></field>
+            <field><name>DPID</name><description>Data PID</description><bitOffset>15</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>BCNT</name><description>Byte count</description><bitOffset>4</bitOffset><bitWidth>11</bitWidth></field>
+            <field><name>CHNUM</name><description>Channel number</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth></field>
+            </fields></register>
+        </registers>
     </peripheral>
     <peripheral>
       <name>OTG_FS_HOST</name>
@@ -24593,8 +24530,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>FS_HCFG</name>
-          <displayName>FS_HCFG</displayName>
+          <name>HCFG</name>
+          <displayName>HCFG</displayName>
           <description>OTG_FS host configuration register
           (OTG_FS_HCFG)</description>
           <addressOffset>0x0</addressOffset>
@@ -24613,7 +24550,7 @@
               <description>FS- and LS-only support</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -24636,8 +24573,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HFNUM</name>
-          <displayName>FS_HFNUM</displayName>
+          <name>HFNUM</name>
+          <displayName>HFNUM</displayName>
           <description>OTG_FS host frame number/frame time
           remaining register (OTG_FS_HFNUM)</description>
           <addressOffset>0x8</addressOffset>
@@ -24660,8 +24597,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HPTXSTS</name>
-          <displayName>FS_HPTXSTS</displayName>
+          <name>HPTXSTS</name>
+          <displayName>HPTXSTS</displayName>
           <description>OTG_FS_Host periodic transmit FIFO/queue
           status register (OTG_FS_HPTXSTS)</description>
           <addressOffset>0x10</addressOffset>
@@ -24731,8 +24668,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HPRT</name>
-          <displayName>FS_HPRT</displayName>
+          <name>HPRT</name>
+          <displayName>HPRT</displayName>
           <description>OTG_FS host port control and status register
           (OTG_FS_HPRT)</description>
           <addressOffset>0x40</addressOffset>
@@ -24833,8 +24770,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR0</name>
-          <displayName>FS_HCCHAR0</displayName>
+          <name>HCCHAR0</name>
+          <displayName>HCCHAR0</displayName>
           <description>OTG_FS host channel-0 characteristics
           register (OTG_FS_HCCHAR0)</description>
           <addressOffset>0x100</addressOffset>
@@ -24905,8 +24842,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR1</name>
-          <displayName>FS_HCCHAR1</displayName>
+          <name>HCCHAR1</name>
+          <displayName>HCCHAR1</displayName>
           <description>OTG_FS host channel-1 characteristics
           register (OTG_FS_HCCHAR1)</description>
           <addressOffset>0x120</addressOffset>
@@ -24977,8 +24914,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR2</name>
-          <displayName>FS_HCCHAR2</displayName>
+          <name>HCCHAR2</name>
+          <displayName>HCCHAR2</displayName>
           <description>OTG_FS host channel-2 characteristics
           register (OTG_FS_HCCHAR2)</description>
           <addressOffset>0x140</addressOffset>
@@ -25049,8 +24986,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR3</name>
-          <displayName>FS_HCCHAR3</displayName>
+          <name>HCCHAR3</name>
+          <displayName>HCCHAR3</displayName>
           <description>OTG_FS host channel-3 characteristics
           register (OTG_FS_HCCHAR3)</description>
           <addressOffset>0x160</addressOffset>
@@ -25121,8 +25058,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR4</name>
-          <displayName>FS_HCCHAR4</displayName>
+          <name>HCCHAR4</name>
+          <displayName>HCCHAR4</displayName>
           <description>OTG_FS host channel-4 characteristics
           register (OTG_FS_HCCHAR4)</description>
           <addressOffset>0x180</addressOffset>
@@ -25193,8 +25130,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR5</name>
-          <displayName>FS_HCCHAR5</displayName>
+          <name>HCCHAR5</name>
+          <displayName>HCCHAR5</displayName>
           <description>OTG_FS host channel-5 characteristics
           register (OTG_FS_HCCHAR5)</description>
           <addressOffset>0x1A0</addressOffset>
@@ -25265,8 +25202,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR6</name>
-          <displayName>FS_HCCHAR6</displayName>
+          <name>HCCHAR6</name>
+          <displayName>HCCHAR6</displayName>
           <description>OTG_FS host channel-6 characteristics
           register (OTG_FS_HCCHAR6)</description>
           <addressOffset>0x1C0</addressOffset>
@@ -25337,8 +25274,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCCHAR7</name>
-          <displayName>FS_HCCHAR7</displayName>
+          <name>HCCHAR7</name>
+          <displayName>HCCHAR7</displayName>
           <description>OTG_FS host channel-7 characteristics
           register (OTG_FS_HCCHAR7)</description>
           <addressOffset>0x1E0</addressOffset>
@@ -25409,8 +25346,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT0</name>
-          <displayName>FS_HCINT0</displayName>
+          <name>HCINT0</name>
+          <displayName>HCINT0</displayName>
           <description>OTG_FS host channel-0 interrupt register
           (OTG_FS_HCINT0)</description>
           <addressOffset>0x108</addressOffset>
@@ -25478,8 +25415,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT1</name>
-          <displayName>FS_HCINT1</displayName>
+          <name>HCINT1</name>
+          <displayName>HCINT1</displayName>
           <description>OTG_FS host channel-1 interrupt register
           (OTG_FS_HCINT1)</description>
           <addressOffset>0x128</addressOffset>
@@ -25547,8 +25484,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT2</name>
-          <displayName>FS_HCINT2</displayName>
+          <name>HCINT2</name>
+          <displayName>HCINT2</displayName>
           <description>OTG_FS host channel-2 interrupt register
           (OTG_FS_HCINT2)</description>
           <addressOffset>0x148</addressOffset>
@@ -25616,8 +25553,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT3</name>
-          <displayName>FS_HCINT3</displayName>
+          <name>HCINT3</name>
+          <displayName>HCINT3</displayName>
           <description>OTG_FS host channel-3 interrupt register
           (OTG_FS_HCINT3)</description>
           <addressOffset>0x168</addressOffset>
@@ -25685,8 +25622,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT4</name>
-          <displayName>FS_HCINT4</displayName>
+          <name>HCINT4</name>
+          <displayName>HCINT4</displayName>
           <description>OTG_FS host channel-4 interrupt register
           (OTG_FS_HCINT4)</description>
           <addressOffset>0x188</addressOffset>
@@ -25754,8 +25691,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT5</name>
-          <displayName>FS_HCINT5</displayName>
+          <name>HCINT5</name>
+          <displayName>HCINT5</displayName>
           <description>OTG_FS host channel-5 interrupt register
           (OTG_FS_HCINT5)</description>
           <addressOffset>0x1A8</addressOffset>
@@ -25823,8 +25760,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT6</name>
-          <displayName>FS_HCINT6</displayName>
+          <name>HCINT6</name>
+          <displayName>HCINT6</displayName>
           <description>OTG_FS host channel-6 interrupt register
           (OTG_FS_HCINT6)</description>
           <addressOffset>0x1C8</addressOffset>
@@ -25892,8 +25829,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINT7</name>
-          <displayName>FS_HCINT7</displayName>
+          <name>HCINT7</name>
+          <displayName>HCINT7</displayName>
           <description>OTG_FS host channel-7 interrupt register
           (OTG_FS_HCINT7)</description>
           <addressOffset>0x1E8</addressOffset>
@@ -25961,8 +25898,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK0</name>
-          <displayName>FS_HCINTMSK0</displayName>
+          <name>HCINTMSK0</name>
+          <displayName>HCINTMSK0</displayName>
           <description>OTG_FS host channel-0 mask register
           (OTG_FS_HCINTMSK0)</description>
           <addressOffset>0x10C</addressOffset>
@@ -26037,8 +25974,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK1</name>
-          <displayName>FS_HCINTMSK1</displayName>
+          <name>HCINTMSK1</name>
+          <displayName>HCINTMSK1</displayName>
           <description>OTG_FS host channel-1 mask register
           (OTG_FS_HCINTMSK1)</description>
           <addressOffset>0x12C</addressOffset>
@@ -26113,8 +26050,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK2</name>
-          <displayName>FS_HCINTMSK2</displayName>
+          <name>HCINTMSK2</name>
+          <displayName>HCINTMSK2</displayName>
           <description>OTG_FS host channel-2 mask register
           (OTG_FS_HCINTMSK2)</description>
           <addressOffset>0x14C</addressOffset>
@@ -26189,8 +26126,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK3</name>
-          <displayName>FS_HCINTMSK3</displayName>
+          <name>HCINTMSK3</name>
+          <displayName>HCINTMSK3</displayName>
           <description>OTG_FS host channel-3 mask register
           (OTG_FS_HCINTMSK3)</description>
           <addressOffset>0x16C</addressOffset>
@@ -26265,8 +26202,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK4</name>
-          <displayName>FS_HCINTMSK4</displayName>
+          <name>HCINTMSK4</name>
+          <displayName>HCINTMSK4</displayName>
           <description>OTG_FS host channel-4 mask register
           (OTG_FS_HCINTMSK4)</description>
           <addressOffset>0x18C</addressOffset>
@@ -26341,8 +26278,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK5</name>
-          <displayName>FS_HCINTMSK5</displayName>
+          <name>HCINTMSK5</name>
+          <displayName>HCINTMSK5</displayName>
           <description>OTG_FS host channel-5 mask register
           (OTG_FS_HCINTMSK5)</description>
           <addressOffset>0x1AC</addressOffset>
@@ -26417,8 +26354,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK6</name>
-          <displayName>FS_HCINTMSK6</displayName>
+          <name>HCINTMSK6</name>
+          <displayName>HCINTMSK6</displayName>
           <description>OTG_FS host channel-6 mask register
           (OTG_FS_HCINTMSK6)</description>
           <addressOffset>0x1CC</addressOffset>
@@ -26493,8 +26430,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCINTMSK7</name>
-          <displayName>FS_HCINTMSK7</displayName>
+          <name>HCINTMSK7</name>
+          <displayName>HCINTMSK7</displayName>
           <description>OTG_FS host channel-7 mask register
           (OTG_FS_HCINTMSK7)</description>
           <addressOffset>0x1EC</addressOffset>
@@ -26569,8 +26506,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ0</name>
-          <displayName>FS_HCTSIZ0</displayName>
+          <name>HCTSIZ0</name>
+          <displayName>HCTSIZ0</displayName>
           <description>OTG_FS host channel-0 transfer size
           register</description>
           <addressOffset>0x110</addressOffset>
@@ -26599,8 +26536,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ1</name>
-          <displayName>FS_HCTSIZ1</displayName>
+          <name>HCTSIZ1</name>
+          <displayName>HCTSIZ1</displayName>
           <description>OTG_FS host channel-1 transfer size
           register</description>
           <addressOffset>0x130</addressOffset>
@@ -26629,8 +26566,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ2</name>
-          <displayName>FS_HCTSIZ2</displayName>
+          <name>HCTSIZ2</name>
+          <displayName>HCTSIZ2</displayName>
           <description>OTG_FS host channel-2 transfer size
           register</description>
           <addressOffset>0x150</addressOffset>
@@ -26659,8 +26596,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ3</name>
-          <displayName>FS_HCTSIZ3</displayName>
+          <name>HCTSIZ3</name>
+          <displayName>HCTSIZ3</displayName>
           <description>OTG_FS host channel-3 transfer size
           register</description>
           <addressOffset>0x170</addressOffset>
@@ -26689,8 +26626,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ4</name>
-          <displayName>FS_HCTSIZ4</displayName>
+          <name>HCTSIZ4</name>
+          <displayName>HCTSIZ4</displayName>
           <description>OTG_FS host channel-x transfer size
           register</description>
           <addressOffset>0x190</addressOffset>
@@ -26719,8 +26656,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ5</name>
-          <displayName>FS_HCTSIZ5</displayName>
+          <name>HCTSIZ5</name>
+          <displayName>HCTSIZ5</displayName>
           <description>OTG_FS host channel-5 transfer size
           register</description>
           <addressOffset>0x1B0</addressOffset>
@@ -26749,8 +26686,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ6</name>
-          <displayName>FS_HCTSIZ6</displayName>
+          <name>HCTSIZ6</name>
+          <displayName>HCTSIZ6</displayName>
           <description>OTG_FS host channel-6 transfer size
           register</description>
           <addressOffset>0x1D0</addressOffset>
@@ -26779,8 +26716,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_HCTSIZ7</name>
-          <displayName>FS_HCTSIZ7</displayName>
+          <name>HCTSIZ7</name>
+          <displayName>HCTSIZ7</displayName>
           <description>OTG_FS host channel-7 transfer size
           register</description>
           <addressOffset>0x1F0</addressOffset>
@@ -26822,8 +26759,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>FS_DCFG</name>
-          <displayName>FS_DCFG</displayName>
+          <name>DCFG</name>
+          <displayName>DCFG</displayName>
           <description>OTG_FS device configuration register
           (OTG_FS_DCFG)</description>
           <addressOffset>0x0</addressOffset>
@@ -26859,8 +26796,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DCTL</name>
-          <displayName>FS_DCTL</displayName>
+          <name>DCTL</name>
+          <displayName>DCTL</displayName>
           <description>OTG_FS device control register
           (OTG_FS_DCTL)</description>
           <addressOffset>0x4</addressOffset>
@@ -26940,8 +26877,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DSTS</name>
-          <displayName>FS_DSTS</displayName>
+          <name>DSTS</name>
+          <displayName>DSTS</displayName>
           <description>OTG_FS device status register
           (OTG_FS_DSTS)</description>
           <addressOffset>0x8</addressOffset>
@@ -26977,8 +26914,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DIEPMSK</name>
-          <displayName>FS_DIEPMSK</displayName>
+          <name>DIEPMSK</name>
+          <displayName>DIEPMSK</displayName>
           <description>OTG_FS device IN endpoint common interrupt
           mask register (OTG_FS_DIEPMSK)</description>
           <addressOffset>0x10</addressOffset>
@@ -27031,8 +26968,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DOEPMSK</name>
-          <displayName>FS_DOEPMSK</displayName>
+          <name>DOEPMSK</name>
+          <displayName>DOEPMSK</displayName>
           <description>OTG_FS device OUT endpoint common interrupt
           mask register (OTG_FS_DOEPMSK)</description>
           <addressOffset>0x14</addressOffset>
@@ -27070,8 +27007,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DAINT</name>
-          <displayName>FS_DAINT</displayName>
+          <name>DAINT</name>
+          <displayName>DAINT</displayName>
           <description>OTG_FS device all endpoints interrupt
           register (OTG_FS_DAINT)</description>
           <addressOffset>0x18</addressOffset>
@@ -27095,8 +27032,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DAINTMSK</name>
-          <displayName>FS_DAINTMSK</displayName>
+          <name>DAINTMSK</name>
+          <displayName>DAINTMSK</displayName>
           <description>OTG_FS all endpoints interrupt mask register
           (OTG_FS_DAINTMSK)</description>
           <addressOffset>0x1C</addressOffset>
@@ -27111,9 +27048,8 @@
               <bitWidth>16</bitWidth>
             </field>
             <field>
-              <name>OEPINT</name>
-              <description>OUT endpoint interrupt
-              bits</description>
+              <name>OEPM</name>
+              <description>OUT EP interrupt mask bits</description>
               <bitOffset>16</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -27175,8 +27111,8 @@
           </fields>
         </register>
         <register>
-          <name>FS_DIEPCTL0</name>
-          <displayName>FS_DIEPCTL0</displayName>
+          <name>DIEPCTL0</name>
+          <displayName>DIEPCTL0</displayName>
           <description>OTG_FS device control IN endpoint 0 control
           register (OTG_FS_DIEPCTL0)</description>
           <addressOffset>0x100</addressOffset>
@@ -27251,15 +27187,14 @@
               <description>Endpoint enable</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>DIEPCTL1</name>
+          <dim>3</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3</dimIndex><name>DIEPCTL%s</name>
           <displayName>DIEPCTL1</displayName>
-          <description>OTG device endpoint-1 control
-          register</description>
+          <description>OTG_FS device endpoint %s IN control register</description>
           <addressOffset>0x120</addressOffset>
           <size>0x20</size>
           <resetValue>0x00000000</resetValue>
@@ -27314,212 +27249,8 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>Stall</name>
-              <description>Stall</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPTYP</name>
-              <description>EPTYP</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>NAKSTS</name>
-              <description>NAKSTS</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>EONUM_DPID</name>
-              <description>EONUM/DPID</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>USBAEP</name>
-              <description>USBAEP</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>MPSIZ</name>
-              <description>MPSIZ</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIEPCTL2</name>
-          <displayName>DIEPCTL2</displayName>
-          <description>OTG device endpoint-2 control
-          register</description>
-          <addressOffset>0x140</addressOffset>
-          <size>0x20</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>EPENA</name>
-              <description>EPENA</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPDIS</name>
-              <description>EPDIS</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SODDFRM</name>
-              <description>SODDFRM</description>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SD0PID_SEVNFRM</name>
-              <description>SD0PID/SEVNFRM</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SNAK</name>
-              <description>SNAK</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>CNAK</name>
-              <description>CNAK</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>TXFNUM</name>
-              <description>TXFNUM</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>4</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>Stall</name>
-              <description>Stall</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPTYP</name>
-              <description>EPTYP</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>NAKSTS</name>
-              <description>NAKSTS</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>EONUM_DPID</name>
-              <description>EONUM/DPID</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>USBAEP</name>
-              <description>USBAEP</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>MPSIZ</name>
-              <description>MPSIZ</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIEPCTL3</name>
-          <displayName>DIEPCTL3</displayName>
-          <description>OTG device endpoint-3 control
-          register</description>
-          <addressOffset>0x160</addressOffset>
-          <size>0x20</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>EPENA</name>
-              <description>EPENA</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPDIS</name>
-              <description>EPDIS</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SODDFRM</name>
-              <description>SODDFRM</description>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SD0PID_SEVNFRM</name>
-              <description>SD0PID/SEVNFRM</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SNAK</name>
-              <description>SNAK</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>CNAK</name>
-              <description>CNAK</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>TXFNUM</name>
-              <description>TXFNUM</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>4</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>Stall</name>
-              <description>Stall</description>
+              <name>STALL</name>
+              <description>STALL</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -27599,8 +27330,8 @@
               <access>write-only</access>
             </field>
             <field>
-              <name>Stall</name>
-              <description>Stall</description>
+              <name>STALL</name>
+              <description>STALL</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -27643,10 +27374,9 @@
           </fields>
         </register>
         <register>
-          <name>DOEPCTL1</name>
+          <dim>3</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3</dimIndex><name>DOEPCTL%s</name>
           <displayName>DOEPCTL1</displayName>
-          <description>device endpoint-1 control
-          register</description>
+          <description>OTG_FS device endpoint %s OUT control register</description>
           <addressOffset>0x320</addressOffset>
           <size>0x20</size>
           <resetValue>0x00000000</resetValue>
@@ -27694,212 +27424,8 @@
               <access>write-only</access>
             </field>
             <field>
-              <name>Stall</name>
-              <description>Stall</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SNPM</name>
-              <description>SNPM</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPTYP</name>
-              <description>EPTYP</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>NAKSTS</name>
-              <description>NAKSTS</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>EONUM_DPID</name>
-              <description>EONUM/DPID</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>USBAEP</name>
-              <description>USBAEP</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>MPSIZ</name>
-              <description>MPSIZ</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DOEPCTL2</name>
-          <displayName>DOEPCTL2</displayName>
-          <description>device endpoint-2 control
-          register</description>
-          <addressOffset>0x340</addressOffset>
-          <size>0x20</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>EPENA</name>
-              <description>EPENA</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPDIS</name>
-              <description>EPDIS</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SODDFRM</name>
-              <description>SODDFRM</description>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SD0PID_SEVNFRM</name>
-              <description>SD0PID/SEVNFRM</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SNAK</name>
-              <description>SNAK</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>CNAK</name>
-              <description>CNAK</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>Stall</name>
-              <description>Stall</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SNPM</name>
-              <description>SNPM</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPTYP</name>
-              <description>EPTYP</description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>NAKSTS</name>
-              <description>NAKSTS</description>
-              <bitOffset>17</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>EONUM_DPID</name>
-              <description>EONUM/DPID</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>USBAEP</name>
-              <description>USBAEP</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>MPSIZ</name>
-              <description>MPSIZ</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DOEPCTL3</name>
-          <displayName>DOEPCTL3</displayName>
-          <description>device endpoint-3 control
-          register</description>
-          <addressOffset>0x360</addressOffset>
-          <size>0x20</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>EPENA</name>
-              <description>EPENA</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>EPDIS</name>
-              <description>EPDIS</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>SODDFRM</name>
-              <description>SODDFRM</description>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SD0PID_SEVNFRM</name>
-              <description>SD0PID/SEVNFRM</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>SNAK</name>
-              <description>SNAK</description>
-              <bitOffset>27</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>CNAK</name>
-              <description>CNAK</description>
-              <bitOffset>26</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>write-only</access>
-            </field>
-            <field>
-              <name>Stall</name>
-              <description>Stall</description>
+              <name>STALL</name>
+              <description>STALL</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -28655,8 +28181,8 @@
       </addressBlock>
       <registers>
         <register>
-          <name>FS_PCGCCTL</name>
-          <displayName>FS_PCGCCTL</displayName>
+          <name>PCGCCTL</name>
+          <displayName>PCGCCTL</displayName>
           <description>OTG_FS power and clock gating control
           register (OTG_FS_PCGCCTL)</description>
           <addressOffset>0x0</addressOffset>

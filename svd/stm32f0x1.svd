@@ -123,7 +123,10 @@
             </field>
           </fields>
         </register>
-      <register><name>DR8</name><description>Data register - byte sized</description><alternateRegister>DR</alternateRegister><addressOffset>0</addressOffset><size>8</size><access>read-write</access><resetValue>255</resetValue><fields><field><name>DR8</name><description>Data register bits</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
+      <register><name>POL</name><displayName>POL</displayName><description>CRC polynomial</description><addressOffset>20</addressOffset><size>32</size><access>read-write</access><resetValue>79764919</resetValue><fields><field><name>POL</name><description>Programmable polynomial</description><bitOffset>0</bitOffset><bitWidth>32</bitWidth><access>read-write</access><writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
+            </field>
+            </fields></register>
+        <register><name>DR8</name><description>Data register - byte sized</description><alternateRegister>DR</alternateRegister><addressOffset>0</addressOffset><size>8</size><access>read-write</access><resetValue>255</resetValue><fields><field><name>DR8</name><description>Data register bits</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             </fields></register>
         <register><name>DR16</name><description>Data register - half-word sized</description><alternateRegister>DR</alternateRegister><addressOffset>0</addressOffset><size>16</size><access>read-write</access><resetValue>65535</resetValue><fields><field><name>DR16</name><description>Data register bits</description><bitOffset>0</bitOffset><bitWidth>16</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
@@ -1259,7 +1262,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -1267,7 +1270,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -1275,7 +1278,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -1283,7 +1286,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -1291,7 +1294,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -1299,7 +1302,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -1619,42 +1622,42 @@
               <description>Port x Reset bit y</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port x Reset bit y</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port x Reset bit y</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port x Reset bit y</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port x Reset bit y</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port x Reset bit y</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -2815,7 +2818,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -2823,7 +2826,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -2831,7 +2834,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -2839,7 +2842,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -2847,7 +2850,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -2855,7 +2858,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -3175,42 +3178,42 @@
               <description>Port x Reset bit y</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port x Reset bit y</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port x Reset bit y</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port x Reset bit y</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port x Reset bit y</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port x Reset bit y</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -9718,7 +9721,7 @@
             </field>
             <field>
               <name>ADCPRE</name>
-              <description>APCPRE is deprecated. See ADC field in CFGR2 register.</description>
+              <description>ADCPRE is deprecated. See ADC field in CFGR2 register.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -13631,6 +13634,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -14345,7 +14349,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>NotStopped</name><description>Not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopped</name><description>Counter stops counting at next update event</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -21767,13 +21771,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CNT_H</name>
-              <description>High counter value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>CNT</name>
               <description>Counter value</description>
               <bitOffset>0</bitOffset>
@@ -21810,13 +21807,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -21834,13 +21824,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1 value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>

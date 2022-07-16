@@ -5946,7 +5946,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -5954,7 +5954,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -5962,7 +5962,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -5970,7 +5970,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -5978,7 +5978,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -5986,7 +5986,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -7387,7 +7387,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -7395,7 +7395,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -7403,7 +7403,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -7411,7 +7411,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -7419,7 +7419,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -7427,7 +7427,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -8804,7 +8804,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -8812,7 +8812,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -8820,7 +8820,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -8828,7 +8828,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -8836,7 +8836,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -8844,7 +8844,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -10858,7 +10858,7 @@
               group</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM3TRGO</name><description>Timer 3 TRGO event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4CC4</name><description>Timer 4 CC4 event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC1</name><description>Timer 5 CC1 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5CC2</name><description>Timer 5 CC2 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5CC3</name><description>Timer 5 CC3 event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM8CC1</name><description>Timer 8 CC1 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM8TRGO</name><description>Timer 8 TRGO event</description><value>14</value></enumeratedValue><enumeratedValue><name>EXTI11</name><description>EXTI line 11</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>JSWSTART</name>
@@ -10882,7 +10882,7 @@
               group</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM8CC4</name><description>Timer 8 CC4 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM1TRGO2</name><description>Timer 1 TRGO(2) event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM8TRGO</name><description>Timer 8 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM8TRGO2</name><description>Timer 8 TRGO(2) event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM3CC3</name><description>Timer 3 CC3 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM6TRGO</name><description>Timer 6 TRGO event</description><value>14</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC2</name><description>Timer 3 CC2 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM4CC1</name><description>Timer 4 CC1 event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM4CC2</name><description>Timer 4 CC2 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM4CC3</name><description>Timer 4 CC3 event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC4</name><description>Timer 5 CC4 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM8CC2</name><description>Timer 8 CC2 event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM8CC3</name><description>Timer 8 CC3 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM8CC4</name><description>Timer 8 CC4 event</description><value>14</value></enumeratedValue><enumeratedValue><name>EXTI15</name><description>EXTI line 15</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ALIGN</name>
@@ -16076,7 +16076,7 @@
     <peripheral>
       <name>ADC_Common</name>
       <description>Common ADC registers</description>
-      <groupName>ADC</groupName>
+      <groupName>ADC_Common</groupName>
       <baseAddress>0x40012300</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -19252,12 +19252,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>CNT</name>
               <description>Counter value</description>
               <bitOffset>0</bitOffset>
@@ -19294,12 +19288,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -19317,13 +19305,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -20877,7 +20858,9 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          </fields>
+          <field><name>OPM</name><description>One-pulse mode</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields>
         </register>
         <register>
           <name>DIER</name>

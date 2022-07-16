@@ -552,7 +552,8 @@
               stop</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ADSTP"/>
+            <enumeratedValues derivedFrom="ADSTPR"/>
+            <enumeratedValues derivedFrom="ADSTPW"/>
             </field>
             <field>
               <name>ADSTP</name>
@@ -560,7 +561,8 @@
               stop</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ADSTP</name><usage>read-write</usage><enumeratedValue><name>Stop</name><description>Stop conversion of channel</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTPR</name><usage>read</usage><enumeratedValue><name>NotStopping</name><description>No stop command active</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopping</name><description>ADC stopping conversion</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTPW</name><usage>write</usage><enumeratedValue><name>StopConversion</name><description>Stop the active conversion</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>JADSTART</name>
@@ -568,7 +570,8 @@
               start</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ADSTART"/>
+            <enumeratedValues derivedFrom="ADSTARTR"/>
+            <enumeratedValues derivedFrom="ADSTARTW"/>
             </field>
             <field>
               <name>ADSTART</name>
@@ -576,21 +579,24 @@
               start</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ADSTART</name><usage>read-write</usage><enumeratedValue><name>Start</name><description>Starts conversion of channel</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTARTR</name><usage>read</usage><enumeratedValue><name>NotActive</name><description>No conversion ongoing</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>ADC operating and may be converting</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTARTW</name><usage>write</usage><enumeratedValue><name>StartConversion</name><description>Start the ADC conversion (may be delayed for hardware triggers)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ADDIS</name>
               <description>ADC disable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ADDISW</name><usage>write</usage><enumeratedValue><name>Disable</name><description>Disable ADC conversion and go to power down mode</description><value>0</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADDISR</name><usage>read</usage><enumeratedValue><name>NotDisabling</name><description>No disable command active</description><value>0</value></enumeratedValue><enumeratedValue><name>Disabling</name><description>ADC disabling</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADDISW</name><usage>write</usage><enumeratedValue><name>Disable</name><description>Disable the ADC</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ADEN</name>
               <description>ADC enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ADENW</name><usage>write</usage><enumeratedValue><name>Enable</name><description>Enable ADC</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADENR</name><usage>read</usage><enumeratedValue><name>Disabled</name><description>ADC disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>ADC enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADENW</name><usage>write</usage><enumeratedValue><name>Enabled</name><description>Enable the ADC</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -6115,19 +6121,19 @@
                <resetValue>0x00000000</resetValue>
                <fields>
                   <field>
-                     <name>DBGSLPD1</name>
+                     <name>DBGSLEEP_D1</name>
                      <description> Allow D1 domain debug in Sleep mode</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>DBGSTPD1</name>
+                     <name>DBGSTOP_D1</name>
                      <description>Allow D1 domain debug in Stop mode</description>
                      <bitOffset>1</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>DBGSTBD1</name>
+                     <name>DBGSTBY_D1</name>
                      <description>Allow D1 domain debug in Standby mode</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>1</bitWidth>
@@ -6637,8 +6643,8 @@
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>DCMI</name>
-        <description>DCMI global interrupt</description>
+        <name>DCMI_PSSI</name>
+        <description>DCMI/PSSI global interrupt</description>
         <value>78</value>
       </interrupt>
       <registers>
@@ -8347,9 +8353,7 @@
               <access>read-write</access>
             <enumeratedValues><name>FTH</name><usage>read-write</usage><enumeratedValue><name>Quarter</name><description>1/4 full FIFO</description><value>0</value></enumeratedValue><enumeratedValue><name>Half</name><description>1/2 full FIFO</description><value>1</value></enumeratedValue><enumeratedValue><name>ThreeQuarters</name><description>3/4 full FIFO</description><value>2</value></enumeratedValue><enumeratedValue><name>Full</name><description>Full FIFO</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
-          <field><name>TRBUFF</name><description>Enable the DMA to handle bufferable transfers</description><bitOffset>20</bitOffset><bitWidth>1</bitWidth><access>read-write</access><enumeratedValues><name>TRBUFF</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Bufferable transfers not enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Bufferable transfers enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            </fields>
+          </fields>
         </register>
         </cluster><register>
           <name>LISR</name>
@@ -8863,9 +8867,7 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CFEIF0</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clear the corresponding CFEIFx flag</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          <field><name>TRBUFF</name><description>Enable the DMA to handle bufferable transfers</description><bitOffset>20</bitOffset><bitWidth>1</bitWidth><access>read-write</access><enumeratedValues><name>TRBUFF</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Bufferable transfers not enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Bufferable transfers enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            </fields>
+          </fields>
         </register>
         <register>
           <name>HIFCR</name>
@@ -9037,9 +9039,7 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CFEIF4</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clear the corresponding CFEIFx flag</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          <field><name>TRBUFF</name><description>Enable the DMA to handle bufferable transfers</description><bitOffset>20</bitOffset><bitWidth>1</bitWidth><access>read-write</access><enumeratedValues><name>TRBUFF</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Bufferable transfers not enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Bufferable transfers enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            </fields>
+          </fields>
         </register>
         </registers>
     </peripheral>
@@ -25556,7 +25556,7 @@
               bit is 0.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -25565,7 +25565,7 @@
               bit is 0.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -25574,7 +25574,7 @@
               bit is 0.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -25583,7 +25583,7 @@
               bit is 0.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -25592,7 +25592,7 @@
               bit is 0.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK15</name>
@@ -25601,7 +25601,7 @@
               bit is 0.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCKK</name>
@@ -25862,9 +25862,9 @@
       </interrupt>
       <registers>
         <register>
-          <name>R0</name>
+          <dim>32</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31</dimIndex><name>R%s</name>
           <displayName>R0</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
+          <description>HSEM register HSEM_R%s HSEM_R31</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -25891,1808 +25891,10 @@
           </fields>
         </register>
         <register>
-          <name>R1</name>
-          <displayName>R1</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R2</name>
-          <displayName>R2</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R3</name>
-          <displayName>R3</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0xC</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R4</name>
-          <displayName>R4</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R5</name>
-          <displayName>R5</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R6</name>
-          <displayName>R6</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R7</name>
-          <displayName>R7</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x1C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R8</name>
-          <displayName>R8</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R9</name>
-          <displayName>R9</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R10</name>
-          <displayName>R10</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R11</name>
-          <displayName>R11</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x2C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R12</name>
-          <displayName>R12</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R13</name>
-          <displayName>R13</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R14</name>
-          <displayName>R14</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x38</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R15</name>
-          <displayName>R15</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x3C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R16</name>
-          <displayName>R16</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R17</name>
-          <displayName>R17</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R18</name>
-          <displayName>R18</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R19</name>
-          <displayName>R19</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x4C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R20</name>
-          <displayName>R20</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x50</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R21</name>
-          <displayName>R21</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x54</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R22</name>
-          <displayName>R22</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x58</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R23</name>
-          <displayName>R23</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x5C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R24</name>
-          <displayName>R24</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x60</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R25</name>
-          <displayName>R25</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x64</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R26</name>
-          <displayName>R26</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x68</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R27</name>
-          <displayName>R27</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x6C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R28</name>
-          <displayName>R28</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x70</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R29</name>
-          <displayName>R29</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x74</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R30</name>
-          <displayName>R30</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x78</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R31</name>
-          <displayName>R31</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x7C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR0</name>
+          <dim>32</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31</dimIndex><name>RLR%s</name>
           <displayName>RLR0</displayName>
           <description>HSEM Read lock register</description>
           <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR1</name>
-          <displayName>RLR1</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR2</name>
-          <displayName>RLR2</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR3</name>
-          <displayName>RLR3</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x8C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR4</name>
-          <displayName>RLR4</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR5</name>
-          <displayName>RLR5</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR6</name>
-          <displayName>RLR6</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR7</name>
-          <displayName>RLR7</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x9C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR8</name>
-          <displayName>RLR8</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR9</name>
-          <displayName>RLR9</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR10</name>
-          <displayName>RLR10</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR11</name>
-          <displayName>RLR11</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xAC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR12</name>
-          <displayName>RLR12</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR13</name>
-          <displayName>RLR13</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR14</name>
-          <displayName>RLR14</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR15</name>
-          <displayName>RLR15</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xBC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR16</name>
-          <displayName>RLR16</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xC0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR17</name>
-          <displayName>RLR17</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xC4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR18</name>
-          <displayName>RLR18</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xC8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR19</name>
-          <displayName>RLR19</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xCC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR20</name>
-          <displayName>RLR20</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xD0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR21</name>
-          <displayName>RLR21</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xD4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR22</name>
-          <displayName>RLR22</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xD8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR23</name>
-          <displayName>RLR23</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xDC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR24</name>
-          <displayName>RLR24</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xE0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR25</name>
-          <displayName>RLR25</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xE4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR26</name>
-          <displayName>RLR26</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xE8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR27</name>
-          <displayName>RLR27</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xEC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR28</name>
-          <displayName>RLR28</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xF0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR29</name>
-          <displayName>RLR29</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xF4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR30</name>
-          <displayName>RLR30</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xF8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>MASTERID</name>
-              <description>Semaphore MasterID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR31</name>
-          <displayName>RLR31</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xFC</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -31554,7 +29756,8 @@
         <description>LCD-TFT error interrupt</description>
         <value>89</value>
       </interrupt>
-      <registers>
+      <interrupt><name>LTDC_ERR</name><description>LCD-TFT global Error interrupt</description><value>89</value></interrupt>
+    <registers>
         <cluster><dim>2</dim><dimIncrement>0x80</dimIncrement><dimIndex>1,2</dimIndex><name>LAYER%s</name><description>Cluster LAYER%s, containing L?CR, L?WHPCR, L?WVPCR, L?CKCR, L?PFCR, L?CACR, L?DCCR, L?BFCR, L?CFBAR, L?CFBLR, L?CFBLNR, L?CLUTWR</description><addressOffset>0x84</addressOffset><register>
           <name>CR</name>
           <displayName>L1CR</displayName>
@@ -41717,7 +39920,11 @@
         <size>0x3FFFF</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>OTG_HS_EP1_OUT</name><description>USB OTG_HS OUT endpoint1 global interrupt</description><value>74</value></interrupt>
+    <interrupt><name>OTG_HS_EP1_IN</name><description>USB OTG_HS IN endpoint1 global interrupt</description><value>75</value></interrupt>
+    <interrupt><name>OTG_HS_WKUP</name><description>USB OTG_HS wakeup Interrupt through EXTI line</description><value>76</value></interrupt>
+    <interrupt><name>OTG_HS</name><description>USB OTG_HS global interrupt</description><value>77</value></interrupt>
+    <registers>
         <register>
           <name>GOTGCTL</name>
           <displayName>GOTGCTL</displayName>
@@ -42640,7 +40847,7 @@
           <displayName>DIEPTXF0_Device</displayName>
           <description>Endpoint 0 transmit FIFO size (peripheral
           mode)</description>
-          <alternateRegister>HNPTXFSIZ_Host</alternateRegister>
+          <alternateRegister>OTG_HS_HNPTXFSIZ_Host</alternateRegister>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <access>read-write</access>
@@ -42996,7 +41203,7 @@
           <displayName>GRXSTSR_Device</displayName>
           <description>OTG_HS Receive status debug read register
           (peripheral mode mode)</description>
-          <alternateRegister>GRXSTSR_Host</alternateRegister>
+          <alternateRegister>OTG_HS_GRXSTSR_Host</alternateRegister>
           <addressOffset>0x1C</addressOffset>
           <size>32</size>
           <access>read-only</access>
@@ -43039,7 +41246,7 @@
           <displayName>GRXSTSP_Device</displayName>
           <description>OTG_HS status read and pop register
           (peripheral mode)</description>
-          <alternateRegister>GRXSTSP_Host</alternateRegister>
+          <alternateRegister>OTG_HS_GRXSTSP_Host</alternateRegister>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <access>read-only</access>
@@ -49799,7 +48006,8 @@
         <size>0x1000</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>ECC_DIAG_IT</name><description>ECC diagnostic global interrupt</description><value>145</value></interrupt>
+    <registers>
         <register>
           <name>IER</name>
           <displayName>IER</displayName>
@@ -53692,6 +51900,10 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="TIM1RST"/>
             </field>
+            <field><name>UART9RST</name><description>UART9 block reset</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1RST"/>
+            </field>
+            <field><name>USART10RST</name><description>USART10 block reset</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1RST"/>
+            </field>
             </fields>
         </register>
         <register>
@@ -55629,6 +53841,10 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="TIM1EN"/>
             </field>
+            <field><name>UART9EN</name><description>UART9 peripheral clocks enable</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1EN"/>
+            </field>
+            <field><name>USART10EN</name><description>USART10 peripheral clocks enable</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1EN"/>
+            </field>
             </fields>
         </register>
         <register>
@@ -57292,6 +55508,10 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="TIM1LPEN"/>
             </field>
+            <field><name>UART9LPEN</name><description>UART9 peripheral clocks enable during CSleep Mode</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1LPEN"/>
+            </field>
+            <field><name>USART10LPEN</name><description>USART10 peripheral clocks enable during CSleep Mode</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1LPEN"/>
+            </field>
             </fields>
         </register>
         <register>
@@ -57414,6 +55634,10 @@
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="TIM1LPEN"/>
+            </field>
+            <field><name>UART9LPEN</name><description>UART9 peripheral clocks enable during CSleep Mode</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1LPEN"/>
+            </field>
+            <field><name>USART10LPEN</name><description>USART10 peripheral clocks enable during CSleep Mode</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="TIM1LPEN"/>
             </field>
             </fields>
         </register>
@@ -57655,7 +55879,8 @@
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>
+      <interrupt><name>HASH_RNG</name><description>HASH OR RNG interrupt</description><value>80</value></interrupt>
+    <registers>
         <register>
           <name>CR</name>
           <displayName>CR</displayName>
@@ -58453,7 +56678,7 @@
           </fields>
         </register>
         <register>
-          <name>ALRMAR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sR</name>
           <displayName>ALRMAR</displayName>
           <description>This register can be written only when
           ALRAWF is set to 1 in RTC_ISR, or in initialization
@@ -58461,122 +56686,6 @@
           procedure is described in RTC register write protection
           on page9.</description>
           <addressOffset>0x1C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SU</name>
-              <description>Second units in BCD
-              format.</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>ST</name>
-              <description>Second tens in BCD format.</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK1</name>
-              <description>Alarm A seconds mask</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MNU</name>
-              <description>Minute units in BCD
-              format.</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MNT</name>
-              <description>Minute tens in BCD format.</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK2</name>
-              <description>Alarm A minutes mask</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>HU</name>
-              <description>Hour units in BCD format.</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>HT</name>
-              <description>Hour tens in BCD format.</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>PM</name>
-              <description>AM/PM notation</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>PM</name><usage>read-write</usage><enumeratedValue><name>AM</name><description>AM or 24-hour format</description><value>0</value></enumeratedValue><enumeratedValue><name>PM</name><description>PM</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MSK3</name>
-              <description>Alarm A hours mask</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>DU</name>
-              <description>Date units or day in BCD
-              format.</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>DT</name>
-              <description>Date tens in BCD format.</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>WDSEL</name>
-              <description>Week day selection</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>WDSEL</name><usage>read-write</usage><enumeratedValue><name>DateUnits</name><description>DU[3:0] represents the date units</description><value>0</value></enumeratedValue><enumeratedValue><name>WeekDay</name><description>DU[3:0] represents the week day. DT[1:0] is don&#8217;t care.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MSK4</name>
-              <description>Alarm A date mask</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBR</name>
-          <displayName>ALRMBR</displayName>
-          <description>This register can be written only when
-          ALRBWF is set to 1 in RTC_ISR, or in initialization
-          mode.This register is write protected. The write access
-          procedure is described in RTC register write protection
-          on page9.</description>
-          <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -58597,7 +56706,7 @@
             </field>
             <field>
               <name>MSK1</name>
-              <description>Alarm B seconds mask</description>
+              <description>Alarm seconds mask</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
@@ -58618,7 +56727,7 @@
             </field>
             <field>
               <name>MSK2</name>
-              <description>Alarm B minutes mask</description>
+              <description>Alarm minutes mask</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -58646,15 +56755,14 @@
             </field>
             <field>
               <name>MSK3</name>
-              <description>Alarm B hours mask</description>
+              <description>Alarm hours mask</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
             </field>
             <field>
               <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
+              <description>Date units or day in BCD format</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
@@ -58675,7 +56783,7 @@
             </field>
             <field>
               <name>MSK4</name>
-              <description>Alarm B date mask</description>
+              <description>Alarm date mask</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -59121,7 +57229,7 @@
           </fields>
         </register>
         <register>
-          <name>ALRMASSR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sSSR</name>
           <displayName>ALRMASSR</displayName>
           <description>This register can be written only when ALRAE
           is reset in RTC_CR register, or in initialization
@@ -59139,43 +57247,6 @@
               with the contents of the synchronous prescaler
               counter to determine if Alarm A is to be activated.
               Only bits 0 up MASKSS-1 are compared.</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MASKSS</name>
-              <description>Mask the most-significant bits starting
-              at this bit ... The overflow bits of the synchronous
-              counter (bits 15) is never compared. This bit can be
-              different from 0 only after a shift
-              operation.</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBSSR</name>
-          <displayName>ALRMBSSR</displayName>
-          <description>This register can be written only when ALRBE
-          is reset in RTC_CR register, or in initialization
-          mode.This register is write protected.The write access
-          procedure is described in Section: RTC register write
-          protection.</description>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SS</name>
-              <description>Sub seconds value This value is compared
-              with the contents of the synchronous prescaler
-              counter to determine if Alarm B is to be activated.
-              Only bits 0 up to MASKSS-1 are
-              compared.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>15</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
@@ -59810,7 +57881,7 @@
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x00000008</resetValue>
+          <resetValue>8</resetValue>
           <fields>
             <field>
               <name>OVRUDR</name>
@@ -64829,7 +62900,7 @@
         <value>26</value>
       </interrupt>
       <interrupt>
-        <name>TIM_CC</name>
+        <name>TIM1_CC</name>
         <description>TIM1 capture / compare</description>
         <value>27</value>
       </interrupt>
@@ -67668,7 +65739,7 @@
     <peripheral>
       <name>TIM15</name>
       <description>General purpose timers</description>
-      <groupName>TIMs</groupName>
+      <groupName>TIM</groupName>
       <baseAddress>0x40014000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -67716,6 +65787,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ARPE</name>
@@ -68532,7 +66604,7 @@
     <peripheral>
       <name>TIM16</name>
       <description>General-purpose-timers</description>
-      <groupName>TIMs</groupName>
+      <groupName>TIM</groupName>
       <baseAddress>0x40014400</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -68580,7 +66652,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>NotStopped</name><description>Not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopped</name><description>Counter stops counting at next update event</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ARPE</name>
@@ -69198,7 +67270,7 @@
     <peripheral>
       <name>TIM17</name>
       <description>General-purpose-timers</description>
-      <groupName>TIMs</groupName>
+      <groupName>TIM</groupName>
       <baseAddress>0x40014800</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -69246,6 +67318,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ARPE</name>
@@ -71952,13 +70025,7 @@
               <bitWidth>16</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
-            <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>PSC</name>
@@ -71988,12 +70055,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -72011,13 +70072,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -72996,13 +71050,7 @@
               <bitWidth>16</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
-            <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>PSC</name>
@@ -73032,12 +71080,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -73055,13 +71097,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -73979,13 +72014,7 @@
               <bitWidth>16</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
-            <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>PSC</name>
@@ -74015,12 +72044,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -74030,7 +72053,7 @@
           </fields>
         </register>
         <register>
-          <dim>4</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3,4</dimIndex><name>CCR%s</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2</dimIndex><name>CCR%s</name>
           <displayName>CCR1</displayName>
           <description>capture/compare register</description>
           <addressOffset>0x34</addressOffset>
@@ -74038,13 +72061,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare 1 value</description>
@@ -74213,6 +72229,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -74951,13 +72968,7 @@
               <bitWidth>16</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
-            <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>PSC</name>
@@ -74987,12 +72998,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -75002,7 +73007,7 @@
           </fields>
         </register>
         <register>
-          <dim>4</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3,4</dimIndex><name>CCR%s</name>
+          <dim>1</dim><dimIncrement>0x0</dimIncrement><dimIndex>1-1</dimIndex><name>CCR%s</name>
           <displayName>CCR1</displayName>
           <description>capture/compare register</description>
           <addressOffset>0x34</addressOffset>
@@ -75010,13 +73015,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare 1 value</description>
@@ -75185,6 +73183,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -75923,13 +73922,7 @@
               <bitWidth>16</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
             </field>
-            <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>PSC</name>
@@ -75959,12 +73952,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -75974,7 +73961,7 @@
           </fields>
         </register>
         <register>
-          <dim>4</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3,4</dimIndex><name>CCR%s</name>
+          <dim>1</dim><dimIncrement>0x0</dimIncrement><dimIndex>1-1</dimIndex><name>CCR%s</name>
           <displayName>CCR1</displayName>
           <description>capture/compare register</description>
           <addressOffset>0x34</addressOffset>
@@ -75982,13 +73969,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare 1 value</description>
@@ -76275,6 +74255,84 @@
             </field>
             <field><name>CGIF0</name><description>Global interrupt flag clear for channel x</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>CGIF0</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clear the corresponding CGIFx flag</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
+            </fields></register>
+        </registers></peripheral>
+    <peripheral derivedFrom="USART1"><name>UART9</name><baseAddress>1073813504</baseAddress><interrupt><name>UART9</name><description>UART9 global interrupt</description><value>155</value></interrupt>
+    </peripheral>
+    <peripheral derivedFrom="USART1"><name>USART10</name><baseAddress>1073814528</baseAddress><interrupt><name>USART10</name><description>USART10 global interrupt</description><value>156</value></interrupt>
+    </peripheral>
+    <peripheral derivedFrom="TIM2"><name>TIM23</name><baseAddress>1073799168</baseAddress><interrupt><name>TIM23</name><description>TIM23 global interrupt</description><value>161</value></interrupt>
+    </peripheral>
+    <peripheral derivedFrom="TIM2"><name>TIM24</name><baseAddress>1073800192</baseAddress><interrupt><name>TIM24</name><description>TIM24 global interrupt</description><value>162</value></interrupt>
+    </peripheral>
+    <peripheral><name>CORDIC</name><description>CORDIC co-processor</description><groupName>CORDIC</groupName><baseAddress>1208108032</baseAddress><addressBlock><offset>0</offset><size>1024</size><usage>registers</usage></addressBlock><interrupt><name>CORDIC_IT</name><description>CORDIC interrupt</description><value>154</value></interrupt>
+    <registers><register><name>CSR</name><description>Control and status register</description><addressOffset>0</addressOffset><resetValue>80</resetValue><fields><field><name>RRDY</name><description>Result ready flag</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>RRDYR</name><usage>read</usage><enumeratedValue><name>NotReady</name><description>Results from computation are not read</description><value>0</value></enumeratedValue><enumeratedValue><name>Ready</name><description>Results are ready, this flag will be automatically cleared once value is read</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>ARGSIZE</name><description>Width of input data</description><bitOffset>22</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>ARGSIZE</name><usage>read-write</usage><enumeratedValue><name>Bits32</name><description>Use 32 bit input values</description><value>0</value></enumeratedValue><enumeratedValue><name>Bits16</name><description>Use 16 bit input values</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>RESSIZE</name><description>Width of output data</description><bitOffset>21</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>RESSIZE</name><usage>read-write</usage><enumeratedValue><name>Bits32</name><description>Use 32 bit output values</description><value>0</value></enumeratedValue><enumeratedValue><name>Bits16</name><description>Use 16 bit output values</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>NARGS</name><description>Number of arguments expected by the WDATA register</description><bitOffset>20</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>NARGS</name><usage>read-write</usage><enumeratedValue><name>Num1</name><description>Only single argument write is needed for next calculation</description><value>0</value></enumeratedValue><enumeratedValue><name>Num2</name><description>Two argument writes need to be performed for next calculation</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>NRES</name><description>Number of results in the RDATA register</description><bitOffset>19</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>NRES</name><usage>read-write</usage><enumeratedValue><name>Num1</name><description>Only single result value will be returned. After a single read RRDY will be automatically cleared</description><value>0</value></enumeratedValue><enumeratedValue><name>Num2</name><description>Two return reads need to be performed. After two reads RRDY will be automatically cleared</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>DMAWEN</name><description>Enable DMA write channel</description><bitOffset>18</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>DMAWEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>No DMA channel writes are generated</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Write requests are generated on the DMA channel when no operation is pending</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>DMAREN</name><description>Enable DMA wread channel</description><bitOffset>17</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>DMAREN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>No DMA channel reads are generated</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Read requests are generated on the DMA channel when RRDY flag is set</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>IEN</name><description>Enable interrupt</description><bitOffset>16</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>IEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Disable interrupt request generation</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Enable interrupt request generation</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>SCALE</name><description>Scaling factor (2^-n for arguments, 2^n for results)</description><bitOffset>8</bitOffset><bitWidth>3</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
+            </field>
+            <field><name>PRECISION</name><description>Precision required (number of iterations/cycles), where PRECISION = (number of iterations/4)</description><bitOffset>4</bitOffset><bitWidth>4</bitWidth><enumeratedValues><name>PRECISION</name><usage>read-write</usage><enumeratedValue><name>Iters4</name><description>4 iterations</description><value>1</value></enumeratedValue><enumeratedValue><name>Iters8</name><description>8 iterations</description><value>2</value></enumeratedValue><enumeratedValue><name>Iters12</name><description>12 iterations</description><value>3</value></enumeratedValue><enumeratedValue><name>Iters16</name><description>16 iterations</description><value>4</value></enumeratedValue><enumeratedValue><name>Iters20</name><description>20 iterations</description><value>5</value></enumeratedValue><enumeratedValue><name>Iters24</name><description>24 iterations</description><value>6</value></enumeratedValue><enumeratedValue><name>Iters28</name><description>28 iterations</description><value>7</value></enumeratedValue><enumeratedValue><name>Iters32</name><description>32 iterations</description><value>8</value></enumeratedValue><enumeratedValue><name>Iters36</name><description>36 iterations</description><value>9</value></enumeratedValue><enumeratedValue><name>Iters40</name><description>40 iterations</description><value>10</value></enumeratedValue><enumeratedValue><name>Iters44</name><description>44 iterations</description><value>11</value></enumeratedValue><enumeratedValue><name>Iters48</name><description>48 iterations</description><value>12</value></enumeratedValue><enumeratedValue><name>Iters52</name><description>52 iterations</description><value>13</value></enumeratedValue><enumeratedValue><name>Iters56</name><description>56 iterations</description><value>14</value></enumeratedValue><enumeratedValue><name>Iters60</name><description>60 iterations</description><value>15</value></enumeratedValue></enumeratedValues>
+            </field>
+            <field><name>FUNC</name><description>Function</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth><enumeratedValues><name>FUNC</name><usage>read-write</usage><enumeratedValue><name>Cosine</name><description>Cosine function</description><value>0</value></enumeratedValue><enumeratedValue><name>Sine</name><description>Sine function</description><value>1</value></enumeratedValue><enumeratedValue><name>Phase</name><description>Phase function</description><value>2</value></enumeratedValue><enumeratedValue><name>Modulus</name><description>Modulus function</description><value>3</value></enumeratedValue><enumeratedValue><name>Arctangent</name><description>Arctangent function</description><value>4</value></enumeratedValue><enumeratedValue><name>HyperbolicCosine</name><description>Hyperbolic Cosine function</description><value>5</value></enumeratedValue><enumeratedValue><name>HyperbolicSine</name><description>Hyperbolic Sine function</description><value>6</value></enumeratedValue><enumeratedValue><name>Arctanh</name><description>Arctanh function</description><value>7</value></enumeratedValue><enumeratedValue><name>NaturalLogarithm</name><description>Natural Logarithm function</description><value>8</value></enumeratedValue><enumeratedValue><name>SquareRoot</name><description>Square Root function</description><value>9</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields></register>
+        <register><name>WDATA</name><description>Argument register</description><addressOffset>4</addressOffset><resetValue>4294967295</resetValue><fields><field><name>ARG</name><description>Function input arguments</description><bitOffset>0</bitOffset><bitWidth>32</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
+            </field>
+            </fields></register>
+        <register><name>RDATA</name><description>Result register</description><addressOffset>8</addressOffset><resetValue>0</resetValue><fields><field><name>RES</name><description>Function result</description><bitOffset>0</bitOffset><bitWidth>32</bitWidth><writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
+            </field>
+            </fields></register>
+        </registers></peripheral>
+    <peripheral><name>FMAC</name><description>Filter math accelerator</description><groupName>FMAC</groupName><baseAddress>1208107008</baseAddress><addressBlock><offset>0</offset><size>1024</size><usage>registers</usage></addressBlock><interrupt><name>FMAC</name><description>FMAC interrupt</description><value>153</value></interrupt>
+    <registers><register><name>X1BUFCFG</name><description>X1 buffer configuration register</description><addressOffset>0</addressOffset><resetValue>0</resetValue><fields><field><name>FULL_WM</name><description>Watermark for buffer full flag</description><bitOffset>24</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>X1_BUF_SIZE</name><description>Allocated size of X1 buffer in 16-bit words</description><bitOffset>8</bitOffset><bitWidth>8</bitWidth></field>
+            <field><name>X1_BASE</name><description>Base address of X1 buffer</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth></field>
+            </fields></register>
+        <register><name>X2BUFCFG</name><description>X2 buffer configuration register</description><addressOffset>4</addressOffset><resetValue>0</resetValue><fields><field><name>X2_BUF_SIZE</name><description>Size of X2 buffer in 16-bit words</description><bitOffset>8</bitOffset><bitWidth>8</bitWidth></field>
+            <field><name>X2_BASE</name><description>Base address of X2 buffer</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth></field>
+            </fields></register>
+        <register><name>YBUFCFG</name><description>Y buffer configuration register</description><addressOffset>8</addressOffset><resetValue>0</resetValue><fields><field><name>EMPTY_WM</name><description>Watermark for buffer empty flag</description><bitOffset>24</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>Y_BUF_SIZE</name><description>Size of Y buffer in 16-bit words</description><bitOffset>8</bitOffset><bitWidth>8</bitWidth></field>
+            <field><name>Y_BASE</name><description>Base address of Y buffer</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth></field>
+            </fields></register>
+        <register><name>PARAM</name><description>Parameter register</description><addressOffset>12</addressOffset><resetValue>0</resetValue><fields><field><name>START</name><description>Enable execution</description><bitOffset>31</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>FUNC</name><description>Function</description><bitOffset>24</bitOffset><bitWidth>7</bitWidth></field>
+            <field><name>R</name><description>Input parameter R</description><bitOffset>16</bitOffset><bitWidth>8</bitWidth></field>
+            <field><name>Q</name><description>Input parameter Q</description><bitOffset>8</bitOffset><bitWidth>8</bitWidth></field>
+            <field><name>P</name><description>Input parameter P</description><bitOffset>0</bitOffset><bitWidth>8</bitWidth></field>
+            </fields></register>
+        <register><name>CR</name><description>Control register</description><addressOffset>16</addressOffset><resetValue>0</resetValue><fields><field><name>RESET</name><description>Reset FMAC unit</description><bitOffset>16</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>CLIPEN</name><description>Enable clipping</description><bitOffset>15</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>DMAWEN</name><description>Enable DMA write channel requests</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>DMAREN</name><description>Enable DMA read channel requests</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>SATIEN</name><description>Enable saturation error interrupts</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>UNFLIEN</name><description>Enable underflow error interrupts</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>OVFLIEN</name><description>Enable overflow error interrupts</description><bitOffset>2</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>WIEN</name><description>Enable write interrupt</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>RIEN</name><description>Enable read interrupt</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth></field>
+            </fields></register>
+        <register><name>SR</name><description>Status register</description><addressOffset>20</addressOffset><resetValue>1</resetValue><fields><field><name>SAT</name><description>Saturation error flag</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>UNFL</name><description>Underflow error flag</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>OVFL</name><description>Overflow error flag</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>X1FULL</name><description>X1 buffer full flag</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>YEMPTY</name><description>Y buffer empty flag</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth></field>
+            </fields></register>
+        <register><name>WDATA</name><description>Write data register</description><addressOffset>24</addressOffset><resetValue>0</resetValue><fields><field><name>WDATA</name><description>Write data (write data are transferred to the address indicated by the write pointer)</description><bitOffset>0</bitOffset><bitWidth>16</bitWidth></field>
+            </fields></register>
+        <register><name>RDATA</name><description>Read data register</description><addressOffset>28</addressOffset><resetValue>0</resetValue><fields><field><name>RES</name><description>Read data (contents of the Y output buffer at the address indicated by the READ pointer)</description><bitOffset>0</bitOffset><bitWidth>16</bitWidth></field>
             </fields></register>
         </registers></peripheral>
     <peripheral derivedFrom="DMA1"><name>DMA2</name><baseAddress>1073873920</baseAddress><interrupt><name>DMA2_STR0</name><description>DMA2 Stream0</description><value>56</value></interrupt>

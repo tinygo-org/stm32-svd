@@ -18,7 +18,7 @@
   <resetMask>0xFFFFFFFF</resetMask>
   <peripherals>
     <peripheral>
-      <name>DAC1</name>
+      <name>DAC</name>
       <description>Digital-to-analog converter</description>
       <groupName>DAC</groupName>
       <baseAddress>0x40007400</baseAddress>
@@ -42,6 +42,7 @@
               <description>DAC channel1 enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>EN1</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>DAC Channel X disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>DAC Channel X enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TEN1</name>
@@ -49,6 +50,7 @@
               enable</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>TEN1</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>DAC Channel X trigger disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>DAC Channel X trigger enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TSEL1</name>
@@ -56,6 +58,7 @@
               selection</description>
               <bitOffset>3</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>TSEL1</name><usage>read-write</usage><enumeratedValue><name>TIM6_TRGO</name><description>TIM6_TRGO event trigger for DAC conversion, if TEN is enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM8_TRGO</name><description>TIM8_TRGO</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM7_TRGO</name><description>TIM7_TRGO  (Note: Reserved on STM32L45xxx and STM32L46xxx devices)</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM5_TRGO</name><description>TIM5_TRGO</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2_TRGO</name><description>TIM2_TRGO</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM4_TRGO</name><description>TIM4_TRGO</description><value>5</value></enumeratedValue><enumeratedValue><name>EXTI9</name><description>External pin</description><value>6</value></enumeratedValue><enumeratedValue><name>SWTRIG</name><description>Software triger</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>WAVE1</name>
@@ -63,6 +66,7 @@
               generation enable</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>WAVE1</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Wave generation disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Noise</name><description>Noise wave generation enabled</description><value>1</value></enumeratedValue><enumeratedValue><name>Triangle</name><description>Triangle wave generation enabled</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MAMP1</name>
@@ -70,12 +74,14 @@
               selector</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
+            <enumeratedValues><name>MAMP1</name><usage>read-write</usage><enumeratedValue><name>Amp1</name><description>Unmask bit0 of LFSR/ triangle amplitude equal to 1</description><value>0</value></enumeratedValue><enumeratedValue><name>Amp3</name><description>Unmask bits[1:0] of LFSR/ triangle amplitude equal to 3</description><value>1</value></enumeratedValue><enumeratedValue><name>Amp7</name><description>Unmask bits[2:0] of LFSR/ triangle amplitude equal to 7</description><value>2</value></enumeratedValue><enumeratedValue><name>Amp15</name><description>Unmask bits[3:0] of LFSR/ triangle amplitude equal to 15</description><value>3</value></enumeratedValue><enumeratedValue><name>Amp31</name><description>Unmask bits[4:0] of LFSR/ triangle amplitude equal to 31</description><value>4</value></enumeratedValue><enumeratedValue><name>Amp63</name><description>Unmask bits[5:0] of LFSR/ triangle amplitude equal 63</description><value>5</value></enumeratedValue><enumeratedValue><name>Amp127</name><description>Unmask bits[6:0] of LFSR/ triangle amplitude equal to 127</description><value>6</value></enumeratedValue><enumeratedValue><name>Amp255</name><description>Unmask bits[7:0] of LFSR/ triangle amplitude equal to 255</description><value>7</value></enumeratedValue><enumeratedValue><name>Amp511</name><description>Unmask bits[8:0] of LFSR/ triangle amplitude equal to 511</description><value>8</value></enumeratedValue><enumeratedValue><name>Amp1023</name><description>Unmask bits[9:0] of LFSR/ triangle amplitude equal to 1023</description><value>9</value></enumeratedValue><enumeratedValue><name>Amp2047</name><description>Unmask bits[10:0] of LFSR/ triangle amplitude equal to 2047</description><value>10</value></enumeratedValue><enumeratedValue><name>Amp4095</name><description>Unmask bits[11:0] of LFSR/ triangle amplitude equal to 4095</description><value>11</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DMAEN1</name>
               <description>DAC channel1 DMA enable</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>DMAEN1</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>DAC Channel X DMA mode disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>DAC Channel X DMA mode enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DMAUDRIE1</name>
@@ -83,6 +89,7 @@
               enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>DMAUDRIE1</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>DAC Channel X  DMA Underrun Interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>DAC Channel X DMA Underrun Interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CEN1</name>
@@ -90,12 +97,14 @@
               enable</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CEN1</name><usage>read-write</usage><enumeratedValue><name>Normal</name><description>DAC Channel X Normal operating mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Calibration</name><description>DAC Channel X calibration mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>EN2</name>
               <description>DAC channel2 enable</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="EN1"/>
             </field>
             <field>
               <name>TEN2</name>
@@ -103,6 +112,7 @@
               enable</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="TEN1"/>
             </field>
             <field>
               <name>TSEL2</name>
@@ -110,6 +120,7 @@
               selection</description>
               <bitOffset>19</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="TSEL1"/>
             </field>
             <field>
               <name>WAVE2</name>
@@ -117,6 +128,7 @@
               generation enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="WAVE1"/>
             </field>
             <field>
               <name>MAMP2</name>
@@ -124,12 +136,14 @@
               selector</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
+            <enumeratedValues derivedFrom="MAMP1"/>
             </field>
             <field>
               <name>DMAEN2</name>
               <description>DAC channel2 DMA enable</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMAEN1"/>
             </field>
             <field>
               <name>DMAUDRIE2</name>
@@ -137,6 +151,7 @@
               enable</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="DMAUDRIE1"/>
             </field>
             <field>
               <name>CEN2</name>
@@ -144,6 +159,7 @@
               enable</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="CEN1"/>
             </field>
           </fields>
         </register>
@@ -162,6 +178,7 @@
               trigger</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>SWTRIG1</name><usage>read-write</usage><enumeratedValue><name>NoTrigger</name><description>No trigger</description><value>0</value></enumeratedValue><enumeratedValue><name>Trigger</name><description>Trigger</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SWTRIG2</name>
@@ -169,6 +186,7 @@
               trigger</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="SWTRIG1"/>
             </field>
           </fields>
         </register>
@@ -188,6 +206,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -207,6 +226,7 @@
               data</description>
               <bitOffset>4</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -226,6 +246,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -245,6 +266,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -264,6 +286,7 @@
               data</description>
               <bitOffset>4</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -283,6 +306,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -302,6 +326,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DACC2DHR</name>
@@ -309,6 +334,7 @@
               data</description>
               <bitOffset>16</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -328,6 +354,7 @@
               data</description>
               <bitOffset>4</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DACC2DHR</name>
@@ -335,6 +362,7 @@
               data</description>
               <bitOffset>20</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -354,6 +382,7 @@
               data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>DACC2DHR</name>
@@ -361,6 +390,7 @@
               data</description>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -378,6 +408,7 @@
               <description>DAC channel1 data output</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -395,6 +426,7 @@
               <description>DAC channel2 data output</description>
               <bitOffset>0</bitOffset>
               <bitWidth>12</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4095</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -413,6 +445,7 @@
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>DMAUDR1</name><usage>read-write</usage><enumeratedValue><name>NoError</name><description>No DMA underrun error condition occurred for DAC channel x</description><value>0</value></enumeratedValue><enumeratedValue><name>Error</name><description>DMA underrun error condition occurred for DAC channel x (the currently selected trigger is driving DAC channel1 conversion at a frequency higher than the DMA service capability rate)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CAL_FLAG1</name>
@@ -421,6 +454,7 @@
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>CAL_FLAG1</name><usage>read-write</usage><enumeratedValue><name>Lower</name><description>Calibration trimming value is lower than the offset correction value</description><value>0</value></enumeratedValue><enumeratedValue><name>Equal_Higher</name><description>Calibration trimming value is equal or greater than the offset correction value</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>BWST1</name>
@@ -429,6 +463,7 @@
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>BWST1</name><usage>read-write</usage><enumeratedValue><name>Idle</name><description>There is no write operation of DAC_SHSR1 ongoing: DAC_SHSR1 can be written</description><value>0</value></enumeratedValue><enumeratedValue><name>Busy</name><description>There is a write operation of DAC_SHSR1 ongoing: DAC_SHSR1 cannot be written</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DMAUDR2</name>
@@ -437,6 +472,7 @@
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="DMAUDR1"/>
             </field>
             <field>
               <name>CAL_FLAG2</name>
@@ -445,6 +481,7 @@
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="CAL_FLAG1"/>
             </field>
             <field>
               <name>BWST2</name>
@@ -453,6 +490,7 @@
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues derivedFrom="BWST1"/>
             </field>
           </fields>
         </register>
@@ -471,6 +509,7 @@
               value</description>
               <bitOffset>0</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
             <field>
               <name>OTRIM2</name>
@@ -478,6 +517,7 @@
               value</description>
               <bitOffset>16</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -495,12 +535,14 @@
               <description>DAC Channel 1 mode</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues><name>MODE1</name><usage>read-write</usage><enumeratedValue><name>NormalPinBuffer</name><description>Normal mode - DAC channelx is connected to external pin with Buffer enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>NormalPinChipBuffer</name><description>Normal mode - DAC channelx is connected to external pin and to on chip peripherals with Buffer enabled</description><value>1</value></enumeratedValue><enumeratedValue><name>NormalPinNoBuffer</name><description>Normal mode - DAC channelx is connected to external pin with Buffer disabled</description><value>2</value></enumeratedValue><enumeratedValue><name>NormalChipNoBuffer</name><description>Normal mode - DAC channelx is connected to on chip peripherals with Buffer disabled</description><value>3</value></enumeratedValue><enumeratedValue><name>SHPinBuffer</name><description>S&amp;H mode - DAC channelx is connected to external pin with Buffer enabled</description><value>4</value></enumeratedValue><enumeratedValue><name>SHPinChipBuffer</name><description>S&amp;H mode - DAC channelx is connected to external pin and to on chip peripherals with Buffer enabled</description><value>5</value></enumeratedValue><enumeratedValue><name>SHPinNoBuffer</name><description>S&amp;H mode - DAC channelx is connected to external pin and to on chip peripherals with Buffer disabled</description><value>6</value></enumeratedValue><enumeratedValue><name>SHChipNoBuffer</name><description>S&amp;H mode - DAC channelx is connected to on chip peripherals with Buffer disabled</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MODE2</name>
               <description>DAC Channel 2 mode</description>
               <bitOffset>16</bitOffset>
               <bitWidth>3</bitWidth>
+            <enumeratedValues derivedFrom="MODE1"/>
             </field>
           </fields>
         </register>
@@ -519,6 +561,7 @@
               <description>DAC Channel 1 sample Time</description>
               <bitOffset>0</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -537,6 +580,7 @@
               <description>DAC Channel 2 sample Time</description>
               <bitOffset>0</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -555,12 +599,14 @@
               <description>DAC Channel 1 hold Time</description>
               <bitOffset>0</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
             <field>
               <name>THOLD2</name>
               <description>DAC Channel 2 hold time</description>
               <bitOffset>16</bitOffset>
               <bitWidth>10</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1023</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -579,12 +625,14 @@
               <description>DAC Channel 1 refresh Time</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TREFRESH2</name>
               <description>DAC Channel 2 refresh Time</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -2405,10 +2453,11 @@
           <resetValue>0x04C11DB7</resetValue>
           <fields>
             <field>
-              <name>Polynomialcoefficients</name>
+              <name>POL</name>
               <description>Programmable polynomial</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -5618,92 +5667,103 @@
           <resetValue>0x0</resetValue>
           <fields>
             <field>
-              <name>COMP1_EN</name>
+              <name>EN</name>
               <description>Comparator 1 enable bit</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Comparator 1 disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Comparator 1 enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_PWRMODE</name>
+              <name>PWRMODE</name>
               <description>Power Mode of the comparator
               1</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PWRMODE</name><usage>read-write</usage><enumeratedValue><name>HighSpeed</name><description>High speed / full power</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed / medium power</description><value>1</value></enumeratedValue><enumeratedValue><name>LowSpeed</name><description>Low speed / ultra-low power</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_INMSEL</name>
+              <name>INMSEL</name>
               <description>Comparator 1 Input Minus connection
               configuration bit</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INMSEL</name><usage>read-write</usage><enumeratedValue><name>OneQuarterVRef</name><description>1/4 of VRefint</description><value>0</value></enumeratedValue><enumeratedValue><name>OneHalfVRef</name><description>1/2 of VRefint</description><value>1</value></enumeratedValue><enumeratedValue><name>ThreeQuarterVRef</name><description>3/4 of VRefint</description><value>2</value></enumeratedValue><enumeratedValue><name>VRef</name><description>VRefint</description><value>3</value></enumeratedValue><enumeratedValue><name>DAC_CH1</name><description>DAC Channel 1</description><value>4</value></enumeratedValue><enumeratedValue><name>DAC_CH2</name><description>DAC Channel 2</description><value>5</value></enumeratedValue><enumeratedValue><name>GPIOx</name><description>GPIO selected with INMESEL</description><value>6</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_INPSEL</name>
+              <name>INPSEL</name>
               <description>Comparator1 input plus selection
               bit</description>
               <bitOffset>7</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INPSEL</name><usage>read-write</usage><enumeratedValue><name>PC5</name><description>PC5 connected to input plus</description><value>0</value></enumeratedValue><enumeratedValue><name>PB2</name><description>PB2 connected to input plus</description><value>1</value></enumeratedValue><enumeratedValue><name>PA3</name><description>PA3 connected to input plus</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_POLARITY</name>
+              <name>POLARITY</name>
               <description>Comparator 1 polarity selection
               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>POLARITY</name><usage>read-write</usage><enumeratedValue><name>NotInverted</name><description>Output is not inverted</description><value>0</value></enumeratedValue><enumeratedValue><name>Inverted</name><description>Output is inverted</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_HYST</name>
+              <name>HYST</name>
               <description>Comparator 1 hysteresis selection
               bits</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>HYST</name><usage>read-write</usage><enumeratedValue><name>NoHysteresis</name><description>No hysteresis</description><value>0</value></enumeratedValue><enumeratedValue><name>LowHysteresis</name><description>Low hysteresis</description><value>1</value></enumeratedValue><enumeratedValue><name>MediumHysteresis</name><description>Medium hysteresis</description><value>2</value></enumeratedValue><enumeratedValue><name>HighHysteresis</name><description>High hysteresis</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_BLANKING</name>
+              <name>BLANKING</name>
               <description>Comparator 1 blanking source selection
               bits</description>
               <bitOffset>18</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>BLANKING</name><usage>read-write</usage><enumeratedValue><name>NoBlanking</name><description>No blanking</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1OC5</name><description>TIM15 OC1 selected as blanking source</description><value>4</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_BRGEN</name>
+              <name>BRGEN</name>
               <description>Scaler bridge enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>BRGEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Scaler resistor bridge disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Scaler resistor bridge enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_SCALEN</name>
+              <name>SCALEN</name>
               <description>Voltage scaler enable bit</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>SCALEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Voltage scaler disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Voltage scaler enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_INMESEL</name>
+              <name>INMESEL</name>
               <description>comparator 1 input minus extended
               selection bits</description>
               <bitOffset>25</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INMESEL</name><usage>read-write</usage><enumeratedValue><name>PC4</name><description>PC4</description><value>0</value></enumeratedValue><enumeratedValue><name>PA0</name><description>PA0</description><value>1</value></enumeratedValue><enumeratedValue><name>PA4</name><description>PA4</description><value>2</value></enumeratedValue><enumeratedValue><name>PA5</name><description>PA5</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_VALUE</name>
+              <name>VALUE</name>
               <description>Comparator 1 output status
               bit</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>VALUE</name><usage>read-write</usage><enumeratedValue><name>Low</name><description>Comparator output is low</description><value>0</value></enumeratedValue><enumeratedValue><name>High</name><description>Comparator output is high</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP1_LOCK</name>
+              <name>LOCK</name>
               <description>COMP1_CSR register lock
               bit</description>
               <bitOffset>31</bitOffset>
@@ -5722,99 +5782,111 @@
           <resetValue>0x0</resetValue>
           <fields>
             <field>
-              <name>COMP2_EN</name>
+              <name>EN</name>
               <description>Comparator 2 enable bit</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Comparator 1 disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Comparator 1 enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_PWRMODE</name>
+              <name>PWRMODE</name>
               <description>Power Mode of the comparator
               2</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>PWRMODE</name><usage>read-write</usage><enumeratedValue><name>HighSpeed</name><description>High speed / full power</description><value>0</value></enumeratedValue><enumeratedValue><name>MediumSpeed</name><description>Medium speed / medium power</description><value>1</value></enumeratedValue><enumeratedValue><name>LowSpeed</name><description>Low speed / ultra-low power</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_INMSEL</name>
+              <name>INMSEL</name>
               <description>Comparator 2 Input Minus connection
               configuration bit</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INMSEL</name><usage>read-write</usage><enumeratedValue><name>OneQuarterVRef</name><description>1/4 of VRefint</description><value>0</value></enumeratedValue><enumeratedValue><name>OneHalfVRef</name><description>1/2 of VRefint</description><value>1</value></enumeratedValue><enumeratedValue><name>ThreeQuarterVRef</name><description>3/4 of VRefint</description><value>2</value></enumeratedValue><enumeratedValue><name>VRef</name><description>VRefint</description><value>3</value></enumeratedValue><enumeratedValue><name>DAC_CH1</name><description>DAC Channel 1</description><value>4</value></enumeratedValue><enumeratedValue><name>DAC_CH2</name><description>DAC Channel 2</description><value>5</value></enumeratedValue><enumeratedValue><name>PB3</name><description>PB3</description><value>6</value></enumeratedValue><enumeratedValue><name>GPIOx</name><description>GPIO selected by INMESEL</description><value>7</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_INPSEL</name>
+              <name>INPSEL</name>
               <description>Comparator 2 Input Plus connection
               configuration bit</description>
               <bitOffset>7</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INPSEL</name><usage>read-write</usage><enumeratedValue><name>PB4</name><description>PB4 connected to input plus</description><value>0</value></enumeratedValue><enumeratedValue><name>PB6</name><description>PB6 connected to input plus</description><value>1</value></enumeratedValue><enumeratedValue><name>PA3</name><description>PA3 connected to input plus</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_WINMODE</name>
+              <name>WINMODE</name>
               <description>Windows mode selection bit</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>WINMODE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>COMP2 input plus is not connected to COMP1</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>COMP2 input plus is connected to COMP1 plus</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_POLARITY</name>
+              <name>POLARITY</name>
               <description>Comparator 2 polarity selection
               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>POLARITY</name><usage>read-write</usage><enumeratedValue><name>NotInverted</name><description>Output is not inverted</description><value>0</value></enumeratedValue><enumeratedValue><name>Inverted</name><description>Output is inverted</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_HYST</name>
+              <name>HYST</name>
               <description>Comparator 2 hysteresis selection
               bits</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>HYST</name><usage>read-write</usage><enumeratedValue><name>NoHysteresis</name><description>No hysteresis</description><value>0</value></enumeratedValue><enumeratedValue><name>LowHysteresis</name><description>Low hysteresis</description><value>1</value></enumeratedValue><enumeratedValue><name>MediumHysteresis</name><description>Medium hysteresis</description><value>2</value></enumeratedValue><enumeratedValue><name>HighHysteresis</name><description>High hysteresis</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_BLANKING</name>
+              <name>BLANKING</name>
               <description>Comparator 2 blanking source selection
               bits</description>
               <bitOffset>18</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>BLANKING</name><usage>read-write</usage><enumeratedValue><name>NoBlanking</name><description>No blanking</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1OC5</name><description>TIM15 OC1 selected as blanking source</description><value>4</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_BRGEN</name>
+              <name>BRGEN</name>
               <description>Scaler bridge enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>BRGEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Scaler resistor bridge disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Scaler resistor bridge enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_SCALEN</name>
+              <name>SCALEN</name>
               <description>Voltage scaler enable bit</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>SCALEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Voltage scaler disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Voltage scaler enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_INMESEL</name>
+              <name>INMESEL</name>
               <description>comparator 2 input minus extended
               selection bits</description>
               <bitOffset>25</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>INMESEL</name><usage>read-write</usage><enumeratedValue><name>PB7</name><description>PB7</description><value>0</value></enumeratedValue><enumeratedValue><name>PA2</name><description>PA2</description><value>1</value></enumeratedValue><enumeratedValue><name>PA4</name><description>PA4</description><value>2</value></enumeratedValue><enumeratedValue><name>PA5</name><description>PA5</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_VALUE</name>
+              <name>VALUE</name>
               <description>Comparator 2 output status
               bit</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
+            <enumeratedValues><name>VALUE</name><usage>read-write</usage><enumeratedValue><name>Low</name><description>Comparator output is low</description><value>0</value></enumeratedValue><enumeratedValue><name>High</name><description>Comparator output is high</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>COMP2_LOCK</name>
+              <name>LOCK</name>
               <description>COMP2_CSR register lock
               bit</description>
               <bitOffset>31</bitOffset>
@@ -8472,6 +8544,7 @@
               <description>ADC clock enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>ADCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>ADC clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>ADC clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>GPIOHEN</name>
@@ -8544,6 +8617,7 @@
               enable</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPTIM1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LPTIM1 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LPTIM1 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPAMPEN</name>
@@ -8577,24 +8651,28 @@
               <description>I2C3 clock enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>I2C3EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>I2C3 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>I2C3 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>I2C1EN</name>
               <description>I2C1 clock enable</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>I2C1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>I2C1 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>I2C1 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USART3EN</name>
               <description>USART3 clock enable</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>USART3EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>USART3 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>USART3 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USART2EN</name>
               <description>USART2 clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>USART2EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>USART2 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>USART2 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SPI3EN</name>
@@ -8668,12 +8746,14 @@
               <description>UART4 clock enable</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>UART4EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>UART4 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>UART4 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>I2C2EN</name>
               <description>I2C2 clock enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>I2C2EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>I2C2 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>I2C2 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -8692,6 +8772,7 @@
               <description>LPTIM2EN</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPTIM2EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LPTIM2 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LPTIM2 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SWPMI1EN</name>
@@ -8706,6 +8787,7 @@
               enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LPUART1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>LPUART1 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>LPUART1 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DFSDMEN</name>
@@ -8753,6 +8835,7 @@
               <description>USART1clock enable</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>USART1EN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>USART1 clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>USART1 clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SPI1EN</name>
@@ -9206,6 +9289,7 @@
               selection</description>
               <bitOffset>28</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>ADCSEL</name><usage>read-write</usage><enumeratedValue><name>NoClock</name><description>No clock selected</description><value>0</value></enumeratedValue><enumeratedValue><name>PLLSAI1</name><description>PLLSAI1 clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>PLLSAI2</name><description>PLLSAI2 clock selected (only for STM32L47x/L48x/L49x/L4Ax devices)</description><value>2</value></enumeratedValue><enumeratedValue><name>SYSCLK</name><description>SYSCLK clock selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CLK48SEL</name>
@@ -9213,6 +9297,7 @@
               selection</description>
               <bitOffset>26</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>CLK48SEL</name><usage>read-write</usage><enumeratedValue><name>HSI48</name><description>HSI48 clock selected (only for STM32L41x/L42x/L43x/L44x/L45x/L46x/L49x/L4Ax devices, otherwise no clock selected)</description><value>0</value></enumeratedValue><enumeratedValue><name>PLLSAI1</name><description>PLLSAI1 clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>PLL</name><description>PLL clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>MSI</name><description>MSI clock selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SAI1SEL</name>
@@ -9227,6 +9312,7 @@
               selection</description>
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="LPTIM1SEL"/>
             </field>
             <field>
               <name>LPTIM1SEL</name>
@@ -9234,6 +9320,7 @@
               selection</description>
               <bitOffset>18</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>LPTIM1SEL</name><usage>read-write</usage><enumeratedValue><name>PCLK</name><description>PCLK clock selected</description><value>0</value></enumeratedValue><enumeratedValue><name>LSI</name><description>LSI clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>HSI16</name><description>HSI16 clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE clock selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>I2C3SEL</name>
@@ -9241,6 +9328,7 @@
               selection</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="I2C1SEL"/>
             </field>
             <field>
               <name>I2C1SEL</name>
@@ -9248,6 +9336,7 @@
               selection</description>
               <bitOffset>12</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>I2C1SEL</name><usage>read-write</usage><enumeratedValue><name>PCLK</name><description>PCLK clock selected</description><value>0</value></enumeratedValue><enumeratedValue><name>SYSCLK</name><description>SYSCLK clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>HSI16</name><description>HSI16 clock selected</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LPUART1SEL</name>
@@ -9255,6 +9344,7 @@
               selection</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>LPUART1SEL</name><usage>read-write</usage><enumeratedValue><name>PCLK</name><description>PCLK clock selected</description><value>0</value></enumeratedValue><enumeratedValue><name>SYSCLK</name><description>SYSCLK clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>HSI16</name><description>HSI16 clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE clock selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USART2SEL</name>
@@ -9262,6 +9352,7 @@
               selection</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="USART1SEL"/>
             </field>
             <field>
               <name>USART1SEL</name>
@@ -9269,6 +9360,7 @@
               selection</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>USART1SEL</name><usage>read-write</usage><enumeratedValue><name>PCLK</name><description>PCLK clock selected</description><value>0</value></enumeratedValue><enumeratedValue><name>SYSCLK</name><description>SYSCLK clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>HSI16</name><description>HSI16 clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE clock selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USART4SEL</name>
@@ -9276,6 +9368,7 @@
               selection</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="USART1SEL"/>
             </field>
             <field>
               <name>USART3SEL</name>
@@ -9283,6 +9376,7 @@
               selection</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="USART1SEL"/>
             </field>
             <field>
               <name>I2C2SEL</name>
@@ -9290,6 +9384,7 @@
               selection</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues derivedFrom="I2C1SEL"/>
             </field>
           </fields>
         </register>
@@ -9331,6 +9426,7 @@
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>RTCEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>RTC clock disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>RTC clock enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>RTCSEL</name>
@@ -9338,6 +9434,7 @@
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
+            <enumeratedValues><name>RTCSEL</name><usage>read-write</usage><enumeratedValue><name>NoClock</name><description>No clock</description><value>0</value></enumeratedValue><enumeratedValue><name>LSE</name><description>LSE oscillator clock selected</description><value>1</value></enumeratedValue><enumeratedValue><name>LSI</name><description>LSI oscillator clock selected</description><value>2</value></enumeratedValue><enumeratedValue><name>HSE</name><description>HSE oscillator clock divided by 32 selected</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LSECSSD</name>
@@ -13441,8 +13538,8 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>regularDATA</name>
-              <description>regularDATA</description>
+              <name>RDATA</name>
+              <description>Regular data</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
@@ -14912,7 +15009,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -14920,7 +15017,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -14928,7 +15025,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -14936,7 +15033,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -14944,7 +15041,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -14952,7 +15049,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -15188,7 +15285,24 @@
             </field>
           </fields>
         </register>
-      </registers>
+      <register><name>BRR</name><description>GPIO port bit reset register</description><addressOffset>40</addressOffset><fields><field><name>BR0</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>BR0W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the corresponding ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field><field><name>BR1</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR2</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>2</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR3</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR4</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR5</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>5</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR6</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR7</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR8</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR9</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR10</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR11</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>11</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR12</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>12</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR13</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>13</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR14</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>14</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR15</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>15</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field></fields></register>
+        </registers>
     </peripheral>
     <peripheral>
       <name>GPIOB</name>
@@ -16329,7 +16443,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -16337,7 +16451,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -16345,7 +16459,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -16353,7 +16467,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -16361,7 +16475,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -16369,7 +16483,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -16605,7 +16719,24 @@
             </field>
           </fields>
         </register>
-      </registers>
+      <register><name>BRR</name><description>GPIO port bit reset register</description><addressOffset>40</addressOffset><fields><field><name>BR0</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>BR0W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the corresponding ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field><field><name>BR1</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR2</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>2</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR3</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR4</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR5</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>5</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR6</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR7</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR8</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR9</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR10</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR11</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>11</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR12</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>12</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR13</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>13</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR14</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>14</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR15</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>15</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field></fields></register>
+        </registers>
     </peripheral>
     <peripheral>
       <name>GPIOC</name>
@@ -17746,7 +17877,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -17754,7 +17885,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -17762,7 +17893,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -17770,7 +17901,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -17778,7 +17909,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -17786,7 +17917,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -18022,7 +18153,24 @@
             </field>
           </fields>
         </register>
-      </registers>
+      <register><name>BRR</name><description>GPIO port bit reset register</description><addressOffset>40</addressOffset><fields><field><name>BR0</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>BR0W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the corresponding ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field><field><name>BR1</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR2</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>2</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR3</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR4</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR5</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>5</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR6</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>6</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR7</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR8</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR9</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR10</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR11</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>11</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR12</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>12</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR13</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>13</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR14</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>14</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field><field><name>BR15</name><description>These bits are write-only. A read to these bits returns the value 0x0000</description><bitOffset>15</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="BR0W"/>
+            </field></fields></register>
+        </registers>
     </peripheral>
     <peripheral derivedFrom="GPIOC">
       <name>GPIOD</name>
@@ -18161,34 +18309,34 @@
               <description>Companding mode</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            <enumeratedValues><name>COMP</name><usage>read-write</usage><enumeratedValue><name>NoCompanding</name><description>No companding algorithm</description><value>0</value></enumeratedValue><enumeratedValue><name>MuLaw</name><description>&#956;-Law algorithm</description><value>2</value></enumeratedValue><enumeratedValue><name>ALaw</name><description>A-Law algorithm</description><value>3</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>COMP</name><usage>read-write</usage><enumeratedValue><name>NoCompanding</name><description>No companding algorithm</description><value>0</value></enumeratedValue><enumeratedValue><name>MuLaw</name><description>&#956;-Law algorithm</description><value>2</value></enumeratedValue><enumeratedValue><name>ALaw</name><description>A-Law algorithm</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CPL</name>
               <description>Complement bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>CPL</name><usage>read-write</usage><enumeratedValue><name>OnesComplement</name><description>1&#8217;s complement representation</description><value>0</value></enumeratedValue><enumeratedValue><name>TwosComplement</name><description>2&#8217;s complement representation</description><value>1</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>CPL</name><usage>read-write</usage><enumeratedValue><name>OnesComplement</name><description>1&#8217;s complement representation</description><value>0</value></enumeratedValue><enumeratedValue><name>TwosComplement</name><description>2&#8217;s complement representation</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>MUTECN</name>
+              <name>MUTECNT</name>
               <description>Mute counter</description>
               <bitOffset>7</bitOffset>
               <bitWidth>6</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>MUTEVAL</name>
               <description>Mute value</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MUTEVAL</name><usage>read-write</usage><enumeratedValue><name>SendZero</name><description>Bit value 0 is sent during the mute mode</description><value>0</value></enumeratedValue><enumeratedValue><name>SendLast</name><description>Last values are sent during the mute mode</description><value>1</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>MUTEVAL</name><usage>read-write</usage><enumeratedValue><name>SendZero</name><description>Bit value 0 is sent during the mute mode</description><value>0</value></enumeratedValue><enumeratedValue><name>SendLast</name><description>Last values are sent during the mute mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>MUTE</name>
               <description>Mute</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MUTE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>No mute mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Mute mode enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>MUTE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>No mute mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Mute mode enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>TRIS</name>
@@ -18196,7 +18344,7 @@
               line</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>FFLUSH</name>
               <description>FIFO flush</description>
@@ -18209,7 +18357,7 @@
               <description>FIFO threshold</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
-            <enumeratedValues><name>FTH</name><usage>read-write</usage><enumeratedValue><name>Empty</name><description>FIFO empty</description><value>0</value></enumeratedValue><enumeratedValue><name>Quarter1</name><description>1&#8260;4 FIFO</description><value>1</value></enumeratedValue><enumeratedValue><name>Quarter2</name><description>1&#8260;2 FIFO</description><value>2</value></enumeratedValue><enumeratedValue><name>Quarter3</name><description>3&#8260;4 FIFO</description><value>3</value></enumeratedValue><enumeratedValue><name>Full</name><description>FIFO full</description><value>4</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>FTH</name><usage>read-write</usage><enumeratedValue><name>Empty</name><description>FIFO empty</description><value>0</value></enumeratedValue><enumeratedValue><name>Quarter1</name><description>1&#8260;4 FIFO</description><value>1</value></enumeratedValue><enumeratedValue><name>Quarter2</name><description>1&#8260;2 FIFO</description><value>2</value></enumeratedValue><enumeratedValue><name>Quarter3</name><description>3&#8260;4 FIFO</description><value>3</value></enumeratedValue><enumeratedValue><name>Full</name><description>FIFO full</description><value>4</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -18228,7 +18376,7 @@
               offset</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>FSOFF</name><usage>read-write</usage><enumeratedValue><name>OnFirst</name><description>FS is asserted on the first bit of the slot 0</description><value>0</value></enumeratedValue><enumeratedValue><name>BeforeFirst</name><description>FS is asserted one bit before the first bit of the slot 0</description><value>1</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>FSOFF</name><usage>read-write</usage><enumeratedValue><name>OnFirst</name><description>FS is asserted on the first bit of the slot 0</description><value>0</value></enumeratedValue><enumeratedValue><name>BeforeFirst</name><description>FS is asserted one bit before the first bit of the slot 0</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>FSPOL</name>
@@ -18236,7 +18384,7 @@
               polarity</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>FSPOL</name><usage>read-write</usage><enumeratedValue><name>FallingEdge</name><description>FS is active low (falling edge)</description><value>0</value></enumeratedValue><enumeratedValue><name>RisingEdge</name><description>FS is active high (rising edge)</description><value>1</value></enumeratedValue></enumeratedValues>
+            <access>read-write</access><enumeratedValues><name>FSPOL</name><usage>read-write</usage><enumeratedValue><name>FallingEdge</name><description>FS is active low (falling edge)</description><value>0</value></enumeratedValue><enumeratedValue><name>RisingEdge</name><description>FS is active high (rising edge)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>FSDEF</name>
@@ -18244,20 +18392,20 @@
               definition</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>FSALL</name>
               <description>Frame synchronization active level
               length</description>
               <bitOffset>8</bitOffset>
               <bitWidth>7</bitWidth>
-            </field>
+            <access>read-write</access></field>
             <field>
               <name>FRL</name>
               <description>Frame length</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>
+            <access>read-write</access></field>
           </fields>
         </register>
         <register>
@@ -18371,8 +18519,8 @@
           <description>AStatus register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+          <access>read-only</access>
+          <resetValue>8</resetValue>
           <fields>
             <field>
               <name>FLVL</name>
@@ -18441,7 +18589,7 @@
           <description>AClear flag register</description>
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
-          <access>read-write</access>
+          <access>write-only</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -19512,6 +19660,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ARPE</name>
@@ -19786,7 +19935,14 @@
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
-          </fields>
+          <field><name>CC2S</name><description>Capture/Compare 2 selection</description><bitOffset>8</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>OC2FE</name><description>Output Compare 2 fast enable</description><bitOffset>10</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>OC2PE</name><description>Capture/Compare 2 selection</description><bitOffset>11</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>OC2M</name><description>Output Compare 2 mode</description><bitOffset>12</bitOffset><bitWidth>3</bitWidth><enumeratedValues derivedFrom="OC1M"/>
+            </field>
+            <field><name>OC2M_3</name><description>Output Compare 2 mode - bit 3</description><bitOffset>24</bitOffset><bitWidth>1</bitWidth><enumeratedValues derivedFrom="OC1M_3"/>
+            </field>
+            </fields>
         </register>
         <register>
           <name>CCMR1_Input</name>
@@ -19818,7 +19974,10 @@
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
-          </fields>
+          <field><name>CC2S</name><description>Capture/Compare 2 selection</description><bitOffset>8</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>IC2PSC</name><description>Input capture 2 prescaler</description><bitOffset>10</bitOffset><bitWidth>2</bitWidth></field>
+            <field><name>IC2F</name><description>Input capture 2 filter</description><bitOffset>12</bitOffset><bitWidth>4</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>CCER</name>
@@ -19858,7 +20017,10 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-          </fields>
+          <field><name>CC2E</name><description>Capture/Compare 2 output enable</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>CC2P</name><description>Capture/Compare 2 output polarity</description><bitOffset>5</bitOffset><bitWidth>1</bitWidth></field>
+            <field><name>CC2NP</name><description>Capture/Compare 2 complementary output polarity</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>CNT</name>
@@ -20061,7 +20223,9 @@
             </field>
           </fields>
         </register>
-      </registers>
+      <register><name>CCR2</name><description>Channel 2 capture/compare register</description><addressOffset>56</addressOffset><fields><field><name>CCR2</name><description>Capture/Compare 2 value</description><bitOffset>0</bitOffset><bitWidth>16</bitWidth><access>read-write</access></field>
+            </fields></register>
+        </registers>
     </peripheral>
     <peripheral>
       <name>TIM16</name>
@@ -20114,7 +20278,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>NotStopped</name><description>Not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopped</name><description>Counter stops counting at next update event</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ARPE</name>
@@ -29769,9 +29933,9 @@
           </fields>
         </register>
         <register>
-          <name>ALRMAR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sR</name>
           <displayName>ALRMAR</displayName>
-          <description>alarm A register</description>
+          <description>Alarm register</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -29779,7 +29943,7 @@
           <fields>
             <field>
               <name>MSK4</name>
-              <description>Alarm A date mask</description>
+              <description>Alarm date mask</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -29797,14 +29961,13 @@
             </field>
             <field>
               <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
+              <description>Date units or day in BCD format</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
             <field>
               <name>MSK3</name>
-              <description>Alarm A hours mask</description>
+              <description>Alarm hours mask</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -29828,7 +29991,7 @@
             </field>
             <field>
               <name>MSK2</name>
-              <description>Alarm A minutes mask</description>
+              <description>Alarm minutes mask</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -29846,103 +30009,7 @@
             </field>
             <field>
               <name>MSK1</name>
-              <description>Alarm A seconds mask</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ST</name>
-              <description>Second tens in BCD format</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>SU</name>
-              <description>Second units in BCD format</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBR</name>
-          <displayName>ALRMBR</displayName>
-          <description>alarm B register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MSK4</name>
-              <description>Alarm B date mask</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>WDSEL</name>
-              <description>Week day selection</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DT</name>
-              <description>Date tens in BCD format</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>MSK3</name>
-              <description>Alarm B hours mask</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>PM</name>
-              <description>AM/PM notation</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>HT</name>
-              <description>Hour tens in BCD format</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>HU</name>
-              <description>Hour units in BCD format</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>MSK2</name>
-              <description>Alarm B minutes mask</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>MNT</name>
-              <description>Minute tens in BCD format</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>MNU</name>
-              <description>Minute units in BCD format</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>MSK1</name>
-              <description>Alarm B seconds mask</description>
+              <description>Alarm seconds mask</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -30306,34 +30373,10 @@
           </fields>
         </register>
         <register>
-          <name>ALRMASSR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sSSR</name>
           <displayName>ALRMASSR</displayName>
-          <description>alarm A sub second register</description>
+          <description>Alarm sub-second register</description>
           <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MASKSS</name>
-              <description>Mask the most-significant bits starting
-              at this bit</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>SS</name>
-              <description>Sub seconds value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBSSR</name>
-          <displayName>ALRMBSSR</displayName>
-          <description>alarm B sub second register</description>
-          <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -30781,6 +30824,7 @@
               Enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPAEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>OpAmp disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>OpAmp enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPALPM</name>
@@ -30788,6 +30832,7 @@
               Mode</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPALPM</name><usage>read-write</usage><enumeratedValue><name>NORMAL</name><description>OpAmp in normal mode</description><value>0</value></enumeratedValue><enumeratedValue><name>LOW</name><description>OpAmp in low power mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPAMODE</name>
@@ -30795,6 +30840,7 @@
               mode</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>OPAMODE</name><usage>read-write</usage><enumeratedValue><name>PGA_DISABLED</name><description>internal PGA diabled</description><value>0</value></enumeratedValue><enumeratedValue><name>PGA_ENABLED</name><description>internal PGA enabled, gain programmed in PGA_GAIN</description><value>2</value></enumeratedValue><enumeratedValue><name>FOLLOWER</name><description>internal follower</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PGA_GAIN</name>
@@ -30802,12 +30848,14 @@
               amplifier gain value</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>PGA_GAIN</name><usage>read-write</usage><enumeratedValue><name>Gain2</name><description>Gain 2</description><value>0</value></enumeratedValue><enumeratedValue><name>Gain4</name><description>Gain 4</description><value>1</value></enumeratedValue><enumeratedValue><name>Gain8</name><description>Gain 8</description><value>2</value></enumeratedValue><enumeratedValue><name>Gain16</name><description>Gain 16</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VM_SEL</name>
               <description>Inverting input selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>VM_SEL</name><usage>read-write</usage><enumeratedValue><name>GPIO</name><description>GPIO connectet to VINM</description><value>0</value></enumeratedValue><enumeratedValue><name>LOW_LEAKAGE</name><description>Low leakage inputs connecte (only available in certen BGA cases</description><value>1</value></enumeratedValue><enumeratedValue><name>PGA_MODE</name><description>OPAMP in PGA mode</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VP_SEL</name>
@@ -30815,18 +30863,21 @@
               selection</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VP_SEL</name><usage>read-write</usage><enumeratedValue><name>GPIO</name><description>GPIO connectet to VINP</description><value>0</value></enumeratedValue><enumeratedValue><name>DAC</name><description>DAC connected to VPINP</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALON</name>
               <description>Calibration mode enabled</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CALON</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Normal mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Calibration mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALSEL</name>
               <description>Calibration selection</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CALSEL</name><usage>read-write</usage><enumeratedValue><name>NMOS</name><description>0.2V applied to OPAMP inputs during calibration</description><value>0</value></enumeratedValue><enumeratedValue><name>PMOS</name><description>VDDA-0.2V applied to OPAMP inputs during calibration"</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USERTRIM</name>
@@ -30834,6 +30885,7 @@
               values to AOP offset</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>USERTRIM</name><usage>read-write</usage><enumeratedValue><name>Factory</name><description>Factory trim used</description><value>0</value></enumeratedValue><enumeratedValue><name>User</name><description>User trim used</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALOUT</name>
@@ -30841,6 +30893,7 @@
               output</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1</maximum></range></writeConstraint>
             </field>
             <field>
               <name>OPA_RANGE</name>
@@ -30848,6 +30901,7 @@
               for stability</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPA_RANGE</name><usage>read-write</usage><enumeratedValue><name>LOW</name><description>low range (VDDA &lt; 2.4V</description><value>0</value></enumeratedValue><enumeratedValue><name>HIGH</name><description>low range (VDDA &gt;2.4V</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -30867,6 +30921,7 @@
               pairs</description>
               <bitOffset>0</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TRIMOFFSETP</name>
@@ -30874,6 +30929,7 @@
               pairs</description>
               <bitOffset>8</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -30893,6 +30949,7 @@
               pairs</description>
               <bitOffset>0</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TRIMLPOFFSETP</name>
@@ -30900,6 +30957,7 @@
               pairs</description>
               <bitOffset>8</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -30918,6 +30976,7 @@
               Enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPAEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>OpAmp disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>OpAmp enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPALPM</name>
@@ -30925,6 +30984,7 @@
               Mode</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPALPM</name><usage>read-write</usage><enumeratedValue><name>NORMAL</name><description>OpAmp in normal mode</description><value>0</value></enumeratedValue><enumeratedValue><name>LOW</name><description>OpAmp in low power mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>OPAMODE</name>
@@ -30932,6 +30992,7 @@
               mode</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>OPAMODE</name><usage>read-write</usage><enumeratedValue><name>PGA_DISABLED</name><description>internal PGA diabled</description><value>0</value></enumeratedValue><enumeratedValue><name>PGA_ENABLED</name><description>internal PGA enabled, gain programmed in PGA_GAIN</description><value>2</value></enumeratedValue><enumeratedValue><name>FOLLOWER</name><description>internal follower</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>PGA_GAIN</name>
@@ -30939,12 +31000,14 @@
               amplifier gain value</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>PGA_GAIN</name><usage>read-write</usage><enumeratedValue><name>Gain2</name><description>Gain 2</description><value>0</value></enumeratedValue><enumeratedValue><name>Gain4</name><description>Gain 4</description><value>1</value></enumeratedValue><enumeratedValue><name>Gain8</name><description>Gain 8</description><value>2</value></enumeratedValue><enumeratedValue><name>Gain16</name><description>Gain 16</description><value>3</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VM_SEL</name>
               <description>Inverting input selection</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+            <enumeratedValues><name>VM_SEL</name><usage>read-write</usage><enumeratedValue><name>GPIO</name><description>GPIO connectet to VINM</description><value>0</value></enumeratedValue><enumeratedValue><name>LOW_LEAKAGE</name><description>Low leakage inputs connecte (only available in certen BGA cases</description><value>1</value></enumeratedValue><enumeratedValue><name>PGA_MODE</name><description>OPAMP in PGA mode</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>VP_SEL</name>
@@ -30952,18 +31015,21 @@
               selection</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>VP_SEL</name><usage>read-write</usage><enumeratedValue><name>GPIO</name><description>GPIO connectet to VINP</description><value>0</value></enumeratedValue><enumeratedValue><name>DAC</name><description>DAC connected to VPINP</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALON</name>
               <description>Calibration mode enabled</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CALON</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Normal mode</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Calibration mode</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALSEL</name>
               <description>Calibration selection</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>CALSEL</name><usage>read-write</usage><enumeratedValue><name>NMOS</name><description>0.2V applied to OPAMP inputs during calibration</description><value>0</value></enumeratedValue><enumeratedValue><name>PMOS</name><description>VDDA-0.2V applied to OPAMP inputs during calibration"</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>USERTRIM</name>
@@ -30971,6 +31037,7 @@
               values to AOP offset</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>USERTRIM</name><usage>read-write</usage><enumeratedValue><name>Factory</name><description>Factory trim used</description><value>0</value></enumeratedValue><enumeratedValue><name>User</name><description>User trim used</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CALOUT</name>
@@ -30978,6 +31045,7 @@
               output</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>1</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -30997,6 +31065,7 @@
               pairs</description>
               <bitOffset>0</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TRIMOFFSETP</name>
@@ -31004,6 +31073,7 @@
               pairs</description>
               <bitOffset>8</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -31023,6 +31093,7 @@
               pairs</description>
               <bitOffset>0</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
             <field>
               <name>TRIMLPOFFSETP</name>
@@ -31030,6 +31101,7 @@
               pairs</description>
               <bitOffset>8</bitOffset>
               <bitWidth>5</bitWidth>
+            <writeConstraint><range><minimum>0</minimum><maximum>31</maximum></range></writeConstraint>
             </field>
           </fields>
         </register>
@@ -34800,7 +34872,7 @@
         <size>0xD</size>
         <usage>registers</usage>
       </addressBlock>
-      <interrupt><name>FPU</name><description>Floating point unit</description><value>81</value></interrupt>
+      <interrupt><name>FPU</name><description>Floating point unit interrupt</description><value>81</value></interrupt>
     <registers>
         <register>
           <name>FPCCR</name>
@@ -36923,13 +36995,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CNT_H</name>
-              <description>High counter value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>CNT</name>
               <description>Counter value</description>
               <bitOffset>0</bitOffset>
@@ -36966,13 +37031,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -36990,13 +37048,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1 value (TIM2
-              only)</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -37075,7 +37126,7 @@
       </registers>
     </peripheral>
     <peripheral derivedFrom="ADC1"><name>ADC2</name><baseAddress>0x50040100</baseAddress></peripheral>
-    <peripheral><name>ADC_Common</name><description>ADC common registers</description><groupName>ADC</groupName><baseAddress>1342440192</baseAddress><addressBlock><offset>0</offset><size>16</size><usage>registers</usage></addressBlock><registers><register><name>CSR</name><description>ADC common status register</description><addressOffset>0</addressOffset><access>read-only</access><resetValue>0</resetValue><fields><field><name>JQOVF_SLV</name><description>Injected Context Queue Overflow flag of the slave ADC</description><bitOffset>26</bitOffset><bitWidth>1</bitWidth></field>
+    <peripheral><name>ADC_Common</name><description>ADC common registers</description><groupName>ADC_Common</groupName><baseAddress>1342440192</baseAddress><addressBlock><offset>0</offset><size>16</size><usage>registers</usage></addressBlock><registers><register><name>CSR</name><description>ADC common status register</description><addressOffset>0</addressOffset><access>read-only</access><resetValue>0</resetValue><fields><field><name>JQOVF_SLV</name><description>Injected Context Queue Overflow flag of the slave ADC</description><bitOffset>26</bitOffset><bitWidth>1</bitWidth></field>
             <field><name>AWD3_SLV</name><description>Analog watchdog 3 flag of the slave ADC</description><bitOffset>25</bitOffset><bitWidth>1</bitWidth></field>
             <field><name>AWD2_SLV</name><description>Analog watchdog 2 flag of the slave ADC</description><bitOffset>24</bitOffset><bitWidth>1</bitWidth></field>
             <field><name>AWD1_SLV</name><description>Analog watchdog 1 flag of the slave ADC</description><bitOffset>23</bitOffset><bitWidth>1</bitWidth></field>
