@@ -20,7 +20,7 @@
     <peripheral>
       <name>ADC_Common</name>
       <description>ADC common registers</description>
-      <groupName>ADC</groupName>
+      <groupName>ADC_Common</groupName>
       <baseAddress>0x40012300</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
@@ -290,7 +290,7 @@
               group</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>EXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC1</name><description>Timer 1 CC1 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC2</name><description>Timer 1 CC2 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM1CC3</name><description>Timer 1 CC3 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC2</name><description>Timer 2 CC2 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM2CC3</name><description>Timer 2 CC3 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM2CC4</name><description>Timer 2 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM3TRGO</name><description>Timer 3 TRGO event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4CC4</name><description>Timer 4 CC4 event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC1</name><description>Timer 5 CC1 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5CC2</name><description>Timer 5 CC2 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5CC3</name><description>Timer 5 CC3 event</description><value>12</value></enumeratedValue><enumeratedValue><name>EXTI11</name><description>EXTI line 11</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>JSWSTART</name>
@@ -314,7 +314,7 @@
               group</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM8CC4</name><description>Timer 8 CC4 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM1TRGO2</name><description>Timer 1 TRGO(2) event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM8TRGO</name><description>Timer 8 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM8TRGO2</name><description>Timer 8 TRGO(2) event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM3CC3</name><description>Timer 3 CC3 event</description><value>11</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>12</value></enumeratedValue><enumeratedValue><name>TIM3CC1</name><description>Timer 3 CC1 event</description><value>13</value></enumeratedValue><enumeratedValue><name>TIM6TRGO</name><description>Timer 6 TRGO event</description><value>14</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>JEXTSEL</name><usage>read-write</usage><enumeratedValue><name>TIM1CC4</name><description>Timer 1 CC4 event</description><value>0</value></enumeratedValue><enumeratedValue><name>TIM1TRGO</name><description>Timer 1 TRGO event</description><value>1</value></enumeratedValue><enumeratedValue><name>TIM2CC1</name><description>Timer 2 CC1 event</description><value>2</value></enumeratedValue><enumeratedValue><name>TIM2TRGO</name><description>Timer 2 TRGO event</description><value>3</value></enumeratedValue><enumeratedValue><name>TIM3CC2</name><description>Timer 3 CC2 event</description><value>4</value></enumeratedValue><enumeratedValue><name>TIM3CC4</name><description>Timer 3 CC4 event</description><value>5</value></enumeratedValue><enumeratedValue><name>TIM4CC1</name><description>Timer 4 CC1 event</description><value>6</value></enumeratedValue><enumeratedValue><name>TIM4CC2</name><description>Timer 4 CC2 event</description><value>7</value></enumeratedValue><enumeratedValue><name>TIM4CC3</name><description>Timer 4 CC3 event</description><value>8</value></enumeratedValue><enumeratedValue><name>TIM4TRGO</name><description>Timer 4 TRGO event</description><value>9</value></enumeratedValue><enumeratedValue><name>TIM5CC4</name><description>Timer 5 CC4 event</description><value>10</value></enumeratedValue><enumeratedValue><name>TIM5TRGO</name><description>Timer 5 TRGO event</description><value>11</value></enumeratedValue><enumeratedValue><name>EXTI15</name><description>EXTI line 15</description><value>15</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ALIGN</name>
@@ -3018,8 +3018,7 @@
         <register>
           <dim>3</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3</dimIndex><name>DIEPCTL%s</name>
           <displayName>DIEPCTL1</displayName>
-          <description>OTG device endpoint-1 control
-          register</description>
+          <description>OTG_FS device endpoint %s IN control register</description>
           <addressOffset>0x120</addressOffset>
           <size>0x20</size>
           <resetValue>0x00000000</resetValue>
@@ -3201,8 +3200,7 @@
         <register>
           <dim>3</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3</dimIndex><name>DOEPCTL%s</name>
           <displayName>DOEPCTL1</displayName>
-          <description>device endpoint-1 control
-          register</description>
+          <description>OTG_FS device endpoint %s OUT control register</description>
           <addressOffset>0x320</addressOffset>
           <size>0x20</size>
           <resetValue>0x00000000</resetValue>
@@ -4644,7 +4642,7 @@
               <description>Host port interrupt mask</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
             <field>
               <name>HCIM</name>
@@ -4740,17 +4738,16 @@
         <register>
           <name>GRXSTSR_Host</name>
           <displayName>GRXSTSR_Host</displayName>
-          <description>OTG_FS Receive status debug read(Host
-          mode)</description>
+          <description>OTG status debug read (host mode)</description>
           <alternateRegister>FS_GRXSTSR_Device</alternateRegister>
-          <addressOffset>0x1C</addressOffset>
-          <size>0x20</size>
+          <addressOffset>28</addressOffset>
+          <size>32</size>
           <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>EPNUM</name>
-              <description>Endpoint number</description>
+              <name>CHNUM</name>
+              <description>Channel number</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
@@ -4772,13 +4769,7 @@
               <bitOffset>17</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
-            <field>
-              <name>FRMNUM</name>
-              <description>Frame number</description>
-              <bitOffset>21</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-          </fields>
+            </fields>
         </register>
         <register>
           <name>GRXFSIZ</name>
@@ -4918,7 +4909,8 @@
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-          </fields>
+          <field><name>NOVBUSSENS</name><description>Vbus sensing disable option</description><bitOffset>21</bitOffset><bitWidth>1</bitWidth></field>
+            </fields>
         </register>
         <register>
           <name>CID</name>
@@ -4965,8 +4957,7 @@
         <register>
           <dim>3</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3</dimIndex><name>DIEPTXF%s</name>
           <displayName>DIEPTXF1</displayName>
-          <description>OTG_FS device IN endpoint transmit FIFO size
-          register (OTG_FS_DIEPTXF2)</description>
+          <description>OTF_FS device IN endpoint transmit FIFO size register</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -4987,8 +4978,7 @@
             </field>
           </fields>
         </register>
-        <register><name>GRXSTSP_Device</name><description>OTG status read and pop (device mode)</description><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>STSPHST</name><description>Status phase start</description><bitOffset>27</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>FRMNUM</name><description>Frame number</description><bitOffset>21</bitOffset><bitWidth>4</bitWidth></field>
+        <register><name>GRXSTSP_Device</name><description>OTG status read and pop (device mode)</description><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>FRMNUM</name><description>Frame number</description><bitOffset>21</bitOffset><bitWidth>4</bitWidth></field>
             <field><name>PKTSTS</name><description>Packet status</description><bitOffset>17</bitOffset><bitWidth>4</bitWidth></field>
             <field><name>DPID</name><description>Data PID</description><bitOffset>15</bitOffset><bitWidth>2</bitWidth></field>
             <field><name>BCNT</name><description>Byte count</description><bitOffset>4</bitOffset><bitWidth>11</bitWidth></field>
@@ -5033,7 +5023,7 @@
               <description>FS- and LS-only support</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-only</access>
+              <access>read-write</access>
             </field>
           </fields>
         </register>
@@ -9466,9 +9456,9 @@
           </fields>
         </register>
         <register>
-          <name>ALRMAR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sR</name>
           <displayName>ALRMAR</displayName>
-          <description>alarm A register</description>
+          <description>Alarm register</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -9476,7 +9466,7 @@
           <fields>
             <field>
               <name>MSK4</name>
-              <description>Alarm A date mask</description>
+              <description>Alarm date mask</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -9497,15 +9487,14 @@
             </field>
             <field>
               <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
+              <description>Date units or day in BCD format</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
             </field>
             <field>
               <name>MSK3</name>
-              <description>Alarm A hours mask</description>
+              <description>Alarm hours mask</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -9533,7 +9522,7 @@
             </field>
             <field>
               <name>MSK2</name>
-              <description>Alarm A minutes mask</description>
+              <description>Alarm minutes mask</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -9554,117 +9543,7 @@
             </field>
             <field>
               <name>MSK1</name>
-              <description>Alarm A seconds mask</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>ST</name>
-              <description>Second tens in BCD format</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SU</name>
-              <description>Second units in BCD format</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBR</name>
-          <displayName>ALRMBR</displayName>
-          <description>alarm B register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MSK4</name>
-              <description>Alarm B date mask</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>WDSEL</name>
-              <description>Week day selection</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>WDSEL</name><usage>read-write</usage><enumeratedValue><name>DateUnits</name><description>DU[3:0] represents the date units</description><value>0</value></enumeratedValue><enumeratedValue><name>WeekDay</name><description>DU[3:0] represents the week day. DT[1:0] is don&#8217;t care.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>DT</name>
-              <description>Date tens in BCD format</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK3</name>
-              <description>Alarm B hours mask</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>PM</name>
-              <description>AM/PM notation</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>PM</name><usage>read-write</usage><enumeratedValue><name>AM</name><description>AM or 24-hour format</description><value>0</value></enumeratedValue><enumeratedValue><name>PM</name><description>PM</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>HT</name>
-              <description>Hour tens in BCD format</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>HU</name>
-              <description>Hour units in BCD format</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK2</name>
-              <description>Alarm B minutes mask</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>MNT</name>
-              <description>Minute tens in BCD format</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MNU</name>
-              <description>Minute units in BCD format</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK1</name>
-              <description>Alarm B seconds mask</description>
+              <description>Alarm seconds mask</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
@@ -9992,36 +9871,10 @@
           </fields>
         </register>
         <register>
-          <name>ALRMASSR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sSSR</name>
           <displayName>ALRMASSR</displayName>
-          <description>alarm A sub second register</description>
+          <description>Alarm sub-second register</description>
           <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MASKSS</name>
-              <description>Mask the most-significant bits starting
-              at this bit</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SS</name>
-              <description>Sub seconds value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBSSR</name>
-          <displayName>ALRMBSSR</displayName>
-          <description>alarm B sub second register</description>
-          <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -12432,7 +12285,9 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          </fields>
+          <field><name>OPM</name><description>One-pulse mode</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields>
         </register>
         <register>
           <name>DIER</name>
@@ -12752,7 +12607,9 @@
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>CEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter enabled</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
-          </fields>
+          <field><name>OPM</name><description>One-pulse mode</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth><enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
+            </field>
+            </fields>
         </register>
         <register>
           <name>DIER</name>
@@ -14756,12 +14613,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CNT_H</name>
-              <description>High counter value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>CNT</name>
               <description>Counter value</description>
               <bitOffset>0</bitOffset>
@@ -14798,12 +14649,6 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ARR_H</name>
-              <description>High Auto-reload value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ARR</name>
               <description>Auto-reload value</description>
               <bitOffset>0</bitOffset>
@@ -14821,13 +14666,6 @@
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
-            <field>
-              <name>CCR1_H</name>
-              <description>High Capture/Compare 1
-              value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
             <field>
               <name>CCR</name>
               <description>Capture/Compare value</description>
@@ -18993,7 +18831,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -19001,7 +18839,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -19009,7 +18847,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -19017,7 +18855,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -19025,7 +18863,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -19033,7 +18871,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -20457,7 +20295,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -20465,7 +20303,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -20473,7 +20311,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -20481,7 +20319,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -20489,7 +20327,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -20497,7 +20335,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -21879,7 +21717,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -21887,7 +21725,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -21895,7 +21733,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -21903,7 +21741,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -21911,7 +21749,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -21919,7 +21757,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -24152,7 +23990,7 @@
         <size>0xD</size>
         <usage>registers</usage>
       </addressBlock>
-      <interrupt><name>FPU</name><description>Floating point unit</description><value>81</value></interrupt>
+      <interrupt><name>FPU</name><description>Floating point unit interrupt</description><value>81</value></interrupt>
     <registers>
         <register>
           <name>FPCCR</name>

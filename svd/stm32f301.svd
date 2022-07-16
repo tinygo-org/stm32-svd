@@ -1155,7 +1155,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -1163,7 +1163,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -1171,7 +1171,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -1179,7 +1179,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -1187,7 +1187,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -1195,7 +1195,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -1515,42 +1515,42 @@
               <description>Port x Reset bit y</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port x Reset bit y</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port x Reset bit y</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port x Reset bit y</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port x Reset bit y</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port x Reset bit y</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -2684,7 +2684,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -2692,7 +2692,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -2700,7 +2700,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -2708,7 +2708,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -2716,7 +2716,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -2724,7 +2724,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -3044,42 +3044,42 @@
               <description>Port x Reset bit y</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port x Reset bit y</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port x Reset bit y</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port x Reset bit y</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port x Reset bit y</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port x Reset bit y</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -4213,7 +4213,7 @@
               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
@@ -4221,7 +4221,7 @@
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
@@ -4229,7 +4229,7 @@
               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
@@ -4237,7 +4237,7 @@
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
@@ -4245,7 +4245,7 @@
               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="LCK10"/>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
@@ -4253,7 +4253,7 @@
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LCK10</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
@@ -4573,42 +4573,42 @@
               <description>Port x Reset bit y</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port x Reset bit y</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port x Reset bit y</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port x Reset bit y</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port x Reset bit y</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port x Reset bit y</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -9052,6 +9052,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -9770,7 +9771,7 @@
               <description>One-pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>NotStopped</name><description>Not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopped</name><description>Counter stops counting at next update event</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -11972,12 +11973,14 @@
             <enumeratedValues><name>ADVREGEN</name><usage>read-write</usage><enumeratedValue><name>Intermediate</name><description>Intermediate state required when moving the ADC voltage regulator between states</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>ADC voltage regulator enabled</description><value>1</value></enumeratedValue><enumeratedValue><name>Disabled</name><description>ADC voltage regulator disabled</description><value>2</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
-              <name>JADST</name>
+              <name>JADSTP</name>
               <description>ADC stop of injected conversion
               command</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+            <enumeratedValues derivedFrom="ADSTPR"/>
+            <enumeratedValues derivedFrom="ADSTPW"/>
             </field>
             <field>
               <name>ADSTP</name>
@@ -11986,7 +11989,8 @@
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues><name>ADSTP</name><usage>read-write</usage><enumeratedValue><name>Stop</name><description>Stop conversion of channel</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTPR</name><usage>read</usage><enumeratedValue><name>NotStopping</name><description>No stop command active</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopping</name><description>ADC stopping conversion</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTPW</name><usage>write</usage><enumeratedValue><name>StopConversion</name><description>Stop the active conversion</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>JADSTART</name>
@@ -11995,7 +11999,8 @@
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues derivedFrom="ADSTART"/>
+            <enumeratedValues derivedFrom="ADSTARTR"/>
+            <enumeratedValues derivedFrom="ADSTARTW"/>
             </field>
             <field>
               <name>ADSTART</name>
@@ -12004,7 +12009,8 @@
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues><name>ADSTART</name><usage>read-write</usage><enumeratedValue><name>Start</name><description>Starts conversion of channel</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTARTR</name><usage>read</usage><enumeratedValue><name>NotActive</name><description>No conversion ongoing</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>ADC operating and may be converting</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADSTARTW</name><usage>write</usage><enumeratedValue><name>StartConversion</name><description>Start the ADC conversion (may be delayed for hardware triggers)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ADDIS</name>
@@ -12012,7 +12018,8 @@
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues><name>ADDISW</name><usage>write</usage><enumeratedValue><name>Disable</name><description>Disable ADC conversion and go to power down mode</description><value>0</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADDISR</name><usage>read</usage><enumeratedValue><name>NotDisabling</name><description>No disable command active</description><value>0</value></enumeratedValue><enumeratedValue><name>Disabling</name><description>ADC disabling</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADDISW</name><usage>write</usage><enumeratedValue><name>Disable</name><description>Disable the ADC</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>ADEN</name>
@@ -12020,7 +12027,8 @@
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues><name>ADENW</name><usage>write</usage><enumeratedValue><name>Enable</name><description>Enable ADC</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADENR</name><usage>read</usage><enumeratedValue><name>Disabled</name><description>ADC disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>ADC enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>ADENW</name><usage>write</usage><enumeratedValue><name>Enabled</name><description>Enable the ADC</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -18143,9 +18151,9 @@
           </fields>
         </register>
         <register>
-          <name>ALRMAR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sR</name>
           <displayName>ALRMAR</displayName>
-          <description>alarm A register</description>
+          <description>Alarm register</description>
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -18153,7 +18161,7 @@
           <fields>
             <field>
               <name>MSK4</name>
-              <description>Alarm A date mask</description>
+              <description>Alarm date mask</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -18174,15 +18182,14 @@
             </field>
             <field>
               <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
+              <description>Date units or day in BCD format</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
             </field>
             <field>
               <name>MSK3</name>
-              <description>Alarm A hours mask</description>
+              <description>Alarm hours mask</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -18210,7 +18217,7 @@
             </field>
             <field>
               <name>MSK2</name>
-              <description>Alarm A minutes mask</description>
+              <description>Alarm minutes mask</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -18231,117 +18238,7 @@
             </field>
             <field>
               <name>MSK1</name>
-              <description>Alarm A seconds mask</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>ST</name>
-              <description>Second tens in BCD format</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SU</name>
-              <description>Second units in BCD format</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBR</name>
-          <displayName>ALRMBR</displayName>
-          <description>alarm B register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MSK4</name>
-              <description>Alarm B date mask</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>WDSEL</name>
-              <description>Week day selection</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>WDSEL</name><usage>read-write</usage><enumeratedValue><name>DateUnits</name><description>DU[3:0] represents the date units</description><value>0</value></enumeratedValue><enumeratedValue><name>WeekDay</name><description>DU[3:0] represents the week day. DT[1:0] is don&#8217;t care.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>DT</name>
-              <description>Date tens in BCD format</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>DU</name>
-              <description>Date units or day in BCD
-              format</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK3</name>
-              <description>Alarm B hours mask</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>PM</name>
-              <description>AM/PM notation</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>PM</name><usage>read-write</usage><enumeratedValue><name>AM</name><description>AM or 24-hour format</description><value>0</value></enumeratedValue><enumeratedValue><name>PM</name><description>PM</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>HT</name>
-              <description>Hour tens in BCD format</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>HU</name>
-              <description>Hour units in BCD format</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK2</name>
-              <description>Alarm B minutes mask</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>MNT</name>
-              <description>Minute tens in BCD format</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MNU</name>
-              <description>Minute units in BCD format</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK1</name>
-              <description>Alarm B seconds mask</description>
+              <description>Alarm seconds mask</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
@@ -18703,36 +18600,10 @@
           </fields>
         </register>
         <register>
-          <name>ALRMASSR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sSSR</name>
           <displayName>ALRMASSR</displayName>
-          <description>alarm A sub second register</description>
+          <description>Alarm sub-second register</description>
           <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MASKSS</name>
-              <description>Mask the most-significant bits starting
-              at this bit</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SS</name>
-              <description>Sub seconds value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBSSR</name>
-          <displayName>ALRMBSSR</displayName>
-          <description>alarm B sub second register</description>
-          <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -19930,335 +19801,6 @@
         <description>Timer 18 global interrupt/DAC3 underrun
         interrupt</description>
         <value>27</value>
-      </interrupt>
-    </peripheral>
-    <peripheral>
-      <name>TIM13</name>
-      <description>General purpose timers</description>
-      <groupName>TIM</groupName>
-      <baseAddress>0x40001C00</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x400</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <interrupt>
-        <name>TIM13_IRQ</name>
-        <description>Timer 13 global interrupt</description>
-        <value>44</value>
-      </interrupt>
-      <registers>
-        <register>
-          <name>CR1</name>
-          <displayName>CR1</displayName>
-          <description>control register 1</description>
-          <addressOffset>0x0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>CKD</name>
-              <description>Clock division</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>2</bitWidth>
-            <enumeratedValues><name>CKD</name><usage>read-write</usage><enumeratedValue><name>Div1</name><description>t_DTS = t_CK_INT</description><value>0</value></enumeratedValue><enumeratedValue><name>Div2</name><description>t_DTS = 2 &#215; t_CK_INT</description><value>1</value></enumeratedValue><enumeratedValue><name>Div4</name><description>t_DTS = 4 &#215; t_CK_INT</description><value>2</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>ARPE</name>
-              <description>Auto-reload preload enable</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ARPE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>TIMx_APRR register is not buffered</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>TIMx_APRR register is buffered</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>URS</name>
-              <description>Update request source</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>URS</name><usage>read-write</usage><enumeratedValue><name>AnyEvent</name><description>Any of counter overflow/underflow, setting UG, or update through slave mode, generates an update interrupt or DMA request</description><value>0</value></enumeratedValue><enumeratedValue><name>CounterOnly</name><description>Only counter overflow/underflow generates an update interrupt or DMA request</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>UDIS</name>
-              <description>Update disable</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>UDIS</name><usage>read-write</usage><enumeratedValue><name>Enabled</name><description>Update event enabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Disabled</name><description>Update event disabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>CEN</name>
-              <description>Counter enable</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>CEN</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DIER</name>
-          <displayName>DIER</displayName>
-          <description>DMA/Interrupt enable register</description>
-          <addressOffset>0xC</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>CC1IE</name>
-              <description>Capture/Compare 1 interrupt
-              enable</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UIE</name>
-              <description>Update interrupt enable</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>UIE</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Update interrupt disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Update interrupt enabled</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>SR</name>
-          <displayName>SR</displayName>
-          <description>status register</description>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>CC1OF</name>
-              <description>Capture/Compare 1 overcapture
-              flag</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1IF</name>
-              <description>Capture/compare 1 interrupt
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UIF</name>
-              <description>Update interrupt flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>UIF</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>No update occurred</description><value>0</value></enumeratedValue><enumeratedValue><name>UpdatePending</name><description>Update interrupt pending.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>EGR</name>
-          <displayName>EGR</displayName>
-          <description>event generation register</description>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <access>write-only</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>CC1G</name>
-              <description>Capture/compare 1
-              generation</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>UG</name>
-              <description>Update generation</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>UG</name><usage>read-write</usage><enumeratedValue><name>Update</name><description>Re-initializes the timer counter and generates an update of the registers.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR1_Output</name>
-          <displayName>CCMR1_Output</displayName>
-          <description>capture/compare mode register (output
-          mode)</description>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CC1S</name>
-              <description>Capture/Compare 1
-              selection</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>OC1FE</name>
-              <description>Output compare 1 fast
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC1PE</name>
-              <description>Output Compare 1 preload
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>OC1M</name>
-              <description>Output Compare 1 mode</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            <enumeratedValues><name>OC1M</name><usage>read-write</usage><enumeratedValue><name>Frozen</name><description>The comparison between the output compare register TIMx_CCRy and the counter TIMx_CNT has no effect on the outputs</description><value>0</value></enumeratedValue><enumeratedValue><name>ActiveOnMatch</name><description>Set channel to active level on match. OCyREF signal is forced high when the counter matches the capture/compare register</description><value>1</value></enumeratedValue><enumeratedValue><name>InactiveOnMatch</name><description>Set channel to inactive level on match. OCyREF signal is forced low when the counter matches the capture/compare register</description><value>2</value></enumeratedValue><enumeratedValue><name>Toggle</name><description>OCyREF toggles when TIMx_CNT=TIMx_CCRy</description><value>3</value></enumeratedValue><enumeratedValue><name>ForceInactive</name><description>OCyREF is forced low</description><value>4</value></enumeratedValue><enumeratedValue><name>ForceActive</name><description>OCyREF is forced high</description><value>5</value></enumeratedValue><enumeratedValue><name>PwmMode1</name><description>In upcounting, channel is active as long as TIMx_CNT&lt;TIMx_CCRy else inactive. In downcounting, channel is inactive as long as TIMx_CNT&gt;TIMx_CCRy else active</description><value>6</value></enumeratedValue><enumeratedValue><name>PwmMode2</name><description>Inversely to PwmMode1</description><value>7</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCMR1_Input</name>
-          <displayName>CCMR1_Input</displayName>
-          <description>capture/compare mode register (input
-          mode)</description>
-          <alternateRegister>CCMR1_Output</alternateRegister>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>IC1F</name>
-              <description>Input capture 1 filter</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>4</bitWidth>
-            </field>
-            <field>
-              <name>IC1PSC</name>
-              <description>Input capture 1 prescaler</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-            <field>
-              <name>CC1S</name>
-              <description>Capture/Compare 1
-              selection</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CCER</name>
-          <displayName>CCER</displayName>
-          <description>capture/compare enable
-          register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>CC1NP</name>
-              <description>Capture/Compare 1 output
-              Polarity</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1P</name>
-              <description>Capture/Compare 1 output
-              Polarity</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>CC1E</name>
-              <description>Capture/Compare 1 output
-              enable</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>CNT</name>
-          <displayName>CNT</displayName>
-          <description>counter</description>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CNT</name>
-              <description>counter value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>PSC</name>
-          <displayName>PSC</displayName>
-          <description>prescaler</description>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0000</resetValue>
-          <fields>
-            <field>
-              <name>PSC</name>
-              <description>Prescaler value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>65535</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ARR</name>
-          <displayName>ARR</displayName>
-          <description>auto-reload register</description>
-          <addressOffset>0x2C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ARR</name>
-              <description>Auto-reload value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <dim>1</dim><dimIncrement>0x0</dimIncrement><dimIndex>1-1</dimIndex><name>CCR%s</name>
-          <displayName>CCR1</displayName>
-          <description>capture/compare register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CCR</name>
-              <description>Capture/Compare value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-          </fields>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral derivedFrom="TIM13">
-      <name>TIM14</name>
-      <baseAddress>0x40002000</baseAddress>
-      <interrupt>
-        <name>TIM14_IRQ</name>
-        <description>Timer 14 global interrupt</description>
-        <value>45</value>
       </interrupt>
     </peripheral>
     <peripheral>
@@ -25898,7 +25440,7 @@
     <peripheral>
       <name>TIM1</name>
       <description>Advanced timer</description>
-      <groupName>TIMs</groupName>
+      <groupName>TIM</groupName>
       <baseAddress>0x40012C00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>

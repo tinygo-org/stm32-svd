@@ -4490,28 +4490,28 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Synchronization overrun event               flag</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SOF10"/>
+            <enumeratedValues derivedFrom="SOF0"/>
             </field>
             <field>
               <name>SOF12</name>
               <description>SOF12</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SOF10"/>
+            <enumeratedValues derivedFrom="SOF0"/>
             </field>
             <field>
               <name>SOF11</name>
               <description>SOF11</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="SOF10"/>
+            <enumeratedValues derivedFrom="SOF0"/>
             </field>
             <field>
               <name>SOF10</name>
               <description>SOF10</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>SOF10</name><usage>read-write</usage><enumeratedValue><name>NoSyncEvent</name><description>No synchronization event occured on a DMA request line multiplexer channel x, while the DMA request counter value is lower than NBREQ</description><value>0</value></enumeratedValue><enumeratedValue><name>SyncEvent</name><description>Synchronization event occured on a DMA request line multiplexer channel x, while the DMA request counter value is lower than NBREQ</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="SOF0"/>
             </field>
             <field>
               <name>SOF9</name>
@@ -4599,28 +4599,28 @@ Copyright (c) 2020 STMicroelectronics.
               <description>CSOF13</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="CSOF10"/>
+            <enumeratedValues derivedFrom="CSOF0"/>
             </field>
             <field>
               <name>CSOF12</name>
               <description>CSOF12</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="CSOF10"/>
+            <enumeratedValues derivedFrom="CSOF0"/>
             </field>
             <field>
               <name>CSOF11</name>
               <description>CSOF11</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="CSOF10"/>
+            <enumeratedValues derivedFrom="CSOF0"/>
             </field>
             <field>
               <name>CSOF10</name>
               <description>CSOF10</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>CSOF10</name><usage>read-write</usage><enumeratedValue><name>Clear</name><description>Clear synchronization flag</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="CSOF0"/>
             </field>
             <field>
               <name>CSOF9</name>
@@ -8034,102 +8034,119 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCKK</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Port configuration lock key not active</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Port configuration lock key active</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LCK15</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK8</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK7</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK6</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK5</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK4</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK3</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK2</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK1</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK0</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCK0</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -8351,42 +8368,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port Reset bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port Reset bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port Reset bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port Reset bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port Reset bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port Reset bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -9390,102 +9407,119 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCKK</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Port configuration lock key not active</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Port configuration lock key active</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LCK15</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK12</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK11</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK10</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK9</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK8</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK7</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK6</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK5</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK4</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK3</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK2</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK1</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK0</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCK0</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -9707,42 +9741,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port Reset bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR10W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR11</name>
               <description>Port Reset bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR12</name>
               <description>Port Reset bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR13</name>
               <description>Port Reset bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port Reset bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port Reset bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR10W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -10410,66 +10444,77 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCKK</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Port configuration lock key not active</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Port configuration lock key active</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LCK15</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK14</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK13</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK6</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK5</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK4</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK3</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK2</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK1</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues derivedFrom="LCK0"/>
             </field>
             <field>
               <name>LCK0</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCK0</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -10670,21 +10715,21 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port Reset bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>BR13W</name><usage>write</usage><enumeratedValue><name>NoAction</name><description>No action on the corresponding ODx bit</description><value>0</value></enumeratedValue><enumeratedValue><name>Reset</name><description>Reset the ODx bit</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR14</name>
               <description>Port Reset bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR13W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
             <field>
               <name>BR15</name>
               <description>Port Reset bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="BR13W"/>
+            <enumeratedValues derivedFrom="BR0W"/>
             </field>
           </fields>
         </register>
@@ -10848,12 +10893,14 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCKK</name><usage>read-write</usage><enumeratedValue><name>NotActive</name><description>Port configuration lock key not active</description><value>0</value></enumeratedValue><enumeratedValue><name>Active</name><description>Port configuration lock key active</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>LCK3</name>
               <description>Port x lock bit y (y=               0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>LCK3</name><usage>read-write</usage><enumeratedValue><name>Unlocked</name><description>Port configuration not locked</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Port configuration locked</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -10979,9 +11026,9 @@ Copyright (c) 2020 STMicroelectronics.
       </interrupt>
       <registers>
         <register>
-          <name>R0</name>
+          <dim>16</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15</dimIndex><name>R%s</name>
           <displayName>R0</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
+          <description>HSEM register HSEM_R%s HSEM_R31</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -11012,502 +11059,7 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>R1</name>
-          <displayName>R1</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R2</name>
-          <displayName>R2</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R3</name>
-          <displayName>R3</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0xC</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R4</name>
-          <displayName>R4</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x10</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R5</name>
-          <displayName>R5</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x14</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R6</name>
-          <displayName>R6</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x18</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R7</name>
-          <displayName>R7</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x1C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R8</name>
-          <displayName>R8</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x20</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R9</name>
-          <displayName>R9</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R10</name>
-          <displayName>R10</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R11</name>
-          <displayName>R11</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x2C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R12</name>
-          <displayName>R12</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R13</name>
-          <displayName>R13</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R14</name>
-          <displayName>R14</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x38</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>R15</name>
-          <displayName>R15</displayName>
-          <description>HSEM register HSEM_R0 HSEM_R31</description>
-          <addressOffset>0x3C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR0</name>
+          <dim>16</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15</dimIndex><name>RLR%s</name>
           <displayName>RLR0</displayName>
           <description>HSEM Read lock register</description>
           <addressOffset>0x80</addressOffset>
@@ -11535,502 +11087,6 @@ Copyright (c) 2020 STMicroelectronics.
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR1</name>
-          <displayName>RLR1</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR2</name>
-          <displayName>RLR2</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR3</name>
-          <displayName>RLR3</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x8C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR4</name>
-          <displayName>RLR4</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR5</name>
-          <displayName>RLR5</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR6</name>
-          <displayName>RLR6</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR7</name>
-          <displayName>RLR7</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0x9C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR8</name>
-          <displayName>RLR8</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR9</name>
-          <displayName>RLR9</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR10</name>
-          <displayName>RLR10</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xA8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR11</name>
-          <displayName>RLR11</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xAC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR12</name>
-          <displayName>RLR12</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR13</name>
-          <displayName>RLR13</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR14</name>
-          <displayName>RLR14</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xB8</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>RLR15</name>
-          <displayName>RLR15</displayName>
-          <description>HSEM Read lock register</description>
-          <addressOffset>0xBC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PROCID</name>
-              <description>Semaphore ProcessID</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>255</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>COREID</name>
-              <description>COREID</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>LOCK</name>
-              <description>Lock indication</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>LOCKR</name><usage>read</usage><enumeratedValue><name>Free</name><description>Semaphore is free</description><value>0</value></enumeratedValue><enumeratedValue><name>Locked</name><description>Semaphore is locked</description><value>1</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>LOCKW</name><usage>write</usage><enumeratedValue><name>Free</name><description>Free semaphore</description><value>0</value></enumeratedValue><enumeratedValue><name>TryLock</name><description>Try to lock semaphore</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
           </fields>
         </register>
@@ -12118,42 +11174,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISE10</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Interrupt generation disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Interrupt generation enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE11</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE12</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE13</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE14</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE15</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
           </fields>
         </register>
@@ -12251,48 +11307,48 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISC10R</name><usage>read</usage><enumeratedValue><name>NoEffect</name><description>Always reads 0</description><value>0</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>ISC10W</name><usage>write</usage><enumeratedValue><name>NoEffect</name><description>Interrupt semaphore x status ISFx and masked status MISFx not affected</description><value>0</value></enumeratedValue><enumeratedValue><name>Clear</name><description>Interrupt semaphore x status ISFx and masked status MISFx cleared</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC11</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC12</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC13</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC14</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC15</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
           </fields>
         </register>
@@ -12380,42 +11436,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISF10</name><usage>read-write</usage><enumeratedValue><name>NotPending</name><description>No interrupt pending</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Interrupt pending</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF11</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF12</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF13</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF14</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF15</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
           </fields>
         </register>
@@ -12503,42 +11559,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MISF10</name><usage>read-write</usage><enumeratedValue><name>NotPending</name><description>No interrupt pending after masking</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Interrupt pending after masking</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF11</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF12</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF13</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF14</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF15</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
           </fields>
         </register>
@@ -12626,42 +11682,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISE10</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Interrupt generation disabled</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Interrupt generation enabled</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE11</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE12</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE13</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE14</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
             <field>
               <name>ISE15</name>
               <description>Interrupt semaphore n enable               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISE10"/>
+            <enumeratedValues derivedFrom="ISE0"/>
             </field>
           </fields>
         </register>
@@ -12759,48 +11815,48 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISC10R</name><usage>read</usage><enumeratedValue><name>NoEffect</name><description>Always reads 0</description><value>0</value></enumeratedValue></enumeratedValues>
-            <enumeratedValues><name>ISC10W</name><usage>write</usage><enumeratedValue><name>NoEffect</name><description>Interrupt semaphore x status ISFx and masked status MISFx not affected</description><value>0</value></enumeratedValue><enumeratedValue><name>Clear</name><description>Interrupt semaphore x status ISFx and masked status MISFx cleared</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC11</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC12</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC13</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC14</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
             <field>
               <name>ISC15</name>
               <description>Interrupt(N) semaphore n clear               bit</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISC10R"/>
-            <enumeratedValues derivedFrom="ISC10W"/>
+            <enumeratedValues derivedFrom="ISC0R"/>
+            <enumeratedValues derivedFrom="ISC0W"/>
             </field>
           </fields>
         </register>
@@ -12888,42 +11944,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>ISF10</name><usage>read-write</usage><enumeratedValue><name>NotPending</name><description>No interrupt pending</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Interrupt pending</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF11</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF12</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF13</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF14</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
             <field>
               <name>ISF15</name>
               <description>Interrupt(N) semaphore n status bit               before enable (mask)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="ISF10"/>
+            <enumeratedValues derivedFrom="ISF0"/>
             </field>
           </fields>
         </register>
@@ -13011,42 +12067,42 @@ Copyright (c) 2020 STMicroelectronics.
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MISF10</name><usage>read-write</usage><enumeratedValue><name>NotPending</name><description>No interrupt pending after masking</description><value>0</value></enumeratedValue><enumeratedValue><name>Pending</name><description>Interrupt pending after masking</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF11</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF12</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF13</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF14</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
             <field>
               <name>MISF15</name>
               <description>masked interrupt(N) semaphore n status               bit after enable (mask)</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MISF10"/>
+            <enumeratedValues derivedFrom="MISF0"/>
             </field>
           </fields>
         </register>
@@ -21414,7 +20470,7 @@ Copyright (c) 2020 STMicroelectronics.
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            <enumeratedValues derivedFrom="CECS"/>
+            <enumeratedValues><name>CEIS</name><usage>read-write</usage><enumeratedValue><name>Correct</name><description>The RNG clock is correct (fRNGCLK&gt; fHCLK/32)</description><value>0</value></enumeratedValue><enumeratedValue><name>Slow</name><description>The RNG clock before internal divider has been detected too slow (fRNGCLK&lt; fHCLK/32)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>SECS</name>
@@ -21422,7 +20478,7 @@ Copyright (c) 2020 STMicroelectronics.
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
-            <enumeratedValues><name>SECS</name><usage>read-write</usage><enumeratedValue><name>NoFault</name><description>No faulty sequence has currently been detected. If the SEIS bit is set, this means that a faulty sequence was detected and the situation has been recovered</description><value>0</value></enumeratedValue><enumeratedValue><name>Fault</name><description>At least one faulty sequence has been detected - see ref manual for details</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>SECSR</name><usage>read</usage><enumeratedValue><name>NoFault</name><description>No faulty sequence has currently been detected. If the SEIS bit is set, this means that a faulty sequence was detected and the situation has been recovered</description><value>0</value></enumeratedValue><enumeratedValue><name>Fault</name><description>At least one faulty sequence has been detected - see ref manual for details</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>CECS</name>
@@ -21430,7 +20486,7 @@ Copyright (c) 2020 STMicroelectronics.
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
-            <enumeratedValues><name>CECS</name><usage>read-write</usage><enumeratedValue><name>Correct</name><description>The RNG clock is correct (fRNGCLK&gt; fHCLK/32)</description><value>0</value></enumeratedValue><enumeratedValue><name>Slow</name><description>The RNG clock before internal divider has been detected too slow (fRNGCLK&lt; fHCLK/32)</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>CECSR</name><usage>read</usage><enumeratedValue><name>Correct</name><description>The RNG clock is correct (fRNGCLK&gt; fHCLK/32)</description><value>0</value></enumeratedValue><enumeratedValue><name>Slow</name><description>The RNG clock before internal divider has been detected too slow (fRNGCLK&lt; fHCLK/32)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>DRDY</name>
@@ -22193,9 +21249,9 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ALRMAR</name>
+          <dim>2</dim><dimIncrement>0x8</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sR</name>
           <displayName>ALRMAR</displayName>
-          <description>Alarm A register</description>
+          <description>Alarm register</description>
           <addressOffset>0x40</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
@@ -22203,7 +21259,7 @@ Copyright (c) 2020 STMicroelectronics.
           <fields>
             <field>
               <name>MSK4</name>
-              <description>Alarm A date mask</description>
+              <description>Alarm date mask</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -22224,14 +21280,14 @@ Copyright (c) 2020 STMicroelectronics.
             </field>
             <field>
               <name>DU</name>
-              <description>Date units or day in BCD               format</description>
+              <description>Date units or day in BCD format</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
             <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
             </field>
             <field>
               <name>MSK3</name>
-              <description>Alarm A hours mask</description>
+              <description>Alarm hours mask</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -22259,7 +21315,7 @@ Copyright (c) 2020 STMicroelectronics.
             </field>
             <field>
               <name>MSK2</name>
-              <description>Alarm A minutes mask</description>
+              <description>Alarm minutes mask</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues derivedFrom="MSK1"/>
@@ -22280,148 +21336,7 @@ Copyright (c) 2020 STMicroelectronics.
             </field>
             <field>
               <name>MSK1</name>
-              <description>Alarm A seconds mask</description>
-              <bitOffset>7</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>ST</name>
-              <description>Second tens in BCD format.</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SU</name>
-              <description>Second units in BCD               format.</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMASSR</name>
-          <displayName>ALRMASSR</displayName>
-          <description>Alarm A sub second register</description>
-          <addressOffset>0x44</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SSCLR</name>
-              <description>Clear synchronous counter on alarm (Binary mode only)</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>SSCLR</name><usage>read-write</usage><enumeratedValue><name>FreeRunning</name><description>The synchronous binary counter (SS[31:0] in RTC_SSR) is free-running</description><value>0</value></enumeratedValue><enumeratedValue><name>ALRMBINR</name><description>The synchronous binary counter (SS[31:0] in RTC_SSR) is running from 0xFFFF FFFF to RTC_ALRMABINR &#8594; SS[31:0] value and is automatically reloaded with 0xFFFF FFFF when reaching RTC_ALRMABINR &#8594; SS[31:0]</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>MASKSS</name>
-              <description>Mask the most-significant bits starting               at this bit</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>6</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>63</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>SS</name>
-              <description>Sub seconds value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>32767</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ALRMBR</name>
-          <displayName>ALRMBR</displayName>
-          <description>Alarm B register</description>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>MSK4</name>
-              <description>Alarm B date mask</description>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>WDSEL</name>
-              <description>Week day selection</description>
-              <bitOffset>30</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>WDSEL</name><usage>read-write</usage><enumeratedValue><name>DateUnits</name><description>DU[3:0] represents the date units</description><value>0</value></enumeratedValue><enumeratedValue><name>WeekDay</name><description>DU[3:0] represents the week day. DT[1:0] is don&#8217;t care.</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>DT</name>
-              <description>Date tens in BCD format</description>
-              <bitOffset>28</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>DU</name>
-              <description>Date units or day in BCD               format</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK3</name>
-              <description>Alarm B hours mask</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>PM</name>
-              <description>AM/PM notation</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues><name>PM</name><usage>read-write</usage><enumeratedValue><name>AM</name><description>AM or 24-hour format</description><value>0</value></enumeratedValue><enumeratedValue><name>PM</name><description>PM</description><value>1</value></enumeratedValue></enumeratedValues>
-            </field>
-            <field>
-              <name>HT</name>
-              <description>Hour tens in BCD format</description>
-              <bitOffset>20</bitOffset>
-              <bitWidth>2</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>3</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>HU</name>
-              <description>Hour units in BCD format</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK2</name>
-              <description>Alarm B minutes mask</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>1</bitWidth>
-            <enumeratedValues derivedFrom="MSK1"/>
-            </field>
-            <field>
-              <name>MNT</name>
-              <description>Minute tens in BCD format</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>3</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>7</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MNU</name>
-              <description>Minute units in BCD format</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>4</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>15</maximum></range></writeConstraint>
-            </field>
-            <field>
-              <name>MSK1</name>
-              <description>Alarm B seconds mask</description>
+              <description>Alarm seconds mask</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
             <enumeratedValues><name>MSK1</name><usage>read-write</usage><enumeratedValue><name>Mask</name><description>Alarm set if the date/day match</description><value>0</value></enumeratedValue><enumeratedValue><name>NotMask</name><description>Date/day don&#8217;t care in Alarm comparison</description><value>1</value></enumeratedValue></enumeratedValues>
@@ -22443,10 +21358,10 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ALRMBSSR</name>
-          <displayName>ALRMBSSR</displayName>
-          <description>Alarm B sub second register</description>
-          <addressOffset>0x4C</addressOffset>
+          <dim>2</dim><dimIncrement>0x8</dimIncrement><dimIndex>A,B</dimIndex><name>ALRM%sSSR</name>
+          <displayName>ALRMASSR</displayName>
+          <description>Alarm sub-second register</description>
+          <addressOffset>0x44</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -22655,7 +21570,7 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>ALRABINR</name>
+          <dim>2</dim><dimIncrement>0x4</dimIncrement><dimIndex>A,B</dimIndex><name>ALR%sBINR</name>
           <displayName>ALRABINR</displayName>
           <description>RTC alarm A binary mode           register</description>
           <addressOffset>0x70</addressOffset>
@@ -22672,25 +21587,7 @@ Copyright (c) 2020 STMicroelectronics.
             </field>
           </fields>
         </register>
-        <register>
-          <name>ALRBBINR</name>
-          <displayName>ALRBBINR</displayName>
-          <description>RTC alarm B binary mode           register</description>
-          <addressOffset>0x74</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SS</name>
-              <description>Synchronous counter alarm value in               Binary mode</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-      </registers>
+        </registers>
     </peripheral>
     <peripheral>
       <name>SCB</name>
@@ -25495,7 +24392,7 @@ Copyright (c) 2020 STMicroelectronics.
           </fields>
         </register>
         <register>
-          <name>BKP0R</name>
+          <dim>20</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19</dimIndex><name>BKP%sR</name>
           <displayName>BKP0R</displayName>
           <description>TAMP backup register</description>
           <addressOffset>0x100</addressOffset>
@@ -25512,349 +24409,7 @@ Copyright (c) 2020 STMicroelectronics.
             </field>
           </fields>
         </register>
-        <register>
-          <name>BKP1R</name>
-          <displayName>BKP1R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x104</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP2R</name>
-          <displayName>BKP2R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x108</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP3R</name>
-          <displayName>BKP3R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x10C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP4R</name>
-          <displayName>BKP4R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x110</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP5R</name>
-          <displayName>BKP5R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x114</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP6R</name>
-          <displayName>BKP6R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x118</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP7R</name>
-          <displayName>BKP7R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x11C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP8R</name>
-          <displayName>BKP8R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x120</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP9R</name>
-          <displayName>BKP9R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x124</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP10R</name>
-          <displayName>BKP10R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x140</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP11R</name>
-          <displayName>BKP11R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x144</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP12R</name>
-          <displayName>BKP12R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x148</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP13R</name>
-          <displayName>BKP13R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x14C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP14R</name>
-          <displayName>BKP14R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x150</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP15R</name>
-          <displayName>BKP15R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x154</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP16R</name>
-          <displayName>BKP16R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x158</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP17R</name>
-          <displayName>BKP17R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x15C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP18R</name>
-          <displayName>BKP18R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x160</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>BKP19R</name>
-          <displayName>BKP19R</displayName>
-          <description>TAMP backup register</description>
-          <addressOffset>0x164</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>BKP</name>
-              <description>BKP</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            <writeConstraint><range><minimum>0</minimum><maximum>4294967295</maximum></range></writeConstraint>
-            </field>
-          </fields>
-        </register>
-      </registers>
+        </registers>
     </peripheral>
     <peripheral>
       <name>TIM1</name>
@@ -28610,7 +27165,7 @@ Copyright (c) 2020 STMicroelectronics.
               <description>One pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>NotStopped</name><description>Not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Stopped</name><description>Counter stops counting at next update event</description><value>1</value></enumeratedValue></enumeratedValues>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
@@ -29303,6 +27858,7 @@ Copyright (c) 2020 STMicroelectronics.
               <description>One pulse mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+            <enumeratedValues><name>OPM</name><usage>read-write</usage><enumeratedValue><name>Disabled</name><description>Counter is not stopped at update event</description><value>0</value></enumeratedValue><enumeratedValue><name>Enabled</name><description>Counter stops counting at the next update event (clearing the CEN bit)</description><value>1</value></enumeratedValue></enumeratedValues>
             </field>
             <field>
               <name>URS</name>
