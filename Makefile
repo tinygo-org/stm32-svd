@@ -11,8 +11,13 @@ $(SVD_IN):
 
 # Patch the SVD file.
 stm32-rs/svd/%.svd.patched: stm32-rs/devices/%.yaml stm32-rs/svd/%.svd
-	svd patch $<
+	svdtools patch $<
 
 # Copy the resulting SVD file to the destination location.
 svd/%.svd: stm32-rs/svd/%.svd.patched
 	cp $< $@
+
+# Apply changes to .yaml files.
+mods:
+	cat mods.ed | sed '/^$$/d;/^#/d' | ed
+

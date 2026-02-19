@@ -1,0 +1,28 @@
+# Deactivating patches/16bit* keeps peripheral registers of
+# IWDG, WWDG, SPI1 or I2C accessible as 32-bit regs.
+#
+e stm32-rs/devices/patches/16bit.yaml
+1,$ s/^[^#]?/#inactive /
+w
+
+#e stm32-rs/devices/patches/16bit_with_mask.yaml
+#1,$ s/^[^#]?/#inactive /
+#w
+
+# remove 16-bit constraints from USART registers,
+# they are all 32-bit; see RM0008, p. 818
+# https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+#
+#e stm32-rs/devices/patches/usart/v1.yaml
+#/^  "\?\*"/
+#.,+1 s/^  [^#]?/  #inactive /
+#w
+
+# remove 16-bit constraint of USART.GTPR
+# it is a 32 bit register, with upper 16 bit reserved; see RM0090, p. 1020
+# https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf#page=1020
+#
+#e stm32-rs/devices/patches/usart/f4_add_UART_GTPR.yaml
+#/^  GTPR/
+#+3,+5 s/size: 16/#size: 16/
+#w
