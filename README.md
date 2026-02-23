@@ -24,7 +24,13 @@ From time to time this repository will need to be updated, to incorporate change
 
  1. Make sure the stm32-rs submodule is pulled, using `git submodule update --init`.
  2. Download the latest patches by going to the stm32-rs subdirectory and running `git pull`.
- 3. Run `make`.
+ 3. Check if modifications get applied to `.yaml` files in stm32-rs cleanly:
+     - `go run patch.go`: This mainly preserves 32-bit access for specific
+       registers where stm32-rs has narrowed the access to 16 bit (or where
+       32-bit access needs to be explicitly enforced for consistency).
+     - `git -C stm32-rs diff`: Check the output to ensure the modifications look plausible.
+
+ 4. Run `make`.
 
 ## License
 

@@ -3,6 +3,8 @@ DEVICES := $(sort $(wildcard stm32-rs/devices/*.yaml))
 SVD_IN := $(patsubst stm32-rs/devices/%.yaml,stm32-rs/svd/%.svd,$(DEVICES))
 SVD_OUT := $(patsubst stm32-rs/devices/%.yaml,svd/%.svd,$(DEVICES))
 
+all: patch files
+
 files: $(SVD_OUT)
 
 # Extract all source .svd files from the vendor supplied archive.
@@ -16,3 +18,12 @@ stm32-rs/svd/%.svd.patched: stm32-rs/devices/%.yaml stm32-rs/svd/%.svd
 # Copy the resulting SVD file to the destination location.
 svd/%.svd: stm32-rs/svd/%.svd.patched
 	cp $< $@
+
+# Apply changes to .yaml files.
+patch:
+	go run patch.go
+
+.PHONY=\
+	all\
+	files\
+	patch\
