@@ -8,15 +8,11 @@ These files are not intended to be modified. Instead, they are intended to be us
 
 SVD tooling is required. You will need to do something like this:
 
-- **Python 3.6+** with pip
-- **svdtools**: Install with `pip install svdtools`
+- **svdtools**: Install with `cargo install svdtools --version 0.5.0`
 - **Git** with submodule support
 
-The `svd` command from svdtools must be available in your PATH. If installed via pip with `--user`, ensure `~/.local/bin` is in your PATH:
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
+The `svdtools` command must be available in your PATH, which can be done by
+sourcing `$HOME/.cargo/env` from a location like `.bashrc`.
 
 ## Contributing
 
