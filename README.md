@@ -32,6 +32,12 @@ From time to time this repository will need to be updated, to incorporate change
 
  4. Run `make`.
 
+Please ensure that the `stm32` targets supported by TinyGo can still be built:
+
+ 1. Regenerate device files from the update SVD files: `make gen-device-stm32`
+ 2. Build src/examples/blinky for all stm32 targets
+ 3. Try to resolve possible issues by adjusting `patch.go` or `src/machine_stm32*`
+
 ## License
 
 The SVD files in this repository have two sources: the original ST SVD files and the stm32-rs patch files.
