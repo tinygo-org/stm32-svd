@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!--
-Copyright (c) 2024 STMicroelectronics.
-
- SPDX-License-Identifier: Apache-2.0
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
-<device schemaVersion="1.1"
-xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F415</name>
   <version>1.3</version>
   <description>STM32F415</description>
@@ -34,7 +15,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <size>0x20</size>
-  <resetValue>0x0</resetValue>
+  <resetValue>0x00000000</resetValue>
   <resetMask>0xFFFFFFFF</resetMask>
   <peripherals>
     <peripheral>
@@ -51,7 +32,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>FPU</name>
         <description>FPU interrupt</description>
         <value>81</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -4485,7 +4466,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ENABLE</name>
@@ -4565,7 +4546,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>FNE</name>
@@ -4594,7 +4575,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINE_RIS</name>
@@ -4638,7 +4619,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINE_IE</name>
@@ -4682,7 +4663,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINE_MIS</name>
@@ -4728,7 +4709,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINE_ISC</name>
@@ -4775,7 +4756,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>FEC</name>
@@ -4811,7 +4792,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>FEU</name>
@@ -4848,7 +4829,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>VST</name>
@@ -4871,7 +4852,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>VLINE</name>
@@ -4894,7 +4875,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>Byte3</name>
@@ -4948,7 +4929,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x000030D0</resetValue>
+          <resetValue>0x000030DB</resetValue>
           <fields>
             <field>
               <name>CBURSTRW</name>
@@ -5050,7 +5031,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0xFFFFFFFF</resetValue>
+          <resetValue>0x0FFFFFFF</resetValue>
           <fields>
             <field>
               <name>ACCMOD</name>
@@ -5104,7 +5085,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x000030D0</resetValue>
+          <resetValue>0x000030D2</resetValue>
           <fields>
             <field>
               <name>CBURSTRW</name>
@@ -5206,7 +5187,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0xFFFFFFFF</resetValue>
+          <resetValue>0x0FFFFFFF</resetValue>
           <fields>
             <field>
               <name>ACCMOD</name>
@@ -5260,7 +5241,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x000030D0</resetValue>
+          <resetValue>0x000030D2</resetValue>
           <fields>
             <field>
               <name>CBURSTRW</name>
@@ -5362,7 +5343,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0xFFFFFFFF</resetValue>
+          <resetValue>0x0FFFFFFF</resetValue>
           <fields>
             <field>
               <name>ACCMOD</name>
@@ -5416,7 +5397,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x000030D0</resetValue>
+          <resetValue>0x000030D2</resetValue>
           <fields>
             <field>
               <name>CBURSTRW</name>
@@ -5518,7 +5499,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0xFFFFFFFF</resetValue>
+          <resetValue>0x0FFFFFFF</resetValue>
           <fields>
             <field>
               <name>ACCMOD</name>
@@ -6231,7 +6212,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
             </field>
-			<field>
+            <field>
               <name>DATAST</name>
               <description>DATAST</description>
               <bitOffset>8</bitOffset>
@@ -6272,7 +6253,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6315,7 +6296,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6358,7 +6339,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6999,7 +6980,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>DMA2_Stream7</name>
         <description>DMA2 Stream7 global interrupt</description>
         <value>70</value>
-      </interrupt> 
+      </interrupt>
       <registers>
         <register>
           <name>LISR</name>
@@ -10620,7 +10601,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>TIM11 reset</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                       
+            </field>
           </fields>
         </register>
         <register>
@@ -13119,7 +13100,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     </peripheral>
     <peripheral derivedFrom="GPIOK">
       <name>GPIOD</name>
-      <baseAddress>0X40020C00</baseAddress>
+      <baseAddress>0x40020C00</baseAddress>
     </peripheral>
     <peripheral derivedFrom="GPIOK">
       <name>GPIOC</name>
@@ -15722,7 +15703,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EXTI3</name>
@@ -15762,7 +15743,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EXTI7</name>
@@ -15802,7 +15783,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EXTI11</name>
@@ -15841,7 +15822,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EXTI15</name>
@@ -15923,7 +15904,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>BIDIMODE</name>
@@ -16021,7 +16002,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TXEIE</name>
@@ -16075,7 +16056,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>status register</description>
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
-          <resetValue>0x0002</resetValue>
+          <resetValue>0x00000002</resetValue>
           <fields>
             <field>
               <name>TIFRFE</name>
@@ -16149,7 +16130,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DR</name>
@@ -16166,7 +16147,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0007</resetValue>
+          <resetValue>0x00000007</resetValue>
           <fields>
             <field>
               <name>CRCPOLY</name>
@@ -16183,7 +16164,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>RxCRC</name>
@@ -16200,7 +16181,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TxCRC</name>
@@ -16217,7 +16198,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>I2SMOD</name>
@@ -16279,7 +16260,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>00000010</resetValue>
+          <resetValue>0x0000000A</resetValue>
           <fields>
             <field>
               <name>MCKOE</name>
@@ -17880,7 +17861,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     </peripheral>
     <peripheral derivedFrom="ADC1">
       <name>ADC2</name>
-      <baseAddress>0x40012100</baseAddress>    
+      <baseAddress>0x40012100</baseAddress>
     </peripheral>
     <peripheral derivedFrom="ADC1">
       <name>ADC3</name>
@@ -18009,7 +17990,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DIV_Mantissa</name>
@@ -18032,7 +18013,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>OVER8</name>
@@ -18134,7 +18115,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINEN</name>
@@ -18200,7 +18181,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ONEBIT</name>
@@ -18285,7 +18266,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>GT</name>
@@ -19098,7 +19079,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>WWDG</name>
         <description>Window Watchdog interrupt</description>
         <value>0</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -19107,7 +19088,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x7F</resetValue>
+          <resetValue>0x0000007F</resetValue>
           <fields>
             <field>
               <name>WDGA</name>
@@ -19130,7 +19111,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x7F</resetValue>
+          <resetValue>0x0000007F</resetValue>
           <fields>
             <field>
               <name>EWI</name>
@@ -19165,7 +19146,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EWIF</name>
@@ -19193,7 +19174,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>RTC Wakeup interrupt through the EXTI
         line</description>
         <value>3</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>RTC_Alarm</name>
         <description>RTC Alarms (A and B) through EXTI line
@@ -20619,7 +20600,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DIV_Mantissa</name>
@@ -20642,7 +20623,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>OVER8</name>
@@ -20744,7 +20725,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LINEN</name>
@@ -20786,7 +20767,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ONEBIT</name>
@@ -21086,24 +21067,24 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Break interrupt and TIM9 global
         interrupt</description>
         <value>24</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>TIM1_UP_TIM10</name>
         <description>TIM1 Update interrupt and TIM10 global
         interrupt</description>
         <value>25</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>TIM1_TRG_COM_TIM11</name>
         <description>TIM1 Trigger and Commutation interrupts and
         TIM11 global interrupt</description>
         <value>26</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>TIM1_CC</name>
         <description>TIM1 Capture Compare interrupt</description>
         <value>27</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -21112,7 +21093,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -21172,7 +21153,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>OIS4</name>
@@ -21258,7 +21239,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ETP</name>
@@ -21311,7 +21292,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TDE</name>
@@ -21420,7 +21401,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4OF</name>
@@ -21511,7 +21492,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>BG</name>
@@ -21838,7 +21819,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4P</name>
@@ -21964,7 +21945,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -22066,7 +22047,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DBL</name>
@@ -22089,7 +22070,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAB</name>
@@ -22107,7 +22088,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x30</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>REP</name>
@@ -22124,7 +22105,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x44</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MOE</name>
@@ -22205,7 +22186,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM8_CC</name>
         <description>TIM8 Capture Compare interrupt</description>
         <value>46</value>
-      </interrupt>    
+      </interrupt>
     </peripheral>
     <peripheral>
       <name>TIM2</name>
@@ -22221,7 +22202,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM2</name>
         <description>TIM2 global interrupt</description>
         <value>28</value>
-      </interrupt>   
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -22230,7 +22211,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -22290,7 +22271,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TI1S</name>
@@ -22320,7 +22301,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ETP</name>
@@ -22373,7 +22354,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TDE</name>
@@ -22464,7 +22445,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4OF</name>
@@ -22543,7 +22524,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TG</name>
@@ -22841,7 +22822,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4NP</name>
@@ -22959,7 +22940,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -23095,7 +23076,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DBL</name>
@@ -23118,7 +23099,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAB</name>
@@ -23136,7 +23117,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ITR1_RMP</name>
@@ -23162,7 +23143,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM3</name>
         <description>TIM3 global interrupt</description>
         <value>29</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -23171,7 +23152,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -23231,7 +23212,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TI1S</name>
@@ -23261,7 +23242,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ETP</name>
@@ -23314,7 +23295,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TDE</name>
@@ -23405,7 +23386,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4OF</name>
@@ -23484,7 +23465,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TG</name>
@@ -23782,7 +23763,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4NP</name>
@@ -23900,7 +23881,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -24036,7 +24017,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DBL</name>
@@ -24059,7 +24040,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAB</name>
@@ -24079,7 +24060,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM4</name>
         <description>TIM4 global interrupt</description>
         <value>30</value>
-      </interrupt>    
+      </interrupt>
     </peripheral>
     <peripheral>
       <name>TIM5</name>
@@ -24104,7 +24085,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -24164,7 +24145,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TI1S</name>
@@ -24194,7 +24175,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ETP</name>
@@ -24247,7 +24228,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TDE</name>
@@ -24338,7 +24319,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4OF</name>
@@ -24417,7 +24398,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TG</name>
@@ -24715,7 +24696,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC4NP</name>
@@ -24833,7 +24814,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -24969,7 +24950,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DBL</name>
@@ -24992,7 +24973,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAB</name>
@@ -25010,7 +24991,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x50</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>IT4_RMP</name>
@@ -25037,7 +25018,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Break interrupt and TIM9 global
         interrupt</description>
         <value>24</value>
-      </interrupt>   
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -25046,7 +25027,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -25093,7 +25074,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MMS</name>
@@ -25110,7 +25091,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MSM</name>
@@ -25139,7 +25120,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TIE</name>
@@ -25176,7 +25157,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC2OF</name>
@@ -25227,7 +25208,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>TG</name>
@@ -25382,7 +25363,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC2NP</name>
@@ -25452,7 +25433,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -25540,7 +25521,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Update interrupt and TIM10 global
         interrupt</description>
         <value>25</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -25549,7 +25530,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -25590,7 +25571,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1IE</name>
@@ -25614,7 +25595,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1OF</name>
@@ -25645,7 +25626,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1G</name>
@@ -25741,7 +25722,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1NP</name>
@@ -25790,7 +25771,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -25871,7 +25852,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Trigger and Commutation interrupts and
         TIM11 global interrupt</description>
         <value>26</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -25880,7 +25861,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CKD</name>
@@ -25921,7 +25902,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1IE</name>
@@ -25945,7 +25926,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1OF</name>
@@ -25976,7 +25957,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1G</name>
@@ -26072,7 +26053,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CC1NP</name>
@@ -26121,7 +26102,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -26209,7 +26190,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ARPE</name>
@@ -26250,7 +26231,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MMS</name>
@@ -26267,7 +26248,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>UDE</name>
@@ -26290,7 +26271,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>UIF</name>
@@ -26307,7 +26288,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>UG</name>
@@ -26341,7 +26322,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PSC</name>
@@ -26358,7 +26339,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+          <resetValue>0x0000FFFF</resetValue>
           <fields>
             <field>
               <name>ARR</name>
@@ -26400,7 +26381,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>Ethernet Wakeup through EXTI line
         interrupt</description>
         <value>62</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>MACCR</name>
@@ -26410,7 +26391,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0008000</resetValue>
+          <resetValue>0x00008000</resetValue>
           <fields>
             <field>
               <name>RE</name>
@@ -33626,22 +33607,22 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>CAN1_TX</name>
         <description>CAN1 TX interrupts</description>
         <value>19</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>CAN1_RX0</name>
         <description>CAN1 RX0 interrupts</description>
         <value>20</value>
-      </interrupt>      
+      </interrupt>
       <interrupt>
         <name>CAN1_RX1</name>
         <description>CAN1 RX1 interrupts</description>
         <value>21</value>
-      </interrupt>      
+      </interrupt>
       <interrupt>
         <name>CAN1_SCE</name>
         <description>CAN1 SCE interrupt</description>
         <value>22</value>
-      </interrupt>      
+      </interrupt>
       <registers>
         <register>
           <name>MCR</name>
@@ -47060,7 +47041,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     </peripheral>
     <peripheral derivedFrom="CAN1">
       <name>CAN2</name>
-      <baseAddress>0x40006800</baseAddress>  
+      <baseAddress>0x40006800</baseAddress>
       <interrupt>
         <name>CAN2_TX</name>
         <description>CAN2 TX interrupts</description>
@@ -47398,12 +47379,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>Tamper and TimeStamp interrupts through the
         EXTI line</description>
         <value>2</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>EXTI0</name>
         <description>EXTI Line0 interrupt</description>
         <value>6</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>EXTI1</name>
         <description>EXTI Line1 interrupt</description>
@@ -48437,7 +48418,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>USB On The Go HS global
         interrupt</description>
         <value>77</value>
-      </interrupt>      
+      </interrupt>
       <registers>
         <register>
           <name>OTG_HS_GOTGCTL</name>
@@ -48445,7 +48426,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS control and status
           register</description>
           <addressOffset>0x0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x00000800</resetValue>
           <fields>
             <field>
@@ -48525,9 +48506,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_GOTGINT</displayName>
           <description>OTG_HS interrupt register</description>
           <addressOffset>0x4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>SEDET</name>
@@ -48575,9 +48556,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS AHB configuration
           register</description>
           <addressOffset>0x8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>GINT</name>
@@ -48618,7 +48599,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS USB configuration
           register</description>
           <addressOffset>0xC</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x00000A00</resetValue>
           <fields>
             <field>
@@ -48758,7 +48739,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_GRSTCTL</displayName>
           <description>OTG_HS reset register</description>
           <addressOffset>0x10</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x20000000</resetValue>
           <fields>
             <field>
@@ -48824,7 +48805,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_GINTSTS</displayName>
           <description>OTG_HS core interrupt register</description>
           <addressOffset>0x14</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x04000020</resetValue>
           <fields>
             <field>
@@ -49024,8 +49005,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_GINTMSK</displayName>
           <description>OTG_HS interrupt mask register</description>
           <addressOffset>0x18</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MMISM</name>
@@ -49233,9 +49214,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Receive status debug read register
           (host mode)</description>
           <addressOffset>0x1C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CHNUM</name>
@@ -49269,9 +49250,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS status read and pop register (host
           mode)</description>
           <addressOffset>0x20</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>CHNUM</name>
@@ -49305,7 +49286,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Receive FIFO size
           register</description>
           <addressOffset>0x24</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000200</resetValue>
           <fields>
@@ -49323,7 +49304,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS nonperiodic transmit FIFO size
           register (host mode)</description>
           <addressOffset>0x28</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000200</resetValue>
           <fields>
@@ -49349,7 +49330,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           mode)</description>
           <alternateRegister>OTG_HS_GNPTXFSIZ_Host</alternateRegister>
           <addressOffset>0x28</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000200</resetValue>
           <fields>
@@ -49374,7 +49355,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS nonperiodic transmit FIFO/queue
           status register</description>
           <addressOffset>0x2C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00080200</resetValue>
           <fields>
@@ -49407,9 +49388,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS general core configuration
           register</description>
           <addressOffset>0x38</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PWRDWN</name>
@@ -49458,7 +49439,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_CID</displayName>
           <description>OTG_HS core ID register</description>
           <addressOffset>0x3C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00001200</resetValue>
           <fields>
@@ -49476,7 +49457,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Host periodic transmit FIFO size
           register</description>
           <addressOffset>0x100</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000600</resetValue>
           <fields>
@@ -49501,7 +49482,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x104</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49526,7 +49507,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x108</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49551,7 +49532,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x11C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49576,7 +49557,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x120</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49601,7 +49582,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x124</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49626,7 +49607,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x128</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49651,7 +49632,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO size
           register</description>
           <addressOffset>0x12C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02000400</resetValue>
           <fields>
@@ -49677,9 +49658,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           (peripheral mode mode)</description>
           <alternateRegister>OTG_HS_GRXSTSR_Host</alternateRegister>
           <addressOffset>0x1C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EPNUM</name>
@@ -49720,9 +49701,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           (peripheral mode)</description>
           <alternateRegister>OTG_HS_GRXSTSP_Host</alternateRegister>
           <addressOffset>0x20</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>EPNUM</name>
@@ -49775,8 +49756,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host configuration
           register</description>
           <addressOffset>0x0</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>FSLSPCS</name>
@@ -49800,7 +49781,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Host frame interval
           register</description>
           <addressOffset>0x4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x0000EA60</resetValue>
           <fields>
@@ -49818,7 +49799,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host frame number/frame time
           remaining register</description>
           <addressOffset>0x8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00003FFF</resetValue>
           <fields>
@@ -49842,7 +49823,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS_Host periodic transmit FIFO/queue
           status register</description>
           <addressOffset>0x10</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x00080100</resetValue>
           <fields>
             <field>
@@ -49877,9 +49858,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Host all channels interrupt
           register</description>
           <addressOffset>0x14</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>HAINT</name>
@@ -49895,9 +49876,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host all channels interrupt mask
           register</description>
           <addressOffset>0x18</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>HAINTM</name>
@@ -49913,8 +49894,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host port control and status
           register</description>
           <addressOffset>0x40</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PCSTS</name>
@@ -50015,9 +49996,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-0 characteristics
           register</description>
           <addressOffset>0x100</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50088,9 +50069,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 characteristics
           register</description>
           <addressOffset>0x120</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50161,9 +50142,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 characteristics
           register</description>
           <addressOffset>0x140</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50234,9 +50215,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 characteristics
           register</description>
           <addressOffset>0x160</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50307,9 +50288,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 characteristics
           register</description>
           <addressOffset>0x180</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50380,9 +50361,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 characteristics
           register</description>
           <addressOffset>0x1A0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50453,9 +50434,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 characteristics
           register</description>
           <addressOffset>0x1C0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50526,9 +50507,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 characteristics
           register</description>
           <addressOffset>0x1E0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50599,9 +50580,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 characteristics
           register</description>
           <addressOffset>0x200</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50672,9 +50653,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 characteristics
           register</description>
           <addressOffset>0x220</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50745,9 +50726,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 characteristics
           register</description>
           <addressOffset>0x240</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50818,9 +50799,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 characteristics
           register</description>
           <addressOffset>0x260</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -50891,9 +50872,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-0 split control
           register</description>
           <addressOffset>0x104</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -50933,9 +50914,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 split control
           register</description>
           <addressOffset>0x124</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -50975,9 +50956,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 split control
           register</description>
           <addressOffset>0x144</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51017,9 +50998,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 split control
           register</description>
           <addressOffset>0x164</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51059,9 +51040,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 split control
           register</description>
           <addressOffset>0x184</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51101,9 +51082,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 split control
           register</description>
           <addressOffset>0x1A4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51143,9 +51124,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 split control
           register</description>
           <addressOffset>0x1C4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51185,9 +51166,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 split control
           register</description>
           <addressOffset>0x1E4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51227,9 +51208,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 split control
           register</description>
           <addressOffset>0x204</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51269,9 +51250,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 split control
           register</description>
           <addressOffset>0x224</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51311,9 +51292,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 split control
           register</description>
           <addressOffset>0x244</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51353,9 +51334,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 split control
           register</description>
           <addressOffset>0x264</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PRTADDR</name>
@@ -51395,9 +51376,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 interrupt
           register</description>
           <addressOffset>0x108</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51477,9 +51458,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 interrupt
           register</description>
           <addressOffset>0x128</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51559,9 +51540,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 interrupt
           register</description>
           <addressOffset>0x148</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51641,9 +51622,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 interrupt
           register</description>
           <addressOffset>0x168</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51723,9 +51704,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 interrupt
           register</description>
           <addressOffset>0x188</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51805,9 +51786,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 interrupt
           register</description>
           <addressOffset>0x1A8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51887,9 +51868,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 interrupt
           register</description>
           <addressOffset>0x1C8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -51969,9 +51950,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 interrupt
           register</description>
           <addressOffset>0x1E8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -52051,9 +52032,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 interrupt
           register</description>
           <addressOffset>0x208</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -52133,9 +52114,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 interrupt
           register</description>
           <addressOffset>0x228</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -52215,9 +52196,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 interrupt
           register</description>
           <addressOffset>0x248</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -52297,9 +52278,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 interrupt
           register</description>
           <addressOffset>0x268</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -52379,9 +52360,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 interrupt mask
           register</description>
           <addressOffset>0x10C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52461,9 +52442,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 interrupt mask
           register</description>
           <addressOffset>0x12C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52543,9 +52524,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 interrupt mask
           register</description>
           <addressOffset>0x14C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52625,9 +52606,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 interrupt mask
           register</description>
           <addressOffset>0x16C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52707,9 +52688,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 interrupt mask
           register</description>
           <addressOffset>0x18C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52789,9 +52770,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 interrupt mask
           register</description>
           <addressOffset>0x1AC</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52871,9 +52852,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 interrupt mask
           register</description>
           <addressOffset>0x1CC</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -52953,9 +52934,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 interrupt mask
           register</description>
           <addressOffset>0x1EC</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -53035,9 +53016,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 interrupt mask
           register</description>
           <addressOffset>0x20C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -53117,9 +53098,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 interrupt mask
           register</description>
           <addressOffset>0x22C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -53199,9 +53180,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 interrupt mask
           register</description>
           <addressOffset>0x24C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -53281,9 +53262,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 interrupt mask
           register</description>
           <addressOffset>0x26C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -53363,9 +53344,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 transfer size
           register</description>
           <addressOffset>0x110</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53393,9 +53374,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 transfer size
           register</description>
           <addressOffset>0x130</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53423,9 +53404,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 transfer size
           register</description>
           <addressOffset>0x150</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53453,9 +53434,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 transfer size
           register</description>
           <addressOffset>0x170</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53483,9 +53464,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 transfer size
           register</description>
           <addressOffset>0x190</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53513,9 +53494,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 transfer size
           register</description>
           <addressOffset>0x1B0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53543,9 +53524,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 transfer size
           register</description>
           <addressOffset>0x1D0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53573,9 +53554,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 transfer size
           register</description>
           <addressOffset>0x1F0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53603,9 +53584,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 transfer size
           register</description>
           <addressOffset>0x210</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53633,9 +53614,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 transfer size
           register</description>
           <addressOffset>0x230</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53663,9 +53644,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 transfer size
           register</description>
           <addressOffset>0x250</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53693,9 +53674,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 transfer size
           register</description>
           <addressOffset>0x270</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -53723,9 +53704,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-0 DMA address
           register</description>
           <addressOffset>0x114</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53741,9 +53722,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-1 DMA address
           register</description>
           <addressOffset>0x134</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53759,9 +53740,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-2 DMA address
           register</description>
           <addressOffset>0x154</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53777,9 +53758,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-3 DMA address
           register</description>
           <addressOffset>0x174</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53795,9 +53776,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-4 DMA address
           register</description>
           <addressOffset>0x194</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53813,9 +53794,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-5 DMA address
           register</description>
           <addressOffset>0x1B4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53831,9 +53812,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-6 DMA address
           register</description>
           <addressOffset>0x1D4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53849,9 +53830,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-7 DMA address
           register</description>
           <addressOffset>0x1F4</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53867,9 +53848,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-8 DMA address
           register</description>
           <addressOffset>0x214</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53885,9 +53866,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-9 DMA address
           register</description>
           <addressOffset>0x234</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53903,9 +53884,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-10 DMA address
           register</description>
           <addressOffset>0x254</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53921,9 +53902,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS host channel-11 DMA address
           register</description>
           <addressOffset>0x274</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -53952,7 +53933,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device configuration
           register</description>
           <addressOffset>0x0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x02200000</resetValue>
           <fields>
@@ -53996,8 +53977,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_DCTL</displayName>
           <description>OTG_HS device control register</description>
           <addressOffset>0x4</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>RWUSIG</name>
@@ -54076,7 +54057,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_HS_DSTS</displayName>
           <description>OTG_HS device status register</description>
           <addressOffset>0x8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000010</resetValue>
           <fields>
@@ -54113,9 +54094,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint common interrupt
           mask register</description>
           <addressOffset>0x10</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -54179,9 +54160,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device OUT endpoint common interrupt
           mask register</description>
           <addressOffset>0x14</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -54237,9 +54218,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device all endpoints interrupt
           register</description>
           <addressOffset>0x18</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>IEPINT</name>
@@ -54262,9 +54243,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS all endpoints interrupt mask
           register</description>
           <addressOffset>0x1C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>IEPM</name>
@@ -54286,7 +54267,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device VBUS discharge time
           register</description>
           <addressOffset>0x28</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x000017D7</resetValue>
           <fields>
@@ -54304,7 +54285,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device VBUS pulsing time
           register</description>
           <addressOffset>0x2C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x000005B8</resetValue>
           <fields>
@@ -54322,9 +54303,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS Device threshold control
           register</description>
           <addressOffset>0x30</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>NONISOTHREN</name>
@@ -54372,9 +54353,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint FIFO empty
           interrupt mask register</description>
           <addressOffset>0x34</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTXFEM</name>
@@ -54391,9 +54372,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device each endpoint interrupt
           register</description>
           <addressOffset>0x38</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>IEP1INT</name>
@@ -54416,9 +54397,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device each endpoint interrupt
           register mask</description>
           <addressOffset>0x3C</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>IEP1INTM</name>
@@ -54442,9 +54423,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device each in endpoint-1 interrupt
           register</description>
           <addressOffset>0x40</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -54514,9 +54495,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device each OUT endpoint-1 interrupt
           register</description>
           <addressOffset>0x80</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRCM</name>
@@ -54598,8 +54579,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-0 control
           register</description>
           <addressOffset>0x100</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -54700,8 +54681,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-1 control
           register</description>
           <addressOffset>0x120</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -54802,8 +54783,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-2 control
           register</description>
           <addressOffset>0x140</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -54904,8 +54885,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-3 control
           register</description>
           <addressOffset>0x160</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -55006,8 +54987,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-4 control
           register</description>
           <addressOffset>0x180</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -55108,8 +55089,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-5 control
           register</description>
           <addressOffset>0x1A0</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -55210,8 +55191,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-6 control
           register</description>
           <addressOffset>0x1C0</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -55312,8 +55293,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-7 control
           register</description>
           <addressOffset>0x1E0</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -55414,7 +55395,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-0 interrupt
           register</description>
           <addressOffset>0x108</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x00000080</resetValue>
           <fields>
             <field>
@@ -55506,8 +55487,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-1 interrupt
           register</description>
           <addressOffset>0x128</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -55598,8 +55579,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-2 interrupt
           register</description>
           <addressOffset>0x148</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -55690,8 +55671,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-3 interrupt
           register</description>
           <addressOffset>0x168</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -55782,8 +55763,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-4 interrupt
           register</description>
           <addressOffset>0x188</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -55874,8 +55855,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-5 interrupt
           register</description>
           <addressOffset>0x1A8</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -55966,8 +55947,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-6 interrupt
           register</description>
           <addressOffset>0x1C8</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -56058,8 +56039,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-7 interrupt
           register</description>
           <addressOffset>0x1E8</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -56150,9 +56131,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint 0 transfer size
           register</description>
           <addressOffset>0x110</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56174,9 +56155,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-1 DMA address
           register</description>
           <addressOffset>0x114</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -56192,9 +56173,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-2 DMA address
           register</description>
           <addressOffset>0x134</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -56210,9 +56191,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-3 DMA address
           register</description>
           <addressOffset>0x154</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -56228,9 +56209,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-4 DMA address
           register</description>
           <addressOffset>0x174</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -56246,9 +56227,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-5 DMA address
           register</description>
           <addressOffset>0x194</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DMAADDR</name>
@@ -56264,9 +56245,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x118</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56283,9 +56264,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x138</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56302,9 +56283,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x158</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56321,9 +56302,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x178</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56340,9 +56321,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x198</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56359,9 +56340,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device IN endpoint transmit FIFO
           status register</description>
           <addressOffset>0x1B8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>INEPTFSAV</name>
@@ -56378,9 +56359,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint transfer size
           register</description>
           <addressOffset>0x130</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56408,9 +56389,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint transfer size
           register</description>
           <addressOffset>0x150</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56438,9 +56419,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint transfer size
           register</description>
           <addressOffset>0x170</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56468,9 +56449,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint transfer size
           register</description>
           <addressOffset>0x190</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56498,9 +56479,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint transfer size
           register</description>
           <addressOffset>0x1B0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -56528,7 +56509,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device control OUT endpoint 0 control
           register</description>
           <addressOffset>0x300</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <resetValue>0x00008000</resetValue>
           <fields>
             <field>
@@ -56609,8 +56590,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-1 control
           register</description>
           <addressOffset>0x320</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -56713,8 +56694,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-2 control
           register</description>
           <addressOffset>0x340</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -56817,8 +56798,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG device endpoint-3 control
           register</description>
           <addressOffset>0x360</addressOffset>
-          <size>32</size>
-          <resetValue>0x0</resetValue>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>MPSIZ</name>
@@ -56921,7 +56902,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-0 interrupt
           register</description>
           <addressOffset>0x308</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000080</resetValue>
           <fields>
@@ -56973,9 +56954,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-1 interrupt
           register</description>
           <addressOffset>0x328</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57025,9 +57006,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-2 interrupt
           register</description>
           <addressOffset>0x348</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57077,9 +57058,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-3 interrupt
           register</description>
           <addressOffset>0x368</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57129,9 +57110,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-4 interrupt
           register</description>
           <addressOffset>0x388</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57181,9 +57162,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-5 interrupt
           register</description>
           <addressOffset>0x3A8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57233,9 +57214,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-6 interrupt
           register</description>
           <addressOffset>0x3C8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57285,9 +57266,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-7 interrupt
           register</description>
           <addressOffset>0x3E8</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRC</name>
@@ -57337,9 +57318,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-1 transfer size
           register</description>
           <addressOffset>0x310</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -57367,9 +57348,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-2 transfer size
           register</description>
           <addressOffset>0x330</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -57398,9 +57379,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-3 transfer size
           register</description>
           <addressOffset>0x350</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -57429,9 +57410,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-4 transfer size
           register</description>
           <addressOffset>0x370</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -57460,9 +57441,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>OTG_HS device endpoint-5 transfer size
           register</description>
           <addressOffset>0x390</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>XFRSIZ</name>
@@ -57504,9 +57485,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>Power and clock gating control
           register</description>
           <addressOffset>0x0</addressOffset>
-          <size>32</size>
+          <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>STPPCLK</name>
@@ -57558,7 +57539,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>SWRST</name>
@@ -57655,7 +57636,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>LAST</name>
@@ -57702,7 +57683,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ADDMODE</name>
@@ -57738,7 +57719,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0xC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>ADD2</name>
@@ -57762,7 +57743,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DR</name>
@@ -57778,7 +57759,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <description>Status register 1</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>SMBALERT</name>
@@ -57893,7 +57874,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x18</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>PEC</name>
@@ -57956,7 +57937,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x1C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>F_S</name>
@@ -57986,7 +57967,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x20</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0002</resetValue>
+          <resetValue>0x00000002</resetValue>
           <fields>
             <field>
               <name>TRISE</name>
@@ -58004,7 +57985,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x0000</resetValue>
+          <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>DNF</name>
@@ -58034,7 +58015,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>I2C2_ER</name>
         <description>I2C2 error interrupt</description>
         <value>34</value>
-      </interrupt>     
+      </interrupt>
     </peripheral>
     <peripheral derivedFrom="I2C3">
       <name>I2C1</name>
@@ -58043,12 +58024,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>I2C1_EV</name>
         <description>I2C1 event interrupt</description>
         <value>31</value>
-      </interrupt>  
+      </interrupt>
       <interrupt>
         <name>I2C1_ER</name>
         <description>I2C1 error interrupt</description>
         <value>32</value>
-      </interrupt>     
+      </interrupt>
     </peripheral>
   </peripherals>
 </device>
